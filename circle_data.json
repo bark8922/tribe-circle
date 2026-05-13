@@ -1,0 +1,204 @@
+{
+  "generated_at": "2026-05-11T12:33:21.172989Z",
+  "source": "/sessions/adoring-relaxed-brown/mnt/Recruiting Dashboard/dashboard_data.json",
+  "periods": {
+    "this_week": {
+      "label": "This week",
+      "iso_label": "W17, Apr 26-May 2 (latest available)",
+      "start": "2026-04-26",
+      "end": "2026-05-02",
+      "iso_week": 17,
+      "elapsed_pct": 1.0
+    },
+    "last_week": {
+      "label": "Last week",
+      "iso_label": "W16, Apr 19-25 (latest available)",
+      "start": "2026-04-19",
+      "end": "2026-04-25",
+      "iso_week": 16,
+      "elapsed_pct": 1.0
+    }
+  },
+  "members": {
+    "lejla@tribe.xyz": {
+      "name": "Lejla Silva",
+      "first_name": "Lejla",
+      "role": "TAP",
+      "client": "Aviv",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 49,
+            "target": 70.0
+          },
+          "Actual Screens": {
+            "actual": 6,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 5,
+            "target": 10.0
+          }
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 133,
+            "target": 70.0
+          },
+          "Actual Screens": {
+            "actual": 20,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 13,
+            "target": 10.0
+          }
+        }
+      }
+    },
+    "maria.gerbore@tribe.xyz": {
+      "name": "Maria Desiree Gerbore",
+      "first_name": "Maria",
+      "role": "TAP",
+      "client": "Nexi",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 4,
+            "target": 100.0
+          },
+          "Actual Screens": {
+            "actual": 7,
+            "target": 20.0
+          },
+          "Moved to ATS": {
+            "actual": 5,
+            "target": 10.0
+          }
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 82,
+            "target": 100.0
+          },
+          "Actual Screens": {
+            "actual": 20,
+            "target": 20.0
+          },
+          "Moved to ATS": {
+            "actual": 14,
+            "target": 10.0
+          }
+        }
+      }
+    },
+    "jandokulil@tribe.xyz": {
+      "name": "Jan Dokulil",
+      "first_name": "Jan",
+      "role": "TAP",
+      "client": "Wolt Market",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 0,
+            "target": 120.0
+          },
+          "Actual Screens": {
+            "actual": 0,
+            "target": 19.0
+          },
+          "Moved to ATS": {
+            "actual": 0,
+            "target": 10.0
+          }
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 22,
+            "target": 120.0
+          },
+          "Actual Screens": {
+            "actual": 13,
+            "target": 19.0
+          },
+          "Moved to ATS": {
+            "actual": 6,
+            "target": 10.0
+          }
+        }
+      }
+    },
+    "chene@tribe.xyz": {
+      "name": "Chené Elliot",
+      "first_name": "Chené",
+      "role": "TAP",
+      "client": "Glovo",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 5,
+            "target": 70.0
+          },
+          "Actual Screens": {
+            "actual": 4,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 2,
+            "target": 10.0
+          }
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 132,
+            "target": 70.0
+          },
+          "Actual Screens": {
+            "actual": 17,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 10,
+            "target": 10.0
+          }
+        }
+      }
+    },
+    "samanthanel@tribe.xyz": {
+      "name": "Samantha Nel",
+      "first_name": "Samantha",
+      "role": "TAP",
+      "client": "Glovo",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 19,
+            "target": 70.0
+          },
+          "Actual Screens": {
+            "actual": 2,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 2,
+            "target": 10.0
+          }
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 77,
+            "target": 70.0
+          },
+          "Actual Screens": {
+            "actual": 18,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 6,
+            "target": 10.0
+          }
+        }
+      }
+    }
+  }
+}

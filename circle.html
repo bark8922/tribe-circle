@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Circle</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --brand: #307bf2;
+      --brand-tint: #D5E5FC;
+      --ink: #2C2D35;
+      --stroke: #E2E2E2;
+      --grey-bg: #F9F9F9;
+      --success: #49C356;
+      --warning: #F6C745;
+      --error: #ED2020;
+    }
+    html, body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, sans-serif; color: var(--ink); }
+    body { background: linear-gradient(135deg, #ffffff 0%, #f4f6fb 70%, #e9eefb 100%); min-height: 100vh; }
+
+    .tile { background: #fff; border: 1px solid var(--stroke); border-radius: 16px; box-shadow: 0 1px 2px rgba(31,41,55,0.04); }
+    .pill { background: #fff; border: 1px solid var(--stroke); border-radius: 999px; padding: 6px 14px; font-size: 13px; font-weight: 500; }
+    .role-badge { background: #EEF4FF; color: var(--brand); border: 1px solid #c9dbf9; border-radius: 6px; font-size: 11px; font-weight: 600; padding: 2px 8px; letter-spacing: 0.04em; }
+    .legend-dot { width: 10px; height: 10px; border-radius: 999px; display: inline-block; }
+    select { background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%232C2D35' stroke-width='2'><polyline points='6 9 12 15 18 9'/></svg>");
+             background-repeat: no-repeat; background-position: right 12px center; appearance: none; padding-right: 32px; }
+    .ring-track { stroke: #EEEEEE; }
+    .ring-segment { transition: stroke-dasharray 700ms cubic-bezier(.2,.7,.3,1); transform: rotate(-90deg); transform-origin: 50% 50%; }
+    .pct-num { font-size: 28px; font-weight: 700; }
+    .delta-good { color: #2f9e3d; }
+    .delta-watch { color: #b3851a; }
+    .delta-risk  { color: #c41818; }
+    .delta-future { color: #6b7c93; }
+  </style>
+</head>
+<body>
+  <div id="root" class="max-w-6xl mx-auto px-6 py-10"></div>
+
+  <script>
+  // ---------- config ----------
+  const STAGES = ['Outreach Contacted', 'Actual Screens', 'Moved to ATS'];
+  const STATUS = {
+    GOOD:   { color: '#49C356', label: 'On track',       delta: 'delta-good',  badge: '▲' },
+    WATCH:  { color: '#F6C745', label: 'Watch',          delta: 'delta-watch', badge: '▼' },
+    RISK:   { color: '#ED2020', label: 'At risk',        delta: 'delta-risk',  badge: '▼' },
+    FUTURE: { color: '#D5E5FC', label: 'Expected by now',delta: 'delta-future',badge: '▲' },
+  };
+  // ---------- helpers ----------
+  function getParam(name) {
+    const u = new URL(window.location.href);
+    return u.searchParams.get(name);
+  }
+  function classifyStatus(actual, target, elapsedPct) {
+    if (!target || target === 0) return 'FUTURE';
+    const expected = target * elapsedPct;
+    if (expected === 0) return 'FUTURE';
+    const ratio = actual / expected;
+    if (ratio >= 0.9) return 'GOOD';
+    if (ratio >= 0.6) return 'WATCH';
+    return 'RISK';
+  }
+  function fmtDelta(actual, target, elapsedPct) {
+    const expected = (target || 0) * elapsedPct;
+    const diff = actual - expected;
+    if (target === 0) return { text: '—', cls: 'delta-future', badge: '' };
+    if (diff >= 0)  return { text: `${diff.toFixed(1)} ahead`,  cls: 'delta-good',  badge: '▲' };
+    return            { text: `${Math.abs(diff).toFixed(1)} behind`, cls: diff < -0.6 * (target * elapsedPct) ? 'delta-risk' : 'delta-watch', badge: '▼' };
+  }
+
+  // ---------- ring chart ----------
+  function ring(actual, target, elapsedPct) {
+    const size = 130, stroke = 14, r = (size - stroke) / 2;
+    const circ = 2 * Math.PI * r;
+    const safeTarget = target > 0 ? target : 1;
+    const achievedFrac = Math.min(actual / safeTarget, 1);
+    const expectedFrac = Math.min(elapsedPct, 1);
+    const status = classifyStatus(actual, target, elapsedPct);
+    const achievedColor = STATUS[status].color;
+    const expectedColor = '#D5E5FC';
+
+    // achieved on top, expected band underneath (so partial achieved sits over expected)
+    const dashAch = `${achievedFrac * circ} ${circ}`;
+    const dashExp = `${expectedFrac * circ} ${circ}`;
+    const pct = target > 0 ? Math.round((actual / target) * 100) : 0;
+
+    return `
+      <svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">
+        <circle cx="${size/2}" cy="${size/2}" r="${r}" fill="none" class="ring-track" stroke-width="${stroke}" />
+        <circle cx="${size/2}" cy="${size/2}" r="${r}" fill="none" stroke="${expectedColor}" stroke-width="${stroke}"
+                stroke-dasharray="${dashExp}" stroke-linecap="round" class="ring-segment" />
+        <circle cx="${size/2}" cy="${size/2}" r="${r}" fill="none" stroke="${achievedColor}" stroke-width="${stroke}"
+                stroke-dasharray="${dashAch}" stroke-linecap="round" class="ring-segment" />
+        <text x="50%" y="54%" text-anchor="middle" dominant-baseline="middle" class="pct-num">${pct}%</text>
+      </svg>`;
+  }
+
+  // ---------- render ----------
+  function renderHeader(member, periods, currentPeriod, allMembers) {
+    const overrideName = getParam('first_name');
+    const displayName = (overrideName && overrideName.trim()) ? overrideName.trim() : member.first_name;
+    const isLocked = !!getParam('member') && !getParam('admin');
+    const memberOpts = Object.entries(allMembers)
+      .map(([email, m]) => `<option value="${email}" ${email===member.email?'selected':''}>${m.name}</option>`).join('');
+    const periodOpts = Object.entries(periods)
+      .map(([k, p]) => `<option value="${k}" ${k===currentPeriod?'selected':''}>${p.label}</option>`).join('');
+
+    return `
+      <div class="flex flex-wrap items-start justify-between gap-4 mb-10">
+        <div>
+          <div class="pill inline-flex items-center gap-2 mb-4">
+            <span style="display:inline-block;width:14px;height:14px;background:var(--brand);border-radius:3px;"></span>
+            <span style="color:var(--ink); letter-spacing:.06em; font-size:11px; font-weight:600;">HIRING OVERVIEW</span>
+          </div>
+          <h1 class="text-4xl font-bold tracking-tight">Hello, ${displayName}</h1>
+          <div class="mt-1 text-sm" style="color:#5b6470;">
+            ${member._empty
+              ? `No targets set for you yet — ask your manager to add you to Circle.`
+              : `Your hiring progress <span class="font-semibold" style="color:var(--brand);">${periods[currentPeriod].label.toLowerCase()}</span>
+                 <span class="role-badge ml-2">${member.role}</span>`}
+          </div>
+        </div>
+        <div class="flex gap-2">
+          ${isLocked ? '' : `<select id="member-sel" class="pill" style="cursor:pointer;">${memberOpts}</select>`}
+          <select id="period-sel" class="pill" style="cursor:pointer;">${periodOpts}</select>
+        </div>
+      </div>`;
+  }
+
+  function renderTile(stage, val, elapsedPct) {
+    const { actual, target } = val;
+    const status = classifyStatus(actual, target, elapsedPct);
+    const delta = fmtDelta(actual, target, elapsedPct);
+
+    return `
+      <div class="tile p-6 flex flex-col">
+        <div class="flex justify-between items-start">
+          <div>
+            <div class="font-semibold" style="font-size:15px;">${stage}</div>
+            <div class="text-xs mt-1" style="color:#7b8593;">Target: ${target % 1 === 0 ? target.toFixed(0) : target.toFixed(1)}</div>
+          </div>
+          <div class="text-2xl font-semibold">${actual}</div>
+        </div>
+        <div class="flex-1 flex items-center justify-center my-3">${ring(actual, target, elapsedPct)}</div>
+        <div class="text-xs font-medium ${delta.cls}">${delta.badge} ${delta.text}</div>
+      </div>`;
+  }
+
+  function renderLegend() {
+    const items = [
+      { color: STATUS.GOOD.color,  label: 'On track' },
+      { color: STATUS.WATCH.color, label: 'Watch' },
+      { color: STATUS.RISK.color,  label: 'At risk' },
+      { color: '#D5E5FC',          label: 'Expected by now' },
+    ];
+    return `
+      <div class="mt-10 flex flex-col items-center gap-2" style="color:#5b6470;">
+        <div class="flex gap-6 text-xs">
+          ${items.map(i => `<span class="flex items-center gap-2"><span class="legend-dot" style="background:${i.color};"></span>${i.label}</span>`).join('')}
+        </div>
+        <div class="text-xs" style="color:#9aa3b2;">Progress is measured against your target, adjusted for time elapsed in the period.</div>
+      </div>`;
+  }
+
+  function renderError(msg) {
+    document.getElementById('root').innerHTML = `
+      <div class="tile p-8 max-w-xl mx-auto text-center">
+        <div class="text-lg font-semibold mb-2">Circle unavailable</div>
+        <div class="text-sm" style="color:#5b6470;">${msg}</div>
+      </div>`;
+  }
+
+  function render(data, memberEmail, periodKey) {
+    const member = data.members[memberEmail];
+    if (!member) {
+      renderError(`No data for <strong>${memberEmail}</strong>. Pilot members: ${Object.keys(data.members).join(', ')}.`);
+      return;
+    }
+    const periods = data.periods;
+    const period = periods[periodKey];
+    if (!period) {
+      renderError(`Unknown period: ${periodKey}`);
+      return;
+    }
+    member.email = memberEmail;
+
+    const tiles = STAGES.map(s => renderTile(s, member.data[periodKey][s], period.elapsed_pct)).join('');
+    document.getElementById('root').innerHTML = `
+      ${renderHeader(member, periods, periodKey, data.members)}
+      <div class="grid gap-5" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr));">${tiles}</div>
+      ${renderLegend()}
+    `;
+
+    const memSel = document.getElementById('member-sel');
+    if (memSel) {
+      memSel.addEventListener('change', e => {
+        const u = new URL(window.location.href);
+        u.searchParams.set('member', e.target.value);
+        window.history.replaceState({}, '', u);
+        render(data, e.target.value, periodKey);
+      });
+    }
+    document.getElementById('period-sel').addEventListener('change', e => {
+      const u = new URL(window.location.href);
+      u.searchParams.set('period', e.target.value);
+      window.history.replaceState({}, '', u);
+      render(data, memberEmail, e.target.value);
+    });
+  }
+
+  // ---------- bootstrap ----------
+  function emptyMember(email, firstName) {
+    const blank = () => Object.fromEntries(STAGES.map(s => [s, { actual: 0, target: 0 }]));
+    return {
+      name: firstName || email.split('@')[0],
+      first_name: firstName || '',
+      role: 'Preview',
+      client: '',
+      data: { this_week: blank(), last_week: blank() },
+      _empty: true,
+    };
+  }
+
+  fetch('./circle_data.json', { cache: 'no-store' })
+    .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+    .then(data => {
+      const memberParam = (getParam('member') || '').toLowerCase();
+      const period = getParam('period') || 'this_week';
+      const isAdmin = !!getParam('admin');
+      let memberKey;
+      if (memberParam && data.members[memberParam]) {
+        memberKey = memberParam;
+      } else if (isAdmin) {
+        memberKey = Object.keys(data.members)[0];
+      } else if (memberParam) {
+        data.members[memberParam] = emptyMember(memberParam, getParam('first_name'));
+        memberKey = memberParam;
+      } else {
+        memberKey = Object.keys(data.members)[0];
+      }
+      render(data, memberKey, period);
+    })
+    .catch(err => renderError(`Could not load circle_data.json: ${err.message}`));
+  </script>
+</body>
+</html>
