@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-05-11T12:33:21.172989Z",
-  "source": "/sessions/adoring-relaxed-brown/mnt/Recruiting Dashboard/dashboard_data.json",
+  "generated_at": "2026-05-14T18:18:23.610982Z",
+  "source": "/tmp/sf.json",
   "periods": {
     "this_week": {
       "label": "This week",
-      "iso_label": "W17, Apr 26-May 2 (latest available)",
-      "start": "2026-04-26",
-      "end": "2026-05-02",
-      "iso_week": 17,
-      "elapsed_pct": 1.0
+      "iso_label": "W20, May 10-16",
+      "start": "2026-05-10",
+      "end": "2026-05-16",
+      "iso_week": 20,
+      "elapsed_pct": 0.714
     },
     "last_week": {
       "label": "Last week",
-      "iso_label": "W16, Apr 19-25 (latest available)",
-      "start": "2026-04-19",
-      "end": "2026-04-25",
-      "iso_week": 16,
+      "iso_label": "W19, May 3-9",
+      "start": "2026-05-03",
+      "end": "2026-05-09",
+      "iso_week": 19,
       "elapsed_pct": 1.0
     }
   },
@@ -28,29 +28,29 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 49,
+            "actual": 75,
             "target": 70.0
           },
           "Actual Screens": {
-            "actual": 6,
+            "actual": 12,
             "target": 15.0
           },
           "Moved to ATS": {
-            "actual": 5,
+            "actual": 11,
             "target": 10.0
           }
         },
         "last_week": {
           "Outreach Contacted": {
-            "actual": 133,
+            "actual": 106,
             "target": 70.0
           },
           "Actual Screens": {
-            "actual": 20,
+            "actual": 8,
             "target": 15.0
           },
           "Moved to ATS": {
-            "actual": 13,
+            "actual": 9,
             "target": 10.0
           }
         }
@@ -64,21 +64,21 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 4,
+            "actual": 0,
             "target": 100.0
           },
           "Actual Screens": {
-            "actual": 7,
+            "actual": 2,
             "target": 20.0
           },
           "Moved to ATS": {
-            "actual": 5,
+            "actual": 2,
             "target": 10.0
           }
         },
         "last_week": {
           "Outreach Contacted": {
-            "actual": 82,
+            "actual": 60,
             "target": 100.0
           },
           "Actual Screens": {
@@ -86,7 +86,7 @@
             "target": 20.0
           },
           "Moved to ATS": {
-            "actual": 14,
+            "actual": 11,
             "target": 10.0
           }
         }
@@ -100,29 +100,29 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 0,
+            "actual": 26,
             "target": 120.0
           },
           "Actual Screens": {
-            "actual": 0,
+            "actual": 1,
             "target": 19.0
           },
           "Moved to ATS": {
-            "actual": 0,
+            "actual": 1,
             "target": 10.0
           }
         },
         "last_week": {
           "Outreach Contacted": {
-            "actual": 22,
+            "actual": 18,
             "target": 120.0
           },
           "Actual Screens": {
-            "actual": 13,
+            "actual": 12,
             "target": 19.0
           },
           "Moved to ATS": {
-            "actual": 6,
+            "actual": 4,
             "target": 10.0
           }
         }
@@ -136,29 +136,29 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 5,
+            "actual": 98,
             "target": 70.0
           },
           "Actual Screens": {
-            "actual": 4,
+            "actual": 15,
             "target": 15.0
           },
           "Moved to ATS": {
-            "actual": 2,
+            "actual": 7,
             "target": 10.0
           }
         },
         "last_week": {
           "Outreach Contacted": {
-            "actual": 132,
+            "actual": 203,
             "target": 70.0
           },
           "Actual Screens": {
-            "actual": 17,
+            "actual": 21,
             "target": 15.0
           },
           "Moved to ATS": {
-            "actual": 10,
+            "actual": 8,
             "target": 10.0
           }
         }
@@ -172,29 +172,29 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 19,
+            "actual": 79,
             "target": 70.0
           },
           "Actual Screens": {
-            "actual": 2,
+            "actual": 6,
             "target": 15.0
           },
           "Moved to ATS": {
-            "actual": 2,
+            "actual": 4,
             "target": 10.0
           }
         },
         "last_week": {
           "Outreach Contacted": {
-            "actual": 77,
+            "actual": 194,
             "target": 70.0
           },
           "Actual Screens": {
-            "actual": 18,
+            "actual": 20,
             "target": 15.0
           },
           "Moved to ATS": {
-            "actual": 6,
+            "actual": 9,
             "target": 10.0
           }
         }
