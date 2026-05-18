@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-18T08:28:13.828732Z",
+  "generated_at": "2026-05-18T09:12:58.145040Z",
   "source": "/tmp/sf.json",
   "periods": {
     "this_week": {
@@ -104,15 +104,6 @@
           },
           "_jobs": [
             {
-              "job_id": "1777545063345x453877705909993500",
-              "job_title": "ISV_Field Sales SME Specialist",
-              "contacted": 0,
-              "actual_screens": 0,
-              "ats": 0,
-              "offered": 0,
-              "hired": 1
-            },
-            {
               "job_id": "1768292793387x706934213874548700",
               "job_title": "ISV_Lazio_Software Sales Expert",
               "contacted": 0,
@@ -120,6 +111,15 @@
               "ats": 2,
               "offered": 0,
               "hired": 0
+            },
+            {
+              "job_id": "1777545063345x453877705909993500",
+              "job_title": "ISV_Field Sales SME Specialist",
+              "contacted": 0,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 1
             }
           ]
         }
@@ -188,6 +188,15 @@
               "hired": 0
             },
             {
+              "job_id": "1776946337682x175310840399396860",
+              "job_title": "Store Manager (Bergen)",
+              "contacted": 2,
+              "actual_screens": 1,
+              "ats": 1,
+              "offered": 1,
+              "hired": 1
+            },
+            {
               "job_id": "1774348446979x233416804899225600",
               "job_title": "Store Manager - Almaty",
               "contacted": 2,
@@ -204,15 +213,6 @@
               "ats": 0,
               "offered": 0,
               "hired": 0
-            },
-            {
-              "job_id": "1776946337682x175310840399396860",
-              "job_title": "Store Manager (Bergen)",
-              "contacted": 2,
-              "actual_screens": 1,
-              "ats": 1,
-              "offered": 1,
-              "hired": 1
             },
             {
               "job_id": "1778764716897x753404041980805100",
