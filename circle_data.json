@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-05-18T07:51:43.685095Z",
+  "generated_at": "2026-05-18T07:54:55.782793Z",
   "source": "/tmp/sf.json",
   "periods": {
     "this_week": {
       "label": "This week",
-      "iso_label": "W20, May 10-16 (latest available)",
-      "start": "2026-05-10",
-      "end": "2026-05-16",
+      "iso_label": "W20, May 11-17 (latest available)",
+      "start": "2026-05-11",
+      "end": "2026-05-17",
       "iso_week": 20,
       "elapsed_pct": 1.0
     },
     "last_week": {
       "label": "Last week",
-      "iso_label": "W19, May 3-9 (latest available)",
-      "start": "2026-05-03",
-      "end": "2026-05-09",
+      "iso_label": "W19, May 4-10 (latest available)",
+      "start": "2026-05-04",
+      "end": "2026-05-10",
       "iso_week": 19,
       "elapsed_pct": 1.0
     }
