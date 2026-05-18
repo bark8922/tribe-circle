@@ -1,0 +1,37 @@
+name: Refresh Circle data
+
+on:
+  schedule:
+    - cron: "0 */2 * * *"
+  workflow_dispatch: {}
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Pull live source data from tribe-recruiting
+        run: |
+          curl -fsSL \
+            "https://raw.githubusercontent.com/bark8922/tribe-recruiting/main/recruiting-dashboard/src/dashboard_data_snowflake.json" \
+            -o /tmp/sf.json
+      - name: Regenerate circle_data.json
+        run: |
+          python3 build_circle_data.py
+          python3 inject_jobs.py
+      - name: Commit + push if changed
+        run: |
+          git config user.email "circle-bot@tribe.xyz"
+          git config user.name "circle-refresh-bot"
+          git add circle_data.json
+          if git diff --staged --quiet; then
+            echo "No data changes; skipping commit."
+          else
+            git commit -m "auto: refresh circle_data.json ($(date -u +'%Y-%m-%d %H:%MZ'))"
+            git push
+          fi
