@@ -153,6 +153,44 @@
       </div>`;
   }
 
+  function renderJobs(member, periodKey) {
+    const jobs = (member.data && member.data[periodKey] && member.data[periodKey]._jobs) || [];
+    if (!jobs.length) return '';
+    const rows = jobs.map(j => `
+      <tr>
+        <td style="padding:10px 12px; border-bottom:1px solid #EFEFEF;">${j.job_title}</td>
+        <td style="padding:10px 12px; border-bottom:1px solid #EFEFEF; text-align:right; font-variant-numeric: tabular-nums;">${j.contacted}</td>
+        <td style="padding:10px 12px; border-bottom:1px solid #EFEFEF; text-align:right; font-variant-numeric: tabular-nums;">${j.actual_screens}</td>
+        <td style="padding:10px 12px; border-bottom:1px solid #EFEFEF; text-align:right; font-variant-numeric: tabular-nums;">${j.ats}</td>
+      </tr>`).join('');
+    const tot = jobs.reduce((a, j) => ({c: a.c+j.contacted, s: a.s+j.actual_screens, t: a.t+j.ats}), {c:0,s:0,t:0});
+    return `
+      <div class="mt-10" style="margin-top:32px;">
+        <div style="font-size:12px; font-weight:600; letter-spacing:.06em; color:#5b6470; text-transform:uppercase; margin-bottom:10px;">By job</div>
+        <div class="tile" style="padding:0; overflow:hidden;">
+          <table style="width:100%; border-collapse:collapse; font-size:13px;">
+            <thead>
+              <tr style="background:#F9F9F9; color:#5b6470; font-size:11px; letter-spacing:.04em; text-transform:uppercase;">
+                <th style="padding:10px 12px; text-align:left; font-weight:600;">Job</th>
+                <th style="padding:10px 12px; text-align:right; font-weight:600;">Contacted</th>
+                <th style="padding:10px 12px; text-align:right; font-weight:600;">Actual Screens</th>
+                <th style="padding:10px 12px; text-align:right; font-weight:600;">Moved to ATS</th>
+              </tr>
+            </thead>
+            <tbody>${rows}</tbody>
+            <tfoot>
+              <tr style="font-weight:600; background:#FAFCFF;">
+                <td style="padding:10px 12px;">Total</td>
+                <td style="padding:10px 12px; text-align:right; font-variant-numeric: tabular-nums;">${tot.c}</td>
+                <td style="padding:10px 12px; text-align:right; font-variant-numeric: tabular-nums;">${tot.s}</td>
+                <td style="padding:10px 12px; text-align:right; font-variant-numeric: tabular-nums;">${tot.t}</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>`;
+  }
+
   function renderLegend() {
     const items = [
       { color: STATUS.GOOD.color,  label: 'On track' },
@@ -195,6 +233,7 @@
     document.getElementById('root').innerHTML = `
       ${renderHeader(member, periods, periodKey, data.members)}
       <div class="grid gap-5" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr));">${tiles}</div>
+      ${renderJobs(member, periodKey)}
       ${renderLegend()}
     `;
 

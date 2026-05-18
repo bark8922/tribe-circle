@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-18T08:04:08.163905Z",
+  "generated_at": "2026-05-18T08:15:14.149740Z",
   "source": "/tmp/sf.json",
   "periods": {
     "this_week": {
@@ -38,7 +38,8 @@
           "Moved to ATS": {
             "actual": 0,
             "target": 10.0
-          }
+          },
+          "_jobs": []
         },
         "last_week": {
           "Outreach Contacted": {
@@ -52,7 +53,16 @@
           "Moved to ATS": {
             "actual": 12,
             "target": 10.0
-          }
+          },
+          "_jobs": [
+            {
+              "job_id": "1773915221899x731095116844892200",
+              "job_title": "Senior IOS Engineer Paris",
+              "contacted": 75,
+              "actual_screens": 13,
+              "ats": 12
+            }
+          ]
         }
       }
     },
@@ -74,7 +84,8 @@
           "Moved to ATS": {
             "actual": 0,
             "target": 6.0
-          }
+          },
+          "_jobs": []
         },
         "last_week": {
           "Outreach Contacted": {
@@ -88,7 +99,16 @@
           "Moved to ATS": {
             "actual": 2,
             "target": 6.0
-          }
+          },
+          "_jobs": [
+            {
+              "job_id": "1768292793387x706934213874548700",
+              "job_title": "ISV_Lazio_Software Sales Expert",
+              "contacted": 0,
+              "actual_screens": 2,
+              "ats": 2
+            }
+          ]
         }
       }
     },
@@ -110,7 +130,8 @@
           "Moved to ATS": {
             "actual": 0,
             "target": 10.0
-          }
+          },
+          "_jobs": []
         },
         "last_week": {
           "Outreach Contacted": {
@@ -124,7 +145,58 @@
           "Moved to ATS": {
             "actual": 8,
             "target": 10.0
-          }
+          },
+          "_jobs": [
+            {
+              "job_id": "1778592510049x208416889183141900",
+              "job_title": "Area Manager - Malta",
+              "contacted": 28,
+              "actual_screens": 0,
+              "ats": 0
+            },
+            {
+              "job_id": "1776430744626x648206653244833800",
+              "job_title": "Supply Chain Manager Cyprus",
+              "contacted": 12,
+              "actual_screens": 2,
+              "ats": 1
+            },
+            {
+              "job_id": "1775659269113x432295379987857400",
+              "job_title": "Category Manager - Cyprus",
+              "contacted": 10,
+              "actual_screens": 5,
+              "ats": 5
+            },
+            {
+              "job_id": "1774348446979x233416804899225600",
+              "job_title": "Store Manager - Almaty",
+              "contacted": 2,
+              "actual_screens": 1,
+              "ats": 0
+            },
+            {
+              "job_id": "1776946337682x175310840399396860",
+              "job_title": "Store Manager (Bergen)",
+              "contacted": 2,
+              "actual_screens": 1,
+              "ats": 1
+            },
+            {
+              "job_id": "1774870532938x227731854049935360",
+              "job_title": "Store Manager - Tbilisi",
+              "contacted": 2,
+              "actual_screens": 1,
+              "ats": 0
+            },
+            {
+              "job_id": "1778764716897x753404041980805100",
+              "job_title": "Area Manager - Athens",
+              "contacted": 1,
+              "actual_screens": 1,
+              "ats": 1
+            }
+          ]
         }
       }
     },
@@ -146,7 +218,8 @@
           "Moved to ATS": {
             "actual": 0,
             "target": 10.0
-          }
+          },
+          "_jobs": []
         },
         "last_week": {
           "Outreach Contacted": {
@@ -160,7 +233,37 @@
           "Moved to ATS": {
             "actual": 9,
             "target": 10.0
-          }
+          },
+          "_jobs": [
+            {
+              "job_id": "1772187627387x288515927427776500",
+              "job_title": "Backend Engineer II (Chene)",
+              "contacted": 96,
+              "actual_screens": 8,
+              "ats": 3
+            },
+            {
+              "job_id": "1776155280233x867244093444980700",
+              "job_title": "iOS Engineer IC3 (Chene)",
+              "contacted": 58,
+              "actual_screens": 0,
+              "ats": 0
+            },
+            {
+              "job_id": "1776155229443x398373782847750140",
+              "job_title": "iOS Engineer IC2 (Chene)",
+              "contacted": 54,
+              "actual_screens": 9,
+              "ats": 5
+            },
+            {
+              "job_id": "1772187860944x479761207964205060",
+              "job_title": "Platform Engineer",
+              "contacted": 1,
+              "actual_screens": 1,
+              "ats": 1
+            }
+          ]
         }
       }
     },
@@ -182,7 +285,8 @@
           "Moved to ATS": {
             "actual": 0,
             "target": 10.0
-          }
+          },
+          "_jobs": []
         },
         "last_week": {
           "Outreach Contacted": {
@@ -196,7 +300,30 @@
           "Moved to ATS": {
             "actual": 12,
             "target": 10.0
-          }
+          },
+          "_jobs": [
+            {
+              "job_id": "1772614005813x477540619595546600",
+              "job_title": "iOS Engineer - IC3 (Sam)",
+              "contacted": 185,
+              "actual_screens": 19,
+              "ats": 10
+            },
+            {
+              "job_id": "1775140193294x599142206485823500",
+              "job_title": "Frontend Engineer - L1",
+              "contacted": 3,
+              "actual_screens": 3,
+              "ats": 1
+            },
+            {
+              "job_id": "1773218075741x431248583678230500",
+              "job_title": "iOS Engineer - IC2",
+              "contacted": 1,
+              "actual_screens": 1,
+              "ats": 1
+            }
+          ]
         }
       }
     }
