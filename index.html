@@ -105,7 +105,11 @@
     const memberOpts = Object.entries(allMembers)
       .map(([email, m]) => `<option value="${email}" ${email===member.email?'selected':''}>${m.name}</option>`).join('');
     const periodOpts = Object.entries(periods)
-      .map(([k, p]) => `<option value="${k}" ${k===currentPeriod?'selected':''}>${p.label}</option>`).join('');
+      .map(([k, p]) => {
+        const dateRange = (p.iso_label || '').replace(/\s*\(latest available\)/, '').split(',').slice(1).join(',').trim();
+        return `<option value="${k}" ${k===currentPeriod?'selected':''}>${p.label}${dateRange ? ' · ' + dateRange : ''}</option>`;
+      }).join('');
+    const currentIsoLabel = (periods[currentPeriod].iso_label || '').replace(/\s*\(latest available\)/, '');
 
     return `
       <div class="flex flex-wrap items-start justify-between gap-4 mb-10">
@@ -119,6 +123,7 @@
             ${member._empty
               ? `No targets set for you yet — ask your manager to add you to Circle.`
               : `Your hiring progress <span class="font-semibold" style="color:var(--brand);">${periods[currentPeriod].label.toLowerCase()}</span>
+                 <span style="color:#9aa3b2; margin-left:4px;">· ${currentIsoLabel}</span>
                  <span class="role-badge ml-2">${member.role}</span>`}
           </div>
         </div>
