@@ -1,19 +1,15 @@
 # tribe-circle
 
-Standalone hosting for the **Circle** hiring overview page, iframed into `overview.tribe.xyz/circle`.
+Standalone hosting for the **Circle** hiring overview, iframed into `overview.tribe.xyz/circle_1`.
 
-Lives on Cloudflare Pages, NOT behind Cloudflare Access (intentionally, so the iframe loads cleanly inside overview without an auth challenge). Per-user data isolation is handled in the page itself via the `?member=` URL parameter passed by Bubble.
+Auto-refresh runs via `.github/workflows/refresh.yml` every 2 hours: pulls live data from tribe-recruiting, runs `build_circle_data.py`, pushes a fresh `circle_data.json`. Cloudflare Workers auto-deploys on push.
 
-## Files
-
-- `index.html` / `circle.html` — same content, both serve the page (index.html is the default Cloudflare Pages entry)
-- `circle_data.json` — per-pilot snapshot (5 recruiters × this/last week × 3 metrics) regenerated from the main recruiting dashboard pipeline
-- `build_circle_data.py` (in [tribe-recruiting/recruiting-dashboard/refresh_staging](https://github.com/bark8922/tribe-recruiting/tree/main/recruiting-dashboard/refresh_staging)) — the generator script
-
-## URL pattern (iframe src on overview)
-
+URL pattern for the iframe:
 ```
-https://tribe-circle.pages.dev/?member={email}&first_name={first name}&admin=1
+https://tribe-circle.tribe-bamboohr.workers.dev/
+  ?member={Current User's Email}
+  &first_name={Current User's First Name}
+  &admin=1   (only for blake@tribe.xyz and martin@tribe.xyz)
 ```
 
-`admin=1` only for blake@tribe.xyz and martin@tribe.xyz.
+Tribe weeks are Mon-Sun, ISO-aligned. 2026W20 = Mon May 11 - Sun May 17.
