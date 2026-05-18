@@ -33,7 +33,9 @@ def load_jobs_csv(path: Path) -> dict:
             contacted = int(row["CONTACTED"])
             screens   = int(row["ACTUAL_SCREENS"])
             ats       = int(row["ATS"])
-            if contacted == 0 and screens == 0 and ats == 0:
+            offered   = int(row.get("OFFERED", 0) or 0)
+            hired     = int(row.get("HIRED", 0)   or 0)
+            if contacted == 0 and screens == 0 and ats == 0 and offered == 0 and hired == 0:
                 continue
             result.setdefault(key, []).append({
                 "job_id":         row["JOB_ID"],
@@ -41,6 +43,8 @@ def load_jobs_csv(path: Path) -> dict:
                 "contacted":      contacted,
                 "actual_screens": screens,
                 "ats":            ats,
+                "offered":        offered,
+                "hired":          hired,
             })
     for jobs in result.values():
         jobs.sort(key=lambda j: -j["contacted"])
@@ -79,3 +83,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+           
