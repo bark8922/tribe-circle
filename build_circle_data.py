@@ -20,12 +20,47 @@ from pathlib import Path
 # ---- Pilot recruiters (from Blake's selection, 2026-05-11) ----
 # Maps recruiting-dashboard (client, ta_name) to overview.tribe.xyz email.
 PILOTS = [
-    {"email": "lejla@tribe.xyz",           "client": "Aviv",         "ta": "Lejla Silva"},
-    {"email": "maria.gerbore@tribe.xyz",   "client": "Nexi",         "ta": "Maria Desiree Gerbore"},
-    {"email": "jandokulil@tribe.xyz",      "client": "Wolt Market",  "ta": "Jan Dokulil"},
-    {"email": "chene@tribe.xyz",           "client": "Glovo",        "ta": "Chené Elliot"},
-    {"email": "samanthanel@tribe.xyz",     "client": "Glovo",        "ta": "Samantha Nel"},
+    {"email": 'adelya@tribe.xyz', "client": 'Wolt North, Baltics & Benelux', "ta": 'Adelya Khakimova'},
+    {"email": 'adis@tribe.xyz', "client": 'Nexi', "ta": 'Adis Prepoljac'},
+    {"email": 'asingh@tribe.xyz', "client": 'DoorDash', "ta": 'Akash Singh'},
+    {"email": 'aleksandra@tribe.xyz', "client": 'Enam', "ta": 'Aleksandra Vistac'},
+    {"email": 'alexandra.richiteanu@tribe.xyz', "client": 'Aviv', "ta": 'Alexandra Richiteanu'},
+    {"email": 'alisa@tribe.xyz', "client": 'Eucalyptus', "ta": 'Alisa Liddell'},
+    {"email": 'andrea@tribe.xyz', "client": 'Fever', "ta": 'Andrea Akovic'},
+    {"email": 'annatyulpanova@tribe.xyz', "client": 'Aviv', "ta": 'Anna Tyulpanova'},
+    {"email": 'chene@tribe.xyz', "client": 'Glovo', "ta": 'Chené Elliot'},
+    {"email": 'danish@tribe.xyz', "client": 'DoorDash', "ta": 'Danish Shams'},
+    {"email": 'dushan@tribe.xyz', "client": 'Eucalyptus', "ta": 'Dušan Špica'},
+    {"email": 'eduardo@tribe.xyz', "client": 'Grover', "ta": 'Eduardo Moral'},
+    {"email": 'ejla@tribe.xyz', "client": 'Wolt Tech', "ta": 'Ejla Suljcic'},
+    {"email": 'ekaterina@tribe.xyz', "client": 'Scorewarrior', "ta": 'Ekaterina Boyprav'},
+    {"email": 'elenapetrovska@tribe.xyz', "client": 'Wolt HQ', "ta": 'Elena Petrovska'},
+    {"email": 'filip@tribe.xyz', "client": 'Parloa', "ta": 'Filip Nogowski'},
+    {"email": 'fuad@tribe.xyz', "client": 'Aiven', "ta": 'Fuad Safarov'},
+    {"email": 'jandokulil@tribe.xyz', "client": 'Wolt Market', "ta": 'Jan Dokulil'},
+    {"email": 'jelenalacmanovic@tribe.xyz', "client": 'Wolt North, Baltics & Benelux', "ta": 'Jelena Lacmanovic'},
+    {"email": 'jonaed@tribe.xyz', "client": 'Parloa', "ta": 'Jonaed Iqbal'},
+    {"email": 'jovana@tribe.xyz', "client": 'Aviv', "ta": 'Jovana Drakula'},
+    {"email": 'kristinaxnikolic@gmail.com', "client": 'Aviv', "ta": 'Kristina Colovic'},
+    {"email": 'lejla@tribe.xyz', "client": 'Aviv', "ta": 'Lejla Silva'},
+    {"email": 'lisa@tribe.xyz', "client": 'Wolt Germany', "ta": 'Lisa Gargulinska'},
+    {"email": 'maria.gerbore@tribe.xyz', "client": 'Nexi', "ta": 'Maria Desiree Gerbore'},
+    {"email": 'marinanikolic@tribe.xyz', "client": 'Taxfix', "ta": 'Marina Nikolic'},
+    {"email": 'mateja@tribe.xyz', "client": 'PhantomBuster', "ta": 'Mateja Jokovic'},
+    {"email": 'meho@tribe.xyz', "client": 'Eucalyptus', "ta": 'Meho Saracevic'},
+    {"email": 'milicaveselinovic@tribe.xyz', "client": 'Wolt HQ', "ta": 'Milica Veselinovic'},
+    {"email": 'nenad@tribe.xyz', "client": 'Wolt HQ', "ta": 'Nenad Skoko'},
+    {"email": 'nidhi@tribe.xyz', "client": 'DoorDash', "ta": 'Nidhi Raina'},
+    {"email": 'niki@tribe.xyz', "client": 'Wolt Central & South', "ta": 'Niki Vokalkova'},
+    {"email": 'rodrigo@tribe.xyz', "client": 'Grover', "ta": 'Rodrigo Gomez'},
+    {"email": 'samanthanel@tribe.xyz', "client": 'Glovo', "ta": 'Samantha Nel'},
+    {"email": 'tinaaramouni@tribe.xyz', "client": 'Wolt North, Baltics & Benelux', "ta": 'Tina Aramouni'},
+    {"email": 'vladimir@tribe.xyz', "client": 'Aiven', "ta": 'Vladimir Stankovic'},
+    {"email": 'wladyslaw@tribe.xyz', "client": 'Aviv', "ta": 'Wladyslaw Gadomski'},
+    {"email": 'zelimir@tribe.xyz', "client": 'SevenRooms', "ta": 'Zelimir Stajcic'},
 ]
+
+
 
 # Stage display label -> (wbr_actuals key, targets key)
 STAGES = [
