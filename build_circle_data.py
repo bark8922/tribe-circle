@@ -1,257 +1,243 @@
 """
 build_circle_data.py
-Generates circle_data.json from dashboard_data.json.
+Generates circle_data.json from dashboard_data_snowflake.json.
 
-Circle is a per-recruiter KPI ring view embedded in overview.tribe.xyz.
-Scope (per Martin, 2026-05-06):
-- Stages: Outreach Contacted, Actual Screens, Moved to ATS
-- Periods: This week, Last week
-- No filters beyond email + period
+Covers BOTH:
+- Talent Acquisition Partners (TAs): targets from `targets` array, actuals from
+  `wbr_actuals[client|ta][wNN]`. Per-job breakdown via project_dashboard.rows
+  filtered by `ta == name AND client == pd_client`.
+- Talent Sourcers (TSes): roster from latest populated week of `ts_weekly`,
+  actuals from `ts_actuals[ts][wNN]`, targets per Blake 2026-04-29:
+    Contacted   = ts_weekly.contacted_target  (default 100 if null)
+    Actual Screens = 7
+    Moved to ATS   = 4
+  Per-job breakdown via project_dashboard.rows filtered by `ts == name`.
 
-Input:  dashboard_data.json (from the recruiting dashboard pipeline)
-Output: circle_data.json  (consumed by circle.html via ?member=<email> param)
+Pilots derived dynamically from the source JSON + Mikhail's Circle KPI sheet
+(name→email map at /tmp/circle_kpi.csv). For dual-role people (in both TA
+targets AND TS roster), TS view wins.
+
+Tribe weeks are Mon-Sun, ISO-aligned. W20 2026 = Mon May 11 - Sun May 17.
 """
 
+import csv
 import json
 import sys
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
-# ---- Pilot recruiters (from Blake's selection, 2026-05-11) ----
-# Maps recruiting-dashboard (client, ta_name) to overview.tribe.xyz email.
-PILOTS = [
-    {"email": 'adelya@tribe.xyz', "client": 'Wolt North, Baltics & Benelux', "ta": 'Adelya Khakimova'},
-    {"email": 'adis@tribe.xyz', "client": 'Nexi', "ta": 'Adis Prepoljac'},
-    {"email": 'asingh@tribe.xyz', "client": 'DoorDash', "ta": 'Akash Singh'},
-    {"email": 'aleksandra@tribe.xyz', "client": 'Enam', "ta": 'Aleksandra Vistac'},
-    {"email": 'alexandra.richiteanu@tribe.xyz', "client": 'Aviv', "ta": 'Alexandra Richiteanu'},
-    {"email": 'alisa@tribe.xyz', "client": 'Eucalyptus', "ta": 'Alisa Liddell'},
-    {"email": 'andrea@tribe.xyz', "client": 'Fever', "ta": 'Andrea Akovic'},
-    {"email": 'annatyulpanova@tribe.xyz', "client": 'Aviv', "ta": 'Anna Tyulpanova'},
-    {"email": 'chene@tribe.xyz', "client": 'Glovo', "ta": 'Chené Elliot'},
-    {"email": 'danish@tribe.xyz', "client": 'DoorDash', "ta": 'Danish Shams'},
-    {"email": 'dushan@tribe.xyz', "client": 'Eucalyptus', "ta": 'Dušan Špica'},
-    {"email": 'eduardo@tribe.xyz', "client": 'Grover', "ta": 'Eduardo Moral'},
-    {"email": 'ejla@tribe.xyz', "client": 'Wolt Tech', "ta": 'Ejla Suljcic'},
-    {"email": 'ekaterina@tribe.xyz', "client": 'Scorewarrior', "ta": 'Ekaterina Boyprav'},
-    {"email": 'elenapetrovska@tribe.xyz', "client": 'Wolt HQ', "ta": 'Elena Petrovska'},
-    {"email": 'filip@tribe.xyz', "client": 'Parloa', "ta": 'Filip Nogowski'},
-    {"email": 'fuad@tribe.xyz', "client": 'Aiven', "ta": 'Fuad Safarov'},
-    {"email": 'jandokulil@tribe.xyz', "client": 'Wolt Market', "ta": 'Jan Dokulil'},
-    {"email": 'jelenalacmanovic@tribe.xyz', "client": 'Wolt North, Baltics & Benelux', "ta": 'Jelena Lacmanovic'},
-    {"email": 'jonaed@tribe.xyz', "client": 'Parloa', "ta": 'Jonaed Iqbal'},
-    {"email": 'jovana@tribe.xyz', "client": 'Aviv', "ta": 'Jovana Drakula'},
-    {"email": 'kristinaxnikolic@gmail.com', "client": 'Aviv', "ta": 'Kristina Colovic'},
-    {"email": 'lejla@tribe.xyz', "client": 'Aviv', "ta": 'Lejla Silva'},
-    {"email": 'lisa@tribe.xyz', "client": 'Wolt Germany', "ta": 'Lisa Gargulinska'},
-    {"email": 'maria.gerbore@tribe.xyz', "client": 'Nexi', "ta": 'Maria Desiree Gerbore'},
-    {"email": 'marinanikolic@tribe.xyz', "client": 'Taxfix', "ta": 'Marina Nikolic'},
-    {"email": 'mateja@tribe.xyz', "client": 'PhantomBuster', "ta": 'Mateja Jokovic'},
-    {"email": 'meho@tribe.xyz', "client": 'Eucalyptus', "ta": 'Meho Saracevic'},
-    {"email": 'milicaveselinovic@tribe.xyz', "client": 'Wolt HQ', "ta": 'Milica Veselinovic'},
-    {"email": 'nenad@tribe.xyz', "client": 'Wolt HQ', "ta": 'Nenad Skoko'},
-    {"email": 'nidhi@tribe.xyz', "client": 'DoorDash', "ta": 'Nidhi Raina'},
-    {"email": 'niki@tribe.xyz', "client": 'Wolt Central & South', "ta": 'Niki Vokalkova'},
-    {"email": 'rodrigo@tribe.xyz', "client": 'Grover', "ta": 'Rodrigo Gomez'},
-    {"email": 'samanthanel@tribe.xyz', "client": 'Glovo', "ta": 'Samantha Nel'},
-    {"email": 'tinaaramouni@tribe.xyz', "client": 'Wolt North, Baltics & Benelux', "ta": 'Tina Aramouni'},
-    {"email": 'vladimir@tribe.xyz', "client": 'Aiven', "ta": 'Vladimir Stankovic'},
-    {"email": 'wladyslaw@tribe.xyz', "client": 'Aviv', "ta": 'Wladyslaw Gadomski'},
-    {"email": 'zelimir@tribe.xyz', "client": 'SevenRooms', "ta": 'Zelimir Stajcic'},
-]
+
+TS_REC_SCREENS_TARGET = 10
+TS_ACTUAL_SCREENS_TARGET = 7
+TS_ATS_TARGET = 4
+TS_CONTACTED_TARGET_DEFAULT = 100
 
 
-
-# Stage display label -> (wbr_actuals key, targets key)
-STAGES = [
-    ("Outreach Contacted", "contacted",       "contacted"),
-    ("Actual Screens",     "actual_screens",  "actual_screens"),
-    ("Moved to ATS",       "ats",             "moved_to_ats"),
-]
-
-
-def iso_week_bounds(d: date) -> tuple[date, date, int]:
-    """Return Monday-Sunday bounds for the ISO week containing d, plus the week number.
-    Tribe uses Mon-Sun weeks aligned with ISO weeks — 2026W20 = Mon May 11 - Sun May 17.
-    Confirmed by Blake 2026-05-18."""
-    monday = d - timedelta(days=d.weekday())   # Mon=0..Sun=6
+def iso_week_bounds(d):
+    monday = d - timedelta(days=d.weekday())
     sunday = monday + timedelta(days=6)
-    iso_week = monday.isocalendar()[1]
-    return monday, sunday, iso_week
+    return monday, sunday, monday.isocalendar()[1]
 
 
-def fmt_range(start: date, end: date) -> str:
+def fmt_range(start, end):
     if start.month == end.month:
         return f"{start.strftime('%b %-d')}-{end.day}"
     return f"{start.strftime('%b %-d')}-{end.strftime('%b %-d')}"
 
 
-def build_periods(today: date | None = None) -> dict:
-    """Build 'this_week' and 'last_week' period metadata."""
+def build_periods(today=None):
     today = today or date.today()
     this_start, this_end, this_iso = iso_week_bounds(today)
     last_start = this_start - timedelta(days=7)
-    last_end   = this_end   - timedelta(days=7)
-    last_iso   = last_start.isocalendar()[1]
-
-    # elapsed_pct for current week: portion of Mon-Sun that has passed by end of "today"
-    elapsed_days = (today - this_start).days + 1   # +1 so Monday=1/7, Sunday=7/7
-    elapsed_days = max(1, min(7, elapsed_days))
-    this_elapsed = elapsed_days / 7.0
-
+    last_end = this_end - timedelta(days=7)
+    last_iso = last_start.isocalendar()[1]
+    elapsed_days = max(1, min(7, (today - this_start).days + 1))
     return {
         "this_week": {
             "label": "This week",
             "iso_label": f"W{this_iso}, {fmt_range(this_start, this_end)}",
             "start": this_start.isoformat(),
-            "end":   this_end.isoformat(),
-            "iso_week":  this_iso,
-            "elapsed_pct": round(this_elapsed, 3),
+            "end": this_end.isoformat(),
+            "iso_week": this_iso,
+            "elapsed_pct": round(elapsed_days / 7.0, 3),
         },
         "last_week": {
             "label": "Last week",
             "iso_label": f"W{last_iso}, {fmt_range(last_start, last_end)}",
             "start": last_start.isoformat(),
-            "end":   last_end.isoformat(),
-            "iso_week":  last_iso,
+            "end": last_end.isoformat(),
+            "iso_week": last_iso,
             "elapsed_pct": 1.0,
         },
     }
 
 
-def find_actuals_for_iso_week(dash: dict, client: str, ta: str, iso_week: int) -> dict | None:
-    """Look up wbr_actuals['{client}|{ta}'] for week 'w{iso_week}'."""
-    key = f"{client}|{ta}"
-    weeks = dash.get("wbr_actuals", {}).get(key)
-    if not weeks:
-        return None
-    wk_key = f"w{iso_week}"
-    return weeks.get(wk_key)
+def load_email_map():
+    """name → email from Mikhail's Circle KPI sheet."""
+    emails = {}
+    p = Path("/tmp/circle_kpi.csv")
+    if not p.exists():
+        return emails
+    with p.open(newline="") as f:
+        for row in csv.DictReader(f):
+            n = row["Full name"].strip()
+            e = row["Email"].strip()
+            if n and e:
+                emails[n] = e
+    # Known alias (typo in WBR vs Mikhail's sheet)
+    if "Rodrigo Gomes" in emails:
+        emails.setdefault("Rodrigo Gomez", emails["Rodrigo Gomes"])
+    return emails
 
 
-def fallback_latest_two_weeks(dash: dict) -> tuple[str, str]:
-    """When live weeks have no data yet (lag), use the two most-recent weeks in the dataset.
-    Returns (this_week_key, last_week_key)."""
-    all_weeks = set()
-    for v in dash.get("wbr_actuals", {}).values():
-        all_weeks.update(v.keys())
-    all_weeks = sorted(all_weeks, key=lambda x: int(x[1:]))
-    if len(all_weeks) < 2:
-        return all_weeks[-1] if all_weeks else "w0", all_weeks[-1] if all_weeks else "w0"
-    return all_weeks[-1], all_weeks[-2]   # this=most recent, last=prev
+def wbr_to_pd_client(client):
+    if client.startswith("Wolt"):
+        return "Wolt"
+    return {"Aviv": "AVIV", "DoorDash": "Doordash"}.get(client, client)
 
 
-def build_member_data(dash: dict, pilot: dict, periods: dict, target_lookup: dict, use_fallback: bool) -> dict:
-    """Build per-period stage data for a single pilot."""
-    out = {}
-    tgt = target_lookup.get((pilot["client"], pilot["ta"]), {})
+def build_pilots(dash, emails):
+    """Returns list of pilot dicts: TA or TS, no duplicate emails (TS wins)."""
+    by_wk = {}
+    for t in dash.get("ts_weekly", []):
+        by_wk.setdefault(t["week"], []).append(t)
+    latest_ts_wk = max(by_wk.keys()) if by_wk else None
 
-    if use_fallback:
-        this_wk_key, last_wk_key = fallback_latest_two_weeks(dash)
-        this_iso = int(this_wk_key[1:])
-        last_iso = int(last_wk_key[1:])
-    else:
-        this_iso = periods["this_week"]["iso_week"]
-        last_iso = periods["last_week"]["iso_week"]
+    ts_pilots = []
+    ts_emails = set()
+    if latest_ts_wk is not None:
+        for t in sorted(by_wk[latest_ts_wk], key=lambda x: x["ts"]):
+            email = emails.get(t["ts"])
+            if not email:
+                continue
+            ts_pilots.append({"role": "TS", "email": email, "name": t["ts"]})
+            ts_emails.add(email)
 
-    for period_key, iso in (("this_week", this_iso), ("last_week", last_iso)):
-        actuals = find_actuals_for_iso_week(dash, pilot["client"], pilot["ta"], iso) or {}
-        out[period_key] = {}
-        for display, actual_field, target_field in STAGES:
-            out[period_key][display] = {
-                "actual": int(actuals.get(actual_field, 0)),
-                "target": float(tgt.get(target_field, 0)),
+    ta_seen_pairs = set()
+    ta_pilots = []
+    for t in dash.get("targets", []):
+        ta = (t.get("ta") or "").strip()
+        team = (t.get("team_group") or "").strip()
+        cl = (t.get("client") or "").strip()
+        if not ta or not team or not cl:
+            continue
+        if (ta, cl) in ta_seen_pairs:
+            continue
+        ta_seen_pairs.add((ta, cl))
+        email = emails.get(ta, "")
+        if not email or email in ts_emails:
+            continue
+        ta_pilots.append({
+            "role": "TA", "email": email, "name": ta,
+            "client": cl, "pd_client": wbr_to_pd_client(cl),
+        })
+
+    return ta_pilots + ts_pilots, latest_ts_wk
+
+
+def first_name(full):
+    return full.split()[0] if full else ""
+
+
+def ta_actuals(dash, client, ta, iso_week):
+    wbr = dash.get("wbr_actuals", {}).get(f"{client}|{ta}", {})
+    return wbr.get(f"w{iso_week}", {}) or {}
+
+
+def ta_targets(dash, client, ta):
+    for t in dash.get("targets", []):
+        if (t.get("client") or "").strip() == client and (t.get("ta") or "").strip() == ta:
+            return t
+    return {}
+
+
+def ts_actuals(dash, ts_name, iso_week):
+    return dash.get("ts_actuals", {}).get(ts_name, {}).get(f"w{iso_week}", {}) or {}
+
+
+def ts_contacted_target(dash, ts_name, iso_week):
+    """Latest non-null contacted_target up to and including iso_week."""
+    candidates = []
+    for r in dash.get("ts_weekly", []):
+        if r.get("ts") != ts_name:
+            continue
+        ct = r.get("contacted_target")
+        if ct is None:
+            continue
+        if r.get("week", 0) <= iso_week:
+            candidates.append((r["week"], ct))
+    if not candidates:
+        return TS_CONTACTED_TARGET_DEFAULT
+    candidates.sort()
+    return float(candidates[-1][1])
+
+
+def build_member(dash, pilot, periods):
+    out = {
+        "name": pilot["name"],
+        "first_name": first_name(pilot["name"]),
+        "role": pilot["role"],
+        "client": pilot.get("client", ""),
+        "pd_client": pilot.get("pd_client", ""),
+        "data": {},
+    }
+    for pk in ("this_week", "last_week"):
+        iso = periods[pk]["iso_week"]
+        if pilot["role"] == "TA":
+            a = ta_actuals(dash, pilot["client"], pilot["name"], iso)
+            t = ta_targets(dash, pilot["client"], pilot["name"])
+            out["data"][pk] = {
+                "Outreach Contacted": {"actual": int(a.get("contacted", 0) or 0),       "target": float(t.get("contacted", 0) or 0)},
+                "Actual Screens":     {"actual": int(a.get("actual_screens", 0) or 0),  "target": float(t.get("actual_screens", 0) or 0)},
+                "Moved to ATS":       {"actual": int(a.get("ats", 0) or 0),             "target": float(t.get("moved_to_ats", 0) or 0)},
+            }
+        else:
+            a = ts_actuals(dash, pilot["name"], iso)
+            out["data"][pk] = {
+                "Outreach Contacted": {"actual": int(a.get("contacted", 0) or 0),       "target": ts_contacted_target(dash, pilot["name"], iso)},
+                "Actual Screens":     {"actual": int(a.get("actual_screens", 0) or 0),  "target": float(TS_ACTUAL_SCREENS_TARGET)},
+                "Moved to ATS":       {"actual": int(a.get("ats", 0) or 0),             "target": float(TS_ATS_TARGET)},
             }
     return out
 
 
-def first_name(full: str) -> str:
-    return full.split()[0] if full else ""
+def find_source_json():
+    for p in [Path("/tmp/sf.json"),
+              Path(__file__).resolve().parent / "dashboard_data_snowflake.json"]:
+        if p.exists():
+            return p
+    print("ERROR: dashboard_data_snowflake.json not found", file=sys.stderr)
+    sys.exit(1)
 
 
 def main():
-    repo_root = Path(__file__).resolve().parent
-    # Look in known locations. Prefer dashboard_data_snowflake.json (live, freshest)
-    # over dashboard_data.json (older snapshot lagging by ~4 weeks).
-    candidates = [
-        Path("/tmp/sf.json"),
-        repo_root / "dashboard_data_snowflake.json",
-        repo_root / "dashboard_data.json",
-        repo_root.parent / "dashboard_data_snowflake.json",
-        repo_root.parent / "dashboard_data.json",
-        Path("/sessions/adoring-relaxed-brown/mnt/Recruiting Dashboard/dashboard_data_snowflake.json"),
-        Path("/sessions/adoring-relaxed-brown/mnt/Recruiting Dashboard/dashboard_data.json"),
-    ]
-    src = next((p for p in candidates if p.exists()), None)
-    if not src:
-        print("ERROR: dashboard_data.json not found", file=sys.stderr)
-        sys.exit(1)
+    src = find_source_json()
     print(f"Loading {src}")
-
     with src.open() as f:
         dash = json.load(f)
 
     today = date.today()
     periods = build_periods(today)
+    emails = load_email_map()
+    if not emails:
+        print("WARNING: /tmp/circle_kpi.csv missing — every pilot will skip email lookup")
+    pilots, ts_wk = build_pilots(dash, emails)
+    print(f"Built {sum(1 for p in pilots if p['role']=='TA')} TA + {sum(1 for p in pilots if p['role']=='TS')} TS pilots (TS roster from w{ts_wk})")
 
-    # Build target lookup
-    target_lookup = {(t["client"], t["ta"]): t for t in dash.get("targets", [])}
-
-    # Decide whether to use fallback (if today's iso_week isn't in the dataset)
-    sample_weeks = set()
-    for v in dash.get("wbr_actuals", {}).values():
-        sample_weeks.update(v.keys())
-    # Only fall back to the latest-available-two-weeks when BOTH the current
-    # ISO week AND the previous ISO week are missing from the data (truly stale).
-    # Normal Monday-morning case (W21 not yet populated, W20 complete) should
-    # still label periods correctly — this_week=W21 (with 0s), last_week=W20.
-    this_key = f"w{periods['this_week']['iso_week']}"
-    last_key = f"w{periods['last_week']['iso_week']}"
-    use_fallback = (this_key not in sample_weeks) and (last_key not in sample_weeks)
-    if use_fallback:
-        last_two = fallback_latest_two_weeks(dash)
-        # Override the period labels to reflect the actual weeks we're showing.
-        # Tribe labels Sun-Sat weeks by the iso-week of the inside Monday, so to
-        # recover the Sun-Sat range from an iso-week, take Monday of that iso-week
-        # and step back one day to Sunday.
-        for period_key, wk_key in (("this_week", last_two[0]), ("last_week", last_two[1])):
-            iso = int(wk_key[1:])
-            start = date.fromisocalendar(today.year, iso, 1)   # Monday of ISO week
-            end = start + timedelta(days=6)                    # Sunday
-            periods[period_key].update({
-                "iso_label": f"W{iso}, {fmt_range(start, end)} (latest available)",
-                "iso_week":  iso,
-                "start":     start.isoformat(),
-                "end":       end.isoformat(),
-                "elapsed_pct": 1.0,
-            })
-        print(f"Using fallback weeks (live data lag): this_week={last_two[0]}, last_week={last_two[1]}")
-
-    members = {}
-    for pilot in PILOTS:
-        data = build_member_data(dash, pilot, periods, target_lookup, use_fallback)
-        members[pilot["email"]] = {
-            "name":       pilot["ta"],
-            "first_name": first_name(pilot["ta"]),
-            "role":       "TAP",
-            "client":     pilot["client"],
-            "data":       data,
-        }
-
+    members = {p["email"]: build_member(dash, p, periods) for p in pilots}
     out = {
         "generated_at": datetime.utcnow().isoformat() + "Z",
-        "source":       str(src),
-        "periods":      periods,
-        "members":      members,
+        "source": str(src),
+        "periods": periods,
+        "members": members,
     }
-
-    dst = repo_root / "circle_data.json"
+    dst = Path(__file__).resolve().parent / "circle_data.json"
     with dst.open("w") as f:
         json.dump(out, f, indent=2, ensure_ascii=False)
-
     print(f"Wrote {dst}  ({len(members)} members)")
     print(f"Periods: this={periods['this_week']['iso_label']}  /  last={periods['last_week']['iso_label']}")
 
 
 if __name__ == "__main__":
     main()
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
