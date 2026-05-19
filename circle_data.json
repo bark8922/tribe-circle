@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T15:57:11.728516Z",
+  "generated_at": "2026-05-19T15:56:35.810457Z",
   "source": "/tmp/sf.json",
   "periods": {
     "this_week": {
@@ -19,5 +19,3696 @@
       "elapsed_pct": 1.0
     }
   },
-  "members": {}
+  "members": {
+    "ejla@tribe.xyz": {
+      "name": "Ejla Suljcic",
+      "first_name": "Ejla",
+      "role": "TA",
+      "client": "Wolt Tech",
+      "pd_client": "Wolt",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 0,
+            "target": 100.0
+          },
+          "Actual Screens": {
+            "actual": 0,
+            "target": 0.0
+          },
+          "Moved to ATS": {
+            "actual": 0,
+            "target": 0.0
+          },
+          "_jobs": []
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 137,
+            "target": 100.0
+          },
+          "Actual Screens": {
+            "actual": 13,
+            "target": 0.0
+          },
+          "Moved to ATS": {
+            "actual": 6,
+            "target": 0.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1774807341830x214952617820028930",
+              "job_title": "Engineering Manager",
+              "contacted": 49,
+              "actual_screens": 1,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1776019670864x279914445004865540",
+              "job_title": "Senior Staff Engineer",
+              "contacted": 44,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1774807489489x336632016352051200",
+              "job_title": "Backend platform Engineer",
+              "contacted": 42,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778440569953x667365067168940000",
+              "job_title": "Go/ Python I4",
+              "contacted": 1,
+              "actual_screens": 6,
+              "ats": 3,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1770597940342x917934738628673500",
+              "job_title": "Kotlin Backend Engineer",
+              "contacted": 1,
+              "actual_screens": 2,
+              "ats": 2,
+              "offered": 1,
+              "hired": 0
+            },
+            {
+              "job_id": "1774209264858x509342702774517760",
+              "job_title": "iOS Dev Discovery",
+              "contacted": 0,
+              "actual_screens": 4,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        }
+      }
+    },
+    "asingh@tribe.xyz": {
+      "name": "Akash Singh",
+      "first_name": "Akash",
+      "role": "TA",
+      "client": "DoorDash",
+      "pd_client": "Doordash",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 0,
+            "target": 0.0
+          },
+          "Actual Screens": {
+            "actual": 0,
+            "target": 10.0
+          },
+          "Moved to ATS": {
+            "actual": 0,
+            "target": 8.0
+          },
+          "_jobs": []
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 0,
+            "target": 0.0
+          },
+          "Actual Screens": {
+            "actual": 0,
+            "target": 10.0
+          },
+          "Moved to ATS": {
+            "actual": 0,
+            "target": 8.0
+          },
+          "_jobs": []
+        }
+      }
+    },
+    "danish@tribe.xyz": {
+      "name": "Danish Shams",
+      "first_name": "Danish",
+      "role": "TA",
+      "client": "DoorDash",
+      "pd_client": "Doordash",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 0,
+            "target": 0.0
+          },
+          "Actual Screens": {
+            "actual": 0,
+            "target": 10.0
+          },
+          "Moved to ATS": {
+            "actual": 0,
+            "target": 8.0
+          },
+          "_jobs": []
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 0,
+            "target": 0.0
+          },
+          "Actual Screens": {
+            "actual": 0,
+            "target": 10.0
+          },
+          "Moved to ATS": {
+            "actual": 0,
+            "target": 8.0
+          },
+          "_jobs": []
+        }
+      }
+    },
+    "nidhi@tribe.xyz": {
+      "name": "Nidhi Raina",
+      "first_name": "Nidhi",
+      "role": "TA",
+      "client": "DoorDash",
+      "pd_client": "Doordash",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 0,
+            "target": 0.0
+          },
+          "Actual Screens": {
+            "actual": 0,
+            "target": 10.0
+          },
+          "Moved to ATS": {
+            "actual": 0,
+            "target": 8.0
+          },
+          "_jobs": []
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 0,
+            "target": 0.0
+          },
+          "Actual Screens": {
+            "actual": 0,
+            "target": 10.0
+          },
+          "Moved to ATS": {
+            "actual": 0,
+            "target": 8.0
+          },
+          "_jobs": []
+        }
+      }
+    },
+    "jandokulil@tribe.xyz": {
+      "name": "Jan Dokulil",
+      "first_name": "Jan",
+      "role": "TA",
+      "client": "Wolt Market",
+      "pd_client": "Wolt",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 0,
+            "target": 120.0
+          },
+          "Actual Screens": {
+            "actual": 0,
+            "target": 19.0
+          },
+          "Moved to ATS": {
+            "actual": 0,
+            "target": 10.0
+          },
+          "_jobs": []
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 57,
+            "target": 120.0
+          },
+          "Actual Screens": {
+            "actual": 11,
+            "target": 19.0
+          },
+          "Moved to ATS": {
+            "actual": 8,
+            "target": 10.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1778592510049x208416889183141900",
+              "job_title": "Area Manager - Malta",
+              "contacted": 28,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1776430744626x648206653244833800",
+              "job_title": "Supply Chain Manager Cyprus",
+              "contacted": 12,
+              "actual_screens": 2,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1775659269113x432295379987857400",
+              "job_title": "Category Manager - Cyprus",
+              "contacted": 10,
+              "actual_screens": 5,
+              "ats": 5,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1776946337682x175310840399396860",
+              "job_title": "Store Manager (Bergen)",
+              "contacted": 2,
+              "actual_screens": 1,
+              "ats": 1,
+              "offered": 1,
+              "hired": 1
+            },
+            {
+              "job_id": "1774348446979x233416804899225600",
+              "job_title": "Store Manager - Almaty",
+              "contacted": 2,
+              "actual_screens": 1,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1774870532938x227731854049935360",
+              "job_title": "Store Manager - Tbilisi",
+              "contacted": 2,
+              "actual_screens": 1,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778764716897x753404041980805100",
+              "job_title": "Area Manager - Athens",
+              "contacted": 1,
+              "actual_screens": 1,
+              "ats": 1,
+              "offered": 1,
+              "hired": 1
+            }
+          ]
+        }
+      }
+    },
+    "jelenalacmanovic@tribe.xyz": {
+      "name": "Jelena Lacmanovic",
+      "first_name": "Jelena",
+      "role": "TA",
+      "client": "Wolt North, Baltics & Benelux",
+      "pd_client": "Wolt",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 0,
+            "target": 70.0
+          },
+          "Actual Screens": {
+            "actual": 0,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 0,
+            "target": 8.0
+          },
+          "_jobs": []
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 0,
+            "target": 70.0
+          },
+          "Actual Screens": {
+            "actual": 0,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 0,
+            "target": 8.0
+          },
+          "_jobs": []
+        }
+      }
+    },
+    "tinaaramouni@tribe.xyz": {
+      "name": "Tina Aramouni",
+      "first_name": "Tina",
+      "role": "TA",
+      "client": "Wolt North, Baltics & Benelux",
+      "pd_client": "Wolt",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 12,
+            "target": 20.0
+          },
+          "Actual Screens": {
+            "actual": 12,
+            "target": 10.0
+          },
+          "Moved to ATS": {
+            "actual": 12,
+            "target": 8.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1778750065408x861715954167709700",
+              "job_title": "Sales Support Associate-Athens",
+              "contacted": 12,
+              "actual_screens": 12,
+              "ats": 12,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 14,
+            "target": 20.0
+          },
+          "Actual Screens": {
+            "actual": 14,
+            "target": 10.0
+          },
+          "Moved to ATS": {
+            "actual": 14,
+            "target": 8.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1778750065408x861715954167709700",
+              "job_title": "Sales Support Associate-Athens",
+              "contacted": 8,
+              "actual_screens": 8,
+              "ats": 8,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778479247884x933743598925774800",
+              "job_title": "Sales Manager-Sweden",
+              "contacted": 6,
+              "actual_screens": 6,
+              "ats": 6,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        }
+      }
+    },
+    "adelya@tribe.xyz": {
+      "name": "Adelya Khakimova",
+      "first_name": "Adelya",
+      "role": "TA",
+      "client": "Wolt North, Baltics & Benelux",
+      "pd_client": "Wolt",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 3,
+            "target": 50.0
+          },
+          "Actual Screens": {
+            "actual": 3,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 2,
+            "target": 8.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1776662016241x890569544355020800",
+              "job_title": "Ops Excellence Specialist (GEO)",
+              "contacted": 3,
+              "actual_screens": 3,
+              "ats": 2,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 7,
+            "target": 50.0
+          },
+          "Actual Screens": {
+            "actual": 7,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 4,
+            "target": 8.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1776662016241x890569544355020800",
+              "job_title": "Ops Excellence Specialist (GEO)",
+              "contacted": 3,
+              "actual_screens": 3,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778755297381x718678733343948800",
+              "job_title": "Hybrid Sales Manager - Germany",
+              "contacted": 2,
+              "actual_screens": 2,
+              "ats": 2,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1776662305695x867664369647616000",
+              "job_title": "Key Account Manager (Malta)",
+              "contacted": 2,
+              "actual_screens": 2,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        }
+      }
+    },
+    "niki@tribe.xyz": {
+      "name": "Niki Vokalkova",
+      "first_name": "Niki",
+      "role": "TA",
+      "client": "Wolt Central & South",
+      "pd_client": "Wolt",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 2,
+            "target": 0.0
+          },
+          "Actual Screens": {
+            "actual": 2,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 1,
+            "target": 8.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1778767219128x645563696286269400",
+              "job_title": "Onboarding Launch Specialist - Finland",
+              "contacted": 1,
+              "actual_screens": 1,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1777468219861x263056314632503300",
+              "job_title": "Enterprise Sales Manager, Poland",
+              "contacted": 1,
+              "actual_screens": 1,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 12,
+            "target": 0.0
+          },
+          "Actual Screens": {
+            "actual": 15,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 8,
+            "target": 8.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1778072574829x376368955057766400",
+              "job_title": "Account Manager - Wolt for Work",
+              "contacted": 5,
+              "actual_screens": 6,
+              "ats": 4,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1777468219861x263056314632503300",
+              "job_title": "Enterprise Sales Manager, Poland",
+              "contacted": 4,
+              "actual_screens": 6,
+              "ats": 2,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778767219128x645563696286269400",
+              "job_title": "Onboarding Launch Specialist - Finland",
+              "contacted": 3,
+              "actual_screens": 3,
+              "ats": 2,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        }
+      }
+    },
+    "nenad@tribe.xyz": {
+      "name": "Nenad Skoko",
+      "first_name": "Nenad",
+      "role": "TA",
+      "client": "Wolt HQ",
+      "pd_client": "Wolt",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 3,
+            "target": 60.0
+          },
+          "Actual Screens": {
+            "actual": 3,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 2,
+            "target": 8.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1776862201667x936823939323658200",
+              "job_title": "Store Manager (WM), Turku Finland, Q2 2026",
+              "contacted": 2,
+              "actual_screens": 3,
+              "ats": 2,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1777473783609x171420471839424500",
+              "job_title": "Area Manager (WM), Czechia",
+              "contacted": 1,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 86,
+            "target": 60.0
+          },
+          "Actual Screens": {
+            "actual": 19,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 16,
+            "target": 8.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1778501360032x181990237728931840",
+              "job_title": "Retail Operations Excellence Specialist, Croatia",
+              "contacted": 45,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1776765224256x762752769425670100",
+              "job_title": "Category Manager (WM), Slovenia",
+              "contacted": 25,
+              "actual_screens": 2,
+              "ats": 2,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1776862201667x936823939323658200",
+              "job_title": "Store Manager (WM), Turku Finland, Q2 2026",
+              "contacted": 5,
+              "actual_screens": 7,
+              "ats": 5,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778141770999x215409067143987200",
+              "job_title": "Global Store Operations Manager",
+              "contacted": 3,
+              "actual_screens": 3,
+              "ats": 3,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1776765364193x497107282998591500",
+              "job_title": "Category Manager (WM), Croatia",
+              "contacted": 3,
+              "actual_screens": 2,
+              "ats": 2,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1775656633858x353932433231183900",
+              "job_title": "Senior Operations Specialist, Fleet Quality and Excellence",
+              "contacted": 2,
+              "actual_screens": 2,
+              "ats": 2,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1775746005997x884574833229168600",
+              "job_title": "Store Manager (WM), Budapest, Q2 2026",
+              "contacted": 2,
+              "actual_screens": 2,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778850843331x970172181951807500",
+              "job_title": "Supply Chain Analyst, Czechia (Fixed-term)",
+              "contacted": 1,
+              "actual_screens": 1,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        }
+      }
+    },
+    "milicaveselinovic@tribe.xyz": {
+      "name": "Milica Veselinovic",
+      "first_name": "Milica",
+      "role": "TA",
+      "client": "Wolt HQ",
+      "pd_client": "Wolt",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 0,
+            "target": 100.0
+          },
+          "Actual Screens": {
+            "actual": 0,
+            "target": 4.0
+          },
+          "Moved to ATS": {
+            "actual": 0,
+            "target": 3.0
+          },
+          "_jobs": []
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 0,
+            "target": 100.0
+          },
+          "Actual Screens": {
+            "actual": 0,
+            "target": 4.0
+          },
+          "Moved to ATS": {
+            "actual": 0,
+            "target": 3.0
+          },
+          "_jobs": []
+        }
+      }
+    },
+    "lisa@tribe.xyz": {
+      "name": "Lisa Gargulinska",
+      "first_name": "Lisa",
+      "role": "TA",
+      "client": "Wolt Germany",
+      "pd_client": "Wolt",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 0,
+            "target": 100.0
+          },
+          "Actual Screens": {
+            "actual": 0,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 0,
+            "target": 8.0
+          },
+          "_jobs": []
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 7,
+            "target": 100.0
+          },
+          "Actual Screens": {
+            "actual": 7,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 4,
+            "target": 8.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1769674790340x316652599221420000",
+              "job_title": "Sales Team Lead - Retail Expansion (m/w/d)",
+              "contacted": 3,
+              "actual_screens": 3,
+              "ats": 3,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1760283063838x995553699417555000",
+              "job_title": "Territory Sales Manager - Bayern/Munich",
+              "contacted": 2,
+              "actual_screens": 2,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1760280747405x760789267914424300",
+              "job_title": "Territory Sales Manager - Gera/Jena/Erfurt",
+              "contacted": 2,
+              "actual_screens": 2,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        }
+      }
+    },
+    "aleksandra@tribe.xyz": {
+      "name": "Aleksandra Vistac",
+      "first_name": "Aleksandra",
+      "role": "TA",
+      "client": "Enam",
+      "pd_client": "Enam",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 25,
+            "target": 70.0
+          },
+          "Actual Screens": {
+            "actual": 6,
+            "target": 17.0
+          },
+          "Moved to ATS": {
+            "actual": 2,
+            "target": 7.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1736934796460x763481035954192400",
+              "job_title": "Fullstack Engineer",
+              "contacted": 24,
+              "actual_screens": 4,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1770882047922x655070271851987000",
+              "job_title": "Security & Compliance Engineer",
+              "contacted": 1,
+              "actual_screens": 1,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1766484364452x686009847116464100",
+              "job_title": "Machine Learning Engineer",
+              "contacted": 0,
+              "actual_screens": 1,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 90,
+            "target": 70.0
+          },
+          "Actual Screens": {
+            "actual": 11,
+            "target": 17.0
+          },
+          "Moved to ATS": {
+            "actual": 4,
+            "target": 7.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1770882047922x655070271851987000",
+              "job_title": "Security & Compliance Engineer",
+              "contacted": 42,
+              "actual_screens": 3,
+              "ats": 2,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1736934796460x763481035954192400",
+              "job_title": "Fullstack Engineer",
+              "contacted": 37,
+              "actual_screens": 4,
+              "ats": 2,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1766484364452x686009847116464100",
+              "job_title": "Machine Learning Engineer",
+              "contacted": 11,
+              "actual_screens": 4,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        }
+      }
+    },
+    "filip@tribe.xyz": {
+      "name": "Filip Nogowski",
+      "first_name": "Filip",
+      "role": "TA",
+      "client": "Parloa",
+      "pd_client": "Parloa",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 0,
+            "target": 50.0
+          },
+          "Actual Screens": {
+            "actual": 0,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 0,
+            "target": 8.0
+          },
+          "_jobs": []
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 108,
+            "target": 50.0
+          },
+          "Actual Screens": {
+            "actual": 21,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 10,
+            "target": 8.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1758529227458x187488425396142080",
+              "job_title": "Principal Engineer",
+              "contacted": 81,
+              "actual_screens": 17,
+              "ats": 9,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1770115575994x938717513032663000",
+              "job_title": "Principal Applied Scientist - AI Agents & Generative AI",
+              "contacted": 27,
+              "actual_screens": 4,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        }
+      }
+    },
+    "ekaterina@tribe.xyz": {
+      "name": "Ekaterina Boyprav",
+      "first_name": "Ekaterina",
+      "role": "TA",
+      "client": "Scorewarrior",
+      "pd_client": "Scorewarrior",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 0,
+            "target": 200.0
+          },
+          "Actual Screens": {
+            "actual": 0,
+            "target": 8.0
+          },
+          "Moved to ATS": {
+            "actual": 0,
+            "target": 3.0
+          },
+          "_jobs": []
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 0,
+            "target": 200.0
+          },
+          "Actual Screens": {
+            "actual": 0,
+            "target": 8.0
+          },
+          "Moved to ATS": {
+            "actual": 0,
+            "target": 3.0
+          },
+          "_jobs": []
+        }
+      }
+    },
+    "marinanikolic@tribe.xyz": {
+      "name": "Marina Nikolic",
+      "first_name": "Marina",
+      "role": "TA",
+      "client": "Taxfix",
+      "pd_client": "Taxfix",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 6,
+            "target": 40.0
+          },
+          "Actual Screens": {
+            "actual": 6,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 4,
+            "target": 5.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1778661110339x342622609631608800",
+              "job_title": "Senior Marketing Data Analyst",
+              "contacted": 3,
+              "actual_screens": 3,
+              "ats": 3,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1776068857353x506312724308557800",
+              "job_title": "Working Student Automation Engineer",
+              "contacted": 1,
+              "actual_screens": 1,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1776933465311x373205304762957800",
+              "job_title": "Software Engineer - FullStack",
+              "contacted": 1,
+              "actual_screens": 1,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1777987322411x102512047924183040",
+              "job_title": "Senior Fullstack Engineer - Stuttgart",
+              "contacted": 1,
+              "actual_screens": 1,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 40,
+            "target": 40.0
+          },
+          "Actual Screens": {
+            "actual": 13,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 12,
+            "target": 5.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1777987322411x102512047924183040",
+              "job_title": "Senior Fullstack Engineer - Stuttgart",
+              "contacted": 27,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1776933465311x373205304762957800",
+              "job_title": "Software Engineer - FullStack",
+              "contacted": 7,
+              "actual_screens": 7,
+              "ats": 6,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1776068857353x506312724308557800",
+              "job_title": "Working Student Automation Engineer",
+              "contacted": 4,
+              "actual_screens": 4,
+              "ats": 4,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778661110339x342622609631608800",
+              "job_title": "Senior Marketing Data Analyst",
+              "contacted": 2,
+              "actual_screens": 2,
+              "ats": 2,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        }
+      }
+    },
+    "meho@tribe.xyz": {
+      "name": "Meho Saracevic",
+      "first_name": "Meho",
+      "role": "TA",
+      "client": "Eucalyptus",
+      "pd_client": "Eucalyptus",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 9,
+            "target": 100.0
+          },
+          "Actual Screens": {
+            "actual": 9,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 4,
+            "target": 7.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1773662334924x767557350958301200",
+              "job_title": "Launcher Associate, UK",
+              "contacted": 5,
+              "actual_screens": 5,
+              "ats": 2,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1759491843951x495797108562985000",
+              "job_title": "Launcher, UK",
+              "contacted": 4,
+              "actual_screens": 4,
+              "ats": 2,
+              "offered": 1,
+              "hired": 0
+            }
+          ]
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 14,
+            "target": 100.0
+          },
+          "Actual Screens": {
+            "actual": 14,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 5,
+            "target": 7.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1773662334924x767557350958301200",
+              "job_title": "Launcher Associate, UK",
+              "contacted": 7,
+              "actual_screens": 7,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1759491843951x495797108562985000",
+              "job_title": "Launcher, UK",
+              "contacted": 4,
+              "actual_screens": 4,
+              "ats": 4,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778156054829x972332452270571500",
+              "job_title": "Operations Associate (Patient Experience)",
+              "contacted": 3,
+              "actual_screens": 3,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        }
+      }
+    },
+    "maria.gerbore@tribe.xyz": {
+      "name": "Maria Desiree Gerbore",
+      "first_name": "Maria",
+      "role": "TA",
+      "client": "Nexi",
+      "pd_client": "Nexi",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 0,
+            "target": 60.0
+          },
+          "Actual Screens": {
+            "actual": 0,
+            "target": 10.0
+          },
+          "Moved to ATS": {
+            "actual": 0,
+            "target": 6.0
+          },
+          "_jobs": []
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 0,
+            "target": 60.0
+          },
+          "Actual Screens": {
+            "actual": 2,
+            "target": 10.0
+          },
+          "Moved to ATS": {
+            "actual": 2,
+            "target": 6.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1768292793387x706934213874548700",
+              "job_title": "ISV_Lazio_Software Sales Expert",
+              "contacted": 0,
+              "actual_screens": 2,
+              "ats": 2,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1777545063345x453877705909993500",
+              "job_title": "ISV_Field Sales SME Specialist",
+              "contacted": 0,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 1
+            }
+          ]
+        }
+      }
+    },
+    "eduardo@tribe.xyz": {
+      "name": "Eduardo Moral",
+      "first_name": "Eduardo",
+      "role": "TA",
+      "client": "Grover",
+      "pd_client": "Grover",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 0,
+            "target": 200.0
+          },
+          "Actual Screens": {
+            "actual": 0,
+            "target": 20.0
+          },
+          "Moved to ATS": {
+            "actual": 0,
+            "target": 10.0
+          },
+          "_jobs": []
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 0,
+            "target": 200.0
+          },
+          "Actual Screens": {
+            "actual": 0,
+            "target": 20.0
+          },
+          "Moved to ATS": {
+            "actual": 0,
+            "target": 10.0
+          },
+          "_jobs": []
+        }
+      }
+    },
+    "jonaed@tribe.xyz": {
+      "name": "Jonaed Iqbal",
+      "first_name": "Jonaed",
+      "role": "TA",
+      "client": "Parloa",
+      "pd_client": "Parloa",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 0,
+            "target": 100.0
+          },
+          "Actual Screens": {
+            "actual": 0,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 0,
+            "target": 8.0
+          },
+          "_jobs": []
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 11,
+            "target": 100.0
+          },
+          "Actual Screens": {
+            "actual": 10,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 6,
+            "target": 8.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1763393512767x549692745513173000",
+              "job_title": "Forward Deployed Engineer",
+              "contacted": 5,
+              "actual_screens": 5,
+              "ats": 2,
+              "offered": 1,
+              "hired": 1
+            },
+            {
+              "job_id": "1763393571166x919806792682438700",
+              "job_title": "Forward Deployed Engineer, DevOps",
+              "contacted": 3,
+              "actual_screens": 3,
+              "ats": 2,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1774637857479x528730995273236500",
+              "job_title": "Forward Deployed Engineer, VoIP",
+              "contacted": 2,
+              "actual_screens": 2,
+              "ats": 2,
+              "offered": 1,
+              "hired": 0
+            },
+            {
+              "job_id": "1773541817458x207812467522011140",
+              "job_title": "Deployment Strategist",
+              "contacted": 1,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        }
+      }
+    },
+    "annatyulpanova@tribe.xyz": {
+      "name": "Anna Tyulpanova",
+      "first_name": "Anna",
+      "role": "TA",
+      "client": "Aviv",
+      "pd_client": "AVIV",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 75,
+            "target": 70.0
+          },
+          "Actual Screens": {
+            "actual": 3,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 2,
+            "target": 10.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1776951183014x527594951702741000",
+              "job_title": "Front End Engineer (Paris)",
+              "contacted": 50,
+              "actual_screens": 3,
+              "ats": 2,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778683338804x926854333803266000",
+              "job_title": "Fullstack React (Bucharest)",
+              "contacted": 16,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778683287482x195811766812016640",
+              "job_title": "Fullstack .NET (Bucharest)",
+              "contacted": 9,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 284,
+            "target": 70.0
+          },
+          "Actual Screens": {
+            "actual": 14,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 11,
+            "target": 10.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1776951183014x527594951702741000",
+              "job_title": "Front End Engineer (Paris)",
+              "contacted": 249,
+              "actual_screens": 8,
+              "ats": 7,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778683287482x195811766812016640",
+              "job_title": "Fullstack .NET (Bucharest)",
+              "contacted": 33,
+              "actual_screens": 2,
+              "ats": 2,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1776762292358x428858720491929600",
+              "job_title": "Senior Backend Engineer Python",
+              "contacted": 1,
+              "actual_screens": 3,
+              "ats": 1,
+              "offered": 1,
+              "hired": 1
+            },
+            {
+              "job_id": "1778683338804x926854333803266000",
+              "job_title": "Fullstack React (Bucharest)",
+              "contacted": 1,
+              "actual_screens": 1,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        }
+      }
+    },
+    "wladyslaw@tribe.xyz": {
+      "name": "Wladyslaw Gadomski",
+      "first_name": "Wladyslaw",
+      "role": "TA",
+      "client": "Aviv",
+      "pd_client": "AVIV",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 0,
+            "target": 70.0
+          },
+          "Actual Screens": {
+            "actual": 0,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 0,
+            "target": 10.0
+          },
+          "_jobs": []
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 58,
+            "target": 70.0
+          },
+          "Actual Screens": {
+            "actual": 24,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 9,
+            "target": 10.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1778238250267x806800061349494800",
+              "job_title": "Senior Backend Engineer, Platform Team - Berlin (Wlad)",
+              "contacted": 44,
+              "actual_screens": 2,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1775138003344x487773161371467800",
+              "job_title": "Senior Backend Engineer Trust & Safety - Wlad - Berlin",
+              "contacted": 13,
+              "actual_screens": 12,
+              "ats": 6,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1775211650509x258412021772451840",
+              "job_title": "Principal Quality engineer",
+              "contacted": 1,
+              "actual_screens": 8,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1775137953484x447343876051304450",
+              "job_title": "Staff Backend Engineer Trust & Safety - Wlad - Berlin",
+              "contacted": 0,
+              "actual_screens": 2,
+              "ats": 2,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        }
+      }
+    },
+    "lejla@tribe.xyz": {
+      "name": "Lejla Silva",
+      "first_name": "Lejla",
+      "role": "TA",
+      "client": "Aviv",
+      "pd_client": "AVIV",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 11,
+            "target": 70.0
+          },
+          "Actual Screens": {
+            "actual": 0,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 0,
+            "target": 10.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1779112032424x907451151344205800",
+              "job_title": "QA Automation - Authentication, Croatia",
+              "contacted": 8,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1779111938424x336950569178497000",
+              "job_title": "QA Automation - Financing, Croatia",
+              "contacted": 3,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 75,
+            "target": 70.0
+          },
+          "Actual Screens": {
+            "actual": 13,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 12,
+            "target": 10.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1773915221899x731095116844892200",
+              "job_title": "Senior IOS Engineer Paris",
+              "contacted": 75,
+              "actual_screens": 13,
+              "ats": 12,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        }
+      }
+    },
+    "kristinaxnikolic@gmail.com": {
+      "name": "Kristina Colovic",
+      "first_name": "Kristina",
+      "role": "TA",
+      "client": "Aviv",
+      "pd_client": "AVIV",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 9,
+            "target": 70.0
+          },
+          "Actual Screens": {
+            "actual": 8,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 4,
+            "target": 10.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1778673333753x755455990320857100",
+              "job_title": "Engineering Manager France, Kristina",
+              "contacted": 7,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778238210297x617135774419124200",
+              "job_title": "Senior Backend Engineer, Platform Team - Berlin (Kristina)",
+              "contacted": 2,
+              "actual_screens": 2,
+              "ats": 2,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1775124928738x792744654411137000",
+              "job_title": "Senior Backend Engineer Trust & Safety - Kristina - Berlin",
+              "contacted": 0,
+              "actual_screens": 4,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1775125002560x755091190743302100",
+              "job_title": "Staff Backend Engineer Trust & Safety - Kristina - Berlin",
+              "contacted": 0,
+              "actual_screens": 2,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 157,
+            "target": 70.0
+          },
+          "Actual Screens": {
+            "actual": 26,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 15,
+            "target": 10.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1778238210297x617135774419124200",
+              "job_title": "Senior Backend Engineer, Platform Team - Berlin (Kristina)",
+              "contacted": 56,
+              "actual_screens": 10,
+              "ats": 7,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778673284727x519021825440350200",
+              "job_title": "Engineering Manager T&S Kristina, Berlin",
+              "contacted": 54,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778673333753x755455990320857100",
+              "job_title": "Engineering Manager France, Kristina",
+              "contacted": 45,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1775124928738x792744654411137000",
+              "job_title": "Senior Backend Engineer Trust & Safety - Kristina - Berlin",
+              "contacted": 2,
+              "actual_screens": 16,
+              "ats": 8,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        }
+      }
+    },
+    "alexandra.richiteanu@tribe.xyz": {
+      "name": "Alexandra Richiteanu",
+      "first_name": "Alexandra",
+      "role": "TA",
+      "client": "Aviv",
+      "pd_client": "AVIV",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 75,
+            "target": 70.0
+          },
+          "Actual Screens": {
+            "actual": 5,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 2,
+            "target": 10.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1776165059453x461431607535861800",
+              "job_title": "Senior Android Engineer - Croatia",
+              "contacted": 73,
+              "actual_screens": 3,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1776164934061x218226347507712000",
+              "job_title": "Senior IOS Engineer - Croatia",
+              "contacted": 2,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1776767694969x733318081986691100",
+              "job_title": "Senior Android Engineer - Germany",
+              "contacted": 0,
+              "actual_screens": 1,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1776767826716x982121841327341600",
+              "job_title": "Senior iOS Engineer - Germany",
+              "contacted": 0,
+              "actual_screens": 1,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 96,
+            "target": 70.0
+          },
+          "Actual Screens": {
+            "actual": 7,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 6,
+            "target": 10.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1776165059453x461431607535861800",
+              "job_title": "Senior Android Engineer - Croatia",
+              "contacted": 71,
+              "actual_screens": 5,
+              "ats": 4,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1776164934061x218226347507712000",
+              "job_title": "Senior IOS Engineer - Croatia",
+              "contacted": 25,
+              "actual_screens": 2,
+              "ats": 2,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        }
+      }
+    },
+    "adis@tribe.xyz": {
+      "name": "Adis Prepoljac",
+      "first_name": "Adis",
+      "role": "TA",
+      "client": "Nexi",
+      "pd_client": "Nexi",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 0,
+            "target": 100.0
+          },
+          "Actual Screens": {
+            "actual": 0,
+            "target": 20.0
+          },
+          "Moved to ATS": {
+            "actual": 0,
+            "target": 10.0
+          },
+          "_jobs": []
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 0,
+            "target": 100.0
+          },
+          "Actual Screens": {
+            "actual": 0,
+            "target": 20.0
+          },
+          "Moved to ATS": {
+            "actual": 0,
+            "target": 10.0
+          },
+          "_jobs": []
+        }
+      }
+    },
+    "mateja@tribe.xyz": {
+      "name": "Mateja Jokovic",
+      "first_name": "Mateja",
+      "role": "TA",
+      "client": "PhantomBuster",
+      "pd_client": "PhantomBuster",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 0,
+            "target": 100.0
+          },
+          "Actual Screens": {
+            "actual": 0,
+            "target": 10.0
+          },
+          "Moved to ATS": {
+            "actual": 0,
+            "target": 5.0
+          },
+          "_jobs": []
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 0,
+            "target": 100.0
+          },
+          "Actual Screens": {
+            "actual": 0,
+            "target": 10.0
+          },
+          "Moved to ATS": {
+            "actual": 0,
+            "target": 5.0
+          },
+          "_jobs": []
+        }
+      }
+    },
+    "chene@tribe.xyz": {
+      "name": "Chené Elliot",
+      "first_name": "Chené",
+      "role": "TA",
+      "client": "Glovo",
+      "pd_client": "Glovo",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 24,
+            "target": 70.0
+          },
+          "Actual Screens": {
+            "actual": 8,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 4,
+            "target": 10.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1776155280233x867244093444980700",
+              "job_title": "iOS Engineer IC3 (Chene)",
+              "contacted": 16,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1776155229443x398373782847750140",
+              "job_title": "iOS Engineer IC2 (Chene)",
+              "contacted": 7,
+              "actual_screens": 7,
+              "ats": 3,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1772187627387x288515927427776500",
+              "job_title": "Backend Engineer II (Chene)",
+              "contacted": 1,
+              "actual_screens": 1,
+              "ats": 1,
+              "offered": 1,
+              "hired": 0
+            }
+          ]
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 209,
+            "target": 70.0
+          },
+          "Actual Screens": {
+            "actual": 18,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 9,
+            "target": 10.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1772187627387x288515927427776500",
+              "job_title": "Backend Engineer II (Chene)",
+              "contacted": 96,
+              "actual_screens": 8,
+              "ats": 3,
+              "offered": 1,
+              "hired": 0
+            },
+            {
+              "job_id": "1776155280233x867244093444980700",
+              "job_title": "iOS Engineer IC3 (Chene)",
+              "contacted": 58,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1776155229443x398373782847750140",
+              "job_title": "iOS Engineer IC2 (Chene)",
+              "contacted": 54,
+              "actual_screens": 9,
+              "ats": 5,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1772187860944x479761207964205060",
+              "job_title": "Platform Engineer",
+              "contacted": 1,
+              "actual_screens": 1,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        }
+      }
+    },
+    "samanthanel@tribe.xyz": {
+      "name": "Samantha Nel",
+      "first_name": "Samantha",
+      "role": "TA",
+      "client": "Glovo",
+      "pd_client": "Glovo",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 30,
+            "target": 70.0
+          },
+          "Actual Screens": {
+            "actual": 0,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 0,
+            "target": 10.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1772614005813x477540619595546600",
+              "job_title": "iOS Engineer - IC3 (Sam)",
+              "contacted": 30,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 189,
+            "target": 70.0
+          },
+          "Actual Screens": {
+            "actual": 23,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 12,
+            "target": 10.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1772614005813x477540619595546600",
+              "job_title": "iOS Engineer - IC3 (Sam)",
+              "contacted": 185,
+              "actual_screens": 19,
+              "ats": 10,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1775140193294x599142206485823500",
+              "job_title": "Frontend Engineer - L1",
+              "contacted": 3,
+              "actual_screens": 3,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1773218075741x431248583678230500",
+              "job_title": "iOS Engineer - IC2",
+              "contacted": 1,
+              "actual_screens": 1,
+              "ats": 1,
+              "offered": 2,
+              "hired": 1
+            }
+          ]
+        }
+      }
+    },
+    "dushan@tribe.xyz": {
+      "name": "Dušan Špica",
+      "first_name": "Dušan",
+      "role": "TA",
+      "client": "Eucalyptus",
+      "pd_client": "Eucalyptus",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 0,
+            "target": 100.0
+          },
+          "Actual Screens": {
+            "actual": 0,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 0,
+            "target": 7.0
+          },
+          "_jobs": []
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 16,
+            "target": 100.0
+          },
+          "Actual Screens": {
+            "actual": 12,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 5,
+            "target": 7.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1774945442541x679227563572199400",
+              "job_title": "Senior Software Engineer (UK) - Fullstack (Ecosystem/Shop)",
+              "contacted": 15,
+              "actual_screens": 8,
+              "ats": 5,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1774630560077x666522591523242000",
+              "job_title": "Senior Software Engineer (UK) - Frontend (Growth)",
+              "contacted": 1,
+              "actual_screens": 4,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        }
+      }
+    },
+    "alisa@tribe.xyz": {
+      "name": "Alisa Liddell",
+      "first_name": "Alisa",
+      "role": "TA",
+      "client": "Eucalyptus",
+      "pd_client": "Eucalyptus",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 1,
+            "target": 100.0
+          },
+          "Actual Screens": {
+            "actual": 0,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 0,
+            "target": 7.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1777486143400x521437858390343700",
+              "job_title": "Growth Marketing Manager",
+              "contacted": 1,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 18,
+            "target": 100.0
+          },
+          "Actual Screens": {
+            "actual": 25,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 11,
+            "target": 7.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1777486143400x521437858390343700",
+              "job_title": "Growth Marketing Manager",
+              "contacted": 7,
+              "actual_screens": 9,
+              "ats": 2,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1775055553196x717323579568947200",
+              "job_title": "Performance Marketer",
+              "contacted": 6,
+              "actual_screens": 7,
+              "ats": 3,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1775055351940x175535104353894400",
+              "job_title": "Creative Strategist (Paid Social)",
+              "contacted": 3,
+              "actual_screens": 7,
+              "ats": 4,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778859938444x522071930312589300",
+              "job_title": "Creative Producer / Creative Project Manager",
+              "contacted": 2,
+              "actual_screens": 2,
+              "ats": 2,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        }
+      }
+    },
+    "vladimir@tribe.xyz": {
+      "name": "Vladimir Stankovic",
+      "first_name": "Vladimir",
+      "role": "TA",
+      "client": "Aiven",
+      "pd_client": "Aiven",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 7,
+            "target": 50.0
+          },
+          "Actual Screens": {
+            "actual": 0,
+            "target": 12.0
+          },
+          "Moved to ATS": {
+            "actual": 0,
+            "target": 5.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1775651825154x949444861303455700",
+              "job_title": "Senior Full Stack Software Engineer (Finland)",
+              "contacted": 7,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 47,
+            "target": 50.0
+          },
+          "Actual Screens": {
+            "actual": 24,
+            "target": 12.0
+          },
+          "Moved to ATS": {
+            "actual": 11,
+            "target": 5.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1775651825154x949444861303455700",
+              "job_title": "Senior Full Stack Software Engineer (Finland)",
+              "contacted": 20,
+              "actual_screens": 12,
+              "ats": 7,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1775651749069x453454844985606140",
+              "job_title": "Senior Full Stack Engineer (Israel)",
+              "contacted": 20,
+              "actual_screens": 5,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778666254554x143049343041536000",
+              "job_title": "Backend engineer - ClickHouse",
+              "contacted": 7,
+              "actual_screens": 7,
+              "ats": 3,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        }
+      }
+    },
+    "fuad@tribe.xyz": {
+      "name": "Fuad Safarov",
+      "first_name": "Fuad",
+      "role": "TA",
+      "client": "Aiven",
+      "pd_client": "Aiven",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 45,
+            "target": 50.0
+          },
+          "Actual Screens": {
+            "actual": 3,
+            "target": 12.0
+          },
+          "Moved to ATS": {
+            "actual": 2,
+            "target": 5.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1775551815119x528177390986985500",
+              "job_title": "Enterprise Account Executive - Berlin",
+              "contacted": 33,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1777017827149x657905825884405800",
+              "job_title": "Senior Technical Account Manager, EMEA",
+              "contacted": 11,
+              "actual_screens": 2,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1775561928314x542790418771738600",
+              "job_title": "Senior Talent Partner - Cork (Ireland)",
+              "contacted": 1,
+              "actual_screens": 1,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 75,
+            "target": 50.0
+          },
+          "Actual Screens": {
+            "actual": 10,
+            "target": 12.0
+          },
+          "Moved to ATS": {
+            "actual": 10,
+            "target": 5.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1777017827149x657905825884405800",
+              "job_title": "Senior Technical Account Manager, EMEA",
+              "contacted": 33,
+              "actual_screens": 5,
+              "ats": 5,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1775551815119x528177390986985500",
+              "job_title": "Enterprise Account Executive - Berlin",
+              "contacted": 21,
+              "actual_screens": 1,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778140015433x997952136168079400",
+              "job_title": "Inside Sales Representative - Cork",
+              "contacted": 20,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778595377703x471342991044771840",
+              "job_title": "Senior Director, OEM Partnerships & Strategy",
+              "contacted": 1,
+              "actual_screens": 1,
+              "ats": 1,
+              "offered": 1,
+              "hired": 1
+            },
+            {
+              "job_id": "1775552220428x685390723465871400",
+              "job_title": "Enterprise Account Executive - Sweden",
+              "contacted": 0,
+              "actual_screens": 3,
+              "ats": 3,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        }
+      }
+    },
+    "andrea@tribe.xyz": {
+      "name": "Andrea Akovic",
+      "first_name": "Andrea",
+      "role": "TS",
+      "client": "",
+      "pd_client": "",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 48,
+            "target": 360.0
+          },
+          "Actual Screens": {
+            "actual": 3,
+            "target": 7.0
+          },
+          "Moved to ATS": {
+            "actual": 0,
+            "target": 4.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1772614005813x477540619595546600",
+              "job_title": "iOS Engineer - IC3 (Sam)",
+              "contacted": 28,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1776155280233x867244093444980700",
+              "job_title": "iOS Engineer IC3 (Chene)",
+              "contacted": 16,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1776155229443x398373782847750140",
+              "job_title": "iOS Engineer IC2 (Chene)",
+              "contacted": 4,
+              "actual_screens": 3,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 398,
+            "target": 360.0
+          },
+          "Actual Screens": {
+            "actual": 21,
+            "target": 7.0
+          },
+          "Moved to ATS": {
+            "actual": 12,
+            "target": 4.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1772614005813x477540619595546600",
+              "job_title": "iOS Engineer - IC3 (Sam)",
+              "contacted": 180,
+              "actual_screens": 14,
+              "ats": 7,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1772187627387x288515927427776500",
+              "job_title": "Backend Engineer II (Chene)",
+              "contacted": 88,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1776155280233x867244093444980700",
+              "job_title": "iOS Engineer IC3 (Chene)",
+              "contacted": 58,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1776155229443x398373782847750140",
+              "job_title": "iOS Engineer IC2 (Chene)",
+              "contacted": 51,
+              "actual_screens": 4,
+              "ats": 2,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778238250267x806800061349494800",
+              "job_title": "Senior Backend Engineer, Platform Team - Berlin (Wlad)",
+              "contacted": 11,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778238210297x617135774419124200",
+              "job_title": "Senior Backend Engineer, Platform Team - Berlin (Kristina)",
+              "contacted": 9,
+              "actual_screens": 1,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1776946337682x175310840399396860",
+              "job_title": "Store Manager (Bergen)",
+              "contacted": 1,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1775138003344x487773161371467800",
+              "job_title": "Senior Backend Engineer Trust & Safety - Wlad - Berlin",
+              "contacted": 0,
+              "actual_screens": 2,
+              "ats": 2,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        }
+      }
+    },
+    "dolores@tribe.xyz": {
+      "name": "Dolores Palotas",
+      "first_name": "Dolores",
+      "role": "TS",
+      "client": "",
+      "pd_client": "",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 0,
+            "target": 100
+          },
+          "Actual Screens": {
+            "actual": 1,
+            "target": 7.0
+          },
+          "Moved to ATS": {
+            "actual": 1,
+            "target": 4.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1777017827149x657905825884405800",
+              "job_title": "Senior Technical Account Manager, EMEA",
+              "contacted": 0,
+              "actual_screens": 1,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 0,
+            "target": 100
+          },
+          "Actual Screens": {
+            "actual": 12,
+            "target": 7.0
+          },
+          "Moved to ATS": {
+            "actual": 7,
+            "target": 4.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1774945442541x679227563572199400",
+              "job_title": "Senior Software Engineer (UK) - Fullstack (Ecosystem/Shop)",
+              "contacted": 0,
+              "actual_screens": 4,
+              "ats": 2,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1775552220428x685390723465871400",
+              "job_title": "Enterprise Account Executive - Sweden",
+              "contacted": 0,
+              "actual_screens": 3,
+              "ats": 3,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1774630560077x666522591523242000",
+              "job_title": "Senior Software Engineer (UK) - Frontend (Growth)",
+              "contacted": 0,
+              "actual_screens": 3,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778238210297x617135774419124200",
+              "job_title": "Senior Backend Engineer, Platform Team - Berlin (Kristina)",
+              "contacted": 0,
+              "actual_screens": 2,
+              "ats": 2,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        }
+      }
+    },
+    "elenapetrovska@tribe.xyz": {
+      "name": "Elena Petrovska",
+      "first_name": "Elena",
+      "role": "TS",
+      "client": "",
+      "pd_client": "",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 44,
+            "target": 100.0
+          },
+          "Actual Screens": {
+            "actual": 1,
+            "target": 7.0
+          },
+          "Moved to ATS": {
+            "actual": 2,
+            "target": 4.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1776774072451x591251363900948500",
+              "job_title": "Revenue Strategy and Operations  Manager - Commerce Platform",
+              "contacted": 29,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1777540603499x788570363141816300",
+              "job_title": "Global Revenue S&O",
+              "contacted": 15,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1775125735494x364560877536935940",
+              "job_title": "Regional Manager, Consumer (Cx) - (Poland)",
+              "contacted": 0,
+              "actual_screens": 1,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1777284652877x748905681153425400",
+              "job_title": "Head of Partnerships",
+              "contacted": 0,
+              "actual_screens": 0,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 153,
+            "target": 100.0
+          },
+          "Actual Screens": {
+            "actual": 7,
+            "target": 7.0
+          },
+          "Moved to ATS": {
+            "actual": 5,
+            "target": 4.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1775125735494x364560877536935940",
+              "job_title": "Regional Manager, Consumer (Cx) - (Poland)",
+              "contacted": 73,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1768294693197x217131731561742340",
+              "job_title": "Regional Restaurant Marketing Manager - West",
+              "contacted": 38,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778233814595x768879759816654800",
+              "job_title": "B2B Marketing - Talent pool",
+              "contacted": 26,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778586504541x975428407693934600",
+              "job_title": "Marketing Lead - talent pool",
+              "contacted": 11,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1777540603499x788570363141816300",
+              "job_title": "Global Revenue S&O",
+              "contacted": 3,
+              "actual_screens": 2,
+              "ats": 2,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1773913077486x516838073586417660",
+              "job_title": "Global Integrated B2B Marketing Manager, Wolt for Work",
+              "contacted": 2,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1776168163670x998794808628084700",
+              "job_title": "Brand Marketing Insights & Research Lead",
+              "contacted": 0,
+              "actual_screens": 2,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1776774072451x591251363900948500",
+              "job_title": "Revenue Strategy and Operations  Manager - Commerce Platform",
+              "contacted": 0,
+              "actual_screens": 1,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1777284652877x748905681153425400",
+              "job_title": "Head of Partnerships",
+              "contacted": 0,
+              "actual_screens": 1,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1776193244015x580844261861752800",
+              "job_title": "Brand Tech & Creative Operations Lead",
+              "contacted": 0,
+              "actual_screens": 1,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1774390389805x966005494540402700",
+              "job_title": "Support Team Lead (Italian speaker)-Romania",
+              "contacted": 0,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 1,
+              "hired": 1
+            }
+          ]
+        }
+      }
+    },
+    "gustavo@tribe.xyz": {
+      "name": "Gustavo Loureiro Castro",
+      "first_name": "Gustavo",
+      "role": "TS",
+      "client": "",
+      "pd_client": "",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 0,
+            "target": 110.0
+          },
+          "Actual Screens": {
+            "actual": 0,
+            "target": 7.0
+          },
+          "Moved to ATS": {
+            "actual": 0,
+            "target": 4.0
+          },
+          "_jobs": []
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 142,
+            "target": 110.0
+          },
+          "Actual Screens": {
+            "actual": 10,
+            "target": 7.0
+          },
+          "Moved to ATS": {
+            "actual": 5,
+            "target": 4.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1758529227458x187488425396142080",
+              "job_title": "Principal Engineer",
+              "contacted": 68,
+              "actual_screens": 4,
+              "ats": 2,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1776161479950x832763580951560200",
+              "job_title": "Staff Product Designer",
+              "contacted": 46,
+              "actual_screens": 2,
+              "ats": 2,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1770115575994x938717513032663000",
+              "job_title": "Principal Applied Scientist - AI Agents & Generative AI",
+              "contacted": 27,
+              "actual_screens": 4,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1773541817458x207812467522011140",
+              "job_title": "Deployment Strategist",
+              "contacted": 1,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        }
+      }
+    },
+    "jovana@tribe.xyz": {
+      "name": "Jovana Drakula",
+      "first_name": "Jovana",
+      "role": "TS",
+      "client": "",
+      "pd_client": "",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 0,
+            "target": 100.0
+          },
+          "Actual Screens": {
+            "actual": 0,
+            "target": 7.0
+          },
+          "Moved to ATS": {
+            "actual": 0,
+            "target": 4.0
+          },
+          "_jobs": []
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 44,
+            "target": 100.0
+          },
+          "Actual Screens": {
+            "actual": 2,
+            "target": 7.0
+          },
+          "Moved to ATS": {
+            "actual": 2,
+            "target": 4.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1770301110861x457136257222049800",
+              "job_title": "Head of Product",
+              "contacted": 23,
+              "actual_screens": 2,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778829612482x568236602980302850",
+              "job_title": "Product Manager, Lead AVIV Berlin",
+              "contacted": 9,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1773325101895x585280399134687200",
+              "job_title": "Technical Product Manager",
+              "contacted": 8,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1773325018606x283473979082276860",
+              "job_title": "Analytics Manager (AVIV)",
+              "contacted": 4,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1775206191653x934212136994340900",
+              "job_title": "Product Manager Demand (AVIV)",
+              "contacted": 0,
+              "actual_screens": 0,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1773325164810x791834858028793900",
+              "job_title": "Policy and Operations Manager (AVIV)",
+              "contacted": 0,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 1
+            }
+          ]
+        }
+      }
+    },
+    "mia@tribe.xyz": {
+      "name": "Mia Gjorgievska",
+      "first_name": "Mia",
+      "role": "TS",
+      "client": "",
+      "pd_client": "",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 0,
+            "target": 100
+          },
+          "Actual Screens": {
+            "actual": 0,
+            "target": 7.0
+          },
+          "Moved to ATS": {
+            "actual": 0,
+            "target": 4.0
+          },
+          "_jobs": []
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 0,
+            "target": 100
+          },
+          "Actual Screens": {
+            "actual": 0,
+            "target": 7.0
+          },
+          "Moved to ATS": {
+            "actual": 0,
+            "target": 4.0
+          },
+          "_jobs": []
+        }
+      }
+    },
+    "naledi@tribe.xyz": {
+      "name": "Naledi Ngwenya",
+      "first_name": "Naledi",
+      "role": "TS",
+      "client": "",
+      "pd_client": "",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 35,
+            "target": 100.0
+          },
+          "Actual Screens": {
+            "actual": 1,
+            "target": 7.0
+          },
+          "Moved to ATS": {
+            "actual": 0,
+            "target": 4.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1775551815119x528177390986985500",
+              "job_title": "Enterprise Account Executive - Berlin",
+              "contacted": 17,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1777017827149x657905825884405800",
+              "job_title": "Senior Technical Account Manager, EMEA",
+              "contacted": 11,
+              "actual_screens": 1,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778673333753x755455990320857100",
+              "job_title": "Engineering Manager France, Kristina",
+              "contacted": 7,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 119,
+            "target": 100.0
+          },
+          "Actual Screens": {
+            "actual": 6,
+            "target": 7.0
+          },
+          "Moved to ATS": {
+            "actual": 2,
+            "target": 4.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1777017827149x657905825884405800",
+              "job_title": "Senior Technical Account Manager, EMEA",
+              "contacted": 30,
+              "actual_screens": 2,
+              "ats": 2,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778238210297x617135774419124200",
+              "job_title": "Senior Backend Engineer, Platform Team - Berlin (Kristina)",
+              "contacted": 24,
+              "actual_screens": 2,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1775551815119x528177390986985500",
+              "job_title": "Enterprise Account Executive - Berlin",
+              "contacted": 21,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778140015433x997952136168079400",
+              "job_title": "Inside Sales Representative - Cork",
+              "contacted": 20,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778238250267x806800061349494800",
+              "job_title": "Senior Backend Engineer, Platform Team - Berlin (Wlad)",
+              "contacted": 13,
+              "actual_screens": 2,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1774945442541x679227563572199400",
+              "job_title": "Senior Software Engineer (UK) - Fullstack (Ecosystem/Shop)",
+              "contacted": 11,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        }
+      }
+    },
+    "nare@tribe.xyz": {
+      "name": "Nare Avetisyan",
+      "first_name": "Nare",
+      "role": "TS",
+      "client": "",
+      "pd_client": "",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 123,
+            "target": 200.0
+          },
+          "Actual Screens": {
+            "actual": 5,
+            "target": 7.0
+          },
+          "Moved to ATS": {
+            "actual": 2,
+            "target": 4.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1776165059453x461431607535861800",
+              "job_title": "Senior Android Engineer - Croatia",
+              "contacted": 73,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1776951183014x527594951702741000",
+              "job_title": "Front End Engineer (Paris)",
+              "contacted": 50,
+              "actual_screens": 1,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1776767694969x733318081986691100",
+              "job_title": "Senior Android Engineer - Germany",
+              "contacted": 0,
+              "actual_screens": 1,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1775124928738x792744654411137000",
+              "job_title": "Senior Backend Engineer Trust & Safety - Kristina - Berlin",
+              "contacted": 0,
+              "actual_screens": 1,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1775125002560x755091190743302100",
+              "job_title": "Staff Backend Engineer Trust & Safety - Kristina - Berlin",
+              "contacted": 0,
+              "actual_screens": 1,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1776767826716x982121841327341600",
+              "job_title": "Senior iOS Engineer - Germany",
+              "contacted": 0,
+              "actual_screens": 1,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 367,
+            "target": 200.0
+          },
+          "Actual Screens": {
+            "actual": 27,
+            "target": 7.0
+          },
+          "Moved to ATS": {
+            "actual": 21,
+            "target": 4.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1776951183014x527594951702741000",
+              "job_title": "Front End Engineer (Paris)",
+              "contacted": 155,
+              "actual_screens": 8,
+              "ats": 7,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1773915221899x731095116844892200",
+              "job_title": "Senior IOS Engineer Paris",
+              "contacted": 74,
+              "actual_screens": 12,
+              "ats": 11,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1776165059453x461431607535861800",
+              "job_title": "Senior Android Engineer - Croatia",
+              "contacted": 52,
+              "actual_screens": 1,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778673333753x755455990320857100",
+              "job_title": "Engineering Manager France, Kristina",
+              "contacted": 45,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778673284727x519021825440350200",
+              "job_title": "Engineering Manager T&S Kristina, Berlin",
+              "contacted": 40,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1776762292358x428858720491929600",
+              "job_title": "Senior Backend Engineer Python",
+              "contacted": 1,
+              "actual_screens": 3,
+              "ats": 1,
+              "offered": 1,
+              "hired": 1
+            },
+            {
+              "job_id": "1775124928738x792744654411137000",
+              "job_title": "Senior Backend Engineer Trust & Safety - Kristina - Berlin",
+              "contacted": 0,
+              "actual_screens": 3,
+              "ats": 2,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        }
+      }
+    },
+    "rodrigo@tribe.xyz": {
+      "name": "Rodrigo Gomes",
+      "first_name": "Rodrigo",
+      "role": "TS",
+      "client": "",
+      "pd_client": "",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 52,
+            "target": 120.0
+          },
+          "Actual Screens": {
+            "actual": 3,
+            "target": 7.0
+          },
+          "Moved to ATS": {
+            "actual": 1,
+            "target": 4.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1736934796460x763481035954192400",
+              "job_title": "Fullstack Engineer",
+              "contacted": 20,
+              "actual_screens": 1,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778683338804x926854333803266000",
+              "job_title": "Fullstack React (Bucharest)",
+              "contacted": 16,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778683287482x195811766812016640",
+              "job_title": "Fullstack .NET (Bucharest)",
+              "contacted": 9,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1775651825154x949444861303455700",
+              "job_title": "Senior Full Stack Software Engineer (Finland)",
+              "contacted": 7,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1776951183014x527594951702741000",
+              "job_title": "Front End Engineer (Paris)",
+              "contacted": 0,
+              "actual_screens": 2,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 171,
+            "target": 120.0
+          },
+          "Actual Screens": {
+            "actual": 9,
+            "target": 7.0
+          },
+          "Moved to ATS": {
+            "actual": 5,
+            "target": 4.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1776951183014x527594951702741000",
+              "job_title": "Front End Engineer (Paris)",
+              "contacted": 35,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778683287482x195811766812016640",
+              "job_title": "Fullstack .NET (Bucharest)",
+              "contacted": 33,
+              "actual_screens": 2,
+              "ats": 2,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1736934796460x763481035954192400",
+              "job_title": "Fullstack Engineer",
+              "contacted": 32,
+              "actual_screens": 4,
+              "ats": 2,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778238210297x617135774419124200",
+              "job_title": "Senior Backend Engineer, Platform Team - Berlin (Kristina)",
+              "contacted": 19,
+              "actual_screens": 1,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778238250267x806800061349494800",
+              "job_title": "Senior Backend Engineer, Platform Team - Berlin (Wlad)",
+              "contacted": 18,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1775651749069x453454844985606140",
+              "job_title": "Senior Full Stack Engineer (Israel)",
+              "contacted": 15,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1766484364452x686009847116464100",
+              "job_title": "Machine Learning Engineer",
+              "contacted": 11,
+              "actual_screens": 2,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1775651825154x949444861303455700",
+              "job_title": "Senior Full Stack Software Engineer (Finland)",
+              "contacted": 8,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        }
+      }
+    },
+    "valeriia@tribe.xyz": {
+      "name": "Valeriia Yurykova",
+      "first_name": "Valeriia",
+      "role": "TS",
+      "client": "",
+      "pd_client": "",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 41,
+            "target": 100.0
+          },
+          "Actual Screens": {
+            "actual": 1,
+            "target": 7.0
+          },
+          "Moved to ATS": {
+            "actual": 0,
+            "target": 4.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1778669071207x125942042073759740",
+              "job_title": "Enterprise Account Manager - Lithuania",
+              "contacted": 30,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1779112032424x907451151344205800",
+              "job_title": "QA Automation - Authentication, Croatia",
+              "contacted": 8,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1779111938424x336950569178497000",
+              "job_title": "QA Automation - Financing, Croatia",
+              "contacted": 3,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1766139080865x930653980317188100",
+              "job_title": "Sales Manager Luxembourg",
+              "contacted": 0,
+              "actual_screens": 1,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 134,
+            "target": 100.0
+          },
+          "Actual Screens": {
+            "actual": 6,
+            "target": 7.0
+          },
+          "Moved to ATS": {
+            "actual": 5,
+            "target": 4.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1778501360032x181990237728931840",
+              "job_title": "Retail Operations Excellence Specialist, Croatia",
+              "contacted": 45,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1777987322411x102512047924183040",
+              "job_title": "Senior Fullstack Engineer - Stuttgart",
+              "contacted": 27,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1776765224256x762752769425670100",
+              "job_title": "Category Manager (WM), Slovenia",
+              "contacted": 25,
+              "actual_screens": 2,
+              "ats": 2,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1766139080865x930653980317188100",
+              "job_title": "Sales Manager Luxembourg",
+              "contacted": 20,
+              "actual_screens": 1,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778669071207x125942042073759740",
+              "job_title": "Enterprise Account Manager - Lithuania",
+              "contacted": 15,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1776343351205x571330529930772500",
+              "job_title": "Enterprise Account Manager Luxembourg",
+              "contacted": 1,
+              "actual_screens": 1,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1776765364193x497107282998591500",
+              "job_title": "Category Manager (WM), Croatia",
+              "contacted": 1,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1776862201667x936823939323658200",
+              "job_title": "Store Manager (WM), Turku Finland, Q2 2026",
+              "contacted": 0,
+              "actual_screens": 2,
+              "ats": 2,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        }
+      }
+    },
+    "zelimir@tribe.xyz": {
+      "name": "Zelimir Stajcic",
+      "first_name": "Zelimir",
+      "role": "TS",
+      "client": "",
+      "pd_client": "",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 0,
+            "target": 100.0
+          },
+          "Actual Screens": {
+            "actual": 0,
+            "target": 7.0
+          },
+          "Moved to ATS": {
+            "actual": 0,
+            "target": 4.0
+          },
+          "_jobs": []
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 157,
+            "target": 100.0
+          },
+          "Actual Screens": {
+            "actual": 5,
+            "target": 7.0
+          },
+          "Moved to ATS": {
+            "actual": 5,
+            "target": 4.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1757593045815x380825256184774660",
+              "job_title": "Mid Software Engineer - Backend",
+              "contacted": 122,
+              "actual_screens": 4,
+              "ats": 4,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1769853317715x196394676335673340",
+              "job_title": "Junior Software Engineer - Backend",
+              "contacted": 35,
+              "actual_screens": 1,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        }
+      }
+    }
+  }
 }

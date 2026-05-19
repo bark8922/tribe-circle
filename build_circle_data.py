@@ -71,17 +71,29 @@ def build_periods(today=None):
     }
 
 
+KPI_SHEET_URL = (
+    "https://docs.google.com/spreadsheets/d/"
+    "1nGxKctROF9Li3KLz1OD7b7koUs64ke3W_-dwwVjHv8Y/export?format=csv&gid=0"
+)
+
+
 def load_email_map():
+    """name -> email. Local /tmp/circle_kpi.csv if present, else fetch from
+    Mikhail's Circle KPI Google Sheet at runtime."""
+    import io, urllib.request
     emails = {}
     p = Path("/tmp/circle_kpi.csv")
-    if not p.exists():
-        return emails
-    with p.open(newline="") as f:
-        for row in csv.DictReader(f):
-            n = row["Full name"].strip()
-            e = row["Email"].strip()
-            if n and e:
-                emails[n] = e
+    if p.exists():
+        text = p.read_text()
+    else:
+        print(f"Fetching email map from {KPI_SHEET_URL}")
+        with urllib.request.urlopen(KPI_SHEET_URL, timeout=15) as resp:
+            text = resp.read().decode("utf-8")
+    for row in csv.DictReader(io.StringIO(text)):
+        n = row["Full name"].strip()
+        e = row["Email"].strip()
+        if n and e:
+            emails[n] = e
     if "Rodrigo Gomes" in emails:
         emails.setdefault("Rodrigo Gomez", emails["Rodrigo Gomes"])
     return emails
