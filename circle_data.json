@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T03:30:11.017057Z",
+  "generated_at": "2026-05-19T07:44:04.024886Z",
   "source": "/tmp/sf.json",
   "periods": {
     "this_week": {
@@ -235,15 +235,15 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 22,
+            "actual": 24,
             "target": 70.0
           },
           "Actual Screens": {
-            "actual": 4,
+            "actual": 8,
             "target": 15.0
           },
           "Moved to ATS": {
-            "actual": 1,
+            "actual": 4,
             "target": 10.0
           },
           "_jobs": [
@@ -259,9 +259,9 @@
             {
               "job_id": "1776155229443x398373782847750140",
               "job_title": "iOS Engineer IC2 (Chene)",
-              "contacted": 5,
-              "actual_screens": 3,
-              "ats": 0,
+              "contacted": 7,
+              "actual_screens": 7,
+              "ats": 3,
               "offered": 0,
               "hired": 0
             },
@@ -338,7 +338,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 3,
+            "actual": 28,
             "target": 70.0
           },
           "Actual Screens": {
@@ -353,7 +353,7 @@
             {
               "job_id": "1772614005813x477540619595546600",
               "job_title": "iOS Engineer - IC3 (Sam)",
-              "contacted": 3,
+              "contacted": 28,
               "actual_screens": 0,
               "ats": 0,
               "offered": 0,
