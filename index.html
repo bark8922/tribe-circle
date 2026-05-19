@@ -244,11 +244,20 @@
     member.email = memberEmail;
 
     const tiles = STAGES.map(s => renderTile(s, member.data[periodKey][s], period.elapsed_pct)).join('');
+    const hasActuals = STAGES.some(s => (member.data[periodKey][s]?.actual || 0) > 0);
+    const hasJobs = ((member.data[periodKey] || {})._jobs || []).length > 0;
+    const isEmptyPeriod = !hasActuals && !hasJobs;
+    const body = isEmptyPeriod
+      ? `<div class="tile" style="padding:40px 24px; text-align:center;">
+           <div style="font-size:15px; font-weight:600; color:#2C2D35; margin-bottom:6px;">No data for this period yet</div>
+           <div style="font-size:13px; color:#7b8593;">Either the week hasn't started or no activity has been logged. Check back later.</div>
+         </div>`
+      : `<div class="grid gap-5" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr));">${tiles}</div>
+         ${renderJobs(member, periodKey)}`;
     document.getElementById('root').innerHTML = `
       ${renderHeader(member, periods, periodKey, data.members)}
-      <div class="grid gap-5" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr));">${tiles}</div>
-      ${renderJobs(member, periodKey)}
-      ${renderLegend()}
+      ${body}
+      ${isEmptyPeriod ? '' : renderLegend()}
     `;
 
     const memSel = document.getElementById('member-sel');
