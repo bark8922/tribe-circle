@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T15:33:06.746635Z",
+  "generated_at": "2026-05-19T15:44:49.770415Z",
   "source": "/tmp/sf.json",
   "periods": {
     "this_week": {
@@ -2632,7 +2632,7 @@
             "target": 100
           },
           "Actual Screens": {
-            "actual": 10,
+            "actual": 12,
             "target": 7.0
           },
           "Moved to ATS": {
@@ -2880,15 +2880,15 @@
         },
         "last_week": {
           "Outreach Contacted": {
-            "actual": 156,
+            "actual": 142,
             "target": 110.0
           },
           "Actual Screens": {
-            "actual": 11,
+            "actual": 10,
             "target": 7.0
           },
           "Moved to ATS": {
-            "actual": 6,
+            "actual": 5,
             "target": 4.0
           },
           "_jobs": [
@@ -3270,7 +3270,7 @@
             "target": 200.0
           },
           "Actual Screens": {
-            "actual": 26,
+            "actual": 27,
             "target": 7.0
           },
           "Moved to ATS": {
@@ -3564,7 +3564,7 @@
         },
         "last_week": {
           "Outreach Contacted": {
-            "actual": 135,
+            "actual": 134,
             "target": 100.0
           },
           "Actual Screens": {
