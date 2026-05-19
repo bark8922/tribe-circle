@@ -2,22 +2,21 @@
 build_circle_data.py
 Generates circle_data.json from dashboard_data_snowflake.json.
 
-Covers BOTH:
-- Talent Acquisition Partners (TAs): targets from `targets` array, actuals from
-  `wbr_actuals[client|ta][wNN]`. Per-job breakdown via project_dashboard.rows
-  filtered by `ta == name AND client == pd_client`.
-- Talent Sourcers (TSes): roster from latest populated week of `ts_weekly`,
-  actuals from `ts_actuals[ts][wNN]`, targets per Blake 2026-04-29:
-    Contacted   = ts_weekly.contacted_target  (default 100 if null)
-    Actual Screens = 7
-    Moved to ATS   = 4
-  Per-job breakdown via project_dashboard.rows filtered by `ts == name`.
-
+Covers both TAs (Talent Acquisition Partners) and TSes (Talent Sourcers).
 Pilots derived dynamically from the source JSON + Mikhail's Circle KPI sheet
-(name→email map at /tmp/circle_kpi.csv). For dual-role people (in both TA
-targets AND TS roster), TS view wins.
+(name->email map at /tmp/circle_kpi.csv).
 
-Tribe weeks are Mon-Sun, ISO-aligned. W20 2026 = Mon May 11 - Sun May 17.
+TA: targets from `targets` array, actuals from `wbr_actuals[client|ta][wNN]`,
+    per-job breakdown via project_dashboard.rows filtered by ta+pd_client.
+TS: roster from latest populated week of `ts_weekly`; actuals also sourced
+    from `project_dashboard.rows` (filter by ts==name) so ring totals
+    reconcile exactly with the per-job breakdown. Targets per Blake
+    2026-04-29: contacted = ts_weekly.contacted_target (default 100),
+    actual_screens = 7, ats = 4.
+
+For dual-role people (in both TA targets AND TS roster), TS view wins.
+
+Tribe weeks: Mon-Sun, ISO-aligned. 2026W20 = Mon May 11 - Sun May 17.
 """
 
 import csv
@@ -73,7 +72,6 @@ def build_periods(today=None):
 
 
 def load_email_map():
-    """name → email from Mikhail's Circle KPI sheet."""
     emails = {}
     p = Path("/tmp/circle_kpi.csv")
     if not p.exists():
@@ -84,7 +82,6 @@ def load_email_map():
             e = row["Email"].strip()
             if n and e:
                 emails[n] = e
-    # Known alias (typo in WBR vs Mikhail's sheet)
     if "Rodrigo Gomes" in emails:
         emails.setdefault("Rodrigo Gomez", emails["Rodrigo Gomes"])
     return emails
@@ -97,12 +94,10 @@ def wbr_to_pd_client(client):
 
 
 def build_pilots(dash, emails):
-    """Returns list of pilot dicts: TA or TS, no duplicate emails (TS wins)."""
     by_wk = {}
     for t in dash.get("ts_weekly", []):
         by_wk.setdefault(t["week"], []).append(t)
     latest_ts_wk = max(by_wk.keys()) if by_wk else None
-
     ts_pilots = []
     ts_emails = set()
     if latest_ts_wk is not None:
@@ -112,18 +107,15 @@ def build_pilots(dash, emails):
                 continue
             ts_pilots.append({"role": "TS", "email": email, "name": t["ts"]})
             ts_emails.add(email)
-
-    ta_seen_pairs = set()
+    seen = set()
     ta_pilots = []
     for t in dash.get("targets", []):
         ta = (t.get("ta") or "").strip()
         team = (t.get("team_group") or "").strip()
         cl = (t.get("client") or "").strip()
-        if not ta or not team or not cl:
+        if not ta or not team or not cl or (ta, cl) in seen:
             continue
-        if (ta, cl) in ta_seen_pairs:
-            continue
-        ta_seen_pairs.add((ta, cl))
+        seen.add((ta, cl))
         email = emails.get(ta, "")
         if not email or email in ts_emails:
             continue
@@ -131,7 +123,6 @@ def build_pilots(dash, emails):
             "role": "TA", "email": email, "name": ta,
             "client": cl, "pd_client": wbr_to_pd_client(cl),
         })
-
     return ta_pilots + ts_pilots, latest_ts_wk
 
 
@@ -151,11 +142,7 @@ def ta_targets(dash, client, ta):
     return {}
 
 
-def ts_actuals(dash, ts_name, iso_week):
-    """Sum project_dashboard.rows by ts=name+iso_week — same source as the
-    per-job breakdown in inject_jobs.py, so ring totals reconcile exactly.
-    (ts_actuals[] uses a slightly different attribution that drifts by a few
-    events; switching to project_dashboard means rings + jobs always agree.)"""
+def ts_actuals_from_pd(dash, ts_name, iso_week):
     sums = {"contacted": 0, "actual_screens": 0, "ats": 0, "offered": 0, "hired": 0}
     for r in dash.get("project_dashboard", {}).get("rows", []):
         if r.get("iso_year") != 2026 or r.get("iso_week") != iso_week:
@@ -168,8 +155,7 @@ def ts_actuals(dash, ts_name, iso_week):
 
 
 def ts_contacted_target(dash, ts_name, iso_week):
-    """Latest non-null contacted_target up to and including iso_week."""
-    candidates = []
+    cands = []
     for r in dash.get("ts_weekly", []):
         if r.get("ts") != ts_name:
             continue
@@ -177,11 +163,11 @@ def ts_contacted_target(dash, ts_name, iso_week):
         if ct is None:
             continue
         if r.get("week", 0) <= iso_week:
-            candidates.append((r["week"], ct))
-    if not candidates:
+            cands.append((r["week"], ct))
+    if not cands:
         return TS_CONTACTED_TARGET_DEFAULT
-    candidates.sort()
-    return float(candidates[-1][1])
+    cands.sort()
+    return float(cands[-1][1])
 
 
 def build_member(dash, pilot, periods):
@@ -199,16 +185,16 @@ def build_member(dash, pilot, periods):
             a = ta_actuals(dash, pilot["client"], pilot["name"], iso)
             t = ta_targets(dash, pilot["client"], pilot["name"])
             out["data"][pk] = {
-                "Outreach Contacted": {"actual": int(a.get("contacted", 0) or 0),       "target": float(t.get("contacted", 0) or 0)},
-                "Actual Screens":     {"actual": int(a.get("actual_screens", 0) or 0),  "target": float(t.get("actual_screens", 0) or 0)},
-                "Moved to ATS":       {"actual": int(a.get("ats", 0) or 0),             "target": float(t.get("moved_to_ats", 0) or 0)},
+                "Outreach Contacted": {"actual": int(a.get("contacted", 0) or 0),      "target": float(t.get("contacted", 0) or 0)},
+                "Actual Screens":     {"actual": int(a.get("actual_screens", 0) or 0), "target": float(t.get("actual_screens", 0) or 0)},
+                "Moved to ATS":       {"actual": int(a.get("ats", 0) or 0),            "target": float(t.get("moved_to_ats", 0) or 0)},
             }
         else:
-            a = ts_actuals(dash, pilot["name"], iso)
+            a = ts_actuals_from_pd(dash, pilot["name"], iso)
             out["data"][pk] = {
-                "Outreach Contacted": {"actual": int(a.get("contacted", 0) or 0),       "target": ts_contacted_target(dash, pilot["name"], iso)},
-                "Actual Screens":     {"actual": int(a.get("actual_screens", 0) or 0),  "target": float(TS_ACTUAL_SCREENS_TARGET)},
-                "Moved to ATS":       {"actual": int(a.get("ats", 0) or 0),             "target": float(TS_ATS_TARGET)},
+                "Outreach Contacted": {"actual": int(a.get("contacted", 0) or 0),      "target": ts_contacted_target(dash, pilot["name"], iso)},
+                "Actual Screens":     {"actual": int(a.get("actual_screens", 0) or 0), "target": float(TS_ACTUAL_SCREENS_TARGET)},
+                "Moved to ATS":       {"actual": int(a.get("ats", 0) or 0),            "target": float(TS_ATS_TARGET)},
             }
     return out
 
@@ -227,15 +213,13 @@ def main():
     print(f"Loading {src}")
     with src.open() as f:
         dash = json.load(f)
-
     today = date.today()
     periods = build_periods(today)
     emails = load_email_map()
     if not emails:
-        print("WARNING: /tmp/circle_kpi.csv missing — every pilot will skip email lookup")
+        print("WARNING: /tmp/circle_kpi.csv missing - email lookup will be empty")
     pilots, ts_wk = build_pilots(dash, emails)
     print(f"Built {sum(1 for p in pilots if p['role']=='TA')} TA + {sum(1 for p in pilots if p['role']=='TS')} TS pilots (TS roster from w{ts_wk})")
-
     members = {p["email"]: build_member(dash, p, periods) for p in pilots}
     out = {
         "generated_at": datetime.utcnow().isoformat() + "Z",
@@ -252,4 +236,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
