@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-20T07:42:17.981625Z",
+  "generated_at": "2026-05-20T10:49:41.527956Z",
   "source": "/tmp/sf.json",
   "periods": {
     "this_week": {
@@ -450,15 +450,15 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 3,
+            "actual": 4,
             "target": 50.0
           },
           "Actual Screens": {
-            "actual": 3,
+            "actual": 4,
             "target": 15.0
           },
           "Moved to ATS": {
-            "actual": 2,
+            "actual": 3,
             "target": 8.0
           },
           "_jobs": [
@@ -469,6 +469,15 @@
               "actual_screens": 3,
               "ats": 2,
               "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1779258169273x145089529770410000",
+              "job_title": "Sales Support Associate - Greece",
+              "contacted": 1,
+              "actual_screens": 1,
+              "ats": 1,
+              "offered": 1,
               "hired": 0
             }
           ]
@@ -850,7 +859,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 25,
+            "actual": 26,
             "target": 70.0
           },
           "Actual Screens": {
@@ -874,7 +883,7 @@
             {
               "job_id": "1770882047922x655070271851987000",
               "job_title": "Security & Compliance Engineer",
-              "contacted": 1,
+              "contacted": 2,
               "actual_screens": 1,
               "ats": 1,
               "offered": 0,
@@ -1241,7 +1250,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 29,
+            "actual": 33,
             "target": 60.0
           },
           "Actual Screens": {
@@ -1255,8 +1264,8 @@
           "_jobs": [
             {
               "job_id": "1778589331171x831632718065827800",
-              "job_title": "Poland _ Customer Value Manager _ Sourcing support",
-              "contacted": 15,
+              "job_title": "Poland _ Supporting other TAs",
+              "contacted": 19,
               "actual_screens": 5,
               "ats": 3,
               "offered": 0,
@@ -1289,7 +1298,7 @@
           "_jobs": [
             {
               "job_id": "1778589331171x831632718065827800",
-              "job_title": "Poland _ Customer Value Manager _ Sourcing support",
+              "job_title": "Poland _ Supporting other TAs",
               "contacted": 42,
               "actual_screens": 1,
               "ats": 0,
@@ -1718,7 +1727,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 23,
+            "actual": 25,
             "target": 70.0
           },
           "Actual Screens": {
@@ -1733,7 +1742,7 @@
             {
               "job_id": "1778673333753x755455990320857100",
               "job_title": "Engineering Manager France, Kristina",
-              "contacted": 21,
+              "contacted": 23,
               "actual_screens": 1,
               "ats": 1,
               "offered": 0,
@@ -2004,7 +2013,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 62,
+            "actual": 81,
             "target": 70.0
           },
           "Actual Screens": {
@@ -2028,7 +2037,7 @@
             {
               "job_id": "1772187627387x288515927427776500",
               "job_title": "Backend Engineer II (Chene)",
-              "contacted": 11,
+              "contacted": 30,
               "actual_screens": 1,
               "ats": 1,
               "offered": 1,
@@ -2528,7 +2537,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 94,
+            "actual": 113,
             "target": 200.0
           },
           "Actual Screens": {
@@ -2550,18 +2559,18 @@
               "hired": 0
             },
             {
-              "job_id": "1772614005813x477540619595546600",
-              "job_title": "iOS Engineer - IC3 (Sam)",
-              "contacted": 28,
+              "job_id": "1772187627387x288515927427776500",
+              "job_title": "Backend Engineer II (Chene)",
+              "contacted": 29,
               "actual_screens": 0,
               "ats": 0,
               "offered": 0,
               "hired": 0
             },
             {
-              "job_id": "1772187627387x288515927427776500",
-              "job_title": "Backend Engineer II (Chene)",
-              "contacted": 10,
+              "job_id": "1772614005813x477540619595546600",
+              "job_title": "iOS Engineer - IC3 (Sam)",
+              "contacted": 28,
               "actual_screens": 0,
               "ats": 0,
               "offered": 0,
@@ -3175,7 +3184,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 49,
+            "actual": 51,
             "target": 100.0
           },
           "Actual Screens": {
@@ -3190,7 +3199,7 @@
             {
               "job_id": "1778673333753x755455990320857100",
               "job_title": "Engineering Manager France, Kristina",
-              "contacted": 21,
+              "contacted": 23,
               "actual_screens": 0,
               "ats": 0,
               "offered": 0,
@@ -3346,8 +3355,8 @@
               "hired": 0
             },
             {
-              "job_id": "1778673333753x755455990320857100",
-              "job_title": "Engineering Manager France, Kristina",
+              "job_id": "1773915221899x731095116844892200",
+              "job_title": "Senior IOS Engineer Paris",
               "contacted": 0,
               "actual_screens": 1,
               "ats": 1,
@@ -3355,8 +3364,8 @@
               "hired": 0
             },
             {
-              "job_id": "1773915221899x731095116844892200",
-              "job_title": "Senior IOS Engineer Paris",
+              "job_id": "1778673333753x755455990320857100",
+              "job_title": "Engineering Manager France, Kristina",
               "contacted": 0,
               "actual_screens": 1,
               "ats": 1,
