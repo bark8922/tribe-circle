@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-20T23:12:38.212173Z",
+  "generated_at": "2026-05-21T03:37:02.199111Z",
   "source": "/tmp/sf.json",
   "periods": {
     "this_week": {
@@ -8,7 +8,7 @@
       "start": "2026-05-18",
       "end": "2026-05-24",
       "iso_week": 21,
-      "elapsed_pct": 0.429
+      "elapsed_pct": 0.571
     },
     "last_week": {
       "label": "Last week",
