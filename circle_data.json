@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-21T07:52:04.646389Z",
+  "generated_at": "2026-05-21T11:23:56.063869Z",
   "source": "/tmp/sf.json",
   "periods": {
     "this_week": {
@@ -927,11 +927,11 @@
             "target": 70.0
           },
           "Actual Screens": {
-            "actual": 6,
+            "actual": 11,
             "target": 17.0
           },
           "Moved to ATS": {
-            "actual": 2,
+            "actual": 4,
             "target": 7.0
           },
           "_jobs": [
@@ -939,7 +939,7 @@
               "job_id": "1736934796460x763481035954192400",
               "job_title": "Fullstack Engineer",
               "contacted": 24,
-              "actual_screens": 4,
+              "actual_screens": 6,
               "ats": 1,
               "offered": 0,
               "hired": 0
@@ -948,8 +948,8 @@
               "job_id": "1770882047922x655070271851987000",
               "job_title": "Security & Compliance Engineer",
               "contacted": 2,
-              "actual_screens": 1,
-              "ats": 1,
+              "actual_screens": 2,
+              "ats": 2,
               "offered": 0,
               "hired": 0
             },
@@ -957,8 +957,8 @@
               "job_id": "1766484364452x686009847116464100",
               "job_title": "Machine Learning Engineer",
               "contacted": 0,
-              "actual_screens": 1,
-              "ats": 0,
+              "actual_screens": 3,
+              "ats": 1,
               "offered": 0,
               "hired": 0
             }
@@ -1628,7 +1628,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 2,
+            "actual": 13,
             "target": 70.0
           },
           "Actual Screens": {
@@ -1640,6 +1640,15 @@
             "target": 10.0
           },
           "_jobs": [
+            {
+              "job_id": "1779287502590x544398473900326900",
+              "job_title": "Sr Platform Engineer - Contractor",
+              "contacted": 11,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
             {
               "job_id": "1775211650509x258412021772451840",
               "job_title": "Principal Quality engineer",
@@ -1800,7 +1809,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 46,
+            "actual": 76,
             "target": 70.0
           },
           "Actual Screens": {
@@ -1815,9 +1824,18 @@
             {
               "job_id": "1778673333753x755455990320857100",
               "job_title": "Engineering Manager France, Kristina",
-              "contacted": 44,
+              "contacted": 65,
               "actual_screens": 1,
               "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778673284727x519021825440350200",
+              "job_title": "Engineering Manager T&S Kristina, Berlin",
+              "contacted": 9,
+              "actual_screens": 0,
+              "ats": 0,
               "offered": 0,
               "hired": 0
             },
@@ -3320,7 +3338,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 72,
+            "actual": 113,
             "target": 100.0
           },
           "Actual Screens": {
@@ -3335,7 +3353,7 @@
             {
               "job_id": "1778673333753x755455990320857100",
               "job_title": "Engineering Manager France, Kristina",
-              "contacted": 44,
+              "contacted": 65,
               "actual_screens": 0,
               "ats": 0,
               "offered": 0,
@@ -3355,6 +3373,24 @@
               "job_title": "Senior Technical Account Manager, EMEA",
               "contacted": 11,
               "actual_screens": 1,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1779287502590x544398473900326900",
+              "job_title": "Sr Platform Engineer - Contractor",
+              "contacted": 11,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778673284727x519021825440350200",
+              "job_title": "Engineering Manager T&S Kristina, Berlin",
+              "contacted": 9,
+              "actual_screens": 0,
               "ats": 0,
               "offered": 0,
               "hired": 0
@@ -3622,7 +3658,7 @@
             "target": 120.0
           },
           "Actual Screens": {
-            "actual": 3,
+            "actual": 4,
             "target": 7.0
           },
           "Moved to ATS": {
@@ -3661,7 +3697,7 @@
               "job_id": "1736934796460x763481035954192400",
               "job_title": "Fullstack Engineer",
               "contacted": 20,
-              "actual_screens": 1,
+              "actual_screens": 2,
               "ats": 0,
               "offered": 0,
               "hired": 0
