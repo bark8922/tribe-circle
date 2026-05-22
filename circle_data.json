@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-22T07:43:44.676631Z",
+  "generated_at": "2026-05-22T10:50:26.402601Z",
   "source": "/tmp/sf.json",
   "periods": {
     "this_week": {
@@ -459,32 +459,32 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 73,
+            "actual": 77,
             "target": 50.0
           },
           "Actual Screens": {
-            "actual": 6,
+            "actual": 10,
             "target": 15.0
           },
           "Moved to ATS": {
-            "actual": 5,
+            "actual": 6,
             "target": 8.0
           },
           "_jobs": [
             {
               "job_id": "1776662305695x867664369647616000",
               "job_title": "Key Account Manager (Malta)",
-              "contacted": 67,
-              "actual_screens": 0,
-              "ats": 0,
+              "contacted": 69,
+              "actual_screens": 2,
+              "ats": 1,
               "offered": 0,
               "hired": 0
             },
             {
               "job_id": "1776662016241x890569544355020800",
               "job_title": "Ops Excellence Specialist (GEO)",
-              "contacted": 3,
-              "actual_screens": 3,
+              "contacted": 4,
+              "actual_screens": 4,
               "ats": 2,
               "offered": 0,
               "hired": 0
@@ -506,6 +506,15 @@
               "ats": 1,
               "offered": 1,
               "hired": 1
+            },
+            {
+              "job_id": "1776662370563x570920990827085800",
+              "job_title": "Account Management Lead",
+              "contacted": 1,
+              "actual_screens": 1,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
             }
           ]
         },
@@ -954,11 +963,11 @@
             "target": 70.0
           },
           "Actual Screens": {
-            "actual": 12,
+            "actual": 13,
             "target": 17.0
           },
           "Moved to ATS": {
-            "actual": 4,
+            "actual": 5,
             "target": 7.0
           },
           "_jobs": [
@@ -984,8 +993,8 @@
               "job_id": "1770882047922x655070271851987000",
               "job_title": "Security & Compliance Engineer",
               "contacted": 2,
-              "actual_screens": 2,
-              "ats": 2,
+              "actual_screens": 3,
+              "ats": 3,
               "offered": 0,
               "hired": 0
             }
@@ -1637,7 +1646,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 15,
+            "actual": 25,
             "target": 70.0
           },
           "Actual Screens": {
@@ -1652,7 +1661,7 @@
             {
               "job_id": "1779287502590x544398473900326900",
               "job_title": "Sr Platform Engineer - Contractor",
-              "contacted": 13,
+              "contacted": 23,
               "actual_screens": 0,
               "ats": 0,
               "offered": 0,
@@ -3356,7 +3365,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 137,
+            "actual": 147,
             "target": 100.0
           },
           "Actual Screens": {
@@ -3387,18 +3396,18 @@
               "hired": 0
             },
             {
-              "job_id": "1775551815119x528177390986985500",
-              "job_title": "Enterprise Account Executive - Berlin",
-              "contacted": 17,
+              "job_id": "1779287502590x544398473900326900",
+              "job_title": "Sr Platform Engineer - Contractor",
+              "contacted": 23,
               "actual_screens": 0,
               "ats": 0,
               "offered": 0,
               "hired": 0
             },
             {
-              "job_id": "1779287502590x544398473900326900",
-              "job_title": "Sr Platform Engineer - Contractor",
-              "contacted": 13,
+              "job_id": "1775551815119x528177390986985500",
+              "job_title": "Enterprise Account Executive - Berlin",
+              "contacted": 17,
               "actual_screens": 0,
               "ats": 0,
               "offered": 0,
