@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-22T14:37:19.033386Z",
+  "generated_at": "2026-05-22T17:50:36.398752Z",
   "source": "/tmp/sf.json",
   "periods": {
     "this_week": {
@@ -3884,8 +3884,8 @@
               "hired": 0
             },
             {
-              "job_id": "1778238210297x617135774419124200",
-              "job_title": "Senior Backend Engineer, Platform Team - Berlin (Kristina)",
+              "job_id": "1766484364452x686009847116464100",
+              "job_title": "Machine Learning Engineer",
               "contacted": 0,
               "actual_screens": 1,
               "ats": 0,
@@ -3893,8 +3893,8 @@
               "hired": 0
             },
             {
-              "job_id": "1766484364452x686009847116464100",
-              "job_title": "Machine Learning Engineer",
+              "job_id": "1778238210297x617135774419124200",
+              "job_title": "Senior Backend Engineer, Platform Team - Berlin (Kristina)",
               "contacted": 0,
               "actual_screens": 1,
               "ats": 0,
