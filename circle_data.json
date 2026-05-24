@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-24T11:16:07.004381Z",
+  "generated_at": "2026-05-24T13:24:21.146568Z",
   "source": "/tmp/sf.json",
   "periods": {
     "this_week": {
@@ -1311,7 +1311,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 40,
+            "actual": 41,
             "target": 100.0
           },
           "Actual Screens": {
@@ -1326,7 +1326,7 @@
             {
               "job_id": "1773662334924x767557350958301200",
               "job_title": "Launcher Associate, UK",
-              "contacted": 34,
+              "contacted": 35,
               "actual_screens": 11,
               "ats": 6,
               "offered": 0,
@@ -2291,11 +2291,11 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 99,
+            "actual": 100,
             "target": 70.0
           },
           "Actual Screens": {
-            "actual": 7,
+            "actual": 10,
             "target": 15.0
           },
           "Moved to ATS": {
@@ -2307,7 +2307,7 @@
               "job_id": "1772614005813x477540619595546600",
               "job_title": "iOS Engineer - IC3 (Sam)",
               "contacted": 70,
-              "actual_screens": 6,
+              "actual_screens": 8,
               "ats": 0,
               "offered": 0,
               "hired": 1
@@ -2315,8 +2315,8 @@
             {
               "job_id": "1779196393064x911687372396822500",
               "job_title": "iOS Engineer - IC4 (Sam)",
-              "contacted": 29,
-              "actual_screens": 1,
+              "contacted": 30,
+              "actual_screens": 2,
               "ats": 1,
               "offered": 0,
               "hired": 0
@@ -2824,7 +2824,7 @@
             "target": 200.0
           },
           "Actual Screens": {
-            "actual": 11,
+            "actual": 13,
             "target": 7.0
           },
           "Moved to ATS": {
@@ -2845,7 +2845,7 @@
               "job_id": "1772614005813x477540619595546600",
               "job_title": "iOS Engineer - IC3 (Sam)",
               "contacted": 56,
-              "actual_screens": 4,
+              "actual_screens": 6,
               "ats": 0,
               "offered": 0,
               "hired": 0
