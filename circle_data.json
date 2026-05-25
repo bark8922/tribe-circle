@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-25T03:43:02.091280Z",
+  "generated_at": "2026-05-25T08:20:38.742810Z",
   "source": "/tmp/sf.json",
   "periods": {
     "this_week": {
@@ -44,18 +44,55 @@
         },
         "last_week": {
           "Outreach Contacted": {
-            "actual": 0,
+            "actual": 67,
             "target": 100.0
           },
           "Actual Screens": {
-            "actual": 0,
+            "actual": 8,
             "target": 0.0
           },
           "Moved to ATS": {
-            "actual": 0,
+            "actual": 4,
             "target": 0.0
           },
-          "_jobs": []
+          "_jobs": [
+            {
+              "job_id": "1774807489489x336632016352051200",
+              "job_title": "Backend platform Engineer",
+              "contacted": 35,
+              "actual_screens": 1,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1768341701471x476904751187623940",
+              "job_title": "Senior Backend Engineer Fintech I5",
+              "contacted": 31,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778440569953x667365067168940000",
+              "job_title": "Go/ Python I4",
+              "contacted": 1,
+              "actual_screens": 2,
+              "ats": 2,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1774807341830x214952617820028930",
+              "job_title": "Engineering Manager",
+              "contacted": 0,
+              "actual_screens": 5,
+              "ats": 2,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
         }
       }
     },
@@ -210,18 +247,64 @@
         },
         "last_week": {
           "Outreach Contacted": {
-            "actual": 0,
+            "actual": 26,
             "target": 120.0
           },
           "Actual Screens": {
-            "actual": 0,
+            "actual": 13,
             "target": 19.0
           },
           "Moved to ATS": {
-            "actual": 0,
+            "actual": 8,
             "target": 10.0
           },
-          "_jobs": []
+          "_jobs": [
+            {
+              "job_id": "1776430744626x648206653244833800",
+              "job_title": "Supply Chain Manager Cyprus",
+              "contacted": 10,
+              "actual_screens": 5,
+              "ats": 3,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778592510049x208416889183141900",
+              "job_title": "Area Manager - Malta",
+              "contacted": 8,
+              "actual_screens": 4,
+              "ats": 3,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1775659269113x432295379987857400",
+              "job_title": "Category Manager - Cyprus",
+              "contacted": 4,
+              "actual_screens": 2,
+              "ats": 2,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1774348446979x233416804899225600",
+              "job_title": "Store Manager - Almaty",
+              "contacted": 2,
+              "actual_screens": 1,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1774870532938x227731854049935360",
+              "job_title": "Store Manager - Tbilisi",
+              "contacted": 2,
+              "actual_screens": 1,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
         }
       }
     },
@@ -1329,8 +1412,8 @@
               "contacted": 0,
               "actual_screens": 6,
               "ats": 5,
-              "offered": 0,
-              "hired": 0
+              "offered": 1,
+              "hired": 1
             }
           ]
         }
@@ -1675,24 +1758,24 @@
         },
         "last_week": {
           "Outreach Contacted": {
-            "actual": 100,
+            "actual": 103,
             "target": 70.0
           },
           "Actual Screens": {
-            "actual": 10,
+            "actual": 14,
             "target": 15.0
           },
           "Moved to ATS": {
-            "actual": 1,
+            "actual": 4,
             "target": 10.0
           },
           "_jobs": [
             {
               "job_id": "1772614005813x477540619595546600",
               "job_title": "iOS Engineer - IC3 (Sam)",
-              "contacted": 70,
-              "actual_screens": 8,
-              "ats": 0,
+              "contacted": 72,
+              "actual_screens": 11,
+              "ats": 2,
               "offered": 0,
               "hired": 1
             },
@@ -1703,6 +1786,15 @@
               "actual_screens": 2,
               "ats": 1,
               "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1775139786221x517847899092287500",
+              "job_title": "Data Internship",
+              "contacted": 1,
+              "actual_screens": 1,
+              "ats": 1,
+              "offered": 1,
               "hired": 0
             }
           ]
@@ -2050,7 +2142,7 @@
             "target": 200.0
           },
           "Actual Screens": {
-            "actual": 13,
+            "actual": 14,
             "target": 7.0
           },
           "Moved to ATS": {
@@ -2071,7 +2163,7 @@
               "job_id": "1772614005813x477540619595546600",
               "job_title": "iOS Engineer - IC3 (Sam)",
               "contacted": 56,
-              "actual_screens": 6,
+              "actual_screens": 7,
               "ats": 0,
               "offered": 0,
               "hired": 0
@@ -2630,8 +2722,8 @@
               "contacted": 0,
               "actual_screens": 6,
               "ats": 5,
-              "offered": 0,
-              "hired": 0
+              "offered": 1,
+              "hired": 1
             },
             {
               "job_id": "1775125002560x755091190743302100",
@@ -2701,11 +2793,11 @@
             "target": 120.0
           },
           "Actual Screens": {
-            "actual": 13,
+            "actual": 14,
             "target": 7.0
           },
           "Moved to ATS": {
-            "actual": 3,
+            "actual": 4,
             "target": 4.0
           },
           "_jobs": [
@@ -2722,8 +2814,8 @@
               "job_id": "1778683338804x926854333803266000",
               "job_title": "Fullstack React (Bucharest)",
               "contacted": 42,
-              "actual_screens": 0,
-              "ats": 0,
+              "actual_screens": 1,
+              "ats": 1,
               "offered": 0,
               "hired": 0
             },
@@ -2979,11 +3071,11 @@
             "target": 100.0
           },
           "Actual Screens": {
-            "actual": 0,
+            "actual": 3,
             "target": 7.0
           },
           "Moved to ATS": {
-            "actual": 0,
+            "actual": 2,
             "target": 4.0
           },
           "_jobs": [
@@ -2991,8 +3083,8 @@
               "job_id": "1757593045815x380825256184774660",
               "job_title": "Mid Software Engineer - Backend",
               "contacted": 151,
-              "actual_screens": 0,
-              "ats": 0,
+              "actual_screens": 3,
+              "ats": 2,
               "offered": 0,
               "hired": 0
             },
