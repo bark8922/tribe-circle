@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-28T07:57:07.014230Z",
+  "generated_at": "2026-05-28T11:42:09.274957Z",
   "source": "/tmp/sf.json",
   "periods": {
     "this_week": {
@@ -461,18 +461,28 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 0,
+            "actual": 3,
             "target": 50.0
           },
           "Actual Screens": {
-            "actual": 0,
+            "actual": 3,
             "target": 15.0
           },
           "Moved to ATS": {
-            "actual": 0,
+            "actual": 2,
             "target": 8.0
           },
-          "_jobs": []
+          "_jobs": [
+            {
+              "job_id": "1776662370563x570920990827085800",
+              "job_title": "Account Management Lead",
+              "contacted": 3,
+              "actual_screens": 3,
+              "ats": 2,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
         },
         "last_week": {
           "Outreach Contacted": {
@@ -951,7 +961,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 35,
+            "actual": 36,
             "target": 70.0
           },
           "Actual Screens": {
@@ -975,7 +985,7 @@
             {
               "job_id": "1766484364452x686009847116464100",
               "job_title": "Machine Learning Engineer",
-              "contacted": 10,
+              "contacted": 11,
               "actual_screens": 1,
               "ats": 1,
               "offered": 0,
@@ -1800,7 +1810,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 93,
+            "actual": 125,
             "target": 70.0
           },
           "Actual Screens": {
@@ -1824,7 +1834,7 @@
             {
               "job_id": "1778673284727x519021825440350200",
               "job_title": "Engineering Manager T&S Kristina, Berlin",
-              "contacted": 10,
+              "contacted": 42,
               "actual_screens": 3,
               "ats": 1,
               "offered": 0,
@@ -3285,7 +3295,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 80,
+            "actual": 112,
             "target": 160.0
           },
           "Actual Screens": {
@@ -3309,7 +3319,7 @@
             {
               "job_id": "1778673284727x519021825440350200",
               "job_title": "Engineering Manager T&S Kristina, Berlin",
-              "contacted": 10,
+              "contacted": 42,
               "actual_screens": 2,
               "ats": 1,
               "offered": 0,
@@ -3646,7 +3656,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 120,
+            "actual": 125,
             "target": 180.0
           },
           "Actual Screens": {
@@ -3661,7 +3671,7 @@
             {
               "job_id": "1778683338804x926854333803266000",
               "job_title": "Fullstack React (Bucharest)",
-              "contacted": 38,
+              "contacted": 43,
               "actual_screens": 2,
               "ats": 1,
               "offered": 0,
@@ -3855,15 +3865,6 @@
               "hired": 0
             },
             {
-              "job_id": "1766484364452x686009847116464100",
-              "job_title": "Machine Learning Engineer",
-              "contacted": 0,
-              "actual_screens": 1,
-              "ats": 0,
-              "offered": 0,
-              "hired": 0
-            },
-            {
               "job_id": "1778238210297x617135774419124200",
               "job_title": "Senior Backend Engineer, Platform Team - Berlin (Kristina)",
               "contacted": 0,
@@ -3875,6 +3876,15 @@
             {
               "job_id": "1778238250267x806800061349494800",
               "job_title": "Senior Backend Engineer, Platform Team - Berlin (Wlad)",
+              "contacted": 0,
+              "actual_screens": 1,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1766484364452x686009847116464100",
+              "job_title": "Machine Learning Engineer",
               "contacted": 0,
               "actual_screens": 1,
               "ats": 0,
