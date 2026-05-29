@@ -270,9 +270,7 @@
       });
     }
     document.getElementById('period-sel').addEventListener('change', e => {
-      const u = new URL(window.location.href);
-      u.searchParams.set('period', e.target.value);
-      window.history.replaceState({}, '', u);
+      // intentionally do NOT persist period to URL — page always lands on this_week
       render(data, memberEmail, e.target.value);
     });
   }
@@ -315,7 +313,7 @@
     .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
     .then(data => {
       const memberParam = (getParam('member') || '').toLowerCase();
-      const period = getParam('period') || 'this_week';
+      const period = 'this_week'; // always default to current week per Blake 2026-05-26
       const isAdmin = !!getParam('admin');
       let memberKey;
       if (memberParam && data.members[memberParam]) {
