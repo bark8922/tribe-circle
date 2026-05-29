@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-29T07:55:01.606072Z",
+  "generated_at": "2026-05-29T08:55:19.819575Z",
   "source": "/tmp/sf.json",
   "periods": {
     "this_week": {
@@ -263,15 +263,6 @@
               "hired": 0
             },
             {
-              "job_id": "1762943671502x870278496041042000",
-              "job_title": "Store Manager - Athens",
-              "contacted": 1,
-              "actual_screens": 1,
-              "ats": 1,
-              "offered": 1,
-              "hired": 1
-            },
-            {
               "job_id": "1774348446979x233416804899225600",
               "job_title": "Store Manager - Almaty",
               "contacted": 1,
@@ -283,6 +274,15 @@
             {
               "job_id": "1779794569993x204519145452339200",
               "job_title": "Content Associate - Baku",
+              "contacted": 1,
+              "actual_screens": 1,
+              "ats": 1,
+              "offered": 1,
+              "hired": 1
+            },
+            {
+              "job_id": "1762943671502x870278496041042000",
+              "job_title": "Store Manager - Athens",
               "contacted": 1,
               "actual_screens": 1,
               "ats": 1,
@@ -470,15 +470,15 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 3,
+            "actual": 5,
             "target": 50.0
           },
           "Actual Screens": {
-            "actual": 3,
+            "actual": 5,
             "target": 15.0
           },
           "Moved to ATS": {
-            "actual": 2,
+            "actual": 3,
             "target": 8.0
           },
           "_jobs": [
@@ -488,6 +488,15 @@
               "contacted": 3,
               "actual_screens": 3,
               "ats": 2,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1776662016241x890569544355020800",
+              "job_title": "Ops Excellence Specialist (GEO)",
+              "contacted": 2,
+              "actual_screens": 2,
+              "ats": 1,
               "offered": 0,
               "hired": 0
             }
@@ -1855,7 +1864,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 165,
+            "actual": 171,
             "target": 70.0
           },
           "Actual Screens": {
@@ -1888,7 +1897,7 @@
             {
               "job_id": "1778238210297x617135774419124200",
               "job_title": "Senior Backend Engineer, Platform Team - Berlin (Kristina)",
-              "contacted": 32,
+              "contacted": 38,
               "actual_screens": 0,
               "ats": 0,
               "offered": 0,
@@ -3198,7 +3207,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 57,
+            "actual": 77,
             "target": 100.0
           },
           "Actual Screens": {
@@ -3224,6 +3233,15 @@
               "job_title": "Analytics Manager (AVIV)",
               "contacted": 21,
               "actual_screens": 1,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1779975417411x145223316330774530",
+              "job_title": "Senior Talent Aquisition Partner (Polish speaker) - Immediate Start",
+              "contacted": 20,
+              "actual_screens": 0,
               "ats": 0,
               "offered": 0,
               "hired": 0
@@ -3358,7 +3376,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 155,
+            "actual": 161,
             "target": 140.0
           },
           "Actual Screens": {
@@ -3391,7 +3409,7 @@
             {
               "job_id": "1778238210297x617135774419124200",
               "job_title": "Senior Backend Engineer, Platform Team - Berlin (Kristina)",
-              "contacted": 32,
+              "contacted": 38,
               "actual_screens": 0,
               "ats": 0,
               "offered": 0,
@@ -4003,7 +4021,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 90,
+            "actual": 214,
             "target": 110.0
           },
           "Actual Screens": {
@@ -4015,6 +4033,15 @@
             "target": 4.0
           },
           "_jobs": [
+            {
+              "job_id": "1779368342428x874602515472056300",
+              "job_title": "Senior TA (High Volume) - Dutch",
+              "contacted": 124,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
             {
               "job_id": "1779445203229x683558468490100700",
               "job_title": "Category Manager, Czechia, Q2 2026",
@@ -4064,7 +4091,7 @@
         },
         "last_week": {
           "Outreach Contacted": {
-            "actual": 101,
+            "actual": 153,
             "target": 100.0
           },
           "Actual Screens": {
@@ -4076,6 +4103,15 @@
             "target": 4.0
           },
           "_jobs": [
+            {
+              "job_id": "1779368342428x874602515472056300",
+              "job_title": "Senior TA (High Volume) - Dutch",
+              "contacted": 52,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
             {
               "job_id": "1777987322411x102512047924183040",
               "job_title": "Senior Fullstack Engineer - Stuttgart",
