@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-31T10:15:16.761537Z",
+  "generated_at": "2026-05-31T13:43:15.093612Z",
   "source": "/tmp/sf.json",
   "periods": {
     "this_week": {
@@ -1568,23 +1568,68 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 7,
+            "actual": 57,
             "target": 100.0
           },
           "Actual Screens": {
-            "actual": 7,
+            "actual": 57,
             "target": 15.0
           },
           "Moved to ATS": {
-            "actual": 0,
+            "actual": 3,
             "target": 8.0
           },
           "_jobs": [
+            {
+              "job_id": "1763393512767x549692745513173000",
+              "job_title": "Forward Deployed Engineer",
+              "contacted": 33,
+              "actual_screens": 33,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1780217990838x496680852749811700",
+              "job_title": "SAP Integration Engineer",
+              "contacted": 14,
+              "actual_screens": 14,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
             {
               "job_id": "1780195232703x520525683101794300",
               "job_title": "GTM Engineer",
               "contacted": 7,
               "actual_screens": 7,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1773541817458x207812467522011140",
+              "job_title": "Deployment Strategist",
+              "contacted": 1,
+              "actual_screens": 1,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778514590060x785602757326536700",
+              "job_title": "Senior IS&T Governance Partner",
+              "contacted": 1,
+              "actual_screens": 1,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1774637857479x528730995273236500",
+              "job_title": "Forward Deployed Engineer, VoIP",
+              "contacted": 1,
+              "actual_screens": 1,
               "ats": 0,
               "offered": 0,
               "hired": 0
@@ -4048,8 +4093,8 @@
               "hired": 0
             },
             {
-              "job_id": "1778238250267x806800061349494800",
-              "job_title": "Senior Backend Engineer, Platform Team - Berlin (Wlad)",
+              "job_id": "1736934796460x763481035954192400",
+              "job_title": "Fullstack Engineer",
               "contacted": 0,
               "actual_screens": 1,
               "ats": 0,
@@ -4057,8 +4102,8 @@
               "hired": 0
             },
             {
-              "job_id": "1736934796460x763481035954192400",
-              "job_title": "Fullstack Engineer",
+              "job_id": "1778238250267x806800061349494800",
+              "job_title": "Senior Backend Engineer, Platform Team - Berlin (Wlad)",
               "contacted": 0,
               "actual_screens": 1,
               "ats": 0,
@@ -4181,6 +4226,15 @@
               "hired": 0
             },
             {
+              "job_id": "1766484364452x686009847116464100",
+              "job_title": "Machine Learning Engineer",
+              "contacted": 0,
+              "actual_screens": 1,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
               "job_id": "1778238210297x617135774419124200",
               "job_title": "Senior Backend Engineer, Platform Team - Berlin (Kristina)",
               "contacted": 0,
@@ -4192,15 +4246,6 @@
             {
               "job_id": "1778238250267x806800061349494800",
               "job_title": "Senior Backend Engineer, Platform Team - Berlin (Wlad)",
-              "contacted": 0,
-              "actual_screens": 1,
-              "ats": 0,
-              "offered": 0,
-              "hired": 0
-            },
-            {
-              "job_id": "1766484364452x686009847116464100",
-              "job_title": "Machine Learning Engineer",
               "contacted": 0,
               "actual_screens": 1,
               "ats": 0,
