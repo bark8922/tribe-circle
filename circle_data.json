@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-31T03:43:58.933407Z",
+  "generated_at": "2026-05-31T07:45:19.136218Z",
   "source": "/tmp/sf.json",
   "periods": {
     "this_week": {
@@ -263,15 +263,6 @@
               "hired": 0
             },
             {
-              "job_id": "1762943671502x870278496041042000",
-              "job_title": "Store Manager - Athens",
-              "contacted": 1,
-              "actual_screens": 1,
-              "ats": 1,
-              "offered": 1,
-              "hired": 1
-            },
-            {
               "job_id": "1774348446979x233416804899225600",
               "job_title": "Store Manager - Almaty",
               "contacted": 1,
@@ -283,6 +274,15 @@
             {
               "job_id": "1779794569993x204519145452339200",
               "job_title": "Content Associate - Baku",
+              "contacted": 1,
+              "actual_screens": 1,
+              "ats": 1,
+              "offered": 1,
+              "hired": 1
+            },
+            {
+              "job_id": "1762943671502x870278496041042000",
+              "job_title": "Store Manager - Athens",
               "contacted": 1,
               "actual_screens": 1,
               "ats": 1,
@@ -1042,11 +1042,11 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 38,
+            "actual": 39,
             "target": 70.0
           },
           "Actual Screens": {
-            "actual": 12,
+            "actual": 15,
             "target": 17.0
           },
           "Moved to ATS": {
@@ -1058,7 +1058,7 @@
               "job_id": "1770882047922x655070271851987000",
               "job_title": "Security & Compliance Engineer",
               "contacted": 22,
-              "actual_screens": 7,
+              "actual_screens": 9,
               "ats": 2,
               "offered": 0,
               "hired": 0
@@ -1067,7 +1067,7 @@
               "job_id": "1766484364452x686009847116464100",
               "job_title": "Machine Learning Engineer",
               "contacted": 11,
-              "actual_screens": 4,
+              "actual_screens": 5,
               "ats": 1,
               "offered": 0,
               "hired": 0
@@ -1075,7 +1075,7 @@
             {
               "job_id": "1736934796460x763481035954192400",
               "job_title": "Fullstack Engineer",
-              "contacted": 5,
+              "contacted": 6,
               "actual_screens": 1,
               "ats": 0,
               "offered": 0,
@@ -1568,18 +1568,28 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 0,
+            "actual": 7,
             "target": 100.0
           },
           "Actual Screens": {
-            "actual": 0,
+            "actual": 7,
             "target": 15.0
           },
           "Moved to ATS": {
             "actual": 0,
             "target": 8.0
           },
-          "_jobs": []
+          "_jobs": [
+            {
+              "job_id": "1780195232703x520525683101794300",
+              "job_title": "GTM Engineer",
+              "contacted": 7,
+              "actual_screens": 7,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
         },
         "last_week": {
           "Outreach Contacted": {
