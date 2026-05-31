@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-31T13:43:15.093612Z",
+  "generated_at": "2026-05-31T15:17:13.665360Z",
   "source": "/tmp/sf.json",
   "periods": {
     "this_week": {
@@ -263,6 +263,15 @@
               "hired": 0
             },
             {
+              "job_id": "1762943671502x870278496041042000",
+              "job_title": "Store Manager - Athens",
+              "contacted": 1,
+              "actual_screens": 1,
+              "ats": 1,
+              "offered": 1,
+              "hired": 1
+            },
+            {
               "job_id": "1774348446979x233416804899225600",
               "job_title": "Store Manager - Almaty",
               "contacted": 1,
@@ -274,15 +283,6 @@
             {
               "job_id": "1779794569993x204519145452339200",
               "job_title": "Content Associate - Baku",
-              "contacted": 1,
-              "actual_screens": 1,
-              "ats": 1,
-              "offered": 1,
-              "hired": 1
-            },
-            {
-              "job_id": "1762943671502x870278496041042000",
-              "job_title": "Store Manager - Athens",
               "contacted": 1,
               "actual_screens": 1,
               "ats": 1,
@@ -4093,8 +4093,8 @@
               "hired": 0
             },
             {
-              "job_id": "1736934796460x763481035954192400",
-              "job_title": "Fullstack Engineer",
+              "job_id": "1778238250267x806800061349494800",
+              "job_title": "Senior Backend Engineer, Platform Team - Berlin (Wlad)",
               "contacted": 0,
               "actual_screens": 1,
               "ats": 0,
@@ -4102,8 +4102,8 @@
               "hired": 0
             },
             {
-              "job_id": "1778238250267x806800061349494800",
-              "job_title": "Senior Backend Engineer, Platform Team - Berlin (Wlad)",
+              "job_id": "1736934796460x763481035954192400",
+              "job_title": "Fullstack Engineer",
               "contacted": 0,
               "actual_screens": 1,
               "ats": 0,
@@ -4226,15 +4226,6 @@
               "hired": 0
             },
             {
-              "job_id": "1766484364452x686009847116464100",
-              "job_title": "Machine Learning Engineer",
-              "contacted": 0,
-              "actual_screens": 1,
-              "ats": 0,
-              "offered": 0,
-              "hired": 0
-            },
-            {
               "job_id": "1778238210297x617135774419124200",
               "job_title": "Senior Backend Engineer, Platform Team - Berlin (Kristina)",
               "contacted": 0,
@@ -4246,6 +4237,15 @@
             {
               "job_id": "1778238250267x806800061349494800",
               "job_title": "Senior Backend Engineer, Platform Team - Berlin (Wlad)",
+              "contacted": 0,
+              "actual_screens": 1,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1766484364452x686009847116464100",
+              "job_title": "Machine Learning Engineer",
               "contacted": 0,
               "actual_screens": 1,
               "ats": 0,
