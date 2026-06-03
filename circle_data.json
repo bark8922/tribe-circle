@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-03T16:47:12.070206Z",
+  "generated_at": "2026-06-03T20:54:37.553953Z",
   "source": "/tmp/sf.json",
   "periods": {
     "this_week": {
@@ -3981,8 +3981,8 @@
               "hired": 0
             },
             {
-              "job_id": "1736934796460x763481035954192400",
-              "job_title": "Fullstack Engineer",
+              "job_id": "1778238250267x806800061349494800",
+              "job_title": "Senior Backend Engineer, Platform Team - Berlin (Wlad)",
               "contacted": 0,
               "actual_screens": 1,
               "ats": 0,
@@ -3990,8 +3990,8 @@
               "hired": 0
             },
             {
-              "job_id": "1778238250267x806800061349494800",
-              "job_title": "Senior Backend Engineer, Platform Team - Berlin (Wlad)",
+              "job_id": "1736934796460x763481035954192400",
+              "job_title": "Fullstack Engineer",
               "contacted": 0,
               "actual_screens": 1,
               "ats": 0,
