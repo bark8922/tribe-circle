@@ -41,7 +41,10 @@
 
   <script>
   // ---------- config ----------
-  const STAGES = ['Outreach Contacted', 'Actual Screens', 'Moved to ATS'];
+  const STAGES_TS = ['Outreach Contacted', 'Recruiter Screen', 'Actual Screens', 'Moved to ATS'];
+  const STAGES_TA = ['Outreach Contacted', 'Actual Screens', 'Moved to ATS'];
+  function stagesFor(role) { return role === 'TS' ? STAGES_TS : STAGES_TA; }
+  const STAGES = STAGES_TA; // legacy alias, fallback only
   const STATUS = {
     GOOD:   { color: '#49C356', label: 'On track',       delta: 'delta-good',  badge: '▲' },
     WATCH:  { color: '#F6C745', label: 'Watch',          delta: 'delta-watch', badge: '▼' },
@@ -149,6 +152,7 @@
   }
 
   function renderTile(stage, val, elapsedPct) {
+    if (!val) return '';
     const { actual, target } = val;
     const status = classifyStatus(actual, target, elapsedPct);
     const delta = fmtDelta(actual, target, elapsedPct);
@@ -172,10 +176,14 @@
     if (!jobs.length) return '';
     const td = 'padding:10px 12px; border-bottom:1px solid #EFEFEF;';
     const tdr = td + ' text-align:right; font-variant-numeric: tabular-nums;';
+    const showRS = member.role === 'TS';
+    const rsCell = (j) => showRS ? `<td style="${tdr}">${j.screens || 0}</td>` : '';
+    const rsHead = showRS ? '<th style="padding:10px 12px; text-align:right; font-weight:600;">Recruiter Screen</th>' : '';
     const rows = jobs.map(j => `
       <tr>
         <td style="${td}">${j.job_title}</td>
         <td style="${tdr}">${j.contacted}</td>
+        ${rsCell(j)}
         <td style="${tdr}">${j.actual_screens}</td>
         <td style="${tdr}">${j.ats}</td>
         <td style="${tdr}">${j.offered || 0}</td>
@@ -183,11 +191,13 @@
       </tr>`).join('');
     const tot = jobs.reduce((a, j) => ({
       c: a.c + j.contacted,
+      rs: a.rs + (j.screens || 0),
       s: a.s + j.actual_screens,
       t: a.t + j.ats,
       o: a.o + (j.offered || 0),
       h: a.h + (j.hired || 0),
-    }), {c:0, s:0, t:0, o:0, h:0});
+    }), {c:0, rs:0, s:0, t:0, o:0, h:0});
+    const rsTotCell = showRS ? `<td style="padding:10px 12px; text-align:right; font-variant-numeric: tabular-nums;">${tot.rs}</td>` : '';
     return `
       <div class="mt-10" style="margin-top:32px;">
         <div style="font-size:12px; font-weight:600; letter-spacing:.06em; color:#5b6470; text-transform:uppercase; margin-bottom:10px;">By job</div>
@@ -197,6 +207,7 @@
               <tr style="background:#F9F9F9; color:#5b6470; font-size:11px; letter-spacing:.04em; text-transform:uppercase;">
                 <th style="padding:10px 12px; text-align:left; font-weight:600;">Job</th>
                 <th style="padding:10px 12px; text-align:right; font-weight:600;">Contacted</th>
+                ${rsHead}
                 <th style="padding:10px 12px; text-align:right; font-weight:600;">Actual Screens</th>
                 <th style="padding:10px 12px; text-align:right; font-weight:600;">Moved to ATS</th>
                 <th style="padding:10px 12px; text-align:right; font-weight:600;">Offered</th>
@@ -208,6 +219,7 @@
               <tr style="font-weight:600; background:#FAFCFF;">
                 <td style="padding:10px 12px;">Total</td>
                 <td style="padding:10px 12px; text-align:right; font-variant-numeric: tabular-nums;">${tot.c}</td>
+                ${rsTotCell}
                 <td style="padding:10px 12px; text-align:right; font-variant-numeric: tabular-nums;">${tot.s}</td>
                 <td style="padding:10px 12px; text-align:right; font-variant-numeric: tabular-nums;">${tot.t}</td>
                 <td style="padding:10px 12px; text-align:right; font-variant-numeric: tabular-nums;">${tot.o}</td>
@@ -219,7 +231,109 @@
       </div>`;
   }
 
-  function renderLegend() {
+  // ---------- rejection-reasons donut (TS only) ----------
+  const DROPS_PALETTE = ['#534AB7','#1D9E75','#D85A30','#D4537E','#BA7517','#185FA5','#3B6D11','#888780'];
+  const DROPS_OTHER_COLOR = '#B4B2A9';
+  const DROPS_TOP_N = 6;
+
+  function aggregateDrops(rows, jobId) {
+    const filtered = jobId ? rows.filter(d => d.job_id === jobId) : rows;
+    const byReason = {};
+    for (const d of filtered) byReason[d.reason] = (byReason[d.reason] || 0) + d.drops;
+    const entries = Object.entries(byReason).sort((a, b) => b[1] - a[1]);
+    const top = entries.slice(0, DROPS_TOP_N);
+    const rest = entries.slice(DROPS_TOP_N);
+    const restTotal = rest.reduce((a, e) => a + e[1], 0);
+    const slices = top.map(([r, v], i) => ({ reason: r, value: v, color: DROPS_PALETTE[i] }));
+    if (restTotal > 0) slices.push({ reason: 'Other categories', value: restTotal, color: DROPS_OTHER_COLOR });
+    const total = entries.reduce((a, e) => a + e[1], 0);
+    return { slices, total, allEntries: entries };
+  }
+
+  function dropsDonutSvg(slices, total) {
+    if (total === 0) return '<g transform="translate(100,100)"><text text-anchor="middle" font-size="13" fill="#7b8593">no drops</text></g>';
+    let a0 = -Math.PI / 2;
+    const R = 80, r = 40;
+    const paths = slices.map(s => {
+      const frac = s.value / total;
+      const a1 = a0 + frac * Math.PI * 2;
+      const x0o = (R * Math.cos(a0)).toFixed(2), y0o = (R * Math.sin(a0)).toFixed(2);
+      const x1o = (R * Math.cos(a1)).toFixed(2), y1o = (R * Math.sin(a1)).toFixed(2);
+      const x0i = (r * Math.cos(a1)).toFixed(2), y0i = (r * Math.sin(a1)).toFixed(2);
+      const x1i = (r * Math.cos(a0)).toFixed(2), y1i = (r * Math.sin(a0)).toFixed(2);
+      const large = (a1 - a0) > Math.PI ? 1 : 0;
+      const d = 'M ' + x0o + ' ' + y0o + ' A ' + R + ' ' + R + ' 0 ' + large + ' 1 ' + x1o + ' ' + y1o + ' L ' + x0i + ' ' + y0i + ' A ' + r + ' ' + r + ' 0 ' + large + ' 0 ' + x1i + ' ' + y1i + ' Z';
+      a0 = a1;
+      return '<path d="' + d + '" fill="' + s.color + '"></path>';
+    }).join('');
+    return '<g transform="translate(100,100)">' + paths +
+      '<text x="0" y="-2" text-anchor="middle" font-size="22" font-weight="500" fill="#2C2D35">' + total + '</text>' +
+      '<text x="0" y="16" text-anchor="middle" font-size="11" fill="#7b8593">dropped</text></g>';
+  }
+
+  function dropsLegendHtml(slices, total) {
+    if (total === 0) return '<span style="color:#7b8593;">No drops in this period.</span>';
+    return slices.map(s => {
+      const pct = Math.round(100 * s.value / total);
+      return '<div style="display:flex; align-items:center; justify-content:space-between;">' +
+        '<span style="display:flex; align-items:center; gap:8px;"><span style="width:10px; height:10px; border-radius:2px; background:' + s.color + ';"></span>' + s.reason + '</span>' +
+        '<span style="color:#5b6470; font-variant-numeric: tabular-nums;">' + s.value + ' \u00b7 ' + pct + '%</span></div>';
+    }).join('');
+  }
+
+  function dropsFullListHtml(entries) {
+    if (!entries.length) return '';
+    const txt = entries.map(([r, v]) => r + ' ' + v).join(' \u00b7 ');
+    return '<span style="color:#9aa3b2;">All reasons:</span> ' + txt;
+  }
+
+  window._circleDropsState = window._circleDropsState || {};
+
+  window.updateCircleDrops = function(uid, jobId) {
+    const rows = window._circleDropsState[uid];
+    if (!rows) return;
+    const agg = aggregateDrops(rows, jobId || null);
+    const donut = document.getElementById(uid + '-donut');
+    const legend = document.getElementById(uid + '-legend');
+    const sub = document.getElementById(uid + '-sub');
+    const full = document.getElementById(uid + '-full');
+    if (donut) donut.innerHTML = dropsDonutSvg(agg.slices, agg.total);
+    if (legend) legend.innerHTML = dropsLegendHtml(agg.slices, agg.total);
+    if (sub) sub.textContent = agg.total + ' candidate' + (agg.total === 1 ? '' : 's') + ' dropped';
+    if (full) full.innerHTML = dropsFullListHtml(agg.allEntries);
+  };
+
+  function renderDrops(member, periodKey) {
+    if (member.role !== 'TS') return '';
+    const drops = (member.data && member.data[periodKey] && member.data[periodKey]._drops) || [];
+    if (!drops.length) return '';
+    const jobsOnPage = (member.data[periodKey]._jobs || []).map(j => ({ id: j.job_id, title: j.job_title }));
+    const uid = 'drops-' + Math.random().toString(36).slice(2, 8);
+    window._circleDropsState[uid] = drops;
+    const initial = aggregateDrops(drops, null);
+    const jobOptsHtml = '<option value="">All jobs</option>' +
+      jobsOnPage.map(j => '<option value="' + j.id + '">' + (j.title || '(untitled)').replace(/"/g, '&quot;') + '</option>').join('');
+    return `
+      <div class="mt-10" style="margin-top:32px;">
+        <div style="font-size:12px; font-weight:600; letter-spacing:.06em; color:#5b6470; text-transform:uppercase; margin-bottom:10px;">Why candidates dropped</div>
+        <div class="tile" style="padding:20px 22px;">
+          <div style="display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:18px; flex-wrap:wrap;">
+            <div>
+              <div style="font-size:15px; font-weight:500; color:#2C2D35; margin-bottom:2px;">Rejection reasons</div>
+              <div id="${uid}-sub" style="font-size:13px; color:#7b8593;">${initial.total} candidate${initial.total === 1 ? '' : 's'} dropped</div>
+            </div>
+            <select class="pill" style="cursor:pointer;" onchange="updateCircleDrops('${uid}', this.value)">${jobOptsHtml}</select>
+          </div>
+          <div style="display:grid; grid-template-columns:180px 1fr; gap:28px; align-items:center;">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="width:180px; height:180px;" role="img" id="${uid}-donut">${dropsDonutSvg(initial.slices, initial.total)}</svg>
+            <div id="${uid}-legend" style="display:flex; flex-direction:column; gap:8px; font-size:13px;">${dropsLegendHtml(initial.slices, initial.total)}</div>
+          </div>
+          <div id="${uid}-full" style="margin-top:18px; font-size:12px; color:#7b8593;">${dropsFullListHtml(initial.allEntries)}</div>
+        </div>
+      </div>`;
+  }
+
+    function renderLegend() {
     const items = [
       { color: STATUS.GOOD.color,  label: 'On track' },
       { color: STATUS.WATCH.color, label: 'Watch' },
@@ -257,8 +371,8 @@
     }
     member.email = memberEmail;
 
-    const tiles = STAGES.map(s => renderTile(s, member.data[periodKey][s], period.elapsed_pct)).join('');
-    const hasActuals = STAGES.some(s => (member.data[periodKey][s]?.actual || 0) > 0);
+    const tiles = stagesFor(member.role).map(s => renderTile(s, member.data[periodKey][s], period.elapsed_pct)).join('');
+    const hasActuals = stagesFor(member.role).some(s => (member.data[periodKey][s]?.actual || 0) > 0);
     const hasJobs = ((member.data[periodKey] || {})._jobs || []).length > 0;
     const isEmptyPeriod = !hasActuals && !hasJobs;
     const body = isEmptyPeriod
@@ -267,7 +381,8 @@
            <div style="font-size:13px; color:#7b8593;">Either the week hasn't started or no activity has been logged. Check back later.</div>
          </div>`
       : `<div class="grid gap-5" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr));">${tiles}</div>
-         ${renderJobs(member, periodKey)}`;
+         ${renderJobs(member, periodKey)}
+         ${renderDrops(member, periodKey)}`;
     document.getElementById('root').innerHTML = `
       ${renderHeader(member, periods, periodKey, data.members, data.generated_at)}
       ${body}
