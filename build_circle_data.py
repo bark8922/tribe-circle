@@ -29,6 +29,7 @@ from pathlib import Path
 TS_REC_SCREENS_TARGET = 10
 TS_ACTUAL_SCREENS_TARGET = 7
 TS_ATS_TARGET = 4
+TS_RECRUITER_SCREEN_TARGET = 10  # weekly target per Andrea 2026-06-04
 TS_CONTACTED_TARGET_DEFAULT = 100
 
 
@@ -155,7 +156,7 @@ def ta_targets(dash, client, ta):
 
 
 def ts_actuals_from_pd(dash, ts_name, iso_week):
-    sums = {"contacted": 0, "actual_screens": 0, "ats": 0, "offered": 0, "hired": 0}
+    sums = {"contacted": 0, "screens": 0, "actual_screens": 0, "ats": 0, "offered": 0, "hired": 0}
     for r in dash.get("project_dashboard", {}).get("rows", []):
         if r.get("iso_year") != 2026 or r.get("iso_week") != iso_week:
             continue
@@ -182,6 +183,26 @@ def ts_contacted_target(dash, ts_name, iso_week):
     return float(cands[-1][1])
 
 
+def drops_for_ts(dash, ts_name, iso_week, iso_year=2026):
+    """Drop rows for one sourcer in one ISO week.
+    Schema each row: {job_id, job_title, client, reason, drops}.
+    """
+    out = []
+    for r in dash.get("drops_by_sourcer", []):
+        if r.get("ts") != ts_name:
+            continue
+        if r.get("iso_year") != iso_year or r.get("iso_week") != iso_week:
+            continue
+        out.append({
+            "job_id": r.get("job_id"),
+            "job_title": (r.get("job_title") or "").strip(),
+            "client": r.get("client"),
+            "reason": r.get("reason"),
+            "drops": int(r.get("drops") or 0),
+        })
+    return out
+
+
 def build_member(dash, pilot, periods):
     out = {
         "name": pilot["name"],
@@ -205,8 +226,10 @@ def build_member(dash, pilot, periods):
             a = ts_actuals_from_pd(dash, pilot["name"], iso)
             out["data"][pk] = {
                 "Outreach Contacted": {"actual": int(a.get("contacted", 0) or 0),      "target": ts_contacted_target(dash, pilot["name"], iso)},
+                "Recruiter Screen":   {"actual": int(a.get("screens", 0) or 0),        "target": float(TS_RECRUITER_SCREEN_TARGET)},
                 "Actual Screens":     {"actual": int(a.get("actual_screens", 0) or 0), "target": float(TS_ACTUAL_SCREENS_TARGET)},
                 "Moved to ATS":       {"actual": int(a.get("ats", 0) or 0),            "target": float(TS_ATS_TARGET)},
+                "_drops":             drops_for_ts(dash, pilot["name"], iso),
             }
     return out
 

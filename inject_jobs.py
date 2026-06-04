@@ -16,7 +16,7 @@ import sys
 from pathlib import Path
 
 
-METRIC_FIELDS = ("contacted", "actual_screens", "ats", "offered", "hired")
+METRIC_FIELDS = ("contacted", "screens", "actual_screens", "ats", "offered", "hired")
 
 
 def find_source_json():
@@ -48,7 +48,7 @@ def aggregate_jobs(rows, name, role, iso_week, pd_client=None, iso_year=2026):
         b = bucket.setdefault(job_id, {
             "job_id": job_id,
             "job_title": (r.get("job_title") or "").strip(),
-            "contacted": 0, "actual_screens": 0, "ats": 0, "offered": 0, "hired": 0,
+            "contacted": 0, "screens": 0, "actual_screens": 0, "ats": 0, "offered": 0, "hired": 0,
         })
         for f in METRIC_FIELDS:
             b[f] += int(r.get(f, 0) or 0)
