@@ -97,8 +97,19 @@
       </svg>`;
   }
 
+  // ---------- helpers ----------
+  function formatRefreshTime(iso) {
+    if (!iso) return 'unknown';
+    const d = new Date(iso);
+    if (isNaN(d.getTime())) return 'unknown';
+    // Show in the viewer's local time: "Jun 3, 5:24 PM"
+    const date = d.toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
+    const time = d.toLocaleTimeString(undefined, { hour: 'numeric', minute: '2-digit' });
+    return `${date}, ${time}`;
+  }
+
   // ---------- render ----------
-  function renderHeader(member, periods, currentPeriod, allMembers) {
+  function renderHeader(member, periods, currentPeriod, allMembers, generatedAt) {
     const overrideName = getParam('first_name');
     const displayName = (overrideName && overrideName.trim()) ? overrideName.trim() : member.first_name;
     const isLocked = !!getParam('member') && !getParam('admin');
@@ -125,6 +136,10 @@
               : `Your hiring progress <span class="font-semibold" style="color:var(--brand);">${periods[currentPeriod].label.toLowerCase()}</span>
                  <span style="color:#9aa3b2; margin-left:4px;">· ${currentIsoLabel}</span>
                  <span class="role-badge ml-2">${member.role}</span>`}
+          </div>
+          <div class="mt-2 text-xs" style="color:#9aa3b2;">
+            Data refreshed <span style="color:#5b6470; font-weight:500;">${formatRefreshTime(generatedAt)}</span>
+            · refreshes automatically every 2h
           </div>
         </div>
         <div class="flex gap-2">
@@ -255,7 +270,7 @@
       : `<div class="grid gap-5" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr));">${tiles}</div>
          ${renderJobs(member, periodKey)}`;
     document.getElementById('root').innerHTML = `
-      ${renderHeader(member, periods, periodKey, data.members)}
+      ${renderHeader(member, periods, periodKey, data.members, data.generated_at)}
       ${body}
       ${isEmptyPeriod ? '' : renderLegend()}
     `;
