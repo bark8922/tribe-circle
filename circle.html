@@ -138,8 +138,7 @@
                  <span class="role-badge ml-2">${member.role}</span>`}
           </div>
           <div class="mt-2 text-xs" style="color:#9aa3b2;">
-            Data refreshed <span style="color:#5b6470; font-weight:500;">${formatRefreshTime(generatedAt)}</span>
-            · source updates 4× daily (08:40, 10:40, 14:40, 16:40 Prague time)
+            Source updates 4× daily (08:40, 10:40, 14:40, 16:40 Prague time)
           </div>
         </div>
         <div class="flex gap-2">
@@ -343,4 +342,8 @@
       }
       render(data, memberKey, period);
     })
-    .catch(err => renderError(`Could not load circle_data.json: ${err.message}
+    .catch(err => renderError(`Could not load circle_data.json: ${err.message}`));
+  </script>
+</body>
+</html>
+                                                                                    
