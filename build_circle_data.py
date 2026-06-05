@@ -177,16 +177,22 @@ class _EmailMap:
 
 
 def load_email_map():
-    """name -> email. Primary source: BambooHR (canonical, single source of
-    truth for active employees). Falls back to Mikhail's KPI Google Sheet if
-    BAMBOOHR_API_KEY isn't set or the API call fails — preserves local-dev
-    workflows that don't have Bamboo credentials.
-    Lookups are diacritic-folded so 'Zelimir Stajcic' (WBR) matches
+    """name -> email. Primary source: BambooHR (canonical, active employees).
+    Merges KPI-sheet entries on top to cover names that BambooHR stores
+    differently from the WBR Target sheet (e.g. 'Valeria Yurykova' in Bamboo
+    vs 'Valeriia Yurykova' in WBR). Bamboo wins on overlap; KPI fills gaps.
+    Lookups also diacritic-fold so 'Zelimir Stajcic' (WBR) matches
     'Želimir Stajčić' (Bamboo)."""
-    emails = load_email_map_from_bamboo()
-    if not emails:
-        emails = load_email_map_from_kpi_sheet()
-    return _EmailMap(emails)
+    bamboo = load_email_map_from_bamboo() or {}
+    kpi = {}
+    try:
+        kpi = load_email_map_from_kpi_sheet()
+    except Exception as exc:
+        print(f"[email-map] KPI sheet fallback unreachable: {exc}", flush=True)
+    merged = dict(kpi)
+    merged.update(bamboo)
+    print(f"[email-map] merged: bamboo={len(bamboo)}, kpi={len(kpi)}, total unique={len(merged)}", flush=True)
+    return _EmailMap(merged)
 
 
 def wbr_to_pd_client(client):
