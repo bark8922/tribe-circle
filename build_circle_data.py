@@ -259,6 +259,23 @@ def main():
     pilots, ts_wk = build_pilots(dash, emails)
     print(f"Built {sum(1 for p in pilots if p['role']=='TA')} TA + {sum(1 for p in pilots if p['role']=='TS')} TS pilots (TS roster from w{ts_wk})")
     members = {p["email"]: build_member(dash, p, periods) for p in pilots}
+
+    # 2026-06-04: drop members with zero activity across both visible periods.
+    # Circle only renders this_week + last_week, so members with no data in either
+    # are dead rows (e.g. ex-employees whose WBR Target sheet entry was never cleaned
+    # up). A member counts as active if any tile in any visible period has actual > 0.
+    def has_any_activity(m):
+        for pk in ("this_week", "last_week"):
+            period = (m.get("data") or {}).get(pk) or {}
+            for k, v in period.items():
+                if k.startswith("_"):
+                    continue
+                if isinstance(v, dict) and (v.get("actual") or 0) > 0:
+                    return True
+        return False
+    members = {email: m for email, m in members.items() if has_any_activity(m)}
+    print(f"Active members after zero-activity filter: {len(members)}")
+
     out = {
         "generated_at": datetime.utcnow().isoformat() + "Z",
         "source": str(src),
