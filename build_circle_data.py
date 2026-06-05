@@ -20,6 +20,8 @@ Tribe weeks: Mon-Sun, ISO-aligned. 2026W20 = Mon May 11 - Sun May 17.
 """
 
 import csv
+import base64
+import os
 import json
 import sys
 from datetime import date, datetime, timedelta
@@ -78,16 +80,51 @@ KPI_SHEET_URL = (
 )
 
 
-def load_email_map():
-    """name -> email. Local /tmp/circle_kpi.csv if present, else fetch from
-    Mikhail's Circle KPI Google Sheet at runtime."""
-    import io, urllib.request
+def load_email_map_from_bamboo():
+    """name -> workEmail from BambooHR directory. Returns None if env vars
+    are missing or the call fails (caller falls back to the KPI sheet)."""
+    api_key = os.environ.get("BAMBOOHR_API_KEY")
+    subdomain = os.environ.get("BAMBOOHR_SUBDOMAIN", "tribe")
+    if not api_key:
+        return None
+    import base64 as _b64
+    url = f"https://api.bamboohr.com/api/gateway.php/{subdomain}/v1/employees/directory"
+    auth = _b64.b64encode(f"{api_key}:x".encode()).decode()
+    req = urllib.request.Request(url, headers={
+        "Authorization": "Basic " + auth,
+        "Accept": "application/json",
+    })
+    try:
+        with urllib.request.urlopen(req, timeout=20) as resp:
+            data = json.loads(resp.read())
+    except Exception as exc:
+        print(f"[email-map] Bamboo fetch failed: {exc}; falling back", flush=True)
+        return None
+    emails = {}
+    for emp in data.get("employees", []):
+        first = (emp.get("firstName") or "").strip()
+        last = (emp.get("lastName") or "").strip()
+        email = (emp.get("workEmail") or "").strip()
+        if not email or not (first or last):
+            continue
+        full = f"{first} {last}".strip()
+        emails[full] = email
+    # Common name variants observed in the WBR Target sheet
+    if "Rodrigo Gomes" in emails:
+        emails.setdefault("Rodrigo Gomez", emails["Rodrigo Gomes"])
+    print(f"[email-map] BambooHR: {len(emails)} active employees", flush=True)
+    return emails
+
+
+def load_email_map_from_kpi_sheet():
+    """Legacy fallback — Mikhail's Circle KPI sheet."""
+    import io
     emails = {}
     p = Path("/tmp/circle_kpi.csv")
     if p.exists():
         text = p.read_text()
     else:
-        print(f"Fetching email map from {KPI_SHEET_URL}")
+        print(f"[email-map] fetching from KPI sheet {KPI_SHEET_URL}", flush=True)
         with urllib.request.urlopen(KPI_SHEET_URL, timeout=15) as resp:
             text = resp.read().decode("utf-8")
     for row in csv.DictReader(io.StringIO(text)):
@@ -97,7 +134,19 @@ def load_email_map():
             emails[n] = e
     if "Rodrigo Gomes" in emails:
         emails.setdefault("Rodrigo Gomez", emails["Rodrigo Gomes"])
+    print(f"[email-map] KPI sheet: {len(emails)} entries", flush=True)
     return emails
+
+
+def load_email_map():
+    """name -> email. Primary source: BambooHR (canonical, single source of
+    truth for active employees). Falls back to Mikhail's KPI Google Sheet if
+    BAMBOOHR_API_KEY isn't set or the API call fails — preserves local-dev
+    workflows that don't have Bamboo credentials."""
+    emails = load_email_map_from_bamboo()
+    if emails:
+        return emails
+    return load_email_map_from_kpi_sheet()
 
 
 def wbr_to_pd_client(client):
