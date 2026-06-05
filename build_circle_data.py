@@ -139,15 +139,54 @@ def load_email_map_from_kpi_sheet():
     return emails
 
 
+def _fold_name(s):
+    """Casefold + strip diacritics, for matching names across data sources.
+    Bamboo often stores 'Želimir Stajčić'; the WBR sheet has 'Zelimir Stajcic'.
+    Without folding, the lookup misses them."""
+    import unicodedata
+    if not s:
+        return ""
+    nfd = unicodedata.normalize("NFD", s)
+    no_diacritics = "".join(c for c in nfd if unicodedata.category(c) != "Mn")
+    return no_diacritics.casefold().strip()
+
+
+class _EmailMap:
+    """Dict-like with diacritic-folded fallback lookup."""
+    def __init__(self, raw):
+        self._raw = dict(raw)
+        self._folded = {_fold_name(k): v for k, v in raw.items()}
+    def get(self, key, default=None):
+        if key in self._raw:
+            return self._raw[key]
+        return self._folded.get(_fold_name(key), default)
+    def __getitem__(self, key):
+        v = self.get(key)
+        if v is None: raise KeyError(key)
+        return v
+    def __contains__(self, key):
+        return self.get(key) is not None
+    def __len__(self):
+        return len(self._raw)
+    def setdefault(self, key, value):
+        if key in self._raw:
+            return self._raw[key]
+        self._raw[key] = value
+        self._folded[_fold_name(key)] = value
+        return value
+
+
 def load_email_map():
     """name -> email. Primary source: BambooHR (canonical, single source of
     truth for active employees). Falls back to Mikhail's KPI Google Sheet if
     BAMBOOHR_API_KEY isn't set or the API call fails — preserves local-dev
-    workflows that don't have Bamboo credentials."""
+    workflows that don't have Bamboo credentials.
+    Lookups are diacritic-folded so 'Zelimir Stajcic' (WBR) matches
+    'Želimir Stajčić' (Bamboo)."""
     emails = load_email_map_from_bamboo()
-    if emails:
-        return emails
-    return load_email_map_from_kpi_sheet()
+    if not emails:
+        emails = load_email_map_from_kpi_sheet()
+    return _EmailMap(emails)
 
 
 def wbr_to_pd_client(client):
