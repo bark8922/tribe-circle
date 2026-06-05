@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-05T07:46:00.745431Z",
+  "generated_at": "2026-06-05T07:48:56.122401Z",
   "source": "/tmp/sf.json",
   "periods": {
     "this_week": {
@@ -488,6 +488,77 @@
               "ats": 1,
               "offered": 1,
               "hired": 1
+            }
+          ]
+        }
+      }
+    },
+    "tinaaramouni@tribe.xyz": {
+      "name": "Tina Aramouni",
+      "first_name": "Tina",
+      "role": "TA",
+      "client": "Wolt North, Baltics & Benelux",
+      "pd_client": "Wolt",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 2,
+            "target": 20.0
+          },
+          "Actual Screens": {
+            "actual": 2,
+            "target": 10.0
+          },
+          "Moved to ATS": {
+            "actual": 2,
+            "target": 8.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1778479191189x925207639857561600",
+              "job_title": "Sales Manager-Denmark",
+              "contacted": 2,
+              "screens": 2,
+              "actual_screens": 2,
+              "ats": 2,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778750065408x861715954167709700",
+              "job_title": "Sales Support Associate-Athens",
+              "contacted": 0,
+              "screens": 0,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 1,
+              "hired": 0
+            }
+          ]
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 1,
+            "target": 20.0
+          },
+          "Actual Screens": {
+            "actual": 1,
+            "target": 10.0
+          },
+          "Moved to ATS": {
+            "actual": 1,
+            "target": 8.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1778479247884x933743598925774800",
+              "job_title": "Sales Manager-Sweden",
+              "contacted": 1,
+              "screens": 1,
+              "actual_screens": 1,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
             }
           ]
         }
@@ -1582,6 +1653,87 @@
         }
       }
     },
+    "filip@tribe.xyz": {
+      "name": "Filip Nogowski",
+      "first_name": "Filip",
+      "role": "TA",
+      "client": "Parloa",
+      "pd_client": "Parloa",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 28,
+            "target": 50.0
+          },
+          "Actual Screens": {
+            "actual": 14,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 8,
+            "target": 8.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1770115575994x938717513032663000",
+              "job_title": "Principal Applied Scientist - AI Agents & Generative AI",
+              "contacted": 20,
+              "screens": 2,
+              "actual_screens": 1,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1758529227458x187488425396142080",
+              "job_title": "Principal Engineer",
+              "contacted": 8,
+              "screens": 13,
+              "actual_screens": 13,
+              "ats": 8,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 56,
+            "target": 50.0
+          },
+          "Actual Screens": {
+            "actual": 23,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 14,
+            "target": 8.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1758529227458x187488425396142080",
+              "job_title": "Principal Engineer",
+              "contacted": 45,
+              "screens": 31,
+              "actual_screens": 22,
+              "ats": 14,
+              "offered": 2,
+              "hired": 2
+            },
+            {
+              "job_id": "1770115575994x938717513032663000",
+              "job_title": "Principal Applied Scientist - AI Agents & Generative AI",
+              "contacted": 11,
+              "screens": 4,
+              "actual_screens": 1,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        }
+      }
+    },
     "marinanikolic@tribe.xyz": {
       "name": "Marina Nikolic",
       "first_name": "Marina",
@@ -1794,6 +1946,87 @@
         }
       }
     },
+    "maria.gerbore@tribe.xyz": {
+      "name": "Maria Desiree Gerbore",
+      "first_name": "Maria",
+      "role": "TA",
+      "client": "Nexi",
+      "pd_client": "Nexi",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 92,
+            "target": 60.0
+          },
+          "Actual Screens": {
+            "actual": 10,
+            "target": 10.0
+          },
+          "Moved to ATS": {
+            "actual": 6,
+            "target": 6.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1778589331171x831632718065827800",
+              "job_title": "Poland _ Supporting other TAs",
+              "contacted": 86,
+              "screens": 4,
+              "actual_screens": 4,
+              "ats": 4,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778588905796x159044889209733120",
+              "job_title": "Senior Field Sales _ ISV Business Line",
+              "contacted": 6,
+              "screens": 6,
+              "actual_screens": 6,
+              "ats": 2,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 120,
+            "target": 60.0
+          },
+          "Actual Screens": {
+            "actual": 10,
+            "target": 10.0
+          },
+          "Moved to ATS": {
+            "actual": 7,
+            "target": 6.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1778589331171x831632718065827800",
+              "job_title": "Poland _ Supporting other TAs",
+              "contacted": 118,
+              "screens": 8,
+              "actual_screens": 8,
+              "ats": 6,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778588905796x159044889209733120",
+              "job_title": "Senior Field Sales _ ISV Business Line",
+              "contacted": 2,
+              "screens": 2,
+              "actual_screens": 2,
+              "ats": 1,
+              "offered": 1,
+              "hired": 1
+            }
+          ]
+        }
+      }
+    },
     "jonaed@tribe.xyz": {
       "name": "Jonaed Iqbal",
       "first_name": "Jonaed",
@@ -1899,6 +2132,117 @@
               "actual_screens": 1,
               "ats": 0,
               "offered": 0,
+              "hired": 0
+            }
+          ]
+        }
+      }
+    },
+    "lejla@tribe.xyz": {
+      "name": "Lejla Silva",
+      "first_name": "Lejla",
+      "role": "TA",
+      "client": "Aviv",
+      "pd_client": "AVIV",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 76,
+            "target": 70.0
+          },
+          "Actual Screens": {
+            "actual": 7,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 5,
+            "target": 10.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1779112032424x907451151344205800",
+              "job_title": "QA Automation - Authentication, Croatia",
+              "contacted": 42,
+              "screens": 2,
+              "actual_screens": 2,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1779111938424x336950569178497000",
+              "job_title": "QA Automation - Financing, Croatia",
+              "contacted": 34,
+              "screens": 5,
+              "actual_screens": 5,
+              "ats": 4,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1773915328724x606290305845559300",
+              "job_title": "Senior Android Engineer Paris",
+              "contacted": 0,
+              "screens": 0,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 1
+            }
+          ]
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 58,
+            "target": 70.0
+          },
+          "Actual Screens": {
+            "actual": 12,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 9,
+            "target": 10.0
+          },
+          "_jobs": [
+            {
+              "job_id": "1779111938424x336950569178497000",
+              "job_title": "QA Automation - Financing, Croatia",
+              "contacted": 37,
+              "screens": 3,
+              "actual_screens": 5,
+              "ats": 4,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1779112032424x907451151344205800",
+              "job_title": "QA Automation - Authentication, Croatia",
+              "contacted": 21,
+              "screens": 5,
+              "actual_screens": 6,
+              "ats": 4,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1773915221899x731095116844892200",
+              "job_title": "Senior IOS Engineer Paris",
+              "contacted": 0,
+              "screens": 0,
+              "actual_screens": 1,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1773915328724x606290305845559300",
+              "job_title": "Senior Android Engineer Paris",
+              "contacted": 0,
+              "screens": 0,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 1,
               "hired": 0
             }
           ]
@@ -5688,6 +6032,475 @@
               "screens": 1,
               "actual_screens": 0,
               "ats": 0,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        }
+      }
+    },
+    "valeriia@tribe.xyz": {
+      "name": "Valeriia Yurykova",
+      "first_name": "Valeriia",
+      "role": "TS",
+      "client": "",
+      "pd_client": "",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 141,
+            "target": 110.0
+          },
+          "Recruiter Screen": {
+            "actual": 5,
+            "target": 10.0
+          },
+          "Actual Screens": {
+            "actual": 2,
+            "target": 7.0
+          },
+          "Moved to ATS": {
+            "actual": 2,
+            "target": 4.0
+          },
+          "_drops": [
+            {
+              "job_id": "1779975417411x145223316330774530",
+              "job_title": "Senior Talent Aquisition Partner (Polish speaker) - Immediate Start",
+              "client": "Tribe.xyz (IR)",
+              "reason": "Skills",
+              "drops": 1
+            },
+            {
+              "job_id": "1777987322411x102512047924183040",
+              "job_title": "Senior Fullstack Engineer - Stuttgart",
+              "client": "Taxfix",
+              "reason": "Remote only",
+              "drops": 2
+            },
+            {
+              "job_id": "1779445203229x683558468490100700",
+              "job_title": "Category Manager, Czechia, Q2 2026",
+              "client": "Wolt",
+              "reason": "Recruiter Rejected",
+              "drops": 1
+            },
+            {
+              "job_id": "1779368342428x874602515472056300",
+              "job_title": "Senior TA (High Volume) - Dutch",
+              "client": "Tribe.xyz (IR)",
+              "reason": "Timing",
+              "drops": 5
+            },
+            {
+              "job_id": "1766504090036x401562054331465700",
+              "job_title": "Store Manager (WM), Budapest, Q1 '26",
+              "client": "Wolt",
+              "reason": "Position",
+              "drops": 1
+            },
+            {
+              "job_id": "1777987322411x102512047924183040",
+              "job_title": "Senior Fullstack Engineer - Stuttgart",
+              "client": "Taxfix",
+              "reason": "Salary",
+              "drops": 2
+            },
+            {
+              "job_id": "1777294001849x171347644691513340",
+              "job_title": "Talent Acquisition Partner (UK)",
+              "client": "Tribe.xyz (IR)",
+              "reason": "Position closed",
+              "drops": 26
+            },
+            {
+              "job_id": "1779111938424x336950569178497000",
+              "job_title": "QA Automation - Financing, Croatia",
+              "client": "AVIV",
+              "reason": "Do not contact again",
+              "drops": 1
+            },
+            {
+              "job_id": "1766139080865x930653980317188100",
+              "job_title": "Sales Manager Luxembourg",
+              "client": "Wolt",
+              "reason": "Dropped out",
+              "drops": 1
+            },
+            {
+              "job_id": "1779368342428x874602515472056300",
+              "job_title": "Senior TA (High Volume) - Dutch",
+              "client": "Tribe.xyz (IR)",
+              "reason": "Position closed",
+              "drops": 158
+            },
+            {
+              "job_id": "1779975417411x145223316330774530",
+              "job_title": "Senior Talent Aquisition Partner (Polish speaker) - Immediate Start",
+              "client": "Tribe.xyz (IR)",
+              "reason": "Type of contract",
+              "drops": 1
+            },
+            {
+              "job_id": "1777987322411x102512047924183040",
+              "job_title": "Senior Fullstack Engineer - Stuttgart",
+              "client": "Taxfix",
+              "reason": "Timing",
+              "drops": 4
+            },
+            {
+              "job_id": "1775746005997x884574833229168600",
+              "job_title": "Store Manager (WM), Budapest, Q2 2026",
+              "client": "Wolt",
+              "reason": "Skills",
+              "drops": 1
+            },
+            {
+              "job_id": "1779975417411x145223316330774530",
+              "job_title": "Senior Talent Aquisition Partner (Polish speaker) - Immediate Start",
+              "client": "Tribe.xyz (IR)",
+              "reason": "Language",
+              "drops": 1
+            },
+            {
+              "job_id": "1779368342428x874602515472056300",
+              "job_title": "Senior TA (High Volume) - Dutch",
+              "client": "Tribe.xyz (IR)",
+              "reason": "Type of contract",
+              "drops": 1
+            },
+            {
+              "job_id": "1769763000086x563212577333575700",
+              "job_title": "Talent Acquisition Partner (Internal Recruitment)",
+              "client": "Tribe.xyz (IR)",
+              "reason": "Type of contract",
+              "drops": 1
+            },
+            {
+              "job_id": "1778501360032x181990237728931840",
+              "job_title": "Retail Operations Excellence Specialist, Croatia",
+              "client": "Wolt",
+              "reason": "Timing",
+              "drops": 1
+            },
+            {
+              "job_id": "1779975417411x145223316330774530",
+              "job_title": "Senior Talent Aquisition Partner (Polish speaker) - Immediate Start",
+              "client": "Tribe.xyz (IR)",
+              "reason": "Position",
+              "drops": 1
+            },
+            {
+              "job_id": "1776243815411x739667639709990900",
+              "job_title": "Tech Talent Sourcer",
+              "client": "Tribe.xyz (IR)",
+              "reason": "Position closed",
+              "drops": 96
+            },
+            {
+              "job_id": "1779975417411x145223316330774530",
+              "job_title": "Senior Talent Aquisition Partner (Polish speaker) - Immediate Start",
+              "client": "Tribe.xyz (IR)",
+              "reason": "Timing",
+              "drops": 2
+            },
+            {
+              "job_id": "1766139080865x930653980317188100",
+              "job_title": "Sales Manager Luxembourg",
+              "client": "Wolt",
+              "reason": "Skills",
+              "drops": 1
+            },
+            {
+              "job_id": "1775746005997x884574833229168600",
+              "job_title": "Store Manager (WM), Budapest, Q2 2026",
+              "client": "Wolt",
+              "reason": "Seniority",
+              "drops": 1
+            },
+            {
+              "job_id": "1779445203229x683558468490100700",
+              "job_title": "Category Manager, Czechia, Q2 2026",
+              "client": "Wolt",
+              "reason": "Timing",
+              "drops": 1
+            }
+          ],
+          "_jobs": [
+            {
+              "job_id": "1779445203229x683558468490100700",
+              "job_title": "Category Manager, Czechia, Q2 2026",
+              "contacted": 55,
+              "screens": 0,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1777987322411x102512047924183040",
+              "job_title": "Senior Fullstack Engineer - Stuttgart",
+              "contacted": 33,
+              "screens": 0,
+              "actual_screens": 1,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1779975417411x145223316330774530",
+              "job_title": "Senior Talent Aquisition Partner (Polish speaker) - Immediate Start",
+              "contacted": 30,
+              "screens": 3,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1779368342428x874602515472056300",
+              "job_title": "Senior TA (High Volume) - Dutch",
+              "contacted": 23,
+              "screens": 0,
+              "actual_screens": 0,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778669071207x125942042073759740",
+              "job_title": "Enterprise Account Manager - Lithuania",
+              "contacted": 0,
+              "screens": 1,
+              "actual_screens": 1,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1779112032424x907451151344205800",
+              "job_title": "QA Automation - Authentication, Croatia",
+              "contacted": 0,
+              "screens": 1,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 234,
+            "target": 110.0
+          },
+          "Recruiter Screen": {
+            "actual": 10,
+            "target": 10.0
+          },
+          "Actual Screens": {
+            "actual": 11,
+            "target": 7.0
+          },
+          "Moved to ATS": {
+            "actual": 8,
+            "target": 4.0
+          },
+          "_drops": [
+            {
+              "job_id": "1778669071207x125942042073759740",
+              "job_title": "Enterprise Account Manager - Lithuania",
+              "client": "Wolt",
+              "reason": "Timing",
+              "drops": 6
+            },
+            {
+              "job_id": "1776862201667x936823939323658200",
+              "job_title": "Store Manager (WM), Turku Finland, Q2 2026",
+              "client": "Wolt",
+              "reason": "Position",
+              "drops": 1
+            },
+            {
+              "job_id": "1779368342428x874602515472056300",
+              "job_title": "Senior TA (High Volume) - Dutch",
+              "client": "Tribe.xyz (IR)",
+              "reason": "Position",
+              "drops": 1
+            },
+            {
+              "job_id": "1778501360032x181990237728931840",
+              "job_title": "Retail Operations Excellence Specialist, Croatia",
+              "client": "Wolt",
+              "reason": "Timing",
+              "drops": 2
+            },
+            {
+              "job_id": "1777987322411x102512047924183040",
+              "job_title": "Senior Fullstack Engineer - Stuttgart",
+              "client": "Taxfix",
+              "reason": "Timing",
+              "drops": 1
+            },
+            {
+              "job_id": "1766139080865x930653980317188100",
+              "job_title": "Sales Manager Luxembourg",
+              "client": "Wolt",
+              "reason": "Timing",
+              "drops": 1
+            },
+            {
+              "job_id": "1779368342428x874602515472056300",
+              "job_title": "Senior TA (High Volume) - Dutch",
+              "client": "Tribe.xyz (IR)",
+              "reason": "Other",
+              "drops": 5
+            },
+            {
+              "job_id": "1777987322411x102512047924183040",
+              "job_title": "Senior Fullstack Engineer - Stuttgart",
+              "client": "Taxfix",
+              "reason": "Salary",
+              "drops": 1
+            },
+            {
+              "job_id": "1776343351205x571330529930772500",
+              "job_title": "Enterprise Account Manager Luxembourg",
+              "client": "Wolt",
+              "reason": "Language",
+              "drops": 1
+            },
+            {
+              "job_id": "1776765224256x762752769425670100",
+              "job_title": "Category Manager (WM), Slovenia",
+              "client": "Wolt",
+              "reason": "Parental leave",
+              "drops": 1
+            },
+            {
+              "job_id": "1766139080865x930653980317188100",
+              "job_title": "Sales Manager Luxembourg",
+              "client": "Wolt",
+              "reason": "Skills",
+              "drops": 1
+            },
+            {
+              "job_id": "1779368342428x874602515472056300",
+              "job_title": "Senior TA (High Volume) - Dutch",
+              "client": "Tribe.xyz (IR)",
+              "reason": "Salary",
+              "drops": 1
+            },
+            {
+              "job_id": "1779368342428x874602515472056300",
+              "job_title": "Senior TA (High Volume) - Dutch",
+              "client": "Tribe.xyz (IR)",
+              "reason": "Timing",
+              "drops": 25
+            },
+            {
+              "job_id": "1776765224256x762752769425670100",
+              "job_title": "Category Manager (WM), Slovenia",
+              "client": "Wolt",
+              "reason": "Timing",
+              "drops": 2
+            },
+            {
+              "job_id": "1776765224256x762752769425670100",
+              "job_title": "Category Manager (WM), Slovenia",
+              "client": "Wolt",
+              "reason": "Skills",
+              "drops": 1
+            }
+          ],
+          "_jobs": [
+            {
+              "job_id": "1779368342428x874602515472056300",
+              "job_title": "Senior TA (High Volume) - Dutch",
+              "contacted": 124,
+              "screens": 4,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1779445203229x683558468490100700",
+              "job_title": "Category Manager, Czechia, Q2 2026",
+              "contacted": 35,
+              "screens": 0,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778669071207x125942042073759740",
+              "job_title": "Enterprise Account Manager - Lithuania",
+              "contacted": 32,
+              "screens": 0,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1777987322411x102512047924183040",
+              "job_title": "Senior Fullstack Engineer - Stuttgart",
+              "contacted": 22,
+              "screens": 3,
+              "actual_screens": 3,
+              "ats": 3,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1767091199251x530598755717087200",
+              "job_title": "Category Manager, Slovakia, Q1 '26",
+              "contacted": 19,
+              "screens": 0,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1776343351205x571330529930772500",
+              "job_title": "Enterprise Account Manager Luxembourg",
+              "contacted": 2,
+              "screens": 0,
+              "actual_screens": 2,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1776765224256x762752769425670100",
+              "job_title": "Category Manager (WM), Slovenia",
+              "contacted": 0,
+              "screens": 1,
+              "actual_screens": 3,
+              "ats": 2,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1766139080865x930653980317188100",
+              "job_title": "Sales Manager Luxembourg",
+              "contacted": 0,
+              "screens": 1,
+              "actual_screens": 2,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1779112032424x907451151344205800",
+              "job_title": "QA Automation - Authentication, Croatia",
+              "contacted": 0,
+              "screens": 1,
+              "actual_screens": 1,
+              "ats": 1,
               "offered": 0,
               "hired": 0
             }
