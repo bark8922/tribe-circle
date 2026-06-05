@@ -124,9 +124,12 @@ def build_pilots(dash, emails):
     ta_pilots = []
     for t in dash.get("targets", []):
         ta = (t.get("ta") or "").strip()
-        team = (t.get("team_group") or "").strip()
         cl = (t.get("client") or "").strip()
-        if not ta or not team or not cl or (ta, cl) in seen:
+        # team_group dropped from the include filter 2026-06-04: it was excluding
+        # active TAs whose WBR target rows lack a team assignment (Iryna Dyda,
+        # Joanna Bober, etc.). Email presence in the KPI sheet is enough to
+        # qualify someone for Circle.
+        if not ta or not cl or (ta, cl) in seen:
             continue
         seen.add((ta, cl))
         email = emails.get(ta, "")
