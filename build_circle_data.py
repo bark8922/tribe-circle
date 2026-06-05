@@ -19,10 +19,12 @@ For dual-role people (in both TA targets AND TS roster), TS view wins.
 Tribe weeks: Mon-Sun, ISO-aligned. 2026W20 = Mon May 11 - Sun May 17.
 """
 
-import csv
 import base64
-import os
+import csv
+import io
 import json
+import os
+import urllib.request
 import sys
 from datetime import date, datetime, timedelta
 from pathlib import Path
@@ -118,7 +120,6 @@ def load_email_map_from_bamboo():
 
 def load_email_map_from_kpi_sheet():
     """Legacy fallback — Mikhail's Circle KPI sheet."""
-    import io
     emails = {}
     p = Path("/tmp/circle_kpi.csv")
     if p.exists():
