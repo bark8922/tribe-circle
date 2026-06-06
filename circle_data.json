@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06T13:41:03.939930Z",
+  "generated_at": "2026-06-06T15:14:49.085170Z",
   "source": "/tmp/sf.json",
   "periods": {
     "this_week": {
@@ -480,6 +480,16 @@
               "hired": 0
             },
             {
+              "job_id": "1762943671502x870278496041042000",
+              "job_title": "Store Manager - Athens",
+              "contacted": 1,
+              "screens": 1,
+              "actual_screens": 1,
+              "ats": 1,
+              "offered": 1,
+              "hired": 1
+            },
+            {
               "job_id": "1774348446979x233416804899225600",
               "job_title": "Store Manager - Almaty",
               "contacted": 1,
@@ -492,16 +502,6 @@
             {
               "job_id": "1779794569993x204519145452339200",
               "job_title": "Content Associate - Baku",
-              "contacted": 1,
-              "screens": 1,
-              "actual_screens": 1,
-              "ats": 1,
-              "offered": 1,
-              "hired": 1
-            },
-            {
-              "job_id": "1762943671502x870278496041042000",
-              "job_title": "Store Manager - Athens",
               "contacted": 1,
               "screens": 1,
               "actual_screens": 1,
@@ -1593,8 +1593,8 @@
               "hired": 0
             },
             {
-              "job_id": "1778595342890x760789216279920600",
-              "job_title": "Enterprise Sales Manager, Retail",
+              "job_id": "1760281065538x811562236048310300",
+              "job_title": "Account Manager (2025.03914) München, Germany",
               "contacted": 2,
               "screens": 2,
               "actual_screens": 2,
@@ -1603,8 +1603,8 @@
               "hired": 0
             },
             {
-              "job_id": "1760281065538x811562236048310300",
-              "job_title": "Account Manager (2025.03914) München, Germany",
+              "job_id": "1778595342890x760789216279920600",
+              "job_title": "Enterprise Sales Manager, Retail",
               "contacted": 2,
               "screens": 2,
               "actual_screens": 2,
