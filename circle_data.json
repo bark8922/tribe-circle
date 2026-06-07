@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-07T10:29:05.144481Z",
+  "generated_at": "2026-06-07T13:50:38.776057Z",
   "source": "/tmp/sf.json",
   "periods": {
     "this_week": {
@@ -1593,8 +1593,8 @@
               "hired": 0
             },
             {
-              "job_id": "1778595342890x760789216279920600",
-              "job_title": "Enterprise Sales Manager, Retail",
+              "job_id": "1760281065538x811562236048310300",
+              "job_title": "Account Manager (2025.03914) München, Germany",
               "contacted": 2,
               "screens": 2,
               "actual_screens": 2,
@@ -1603,8 +1603,8 @@
               "hired": 0
             },
             {
-              "job_id": "1760281065538x811562236048310300",
-              "job_title": "Account Manager (2025.03914) München, Germany",
+              "job_id": "1778595342890x760789216279920600",
+              "job_title": "Enterprise Sales Manager, Retail",
               "contacted": 2,
               "screens": 2,
               "actual_screens": 2,
