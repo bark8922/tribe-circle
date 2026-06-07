@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-07T03:51:39.715185Z",
+  "generated_at": "2026-06-07T07:54:25.946248Z",
   "source": "/tmp/sf.json",
   "periods": {
     "this_week": {
@@ -480,16 +480,6 @@
               "hired": 0
             },
             {
-              "job_id": "1762943671502x870278496041042000",
-              "job_title": "Store Manager - Athens",
-              "contacted": 1,
-              "screens": 1,
-              "actual_screens": 1,
-              "ats": 1,
-              "offered": 1,
-              "hired": 1
-            },
-            {
               "job_id": "1774348446979x233416804899225600",
               "job_title": "Store Manager - Almaty",
               "contacted": 1,
@@ -502,6 +492,16 @@
             {
               "job_id": "1779794569993x204519145452339200",
               "job_title": "Content Associate - Baku",
+              "contacted": 1,
+              "screens": 1,
+              "actual_screens": 1,
+              "ats": 1,
+              "offered": 1,
+              "hired": 1
+            },
+            {
+              "job_id": "1762943671502x870278496041042000",
+              "job_title": "Store Manager - Athens",
               "contacted": 1,
               "screens": 1,
               "actual_screens": 1,
@@ -1593,8 +1593,8 @@
               "hired": 0
             },
             {
-              "job_id": "1760281065538x811562236048310300",
-              "job_title": "Account Manager (2025.03914) München, Germany",
+              "job_id": "1778595342890x760789216279920600",
+              "job_title": "Enterprise Sales Manager, Retail",
               "contacted": 2,
               "screens": 2,
               "actual_screens": 2,
@@ -1603,8 +1603,8 @@
               "hired": 0
             },
             {
-              "job_id": "1778595342890x760789216279920600",
-              "job_title": "Enterprise Sales Manager, Retail",
+              "job_id": "1760281065538x811562236048310300",
+              "job_title": "Account Manager (2025.03914) München, Germany",
               "contacted": 2,
               "screens": 2,
               "actual_screens": 2,
@@ -4504,16 +4504,6 @@
               "hired": 0
             },
             {
-              "job_id": "1779975417411x145223316330774530",
-              "job_title": "Senior Talent Aquisition Partner (Polish speaker) - Immediate Start",
-              "contacted": 0,
-              "screens": 3,
-              "actual_screens": 0,
-              "ats": 0,
-              "offered": 0,
-              "hired": 0
-            },
-            {
               "job_id": "1773325101895x585280399134687200",
               "job_title": "Technical Product Manager",
               "contacted": 0,
@@ -4522,6 +4512,16 @@
               "ats": 0,
               "offered": 0,
               "hired": 1
+            },
+            {
+              "job_id": "1779975417411x145223316330774530",
+              "job_title": "Senior Talent Aquisition Partner (Polish speaker) - Immediate Start",
+              "contacted": 0,
+              "screens": 3,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
             }
           ]
         },
