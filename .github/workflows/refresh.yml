@@ -2,7 +2,8 @@ name: Refresh Circle data
 
 on:
   schedule:
-    - cron: "0 */2 * * *"
+    # Fire ~7min after recruiting Flow finishes (Keboola Flow runs 06:41/08:41/12:41/14:41 UTC, done by ~:48)
+    - cron: "55 6,8,12,14 * * *"
   workflow_dispatch: {}
 
 jobs:
