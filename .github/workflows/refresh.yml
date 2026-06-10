@@ -1,8 +1,14 @@
 name: Refresh Circle data
 
 on:
+  # Primary trigger: Keboola fires this the moment fresh data lands in
+  # tribe-recruiting (see keboola_entry.py notify_circle). Event-driven, so
+  # no dependence on GitHub's best-effort cron delivery.
+  repository_dispatch:
+    types: [recruiting-data-updated]
+  # Backstop only: GitHub cron is best-effort and silently dropped both
+  # morning slots on 2026-06-10. Kept as a safety net behind the dispatch.
   schedule:
-    # Fire ~7min after recruiting Flow finishes (Keboola Flow runs 06:41/08:41/12:41/14:41 UTC, done by ~:48)
     - cron: "55 6,8,12,14 * * *"
   workflow_dispatch: {}
 
