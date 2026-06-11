@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11T06:48:19.159793Z",
+  "generated_at": "2026-06-11T08:48:27.717956Z",
   "source": "/tmp/sf.json",
   "periods": {
     "this_week": {
@@ -698,17 +698,17 @@
             "target": 0.0
           },
           "Actual Screens": {
-            "actual": 1,
+            "actual": 2,
             "target": 15.0
           },
           "Moved to ATS": {
-            "actual": 1,
+            "actual": 2,
             "target": 8.0
           },
           "_jobs": [
             {
-              "job_id": "1780991897689x618831523072966700",
-              "job_title": "Sales Manager - Prague",
+              "job_id": "1779870541406x894207762128175100",
+              "job_title": "Merchant Associate - Blava",
               "contacted": 1,
               "screens": 1,
               "actual_screens": 1,
@@ -717,12 +717,12 @@
               "hired": 0
             },
             {
-              "job_id": "1779870541406x894207762128175100",
-              "job_title": "Merchant Associate - Blava",
+              "job_id": "1780991897689x618831523072966700",
+              "job_title": "Sales Manager - Prague",
               "contacted": 1,
               "screens": 1,
-              "actual_screens": 0,
-              "ats": 0,
+              "actual_screens": 1,
+              "ats": 1,
               "offered": 0,
               "hired": 0
             },
@@ -906,15 +906,15 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 41,
+            "actual": 42,
             "target": 50.0
           },
           "Actual Screens": {
-            "actual": 1,
+            "actual": 2,
             "target": 12.0
           },
           "Moved to ATS": {
-            "actual": 1,
+            "actual": 2,
             "target": 5.0
           },
           "_jobs": [
@@ -935,6 +935,16 @@
               "screens": 0,
               "actual_screens": 0,
               "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1778840593499x929159847163723800",
+              "job_title": "Technical Support Engineer - Australia / India",
+              "contacted": 1,
+              "screens": 1,
+              "actual_screens": 1,
+              "ats": 1,
               "offered": 0,
               "hired": 0
             },
@@ -1672,7 +1682,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 11,
+            "actual": 14,
             "target": 40.0
           },
           "Actual Screens": {
@@ -1701,6 +1711,16 @@
               "screens": 7,
               "actual_screens": 5,
               "ats": 4,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1779879195745x269918544983490560",
+              "job_title": "GTM Engineer",
+              "contacted": 3,
+              "screens": 0,
+              "actual_screens": 0,
+              "ats": 0,
               "offered": 0,
               "hired": 0
             },
@@ -2147,7 +2167,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 7,
+            "actual": 35,
             "target": 70.0
           },
           "Actual Screens": {
@@ -2162,7 +2182,7 @@
             {
               "job_id": "1772614005813x477540619595546600",
               "job_title": "iOS Engineer - IC3 (Sam)",
-              "contacted": 3,
+              "contacted": 31,
               "screens": 12,
               "actual_screens": 4,
               "ats": 0,
@@ -2298,7 +2318,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 273,
+            "actual": 274,
             "target": 70.0
           },
           "Actual Screens": {
@@ -2363,7 +2383,7 @@
             {
               "job_id": "1778673284727x519021825440350200",
               "job_title": "Engineering Manager T&S Kristina, Berlin",
-              "contacted": 0,
+              "contacted": 1,
               "screens": 2,
               "actual_screens": 2,
               "ats": 2,
@@ -2514,11 +2534,11 @@
             "target": 20.0
           },
           "Actual Screens": {
-            "actual": 8,
+            "actual": 9,
             "target": 15.0
           },
           "Moved to ATS": {
-            "actual": 4,
+            "actual": 5,
             "target": 10.0
           },
           "_jobs": [
@@ -2527,8 +2547,8 @@
               "job_title": "Account Manager Regions Italy - Bologna",
               "contacted": 14,
               "screens": 4,
-              "actual_screens": 2,
-              "ats": 1,
+              "actual_screens": 3,
+              "ats": 2,
               "offered": 0,
               "hired": 0
             },
@@ -2812,7 +2832,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 46,
+            "actual": 74,
             "target": 100.0
           },
           "Recruiter Screen": {
@@ -2829,6 +2849,16 @@
           },
           "_drops": [],
           "_jobs": [
+            {
+              "job_id": "1772614005813x477540619595546600",
+              "job_title": "iOS Engineer - IC3 (Sam)",
+              "contacted": 28,
+              "screens": 5,
+              "actual_screens": 2,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
             {
               "job_id": "1780994896815x966398833240834000",
               "job_title": "Generalist TA (French speaker)",
@@ -2867,16 +2897,6 @@
               "actual_screens": 0,
               "ats": 1,
               "offered": 1,
-              "hired": 0
-            },
-            {
-              "job_id": "1772614005813x477540619595546600",
-              "job_title": "iOS Engineer - IC3 (Sam)",
-              "contacted": 0,
-              "screens": 5,
-              "actual_screens": 2,
-              "ats": 0,
-              "offered": 0,
               "hired": 0
             },
             {
@@ -3240,7 +3260,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 63,
+            "actual": 66,
             "target": 100.0
           },
           "Recruiter Screen": {
@@ -3248,11 +3268,11 @@
             "target": 10.0
           },
           "Actual Screens": {
-            "actual": 4,
+            "actual": 5,
             "target": 7.0
           },
           "Moved to ATS": {
-            "actual": 2,
+            "actual": 3,
             "target": 4.0
           },
           "_drops": [],
@@ -3260,7 +3280,7 @@
             {
               "job_id": "1780916551860x156414970281066500",
               "job_title": "Regional CRM Lead (North region)",
-              "contacted": 62,
+              "contacted": 65,
               "screens": 0,
               "actual_screens": 0,
               "ats": 0,
@@ -3273,6 +3293,16 @@
               "contacted": 1,
               "screens": 6,
               "actual_screens": 3,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1773913077486x516838073586417660",
+              "job_title": "Global Integrated B2B Marketing Manager, Wolt for Work",
+              "contacted": 0,
+              "screens": 0,
+              "actual_screens": 1,
               "ats": 1,
               "offered": 0,
               "hired": 0
@@ -4097,16 +4127,6 @@
               "hired": 0
             },
             {
-              "job_id": "1773325101895x585280399134687200",
-              "job_title": "Technical Product Manager",
-              "contacted": 0,
-              "screens": 0,
-              "actual_screens": 0,
-              "ats": 0,
-              "offered": 0,
-              "hired": 1
-            },
-            {
               "job_id": "1779975417411x145223316330774530",
               "job_title": "Senior Talent Aquisition Partner (Polish speaker) - Immediate Start",
               "contacted": 0,
@@ -4115,6 +4135,16 @@
               "ats": 0,
               "offered": 0,
               "hired": 0
+            },
+            {
+              "job_id": "1773325101895x585280399134687200",
+              "job_title": "Technical Product Manager",
+              "contacted": 0,
+              "screens": 0,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 1
             }
           ]
         }
@@ -4129,7 +4159,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 152,
+            "actual": 153,
             "target": 220.0
           },
           "Recruiter Screen": {
@@ -4167,9 +4197,9 @@
               "hired": 0
             },
             {
-              "job_id": "1775124928738x792744654411137000",
-              "job_title": "Senior Backend Engineer Trust & Safety - Kristina - Berlin",
-              "contacted": 0,
+              "job_id": "1778673284727x519021825440350200",
+              "job_title": "Engineering Manager T&S Kristina, Berlin",
+              "contacted": 1,
               "screens": 1,
               "actual_screens": 1,
               "ats": 1,
@@ -4177,8 +4207,8 @@
               "hired": 0
             },
             {
-              "job_id": "1778673284727x519021825440350200",
-              "job_title": "Engineering Manager T&S Kristina, Berlin",
+              "job_id": "1775124928738x792744654411137000",
+              "job_title": "Senior Backend Engineer Trust & Safety - Kristina - Berlin",
               "contacted": 0,
               "screens": 1,
               "actual_screens": 1,
@@ -5280,16 +5310,6 @@
               "hired": 0
             },
             {
-              "job_id": "1777987322411x102512047924183040",
-              "job_title": "Senior Fullstack Engineer - Stuttgart",
-              "contacted": 0,
-              "screens": 2,
-              "actual_screens": 0,
-              "ats": 0,
-              "offered": 0,
-              "hired": 0
-            },
-            {
               "job_id": "1776343351205x571330529930772500",
               "job_title": "Enterprise Account Manager Luxembourg",
               "contacted": 0,
@@ -5304,6 +5324,16 @@
               "job_title": "Category Manager (WM), Slovenia",
               "contacted": 0,
               "screens": 1,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1777987322411x102512047924183040",
+              "job_title": "Senior Fullstack Engineer - Stuttgart",
+              "contacted": 0,
+              "screens": 2,
               "actual_screens": 0,
               "ats": 0,
               "offered": 0,
@@ -5560,16 +5590,6 @@
               "hired": 0
             },
             {
-              "job_id": "1779112032424x907451151344205800",
-              "job_title": "QA Automation - Authentication, Croatia",
-              "contacted": 0,
-              "screens": 1,
-              "actual_screens": 0,
-              "ats": 0,
-              "offered": 0,
-              "hired": 0
-            },
-            {
               "job_id": "1776343351205x571330529930772500",
               "job_title": "Enterprise Account Manager Luxembourg",
               "contacted": 0,
@@ -5577,6 +5597,16 @@
               "actual_screens": 0,
               "ats": 0,
               "offered": 1,
+              "hired": 0
+            },
+            {
+              "job_id": "1779112032424x907451151344205800",
+              "job_title": "QA Automation - Authentication, Croatia",
+              "contacted": 0,
+              "screens": 1,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
               "hired": 0
             }
           ]
