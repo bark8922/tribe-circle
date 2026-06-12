@@ -304,7 +304,6 @@
   };
 
   function renderDrops(member, periodKey) {
-    if (member.role !== 'TS') return '';
     const drops = (member.data && member.data[periodKey] && member.data[periodKey]._drops) || [];
     if (!drops.length) return '';
     const jobsOnPage = (member.data[periodKey]._jobs || []).map(j => ({ id: j.job_id, title: j.job_title }));
