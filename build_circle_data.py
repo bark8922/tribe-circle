@@ -301,6 +301,42 @@ def drops_for_ts(dash, ts_name, iso_week, iso_year=2026):
     return out
 
 
+def _client_match(drop_client, pilot):
+    """Tolerant match between a drop row's Bubble client_name and the pilot's
+    WBR client. Handles Wolt sub-clients (both sides start with 'Wolt') and
+    case differences (Aviv/AVIV, DoorDash/Doordash)."""
+    dc = (drop_client or "").strip().casefold()
+    if not dc:
+        return False
+    for key in ("client", "pd_client"):
+        pc = (pilot.get(key) or "").strip().casefold()
+        if pc and (dc == pc or (dc.startswith("wolt") and pc.startswith("wolt"))):
+            return True
+    return False
+
+
+def drops_for_ta(dash, pilot, iso_week, iso_year=2026):
+    """Drop rows for one TA in one ISO week, from drops_by_recruiter
+    (who_event_created_for attribution), scoped to the pilot's client.
+    Same row schema as drops_for_ts."""
+    out = []
+    for r in dash.get("drops_by_recruiter", []):
+        if r.get("recruiter") != pilot["name"]:
+            continue
+        if r.get("iso_year") != iso_year or r.get("iso_week") != iso_week:
+            continue
+        if not _client_match(r.get("client"), pilot):
+            continue
+        out.append({
+            "job_id": r.get("job_id"),
+            "job_title": (r.get("job_title") or "").strip(),
+            "client": r.get("client"),
+            "reason": r.get("reason"),
+            "drops": int(r.get("drops") or 0),
+        })
+    return out
+
+
 def build_member(dash, pilot, periods):
     out = {
         "name": pilot["name"],
@@ -319,6 +355,7 @@ def build_member(dash, pilot, periods):
                 "Outreach Contacted": {"actual": int(a.get("contacted", 0) or 0),      "target": float(t.get("contacted", 0) or 0)},
                 "Actual Screens":     {"actual": int(a.get("actual_screens", 0) or 0), "target": float(t.get("actual_screens", 0) or 0)},
                 "Moved to ATS":       {"actual": int(a.get("ats", 0) or 0),            "target": float(t.get("moved_to_ats", 0) or 0)},
+                "_drops":             drops_for_ta(dash, pilot, iso),
             }
         else:
             a = ts_actuals_from_pd(dash, pilot["name"], iso)
