@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11T16:41:44.592268Z",
+  "generated_at": "2026-06-12T06:48:21.683965Z",
   "source": "/tmp/sf.json",
   "periods": {
     "this_week": {
@@ -8,7 +8,7 @@
       "start": "2026-06-08",
       "end": "2026-06-14",
       "iso_week": 24,
-      "elapsed_pct": 0.571
+      "elapsed_pct": 0.714
     },
     "last_week": {
       "label": "Last week",
@@ -583,15 +583,15 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 40,
+            "actual": 41,
             "target": 50.0
           },
           "Actual Screens": {
-            "actual": 7,
+            "actual": 8,
             "target": 15.0
           },
           "Moved to ATS": {
-            "actual": 7,
+            "actual": 8,
             "target": 8.0
           },
           "_jobs": [
@@ -618,12 +618,12 @@
             {
               "job_id": "1776662305695x867664369647616000",
               "job_title": "Key Account Manager (Malta)",
-              "contacted": 2,
-              "screens": 2,
-              "actual_screens": 3,
-              "ats": 3,
-              "offered": 0,
-              "hired": 0
+              "contacted": 3,
+              "screens": 3,
+              "actual_screens": 4,
+              "ats": 4,
+              "offered": 1,
+              "hired": 1
             },
             {
               "job_id": "1779258169273x145089529770410000",
@@ -643,11 +643,11 @@
             "target": 50.0
           },
           "Actual Screens": {
-            "actual": 17,
+            "actual": 16,
             "target": 15.0
           },
           "Moved to ATS": {
-            "actual": 9,
+            "actual": 8,
             "target": 8.0
           },
           "_jobs": [
@@ -675,10 +675,10 @@
               "job_id": "1776662305695x867664369647616000",
               "job_title": "Key Account Manager (Malta)",
               "contacted": 3,
-              "screens": 4,
-              "actual_screens": 6,
-              "ats": 3,
-              "offered": 1,
+              "screens": 3,
+              "actual_screens": 5,
+              "ats": 2,
+              "offered": 0,
               "hired": 0
             },
             {
@@ -704,25 +704,25 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 27,
+            "actual": 29,
             "target": 0.0
           },
           "Actual Screens": {
-            "actual": 4,
+            "actual": 5,
             "target": 15.0
           },
           "Moved to ATS": {
-            "actual": 3,
+            "actual": 4,
             "target": 8.0
           },
           "_jobs": [
             {
               "job_id": "1780991897689x618831523072966700",
               "job_title": "Sales Manager - Prague",
-              "contacted": 26,
-              "screens": 3,
-              "actual_screens": 3,
-              "ats": 2,
+              "contacted": 28,
+              "screens": 4,
+              "actual_screens": 4,
+              "ats": 3,
               "offered": 0,
               "hired": 0
             },
@@ -1047,7 +1047,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 20,
+            "actual": 29,
             "target": 70.0
           },
           "Actual Screens": {
@@ -1062,8 +1062,8 @@
             {
               "job_id": "1772187627387x288515927427776500",
               "job_title": "Backend Engineer II (Chene)",
-              "contacted": 12,
-              "screens": 3,
+              "contacted": 21,
+              "screens": 5,
               "actual_screens": 2,
               "ats": 1,
               "offered": 0,
@@ -1168,25 +1168,25 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 36,
+            "actual": 37,
             "target": 60.0
           },
           "Actual Screens": {
-            "actual": 2,
+            "actual": 3,
             "target": 15.0
           },
           "Moved to ATS": {
-            "actual": 2,
+            "actual": 3,
             "target": 8.0
           },
           "_jobs": [
             {
               "job_id": "1779445203229x683558468490100700",
               "job_title": "Category Manager, Czechia, Q2 2026",
-              "contacted": 33,
-              "screens": 1,
-              "actual_screens": 0,
-              "ats": 0,
+              "contacted": 34,
+              "screens": 2,
+              "actual_screens": 1,
+              "ats": 1,
               "offered": 0,
               "hired": 0
             },
@@ -1359,7 +1359,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 79,
+            "actual": 84,
             "target": 70.0
           },
           "Actual Screens": {
@@ -1384,10 +1384,20 @@
             {
               "job_id": "1776767826716x982121841327341600",
               "job_title": "Senior iOS Engineer - Germany",
-              "contacted": 36,
+              "contacted": 40,
               "screens": 6,
               "actual_screens": 6,
               "ats": 5,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1780328272082x222571569976705020",
+              "job_title": "Senior Front End Engineer (DE) - Alex",
+              "contacted": 1,
+              "screens": 0,
+              "actual_screens": 0,
+              "ats": 0,
               "offered": 0,
               "hired": 0
             },
@@ -1528,8 +1538,8 @@
               "hired": 0
             },
             {
-              "job_id": "1760281065538x811562236048310300",
-              "job_title": "Account Manager (2025.03914) München, Germany",
+              "job_id": "1778595342890x760789216279920600",
+              "job_title": "Enterprise Sales Manager, Retail",
               "contacted": 2,
               "screens": 2,
               "actual_screens": 2,
@@ -1538,8 +1548,8 @@
               "hired": 0
             },
             {
-              "job_id": "1778595342890x760789216279920600",
-              "job_title": "Enterprise Sales Manager, Retail",
+              "job_id": "1760281065538x811562236048310300",
+              "job_title": "Account Manager (2025.03914) München, Germany",
               "contacted": 2,
               "screens": 2,
               "actual_screens": 2,
@@ -1570,7 +1580,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 9,
+            "actual": 15,
             "target": 70.0
           },
           "Actual Screens": {
@@ -1585,7 +1595,7 @@
             {
               "job_id": "1766484364452x686009847116464100",
               "job_title": "Machine Learning Engineer",
-              "contacted": 9,
+              "contacted": 15,
               "screens": 0,
               "actual_screens": 0,
               "ats": 0,
@@ -1823,11 +1833,11 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 29,
+            "actual": 30,
             "target": 100.0
           },
           "Actual Screens": {
-            "actual": 15,
+            "actual": 16,
             "target": 15.0
           },
           "Moved to ATS": {
@@ -1858,9 +1868,9 @@
             {
               "job_id": "1774519521018x502430651468480500",
               "job_title": "Patient Support Specialist - Germany",
-              "contacted": 1,
-              "screens": 1,
-              "actual_screens": 1,
+              "contacted": 2,
+              "screens": 2,
+              "actual_screens": 2,
               "ats": 0,
               "offered": 0,
               "hired": 0
@@ -2096,7 +2106,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 90,
+            "actual": 100,
             "target": 70.0
           },
           "Actual Screens": {
@@ -2121,7 +2131,7 @@
             {
               "job_id": "1779111938424x336950569178497000",
               "job_title": "QA Automation - Financing, Croatia",
-              "contacted": 22,
+              "contacted": 31,
               "screens": 7,
               "actual_screens": 3,
               "ats": 2,
@@ -2131,7 +2141,7 @@
             {
               "job_id": "1779112032424x907451151344205800",
               "job_title": "QA Automation - Authentication, Croatia",
-              "contacted": 12,
+              "contacted": 13,
               "screens": 4,
               "actual_screens": 3,
               "ats": 3,
@@ -2207,7 +2217,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 35,
+            "actual": 58,
             "target": 70.0
           },
           "Actual Screens": {
@@ -2222,7 +2232,7 @@
             {
               "job_id": "1772614005813x477540619595546600",
               "job_title": "iOS Engineer - IC3 (Sam)",
-              "contacted": 31,
+              "contacted": 54,
               "screens": 12,
               "actual_screens": 4,
               "ats": 0,
@@ -2358,18 +2368,28 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 330,
+            "actual": 388,
             "target": 70.0
           },
           "Actual Screens": {
-            "actual": 19,
+            "actual": 20,
             "target": 15.0
           },
           "Moved to ATS": {
-            "actual": 17,
+            "actual": 18,
             "target": 10.0
           },
           "_jobs": [
+            {
+              "job_id": "1779970626328x834670130159681500",
+              "job_title": "Engineering Manager, Platform - Berlin",
+              "contacted": 141,
+              "screens": 13,
+              "actual_screens": 3,
+              "ats": 3,
+              "offered": 0,
+              "hired": 0
+            },
             {
               "job_id": "1778673333753x755455990320857100",
               "job_title": "Engineering Manager France, Kristina",
@@ -2383,20 +2403,10 @@
             {
               "job_id": "1781004000068x614726314335666200",
               "job_title": "Senior Backend Engineer, Romania (Contractor) Kristina",
-              "contacted": 100,
-              "screens": 5,
-              "actual_screens": 4,
-              "ats": 4,
-              "offered": 0,
-              "hired": 0
-            },
-            {
-              "job_id": "1779970626328x834670130159681500",
-              "job_title": "Engineering Manager, Platform - Berlin",
-              "contacted": 89,
-              "screens": 12,
-              "actual_screens": 3,
-              "ats": 3,
+              "contacted": 106,
+              "screens": 6,
+              "actual_screens": 5,
+              "ats": 5,
               "offered": 0,
               "hired": 0
             },
@@ -2509,25 +2519,25 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 41,
+            "actual": 43,
             "target": 100.0
           },
           "Actual Screens": {
-            "actual": 5,
+            "actual": 8,
             "target": 15.0
           },
           "Moved to ATS": {
-            "actual": 4,
+            "actual": 5,
             "target": 7.0
           },
           "_jobs": [
             {
               "job_id": "1774945442541x679227563572199400",
               "job_title": "Senior Software Engineer (UK) - Fullstack (Ecosystem/Shop)",
-              "contacted": 41,
-              "screens": 6,
-              "actual_screens": 5,
-              "ats": 4,
+              "contacted": 43,
+              "screens": 9,
+              "actual_screens": 8,
+              "ats": 5,
               "offered": 0,
               "hired": 0
             }
@@ -2570,11 +2580,11 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 26,
+            "actual": 27,
             "target": 20.0
           },
           "Actual Screens": {
-            "actual": 15,
+            "actual": 16,
             "target": 15.0
           },
           "Moved to ATS": {
@@ -2603,18 +2613,18 @@
               "hired": 0
             },
             {
-              "job_id": "1777281385245x962416365381615600",
-              "job_title": "Account Manager Regions Italy - Firenze",
-              "contacted": 2,
-              "screens": 2,
-              "actual_screens": 2,
+              "job_id": "1777281480146x386265215830065150",
+              "job_title": "Senior Account Manager Regions Italy - Torino",
+              "contacted": 3,
+              "screens": 3,
+              "actual_screens": 3,
               "ats": 0,
               "offered": 0,
               "hired": 0
             },
             {
-              "job_id": "1777281480146x386265215830065150",
-              "job_title": "Senior Account Manager Regions Italy - Torino",
+              "job_id": "1777281385245x962416365381615600",
+              "job_title": "Account Manager Regions Italy - Firenze",
               "contacted": 2,
               "screens": 2,
               "actual_screens": 2,
@@ -2711,25 +2721,35 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 287,
+            "actual": 352,
             "target": 70.0
           },
           "Actual Screens": {
-            "actual": 21,
+            "actual": 25,
             "target": 15.0
           },
           "Moved to ATS": {
-            "actual": 16,
+            "actual": 20,
             "target": 10.0
           },
           "_jobs": [
             {
               "job_id": "1779729846009x817600643033989100",
               "job_title": "Frontend Engineer - Croatia",
-              "contacted": 69,
+              "contacted": 102,
               "screens": 13,
-              "actual_screens": 10,
-              "ats": 7,
+              "actual_screens": 12,
+              "ats": 9,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1781084768272x309178114878734340",
+              "job_title": "Senior Machine Learning Engineer",
+              "contacted": 74,
+              "screens": 0,
+              "actual_screens": 0,
+              "ats": 0,
               "offered": 0,
               "hired": 0
             },
@@ -2747,19 +2767,9 @@
               "job_id": "1780324773234x469050419941736450",
               "job_title": "Frontend Engineer - DE",
               "contacted": 42,
-              "screens": 4,
-              "actual_screens": 2,
-              "ats": 4,
-              "offered": 0,
-              "hired": 0
-            },
-            {
-              "job_id": "1781084768272x309178114878734340",
-              "job_title": "Senior Machine Learning Engineer",
-              "contacted": 42,
-              "screens": 0,
-              "actual_screens": 0,
-              "ats": 0,
+              "screens": 5,
+              "actual_screens": 4,
+              "ats": 6,
               "offered": 0,
               "hired": 0
             },
@@ -2872,11 +2882,11 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 81,
+            "actual": 117,
             "target": 100.0
           },
           "Recruiter Screen": {
-            "actual": 9,
+            "actual": 11,
             "target": 10.0
           },
           "Actual Screens": {
@@ -2890,19 +2900,9 @@
           "_drops": [],
           "_jobs": [
             {
-              "job_id": "1780994896815x966398833240834000",
-              "job_title": "Generalist TA (French speaker)",
-              "contacted": 32,
-              "screens": 1,
-              "actual_screens": 1,
-              "ats": 0,
-              "offered": 0,
-              "hired": 0
-            },
-            {
               "job_id": "1772614005813x477540619595546600",
               "job_title": "iOS Engineer - IC3 (Sam)",
-              "contacted": 28,
+              "contacted": 51,
               "screens": 5,
               "actual_screens": 2,
               "ats": 0,
@@ -2910,10 +2910,20 @@
               "hired": 0
             },
             {
+              "job_id": "1780994896815x966398833240834000",
+              "job_title": "Generalist TA (French speaker)",
+              "contacted": 36,
+              "screens": 1,
+              "actual_screens": 1,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
               "job_id": "1772187627387x288515927427776500",
               "job_title": "Backend Engineer II (Chene)",
-              "contacted": 10,
-              "screens": 1,
+              "contacted": 19,
+              "screens": 3,
               "actual_screens": 0,
               "ats": 0,
               "offered": 0,
@@ -3359,7 +3369,7 @@
             },
             {
               "job_id": "1775125735494x364560877536935940",
-              "job_title": "Regional Manager, Consumer (Cx) - (Poland)",
+              "job_title": "Regional Manager, S&O, Consumer (Cx) - (Poland)",
               "contacted": 0,
               "screens": 2,
               "actual_screens": 1,
@@ -3637,7 +3647,7 @@
             },
             {
               "job_id": "1775125735494x364560877536935940",
-              "job_title": "Regional Manager, Consumer (Cx) - (Poland)",
+              "job_title": "Regional Manager, S&O, Consumer (Cx) - (Poland)",
               "contacted": 0,
               "screens": 1,
               "actual_screens": 1,
@@ -3987,7 +3997,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 98,
+            "actual": 102,
             "target": 100.0
           },
           "Recruiter Screen": {
@@ -4007,7 +4017,7 @@
             {
               "job_id": "1779970626328x834670130159681500",
               "job_title": "Engineering Manager, Platform - Berlin",
-              "contacted": 54,
+              "contacted": 58,
               "screens": 7,
               "actual_screens": 2,
               "ats": 2,
@@ -4177,16 +4187,6 @@
               "hired": 0
             },
             {
-              "job_id": "1773325101895x585280399134687200",
-              "job_title": "Technical Product Manager",
-              "contacted": 0,
-              "screens": 0,
-              "actual_screens": 0,
-              "ats": 0,
-              "offered": 0,
-              "hired": 1
-            },
-            {
               "job_id": "1779975417411x145223316330774530",
               "job_title": "Senior Talent Aquisition Partner (Polish speaker) - Immediate Start",
               "contacted": 0,
@@ -4195,6 +4195,16 @@
               "ats": 0,
               "offered": 0,
               "hired": 0
+            },
+            {
+              "job_id": "1773325101895x585280399134687200",
+              "job_title": "Technical Product Manager",
+              "contacted": 0,
+              "screens": 0,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 1
             }
           ]
         }
@@ -4209,7 +4219,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 158,
+            "actual": 164,
             "target": 220.0
           },
           "Recruiter Screen": {
@@ -4239,7 +4249,7 @@
             {
               "job_id": "1781004000068x614726314335666200",
               "job_title": "Senior Backend Engineer, Romania (Contractor) Kristina",
-              "contacted": 52,
+              "contacted": 58,
               "screens": 2,
               "actual_screens": 2,
               "ats": 2,
@@ -4287,8 +4297,8 @@
               "hired": 0
             },
             {
-              "job_id": "1778238250267x806800061349494800",
-              "job_title": "Senior Backend Engineer, Platform Team - Berlin (Wlad)",
+              "job_id": "1774945442541x679227563572199400",
+              "job_title": "Senior Software Engineer (UK) - Fullstack (Ecosystem/Shop)",
               "contacted": 0,
               "screens": 1,
               "actual_screens": 0,
@@ -4297,8 +4307,8 @@
               "hired": 0
             },
             {
-              "job_id": "1774945442541x679227563572199400",
-              "job_title": "Senior Software Engineer (UK) - Fullstack (Ecosystem/Shop)",
+              "job_id": "1778238250267x806800061349494800",
+              "job_title": "Senior Backend Engineer, Platform Team - Berlin (Wlad)",
               "contacted": 0,
               "screens": 1,
               "actual_screens": 0,
@@ -4468,15 +4478,15 @@
             "target": 110.0
           },
           "Recruiter Screen": {
-            "actual": 28,
+            "actual": 29,
             "target": 10.0
           },
           "Actual Screens": {
-            "actual": 23,
+            "actual": 25,
             "target": 7.0
           },
           "Moved to ATS": {
-            "actual": 19,
+            "actual": 21,
             "target": 4.0
           },
           "_drops": [],
@@ -4505,9 +4515,9 @@
               "job_id": "1780324773234x469050419941736450",
               "job_title": "Frontend Engineer - DE",
               "contacted": 42,
-              "screens": 4,
-              "actual_screens": 2,
-              "ats": 4,
+              "screens": 5,
+              "actual_screens": 4,
+              "ats": 6,
               "offered": 0,
               "hired": 0
             },
@@ -4929,7 +4939,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 126,
+            "actual": 168,
             "target": 180.0
           },
           "Recruiter Screen": {
@@ -4949,10 +4959,20 @@
             {
               "job_id": "1781084768272x309178114878734340",
               "job_title": "Senior Machine Learning Engineer",
-              "contacted": 42,
+              "contacted": 74,
               "screens": 0,
               "actual_screens": 0,
               "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1779111938424x336950569178497000",
+              "job_title": "QA Automation - Financing, Croatia",
+              "contacted": 31,
+              "screens": 7,
+              "actual_screens": 3,
+              "ats": 2,
               "offered": 0,
               "hired": 0
             },
@@ -4963,16 +4983,6 @@
               "screens": 1,
               "actual_screens": 1,
               "ats": 0,
-              "offered": 0,
-              "hired": 0
-            },
-            {
-              "job_id": "1779111938424x336950569178497000",
-              "job_title": "QA Automation - Financing, Croatia",
-              "contacted": 22,
-              "screens": 7,
-              "actual_screens": 3,
-              "ats": 2,
               "offered": 0,
               "hired": 0
             },
@@ -4989,7 +4999,7 @@
             {
               "job_id": "1779112032424x907451151344205800",
               "job_title": "QA Automation - Authentication, Croatia",
-              "contacted": 12,
+              "contacted": 13,
               "screens": 4,
               "actual_screens": 2,
               "ats": 2,
@@ -5680,16 +5690,6 @@
               "hired": 0
             },
             {
-              "job_id": "1779112032424x907451151344205800",
-              "job_title": "QA Automation - Authentication, Croatia",
-              "contacted": 0,
-              "screens": 1,
-              "actual_screens": 0,
-              "ats": 0,
-              "offered": 0,
-              "hired": 0
-            },
-            {
               "job_id": "1776343351205x571330529930772500",
               "job_title": "Enterprise Account Manager Luxembourg",
               "contacted": 0,
@@ -5697,6 +5697,16 @@
               "actual_screens": 0,
               "ats": 0,
               "offered": 1,
+              "hired": 0
+            },
+            {
+              "job_id": "1779112032424x907451151344205800",
+              "job_title": "QA Automation - Authentication, Croatia",
+              "contacted": 0,
+              "screens": 1,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
               "hired": 0
             }
           ]
@@ -5712,30 +5722,40 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 190,
+            "actual": 271,
             "target": 300.0
           },
           "Recruiter Screen": {
-            "actual": 29,
+            "actual": 31,
             "target": 10.0
           },
           "Actual Screens": {
-            "actual": 10,
+            "actual": 13,
             "target": 7.0
           },
           "Moved to ATS": {
-            "actual": 7,
+            "actual": 10,
             "target": 4.0
           },
           "_drops": [],
           "_jobs": [
             {
+              "job_id": "1779970626328x834670130159681500",
+              "job_title": "Engineering Manager, Platform - Berlin",
+              "contacted": 83,
+              "screens": 5,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
               "job_id": "1779729846009x817600643033989100",
               "job_title": "Frontend Engineer - Croatia",
-              "contacted": 47,
+              "contacted": 80,
               "screens": 9,
-              "actual_screens": 3,
-              "ats": 1,
+              "actual_screens": 5,
+              "ats": 3,
               "offered": 0,
               "hired": 0
             },
@@ -5753,19 +5773,9 @@
               "job_id": "1781004000068x614726314335666200",
               "job_title": "Senior Backend Engineer, Romania (Contractor) Kristina",
               "contacted": 38,
-              "screens": 1,
-              "actual_screens": 0,
-              "ats": 0,
-              "offered": 0,
-              "hired": 0
-            },
-            {
-              "job_id": "1779970626328x834670130159681500",
-              "job_title": "Engineering Manager, Platform - Berlin",
-              "contacted": 35,
-              "screens": 4,
-              "actual_screens": 0,
-              "ats": 0,
+              "screens": 2,
+              "actual_screens": 1,
+              "ats": 1,
               "offered": 0,
               "hired": 0
             },
@@ -5817,15 +5827,15 @@
             "target": 300.0
           },
           "Recruiter Screen": {
-            "actual": 12,
+            "actual": 11,
             "target": 10.0
           },
           "Actual Screens": {
-            "actual": 4,
+            "actual": 3,
             "target": 7.0
           },
           "Moved to ATS": {
-            "actual": 2,
+            "actual": 1,
             "target": 4.0
           },
           "_drops": [
@@ -5937,10 +5947,10 @@
               "job_id": "1776662305695x867664369647616000",
               "job_title": "Key Account Manager (Malta)",
               "contacted": 0,
-              "screens": 1,
-              "actual_screens": 3,
-              "ats": 1,
-              "offered": 1,
+              "screens": 0,
+              "actual_screens": 2,
+              "ats": 0,
+              "offered": 0,
               "hired": 0
             },
             {
