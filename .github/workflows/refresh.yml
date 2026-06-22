@@ -25,8 +25,9 @@ jobs:
       - name: Pull live source data from tribe-recruiting
         run: |
           curl -fsSL \
-            "https://raw.githubusercontent.com/bark8922/tribe-recruiting/main/recruiting-dashboard/src/dashboard_data_snowflake.json" \
-            -o /tmp/sf.json
+            "https://raw.githubusercontent.com/bark8922/tribe-recruiting/main/recruiting-dashboard/public/dashboard_data_snowflake.json.gz" \
+            -o /tmp/sf.json.gz
+          gunzip -f /tmp/sf.json.gz
       - name: Regenerate circle_data.json
         env:
           BAMBOOHR_SUBDOMAIN: ${{ secrets.BAMBOOHR_SUBDOMAIN }}
