@@ -105,10 +105,10 @@
     if (!iso) return 'unknown';
     const d = new Date(iso);
     if (isNaN(d.getTime())) return 'unknown';
-    // Show in the viewer's local time: "Jun 3, 5:24 PM"
-    const date = d.toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
-    const time = d.toLocaleTimeString(undefined, { hour: 'numeric', minute: '2-digit' });
-    return `${date}, ${time}`;
+    // Always show Central European Time (Europe/Berlin), regardless of viewer location.
+    const date = d.toLocaleDateString('en-GB', { month: 'short', day: 'numeric', timeZone: 'Europe/Berlin' });
+    const time = d.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Berlin' });
+    return `${date}, ${time} CET`;
   }
 
   // ---------- render ----------
