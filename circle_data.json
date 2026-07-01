@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T15:24:08.931420Z",
+  "generated_at": "2026-07-01T06:49:28.489553Z",
   "source": "/tmp/sf.json",
   "periods": {
     "this_week": {
@@ -8,7 +8,7 @@
       "start": "2026-06-29",
       "end": "2026-07-05",
       "iso_week": 27,
-      "elapsed_pct": 0.286
+      "elapsed_pct": 0.429
     },
     "last_week": {
       "label": "Last week",
@@ -29,7 +29,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 23,
+            "actual": 32,
             "target": 50.0
           },
           "Actual Screens": {
@@ -41,6 +41,13 @@
             "target": 5.0
           },
           "_drops": [
+            {
+              "job_id": "1781921557004x628697378970927100",
+              "job_title": "Sr SWE (Platform & Infra) - Israel",
+              "client": "Aiven",
+              "reason": "Timing",
+              "drops": 3
+            },
             {
               "job_id": "1781921557004x628697378970927100",
               "job_title": "Sr SWE (Platform & Infra) - Israel",
@@ -59,22 +66,15 @@
               "job_id": "1781921557004x628697378970927100",
               "job_title": "Sr SWE (Platform & Infra) - Israel",
               "client": "Aiven",
-              "reason": "Location",
-              "drops": 1
-            },
-            {
-              "job_id": "1781921557004x628697378970927100",
-              "job_title": "Sr SWE (Platform & Infra) - Israel",
-              "client": "Aiven",
-              "reason": "Timing",
-              "drops": 3
-            },
-            {
-              "job_id": "1781921557004x628697378970927100",
-              "job_title": "Sr SWE (Platform & Infra) - Israel",
-              "client": "Aiven",
               "reason": "Other",
               "drops": 3
+            },
+            {
+              "job_id": "1781921557004x628697378970927100",
+              "job_title": "Sr SWE (Platform & Infra) - Israel",
+              "client": "Aiven",
+              "reason": "Location",
+              "drops": 1
             }
           ],
           "_jobs": [
@@ -82,6 +82,16 @@
               "job_id": "1781921557004x628697378970927100",
               "job_title": "Sr SWE (Platform & Infra) - Israel",
               "contacted": 21,
+              "screens": 0,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1775651825154x949444861303455700",
+              "job_title": "Senior Software Engineer (Finland)",
+              "contacted": 9,
               "screens": 0,
               "actual_screens": 0,
               "ats": 0,
@@ -115,11 +125,11 @@
           },
           "_drops": [
             {
-              "job_id": "1775651825154x949444861303455700",
-              "job_title": "Senior Software Engineer (Finland)",
+              "job_id": "1775651749069x453454844985606140",
+              "job_title": "Senior Software Engineer (Israel)",
               "client": "Aiven",
-              "reason": "Timing",
-              "drops": 2
+              "reason": "Skills",
+              "drops": 1
             },
             {
               "job_id": "1775651825154x949444861303455700",
@@ -129,13 +139,6 @@
               "drops": 2
             },
             {
-              "job_id": "1781921557004x628697378970927100",
-              "job_title": "Sr SWE (Platform & Infra) - Israel",
-              "client": "Aiven",
-              "reason": "Timing",
-              "drops": 3
-            },
-            {
               "job_id": "1775651825154x949444861303455700",
               "job_title": "Senior Software Engineer (Finland)",
               "client": "Aiven",
@@ -143,11 +146,18 @@
               "drops": 4
             },
             {
-              "job_id": "1775651749069x453454844985606140",
-              "job_title": "Senior Software Engineer (Israel)",
+              "job_id": "1775651825154x949444861303455700",
+              "job_title": "Senior Software Engineer (Finland)",
               "client": "Aiven",
-              "reason": "Skills",
-              "drops": 1
+              "reason": "Timing",
+              "drops": 2
+            },
+            {
+              "job_id": "1781921557004x628697378970927100",
+              "job_title": "Sr SWE (Platform & Infra) - Israel",
+              "client": "Aiven",
+              "reason": "Timing",
+              "drops": 3
             }
           ],
           "_jobs": [
@@ -382,7 +392,14 @@
               "job_id": "1780395909692x443163030934781950",
               "job_title": "Category Manager - Greece",
               "client": "Wolt",
-              "reason": "Seniority",
+              "reason": "Salary",
+              "drops": 2
+            },
+            {
+              "job_id": "1778764716897x753404041980805100",
+              "job_title": "Area Manager - Athens",
+              "client": "Wolt",
+              "reason": "Skills",
               "drops": 1
             },
             {
@@ -393,18 +410,11 @@
               "drops": 1
             },
             {
-              "job_id": "1778764716897x753404041980805100",
-              "job_title": "Area Manager - Athens",
-              "client": "Wolt",
-              "reason": "Skills",
-              "drops": 1
-            },
-            {
               "job_id": "1780395909692x443163030934781950",
               "job_title": "Category Manager - Greece",
               "client": "Wolt",
-              "reason": "Salary",
-              "drops": 2
+              "reason": "Seniority",
+              "drops": 1
             }
           ],
           "_jobs": [
@@ -642,14 +652,14 @@
               "job_id": "1782225434335x340639237072224260",
               "job_title": "Account Manager - Košice, SVK",
               "client": "Wolt",
-              "reason": "Language",
+              "reason": "Position closed",
               "drops": 1
             },
             {
               "job_id": "1782225434335x340639237072224260",
               "job_title": "Account Manager - Košice, SVK",
               "client": "Wolt",
-              "reason": "Position closed",
+              "reason": "Language",
               "drops": 1
             }
           ],
@@ -701,17 +711,10 @@
           },
           "_drops": [
             {
-              "job_id": "1782225434335x340639237072224260",
-              "job_title": "Account Manager - Košice, SVK",
+              "job_id": "1779789308480x321852111809675260",
+              "job_title": "Account Manager - Brno",
               "client": "Wolt",
-              "reason": "Location",
-              "drops": 1
-            },
-            {
-              "job_id": "1781697512310x532658041294946300",
-              "job_title": "Sales Manager I5 Prague",
-              "client": "Wolt",
-              "reason": "Skills",
+              "reason": "Position closed",
               "drops": 1
             },
             {
@@ -722,10 +725,17 @@
               "drops": 1
             },
             {
-              "job_id": "1778072574829x376368955057766400",
-              "job_title": "Account Manager - Wolt for Work",
+              "job_id": "1782225434335x340639237072224260",
+              "job_title": "Account Manager - Košice, SVK",
               "client": "Wolt",
               "reason": "Salary",
+              "drops": 1
+            },
+            {
+              "job_id": "1781697512310x532658041294946300",
+              "job_title": "Sales Manager I5 Prague",
+              "client": "Wolt",
+              "reason": "Skills",
               "drops": 1
             },
             {
@@ -736,10 +746,17 @@
               "drops": 1
             },
             {
-              "job_id": "1779789308480x321852111809675260",
-              "job_title": "Account Manager - Brno",
+              "job_id": "1782225434335x340639237072224260",
+              "job_title": "Account Manager - Košice, SVK",
               "client": "Wolt",
-              "reason": "Position closed",
+              "reason": "Location",
+              "drops": 1
+            },
+            {
+              "job_id": "1781697512310x532658041294946300",
+              "job_title": "Sales Manager I5 Prague",
+              "client": "Wolt",
+              "reason": "Salary",
               "drops": 1
             },
             {
@@ -750,15 +767,8 @@
               "drops": 3
             },
             {
-              "job_id": "1782225434335x340639237072224260",
-              "job_title": "Account Manager - Košice, SVK",
-              "client": "Wolt",
-              "reason": "Salary",
-              "drops": 1
-            },
-            {
-              "job_id": "1781697512310x532658041294946300",
-              "job_title": "Sales Manager I5 Prague",
+              "job_id": "1778072574829x376368955057766400",
+              "job_title": "Account Manager - Wolt for Work",
               "client": "Wolt",
               "reason": "Salary",
               "drops": 1
@@ -838,7 +848,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 1,
+            "actual": 17,
             "target": 50.0
           },
           "Actual Screens": {
@@ -858,10 +868,10 @@
               "drops": 2
             },
             {
-              "job_id": "1775552220428x685390723465871400",
-              "job_title": "Enterprise Account Executive - Sweden",
+              "job_id": "1775551815119x528177390986985500",
+              "job_title": "Enterprise Account Executive - Berlin",
               "client": "Aiven",
-              "reason": "Salary",
+              "reason": "Position",
               "drops": 1
             },
             {
@@ -872,10 +882,10 @@
               "drops": 1
             },
             {
-              "job_id": "1775551815119x528177390986985500",
-              "job_title": "Enterprise Account Executive - Berlin",
+              "job_id": "1775552220428x685390723465871400",
+              "job_title": "Enterprise Account Executive - Sweden",
               "client": "Aiven",
-              "reason": "Position",
+              "reason": "Salary",
               "drops": 1
             },
             {
@@ -890,7 +900,7 @@
             {
               "job_id": "1775551815119x528177390986985500",
               "job_title": "Enterprise Account Executive - Berlin",
-              "contacted": 1,
+              "contacted": 17,
               "screens": 3,
               "actual_screens": 0,
               "ats": 0,
@@ -901,7 +911,7 @@
               "job_id": "1775552220428x685390723465871400",
               "job_title": "Enterprise Account Executive - Sweden",
               "contacted": 0,
-              "screens": 0,
+              "screens": 1,
               "actual_screens": 1,
               "ats": 1,
               "offered": 0,
@@ -924,31 +934,24 @@
           },
           "_drops": [
             {
-              "job_id": "1777017827149x657905825884405800",
-              "job_title": "Senior Technical Account Manager, EMEA",
-              "client": "Aiven",
-              "reason": "Position closed",
-              "drops": 1
-            },
-            {
-              "job_id": "1775552220428x685390723465871400",
-              "job_title": "Enterprise Account Executive - Sweden",
-              "client": "Aiven",
-              "reason": "Timing",
-              "drops": 10
-            },
-            {
               "job_id": "1775551815119x528177390986985500",
               "job_title": "Enterprise Account Executive - Berlin",
               "client": "Aiven",
-              "reason": "Location",
-              "drops": 1
+              "reason": "Timing",
+              "drops": 4
             },
             {
               "job_id": "1778840593499x929159847163723800",
               "job_title": "Technical Support Engineer - Australia / India",
               "client": "Aiven",
               "reason": "Hiring Manager Rejected",
+              "drops": 1
+            },
+            {
+              "job_id": "1778840593499x929159847163723800",
+              "job_title": "Technical Support Engineer - Australia / India",
+              "client": "Aiven",
+              "reason": "Location",
               "drops": 1
             },
             {
@@ -959,11 +962,11 @@
               "drops": 1
             },
             {
-              "job_id": "1775551815119x528177390986985500",
-              "job_title": "Enterprise Account Executive - Berlin",
+              "job_id": "1777017827149x657905825884405800",
+              "job_title": "Senior Technical Account Manager, EMEA",
               "client": "Aiven",
-              "reason": "Timing",
-              "drops": 4
+              "reason": "Position closed",
+              "drops": 1
             },
             {
               "job_id": "1777017827149x657905825884405800",
@@ -973,11 +976,18 @@
               "drops": 1
             },
             {
-              "job_id": "1778840593499x929159847163723800",
-              "job_title": "Technical Support Engineer - Australia / India",
+              "job_id": "1775551815119x528177390986985500",
+              "job_title": "Enterprise Account Executive - Berlin",
               "client": "Aiven",
               "reason": "Location",
               "drops": 1
+            },
+            {
+              "job_id": "1775552220428x685390723465871400",
+              "job_title": "Enterprise Account Executive - Sweden",
+              "client": "Aiven",
+              "reason": "Timing",
+              "drops": 10
             }
           ],
           "_jobs": [
@@ -1060,6 +1070,13 @@
               "job_id": "1772187860944x479761207964205060",
               "job_title": "Platform Engineer",
               "client": "Glovo",
+              "reason": "Location",
+              "drops": 2
+            },
+            {
+              "job_id": "1772187860944x479761207964205060",
+              "job_title": "Platform Engineer",
+              "client": "Glovo",
               "reason": "Remote only",
               "drops": 1
             },
@@ -1069,13 +1086,6 @@
               "client": "Glovo",
               "reason": "Skills",
               "drops": 1
-            },
-            {
-              "job_id": "1772187860944x479761207964205060",
-              "job_title": "Platform Engineer",
-              "client": "Glovo",
-              "reason": "Location",
-              "drops": 2
             },
             {
               "job_id": "1772187860944x479761207964205060",
@@ -1126,12 +1136,12 @@
               "job_id": "1772187627387x288515927427776500",
               "job_title": "Backend Engineer II (Chene)",
               "client": "Glovo",
-              "reason": "Type of contract",
-              "drops": 1
+              "reason": "Location",
+              "drops": 9
             },
             {
-              "job_id": "1772187627387x288515927427776500",
-              "job_title": "Backend Engineer II (Chene)",
+              "job_id": "1772187860944x479761207964205060",
+              "job_title": "Platform Engineer",
               "client": "Glovo",
               "reason": "Remote only",
               "drops": 2
@@ -1140,7 +1150,7 @@
               "job_id": "1772187627387x288515927427776500",
               "job_title": "Backend Engineer II (Chene)",
               "client": "Glovo",
-              "reason": "Culture Fit",
+              "reason": "Remote only",
               "drops": 2
             },
             {
@@ -1154,28 +1164,14 @@
               "job_id": "1772187627387x288515927427776500",
               "job_title": "Backend Engineer II (Chene)",
               "client": "Glovo",
-              "reason": "Skills",
-              "drops": 1
-            },
-            {
-              "job_id": "1772187860944x479761207964205060",
-              "job_title": "Platform Engineer",
-              "client": "Glovo",
-              "reason": "Remote only",
+              "reason": "Culture Fit",
               "drops": 2
             },
             {
               "job_id": "1772187627387x288515927427776500",
               "job_title": "Backend Engineer II (Chene)",
               "client": "Glovo",
-              "reason": "Seniority",
-              "drops": 1
-            },
-            {
-              "job_id": "1772187627387x288515927427776500",
-              "job_title": "Backend Engineer II (Chene)",
-              "client": "Glovo",
-              "reason": "Language",
+              "reason": "Skills",
               "drops": 1
             },
             {
@@ -1186,6 +1182,13 @@
               "drops": 5
             },
             {
+              "job_id": "1772187627387x288515927427776500",
+              "job_title": "Backend Engineer II (Chene)",
+              "client": "Glovo",
+              "reason": "Language",
+              "drops": 1
+            },
+            {
               "job_id": "1772187860944x479761207964205060",
               "job_title": "Platform Engineer",
               "client": "Glovo",
@@ -1196,8 +1199,15 @@
               "job_id": "1772187627387x288515927427776500",
               "job_title": "Backend Engineer II (Chene)",
               "client": "Glovo",
-              "reason": "Location",
-              "drops": 9
+              "reason": "Type of contract",
+              "drops": 1
+            },
+            {
+              "job_id": "1772187627387x288515927427776500",
+              "job_title": "Backend Engineer II (Chene)",
+              "client": "Glovo",
+              "reason": "Seniority",
+              "drops": 1
             }
           ],
           "_jobs": [
@@ -1257,13 +1267,6 @@
           },
           "_drops": [
             {
-              "job_id": "1779445203229x683558468490100700",
-              "job_title": "Category Manager, Czechia, Q2 2026",
-              "client": "Wolt",
-              "reason": "Parental leave",
-              "drops": 1
-            },
-            {
               "job_id": "1780492838849x646001879518543900",
               "job_title": "Store Team Lead, Croatia, Q2 2026",
               "client": "Wolt",
@@ -1276,6 +1279,13 @@
               "client": "Wolt",
               "reason": "Timing",
               "drops": 2
+            },
+            {
+              "job_id": "1779445203229x683558468490100700",
+              "job_title": "Category Manager, Czechia, Q2 2026",
+              "client": "Wolt",
+              "reason": "Parental leave",
+              "drops": 1
             }
           ],
           "_jobs": [
@@ -1306,13 +1316,6 @@
           },
           "_drops": [
             {
-              "job_id": "1779445203229x683558468490100700",
-              "job_title": "Category Manager, Czechia, Q2 2026",
-              "client": "Wolt",
-              "reason": "Timing",
-              "drops": 9
-            },
-            {
               "job_id": "1780492838849x646001879518543900",
               "job_title": "Store Team Lead, Croatia, Q2 2026",
               "client": "Wolt",
@@ -1323,8 +1326,8 @@
               "job_id": "1779445203229x683558468490100700",
               "job_title": "Category Manager, Czechia, Q2 2026",
               "client": "Wolt",
-              "reason": "Skills",
-              "drops": 1
+              "reason": "Timing",
+              "drops": 9
             },
             {
               "job_id": "1779445203229x683558468490100700",
@@ -1332,6 +1335,13 @@
               "client": "Wolt",
               "reason": "Salary",
               "drops": 3
+            },
+            {
+              "job_id": "1779445203229x683558468490100700",
+              "job_title": "Category Manager, Czechia, Q2 2026",
+              "client": "Wolt",
+              "reason": "Skills",
+              "drops": 1
             },
             {
               "job_id": "1779445203229x683558468490100700",
@@ -1409,11 +1419,11 @@
             "target": 70.0
           },
           "Actual Screens": {
-            "actual": 5,
+            "actual": 6,
             "target": 15.0
           },
           "Moved to ATS": {
-            "actual": 3,
+            "actual": 5,
             "target": 10.0
           },
           "_drops": [
@@ -1428,6 +1438,41 @@
               "job_id": "1776165059453x461431607535861800",
               "job_title": "Senior Android Engineer - Croatia (Alex)",
               "client": "AVIV",
+              "reason": "Position",
+              "drops": 1
+            },
+            {
+              "job_id": "1776767826716x982121841327341600",
+              "job_title": "Senior iOS Engineer - Germany [ ALEX ]",
+              "client": "AVIV",
+              "reason": "Skills",
+              "drops": 1
+            },
+            {
+              "job_id": "1776165059453x461431607535861800",
+              "job_title": "Senior Android Engineer - Croatia (Alex)",
+              "client": "AVIV",
+              "reason": "Timing",
+              "drops": 2
+            },
+            {
+              "job_id": "1776165059453x461431607535861800",
+              "job_title": "Senior Android Engineer - Croatia (Alex)",
+              "client": "AVIV",
+              "reason": "Dropped out",
+              "drops": 2
+            },
+            {
+              "job_id": "1776767694969x733318081986691100",
+              "job_title": "Senior Android Engineer - Germany [ ALEX ]",
+              "client": "AVIV",
+              "reason": "Timing",
+              "drops": 4
+            },
+            {
+              "job_id": "1776767694969x733318081986691100",
+              "job_title": "Senior Android Engineer - Germany [ ALEX ]",
+              "client": "AVIV",
               "reason": "Skills",
               "drops": 2
             },
@@ -1435,8 +1480,8 @@
               "job_id": "1776165059453x461431607535861800",
               "job_title": "Senior Android Engineer - Croatia (Alex)",
               "client": "AVIV",
-              "reason": "Position",
-              "drops": 1
+              "reason": "Skills",
+              "drops": 2
             },
             {
               "job_id": "1776767694969x733318081986691100",
@@ -1444,43 +1489,22 @@
               "client": "AVIV",
               "reason": "Salary",
               "drops": 2
-            },
-            {
-              "job_id": "1776767694969x733318081986691100",
-              "job_title": "Senior Android Engineer - Germany [ ALEX ]",
-              "client": "AVIV",
-              "reason": "Skills",
-              "drops": 2
-            },
-            {
-              "job_id": "1776767694969x733318081986691100",
-              "job_title": "Senior Android Engineer - Germany [ ALEX ]",
-              "client": "AVIV",
-              "reason": "Timing",
-              "drops": 3
-            },
-            {
-              "job_id": "1776165059453x461431607535861800",
-              "job_title": "Senior Android Engineer - Croatia (Alex)",
-              "client": "AVIV",
-              "reason": "Timing",
-              "drops": 2
             }
           ],
           "_jobs": [
             {
-              "job_id": "1776165059453x461431607535861800",
-              "job_title": "Senior Android Engineer - Croatia (Alex)",
+              "job_id": "1776767694969x733318081986691100",
+              "job_title": "Senior Android Engineer - Germany [ ALEX ]",
               "contacted": 0,
-              "screens": 2,
-              "actual_screens": 2,
-              "ats": 1,
+              "screens": 3,
+              "actual_screens": 3,
+              "ats": 3,
               "offered": 0,
               "hired": 0
             },
             {
-              "job_id": "1776767694969x733318081986691100",
-              "job_title": "Senior Android Engineer - Germany [ ALEX ]",
+              "job_id": "1776165059453x461431607535861800",
+              "job_title": "Senior Android Engineer - Croatia (Alex)",
               "contacted": 0,
               "screens": 2,
               "actual_screens": 2,
@@ -1518,8 +1542,22 @@
               "job_id": "1776767826716x982121841327341600",
               "job_title": "Senior iOS Engineer - Germany [ ALEX ]",
               "client": "AVIV",
-              "reason": "Seniority",
-              "drops": 1
+              "reason": "Timing",
+              "drops": 7
+            },
+            {
+              "job_id": "1776165059453x461431607535861800",
+              "job_title": "Senior Android Engineer - Croatia (Alex)",
+              "client": "AVIV",
+              "reason": "Skills",
+              "drops": 2
+            },
+            {
+              "job_id": "1776767694969x733318081986691100",
+              "job_title": "Senior Android Engineer - Germany [ ALEX ]",
+              "client": "AVIV",
+              "reason": "Timing",
+              "drops": 5
             },
             {
               "job_id": "1776767826716x982121841327341600",
@@ -1529,18 +1567,25 @@
               "drops": 1
             },
             {
+              "job_id": "1776165059453x461431607535861800",
+              "job_title": "Senior Android Engineer - Croatia (Alex)",
+              "client": "AVIV",
+              "reason": "Remote only",
+              "drops": 1
+            },
+            {
               "job_id": "1776767826716x982121841327341600",
               "job_title": "Senior iOS Engineer - Germany [ ALEX ]",
               "client": "AVIV",
-              "reason": "Timing",
-              "drops": 7
+              "reason": "Skills",
+              "drops": 5
             },
             {
               "job_id": "1776165059453x461431607535861800",
               "job_title": "Senior Android Engineer - Croatia (Alex)",
               "client": "AVIV",
-              "reason": "Salary",
-              "drops": 1
+              "reason": "Dropped out",
+              "drops": 2
             },
             {
               "job_id": "1780328272082x222571569976705020",
@@ -1548,13 +1593,6 @@
               "client": "AVIV",
               "reason": "Timing",
               "drops": 4
-            },
-            {
-              "job_id": "1776767826716x982121841327341600",
-              "job_title": "Senior iOS Engineer - Germany [ ALEX ]",
-              "client": "AVIV",
-              "reason": "Unresponsive",
-              "drops": 1
             },
             {
               "job_id": "1776767694969x733318081986691100",
@@ -1567,15 +1605,15 @@
               "job_id": "1776165059453x461431607535861800",
               "job_title": "Senior Android Engineer - Croatia (Alex)",
               "client": "AVIV",
-              "reason": "Position",
-              "drops": 4
+              "reason": "Timing",
+              "drops": 12
             },
             {
-              "job_id": "1776165059453x461431607535861800",
-              "job_title": "Senior Android Engineer - Croatia (Alex)",
+              "job_id": "1776767826716x982121841327341600",
+              "job_title": "Senior iOS Engineer - Germany [ ALEX ]",
               "client": "AVIV",
-              "reason": "Skills",
-              "drops": 2
+              "reason": "Seniority",
+              "drops": 1
             },
             {
               "job_id": "1780328272082x222571569976705020",
@@ -1583,6 +1621,13 @@
               "client": "AVIV",
               "reason": "Skills",
               "drops": 2
+            },
+            {
+              "job_id": "1776165059453x461431607535861800",
+              "job_title": "Senior Android Engineer - Croatia (Alex)",
+              "client": "AVIV",
+              "reason": "Position",
+              "drops": 4
             },
             {
               "job_id": "1780328272082x222571569976705020",
@@ -1595,36 +1640,15 @@
               "job_id": "1776767826716x982121841327341600",
               "job_title": "Senior iOS Engineer - Germany [ ALEX ]",
               "client": "AVIV",
-              "reason": "Skills",
-              "drops": 5
-            },
-            {
-              "job_id": "1776165059453x461431607535861800",
-              "job_title": "Senior Android Engineer - Croatia (Alex)",
-              "client": "AVIV",
-              "reason": "Remote only",
+              "reason": "Unresponsive",
               "drops": 1
             },
             {
               "job_id": "1776165059453x461431607535861800",
               "job_title": "Senior Android Engineer - Croatia (Alex)",
               "client": "AVIV",
-              "reason": "Timing",
-              "drops": 12
-            },
-            {
-              "job_id": "1776165059453x461431607535861800",
-              "job_title": "Senior Android Engineer - Croatia (Alex)",
-              "client": "AVIV",
-              "reason": "Dropped out",
-              "drops": 2
-            },
-            {
-              "job_id": "1776767694969x733318081986691100",
-              "job_title": "Senior Android Engineer - Germany [ ALEX ]",
-              "client": "AVIV",
-              "reason": "Timing",
-              "drops": 5
+              "reason": "Salary",
+              "drops": 1
             }
           ],
           "_jobs": [
@@ -1842,8 +1866,15 @@
               "job_id": "1736934796460x763481035954192400",
               "job_title": "Fullstack Engineer",
               "client": "Enam",
-              "reason": "Remote only",
-              "drops": 4
+              "reason": "Culture Fit",
+              "drops": 1
+            },
+            {
+              "job_id": "1736934796460x763481035954192400",
+              "job_title": "Fullstack Engineer",
+              "client": "Enam",
+              "reason": "Timing",
+              "drops": 3
             },
             {
               "job_id": "1766484364452x686009847116464100",
@@ -1856,15 +1887,8 @@
               "job_id": "1736934796460x763481035954192400",
               "job_title": "Fullstack Engineer",
               "client": "Enam",
-              "reason": "Timing",
-              "drops": 3
-            },
-            {
-              "job_id": "1736934796460x763481035954192400",
-              "job_title": "Fullstack Engineer",
-              "client": "Enam",
-              "reason": "Culture Fit",
-              "drops": 1
+              "reason": "Remote only",
+              "drops": 4
             }
           ],
           "_jobs": [
@@ -1918,14 +1942,42 @@
               "job_id": "1736934796460x763481035954192400",
               "job_title": "Fullstack Engineer",
               "client": "Enam",
-              "reason": "Position",
+              "reason": "Culture Fit",
               "drops": 1
             },
             {
               "job_id": "1766484364452x686009847116464100",
               "job_title": "Machine Learning Engineer",
               "client": "Enam",
+              "reason": "Culture Fit",
+              "drops": 3
+            },
+            {
+              "job_id": "1770882047922x655070271851987000",
+              "job_title": "Security & Compliance Engineer",
+              "client": "Enam",
+              "reason": "Timing",
+              "drops": 3
+            },
+            {
+              "job_id": "1766484364452x686009847116464100",
+              "job_title": "Machine Learning Engineer",
+              "client": "Enam",
+              "reason": "Skills",
+              "drops": 2
+            },
+            {
+              "job_id": "1766484364452x686009847116464100",
+              "job_title": "Machine Learning Engineer",
+              "client": "Enam",
               "reason": "Dropped out",
+              "drops": 1
+            },
+            {
+              "job_id": "1766484364452x686009847116464100",
+              "job_title": "Machine Learning Engineer",
+              "client": "Enam",
+              "reason": "Language",
               "drops": 1
             },
             {
@@ -1936,24 +1988,17 @@
               "drops": 2
             },
             {
-              "job_id": "1736934796460x763481035954192400",
-              "job_title": "Fullstack Engineer",
+              "job_id": "1766484364452x686009847116464100",
+              "job_title": "Machine Learning Engineer",
               "client": "Enam",
-              "reason": "Culture Fit",
-              "drops": 1
+              "reason": "Timing",
+              "drops": 3
             },
             {
               "job_id": "1736934796460x763481035954192400",
               "job_title": "Fullstack Engineer",
               "client": "Enam",
-              "reason": "Language",
-              "drops": 1
-            },
-            {
-              "job_id": "1736934796460x763481035954192400",
-              "job_title": "Fullstack Engineer",
-              "client": "Enam",
-              "reason": "Skills",
+              "reason": "Timing",
               "drops": 1
             },
             {
@@ -1964,18 +2009,25 @@
               "drops": 1
             },
             {
-              "job_id": "1770882047922x655070271851987000",
-              "job_title": "Security & Compliance Engineer",
-              "client": "Enam",
-              "reason": "Timing",
-              "drops": 3
-            },
-            {
-              "job_id": "1766484364452x686009847116464100",
-              "job_title": "Machine Learning Engineer",
+              "job_id": "1736934796460x763481035954192400",
+              "job_title": "Fullstack Engineer",
               "client": "Enam",
               "reason": "Skills",
-              "drops": 2
+              "drops": 1
+            },
+            {
+              "job_id": "1736934796460x763481035954192400",
+              "job_title": "Fullstack Engineer",
+              "client": "Enam",
+              "reason": "Language",
+              "drops": 1
+            },
+            {
+              "job_id": "1736934796460x763481035954192400",
+              "job_title": "Fullstack Engineer",
+              "client": "Enam",
+              "reason": "Position",
+              "drops": 1
             },
             {
               "job_id": "1770882047922x655070271851987000",
@@ -1985,39 +2037,11 @@
               "drops": 1
             },
             {
-              "job_id": "1766484364452x686009847116464100",
-              "job_title": "Machine Learning Engineer",
-              "client": "Enam",
-              "reason": "Culture Fit",
-              "drops": 3
-            },
-            {
               "job_id": "1736934796460x763481035954192400",
               "job_title": "Fullstack Engineer",
               "client": "Enam",
               "reason": "Remote only",
               "drops": 2
-            },
-            {
-              "job_id": "1766484364452x686009847116464100",
-              "job_title": "Machine Learning Engineer",
-              "client": "Enam",
-              "reason": "Language",
-              "drops": 1
-            },
-            {
-              "job_id": "1736934796460x763481035954192400",
-              "job_title": "Fullstack Engineer",
-              "client": "Enam",
-              "reason": "Timing",
-              "drops": 1
-            },
-            {
-              "job_id": "1766484364452x686009847116464100",
-              "job_title": "Machine Learning Engineer",
-              "client": "Enam",
-              "reason": "Timing",
-              "drops": 3
             }
           ],
           "_jobs": [
@@ -2064,7 +2088,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 4,
+            "actual": 10,
             "target": 50.0
           },
           "Actual Screens": {
@@ -2102,7 +2126,7 @@
             {
               "job_id": "1770115575994x938717513032663000",
               "job_title": "Principal Applied Scientist - AI Agents & Generative AI",
-              "contacted": 4,
+              "contacted": 10,
               "screens": 1,
               "actual_screens": 0,
               "ats": 0,
@@ -2126,10 +2150,17 @@
           },
           "_drops": [
             {
+              "job_id": "1770115575994x938717513032663000",
+              "job_title": "Principal Applied Scientist - AI Agents & Generative AI",
+              "client": "Parloa",
+              "reason": "Unresponsive",
+              "drops": 2
+            },
+            {
               "job_id": "1758529227458x187488425396142080",
               "job_title": "Principal Engineer",
               "client": "Parloa",
-              "reason": "Unresponsive",
+              "reason": "Seniority",
               "drops": 1
             },
             {
@@ -2143,15 +2174,8 @@
               "job_id": "1758529227458x187488425396142080",
               "job_title": "Principal Engineer",
               "client": "Parloa",
-              "reason": "Seniority",
-              "drops": 1
-            },
-            {
-              "job_id": "1770115575994x938717513032663000",
-              "job_title": "Principal Applied Scientist - AI Agents & Generative AI",
-              "client": "Parloa",
               "reason": "Unresponsive",
-              "drops": 2
+              "drops": 1
             },
             {
               "job_id": "1770115575994x938717513032663000",
@@ -2246,6 +2270,13 @@
               "job_id": "1777987322411x102512047924183040",
               "job_title": "Senior Fullstack Engineer - Stuttgart",
               "client": "Taxfix",
+              "reason": "Skills",
+              "drops": 1
+            },
+            {
+              "job_id": "1777987322411x102512047924183040",
+              "job_title": "Senior Fullstack Engineer - Stuttgart",
+              "client": "Taxfix",
               "reason": "Culture Fit",
               "drops": 1
             },
@@ -2261,13 +2292,6 @@
               "job_title": "Software Engineer - FullStack",
               "client": "Taxfix",
               "reason": "Salary",
-              "drops": 1
-            },
-            {
-              "job_id": "1777987322411x102512047924183040",
-              "job_title": "Senior Fullstack Engineer - Stuttgart",
-              "client": "Taxfix",
-              "reason": "Skills",
               "drops": 1
             }
           ],
@@ -2325,25 +2349,18 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 2,
+            "actual": 4,
             "target": 100.0
           },
           "Actual Screens": {
-            "actual": 3,
+            "actual": 5,
             "target": 15.0
           },
           "Moved to ATS": {
-            "actual": 2,
+            "actual": 4,
             "target": 7.0
           },
           "_drops": [
-            {
-              "job_id": "1759491843951x495797108562985000",
-              "job_title": "Launcher, UK",
-              "client": "Eucalyptus",
-              "reason": "Skills",
-              "drops": 3
-            },
             {
               "job_id": "1773662334924x767557350958301200",
               "job_title": "Launcher Associate, UK",
@@ -2371,16 +2388,23 @@
               "client": "Eucalyptus",
               "reason": "Skills",
               "drops": 1
+            },
+            {
+              "job_id": "1759491843951x495797108562985000",
+              "job_title": "Launcher, UK",
+              "client": "Eucalyptus",
+              "reason": "Skills",
+              "drops": 3
             }
           ],
           "_jobs": [
             {
               "job_id": "1759491843951x495797108562985000",
               "job_title": "Launcher, UK",
-              "contacted": 2,
-              "screens": 2,
-              "actual_screens": 2,
-              "ats": 2,
+              "contacted": 4,
+              "screens": 4,
+              "actual_screens": 4,
+              "ats": 4,
               "offered": 0,
               "hired": 0
             },
@@ -2421,34 +2445,6 @@
           },
           "_drops": [
             {
-              "job_id": "1773662334924x767557350958301200",
-              "job_title": "Launcher Associate, UK",
-              "client": "Eucalyptus",
-              "reason": "Timing",
-              "drops": 1
-            },
-            {
-              "job_id": "1759491843951x495797108562985000",
-              "job_title": "Launcher, UK",
-              "client": "Eucalyptus",
-              "reason": "Skills",
-              "drops": 2
-            },
-            {
-              "job_id": "1774519521018x502430651468480500",
-              "job_title": "Patient Support Specialist - Germany",
-              "client": "Eucalyptus",
-              "reason": "Dropped out",
-              "drops": 1
-            },
-            {
-              "job_id": "1773663264463x849538762857250800",
-              "job_title": "Medical Support Associate, DE",
-              "client": "Eucalyptus",
-              "reason": "Skills",
-              "drops": 1
-            },
-            {
               "job_id": "1759491843951x495797108562985000",
               "job_title": "Launcher, UK",
               "client": "Eucalyptus",
@@ -2459,8 +2455,8 @@
               "job_id": "1773662334924x767557350958301200",
               "job_title": "Launcher Associate, UK",
               "client": "Eucalyptus",
-              "reason": "No Show",
-              "drops": 2
+              "reason": "Timing",
+              "drops": 1
             },
             {
               "job_id": "1759491843951x495797108562985000",
@@ -2475,6 +2471,34 @@
               "client": "Eucalyptus",
               "reason": "Skills",
               "drops": 7
+            },
+            {
+              "job_id": "1774519521018x502430651468480500",
+              "job_title": "Patient Support Specialist - Germany",
+              "client": "Eucalyptus",
+              "reason": "Dropped out",
+              "drops": 1
+            },
+            {
+              "job_id": "1773662334924x767557350958301200",
+              "job_title": "Launcher Associate, UK",
+              "client": "Eucalyptus",
+              "reason": "No Show",
+              "drops": 2
+            },
+            {
+              "job_id": "1773663264463x849538762857250800",
+              "job_title": "Medical Support Associate, DE",
+              "client": "Eucalyptus",
+              "reason": "Skills",
+              "drops": 1
+            },
+            {
+              "job_id": "1759491843951x495797108562985000",
+              "job_title": "Launcher, UK",
+              "client": "Eucalyptus",
+              "reason": "Skills",
+              "drops": 2
             }
           ],
           "_jobs": [
@@ -2655,13 +2679,6 @@
           },
           "_drops": [
             {
-              "job_id": "1781094905113x292385134163525600",
-              "job_title": "Senior Android Engineer Germany - Lejla",
-              "client": "AVIV",
-              "reason": "Do not contact again",
-              "drops": 3
-            },
-            {
               "job_id": "1779111938424x336950569178497000",
               "job_title": "QA Automation - Financing, Croatia",
               "client": "AVIV",
@@ -2674,6 +2691,13 @@
               "client": "AVIV",
               "reason": "No Show",
               "drops": 1
+            },
+            {
+              "job_id": "1781094905113x292385134163525600",
+              "job_title": "Senior Android Engineer Germany - Lejla",
+              "client": "AVIV",
+              "reason": "Do not contact again",
+              "drops": 3
             }
           ],
           "_jobs": [
@@ -2684,6 +2708,16 @@
               "screens": 2,
               "actual_screens": 3,
               "ats": 2,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1773915221899x731095116844892200",
+              "job_title": "Senior IOS Engineer Paris",
+              "contacted": 0,
+              "screens": 1,
+              "actual_screens": 0,
+              "ats": 0,
               "offered": 0,
               "hired": 0
             }
@@ -2704,24 +2738,17 @@
           },
           "_drops": [
             {
-              "job_id": "1779111938424x336950569178497000",
-              "job_title": "QA Automation - Financing, Croatia",
-              "client": "AVIV",
-              "reason": "Dropped out",
-              "drops": 2
-            },
-            {
-              "job_id": "1781094905113x292385134163525600",
-              "job_title": "Senior Android Engineer Germany - Lejla",
-              "client": "AVIV",
-              "reason": "Dropped out",
-              "drops": 2
-            },
-            {
-              "job_id": "1781094905113x292385134163525600",
-              "job_title": "Senior Android Engineer Germany - Lejla",
+              "job_id": "1773915221899x731095116844892200",
+              "job_title": "Senior IOS Engineer Paris",
               "client": "AVIV",
               "reason": "Do not contact again",
+              "drops": 1
+            },
+            {
+              "job_id": "1781094905113x292385134163525600",
+              "job_title": "Senior Android Engineer Germany - Lejla",
+              "client": "AVIV",
+              "reason": "Dropped out",
               "drops": 2
             },
             {
@@ -2732,11 +2759,18 @@
               "drops": 2
             },
             {
-              "job_id": "1773915221899x731095116844892200",
-              "job_title": "Senior IOS Engineer Paris",
+              "job_id": "1779111938424x336950569178497000",
+              "job_title": "QA Automation - Financing, Croatia",
+              "client": "AVIV",
+              "reason": "Dropped out",
+              "drops": 2
+            },
+            {
+              "job_id": "1781094905113x292385134163525600",
+              "job_title": "Senior Android Engineer Germany - Lejla",
               "client": "AVIV",
               "reason": "Do not contact again",
-              "drops": 1
+              "drops": 2
             }
           ],
           "_jobs": [
@@ -2793,7 +2827,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 12,
+            "actual": 28,
             "target": 70.0
           },
           "Actual Screens": {
@@ -2806,15 +2840,15 @@
           },
           "_drops": [
             {
-              "job_id": "1772614005813x477540619595546600",
-              "job_title": "iOS Engineer - IC3 (Sam)",
+              "job_id": "1773218075741x431248583678230500",
+              "job_title": "iOS Engineer - IC2",
               "client": "Glovo",
               "reason": "Skills",
               "drops": 1
             },
             {
-              "job_id": "1773218075741x431248583678230500",
-              "job_title": "iOS Engineer - IC2",
+              "job_id": "1772614005813x477540619595546600",
+              "job_title": "iOS Engineer - IC3 (Sam)",
               "client": "Glovo",
               "reason": "Skills",
               "drops": 1
@@ -2824,7 +2858,7 @@
             {
               "job_id": "1773218075741x431248583678230500",
               "job_title": "iOS Engineer - IC2",
-              "contacted": 7,
+              "contacted": 22,
               "screens": 0,
               "actual_screens": 0,
               "ats": 0,
@@ -2834,7 +2868,7 @@
             {
               "job_id": "1772614005813x477540619595546600",
               "job_title": "iOS Engineer - IC3 (Sam)",
-              "contacted": 5,
+              "contacted": 6,
               "screens": 0,
               "actual_screens": 0,
               "ats": 0,
@@ -2858,11 +2892,39 @@
           },
           "_drops": [
             {
+              "job_id": "1775139786221x517847899092287500",
+              "job_title": "Data Internship",
+              "client": "Glovo",
+              "reason": "Culture Fit",
+              "drops": 1
+            },
+            {
+              "job_id": "1775139786221x517847899092287500",
+              "job_title": "Data Internship",
+              "client": "Glovo",
+              "reason": "Salary",
+              "drops": 1
+            },
+            {
               "job_id": "1772030095992x607794061438353400",
               "job_title": "Data Manager",
               "client": "Glovo",
               "reason": "Culture Fit",
               "drops": 1
+            },
+            {
+              "job_id": "1772030095992x607794061438353400",
+              "job_title": "Data Manager",
+              "client": "Glovo",
+              "reason": "Skills",
+              "drops": 2
+            },
+            {
+              "job_id": "1779196393064x911687372396822500",
+              "job_title": "iOS Engineer - IC4 (Sam)",
+              "client": "Glovo",
+              "reason": "Unresponsive",
+              "drops": 2
             },
             {
               "job_id": "1772614005813x477540619595546600",
@@ -2875,21 +2937,14 @@
               "job_id": "1773218075741x431248583678230500",
               "job_title": "iOS Engineer - IC2",
               "client": "Glovo",
-              "reason": "Dropped out",
+              "reason": "Skills",
               "drops": 1
             },
             {
               "job_id": "1773218075741x431248583678230500",
               "job_title": "iOS Engineer - IC2",
               "client": "Glovo",
-              "reason": "Skills",
-              "drops": 1
-            },
-            {
-              "job_id": "1775139786221x517847899092287500",
-              "job_title": "Data Internship",
-              "client": "Glovo",
-              "reason": "Salary",
+              "reason": "Dropped out",
               "drops": 1
             },
             {
@@ -2897,27 +2952,6 @@
               "job_title": "Data Internship",
               "client": "Glovo",
               "reason": "Language",
-              "drops": 1
-            },
-            {
-              "job_id": "1779196393064x911687372396822500",
-              "job_title": "iOS Engineer - IC4 (Sam)",
-              "client": "Glovo",
-              "reason": "Unresponsive",
-              "drops": 2
-            },
-            {
-              "job_id": "1772030095992x607794061438353400",
-              "job_title": "Data Manager",
-              "client": "Glovo",
-              "reason": "Skills",
-              "drops": 2
-            },
-            {
-              "job_id": "1775139786221x517847899092287500",
-              "job_title": "Data Internship",
-              "client": "Glovo",
-              "reason": "Culture Fit",
               "drops": 1
             }
           ],
@@ -2985,7 +3019,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 34,
+            "actual": 36,
             "target": 70.0
           },
           "Actual Screens": {
@@ -2998,10 +3032,10 @@
           },
           "_drops": [
             {
-              "job_id": "1775125002560x755091190743302100",
-              "job_title": "Staff Backend Engineer Trust & Safety - Kristina - Berlin",
+              "job_id": "1775124928738x792744654411137000",
+              "job_title": "Senior Backend Engineer Trust & Safety - Kristina - Berlin",
               "client": "AVIV",
-              "reason": "Skills",
+              "reason": "No Show",
               "drops": 1
             },
             {
@@ -3019,10 +3053,10 @@
               "drops": 1
             },
             {
-              "job_id": "1775124928738x792744654411137000",
-              "job_title": "Senior Backend Engineer Trust & Safety - Kristina - Berlin",
+              "job_id": "1775125002560x755091190743302100",
+              "job_title": "Staff Backend Engineer Trust & Safety - Kristina - Berlin",
               "client": "AVIV",
-              "reason": "No Show",
+              "reason": "Skills",
               "drops": 1
             }
           ],
@@ -3030,7 +3064,7 @@
             {
               "job_id": "1782250845269x899719344202186800",
               "job_title": "QA Engineer, Automation",
-              "contacted": 19,
+              "contacted": 21,
               "screens": 5,
               "actual_screens": 0,
               "ats": 0,
@@ -3051,7 +3085,7 @@
               "job_id": "1778673333753x755455990320857100",
               "job_title": "Engineering Manager France, Kristina",
               "contacted": 0,
-              "screens": 3,
+              "screens": 5,
               "actual_screens": 3,
               "ats": 3,
               "offered": 0,
@@ -3104,24 +3138,17 @@
           },
           "_drops": [
             {
+              "job_id": "1778673284727x519021825440350200",
+              "job_title": "Engineering Manager T&S Kristina, Berlin",
+              "client": "AVIV",
+              "reason": "Industry",
+              "drops": 1
+            },
+            {
               "job_id": "1778673333753x755455990320857100",
               "job_title": "Engineering Manager France, Kristina",
               "client": "AVIV",
               "reason": "Salary",
-              "drops": 1
-            },
-            {
-              "job_id": "1778673284727x519021825440350200",
-              "job_title": "Engineering Manager T&S Kristina, Berlin",
-              "client": "AVIV",
-              "reason": "Technology",
-              "drops": 1
-            },
-            {
-              "job_id": "1778673333753x755455990320857100",
-              "job_title": "Engineering Manager France, Kristina",
-              "client": "AVIV",
-              "reason": "Other",
               "drops": 1
             },
             {
@@ -3132,10 +3159,17 @@
               "drops": 2
             },
             {
+              "job_id": "1778673333753x755455990320857100",
+              "job_title": "Engineering Manager France, Kristina",
+              "client": "AVIV",
+              "reason": "Other",
+              "drops": 1
+            },
+            {
               "job_id": "1778673284727x519021825440350200",
               "job_title": "Engineering Manager T&S Kristina, Berlin",
               "client": "AVIV",
-              "reason": "Industry",
+              "reason": "Technology",
               "drops": 1
             },
             {
@@ -3283,36 +3317,8 @@
               "job_id": "1774945442541x679227563572199400",
               "job_title": "Senior Software Engineer (UK) - Fullstack (Ecosystem/Shop)",
               "client": "Eucalyptus",
-              "reason": "Remote only",
-              "drops": 6
-            },
-            {
-              "job_id": "1774945442541x679227563572199400",
-              "job_title": "Senior Software Engineer (UK) - Fullstack (Ecosystem/Shop)",
-              "client": "Eucalyptus",
               "reason": "Technology",
               "drops": 1
-            },
-            {
-              "job_id": "1774630560077x666522591523242000",
-              "job_title": "Senior Software Engineer (UK) - Frontend (Growth)",
-              "client": "Eucalyptus",
-              "reason": "Timing",
-              "drops": 1
-            },
-            {
-              "job_id": "1774945442541x679227563572199400",
-              "job_title": "Senior Software Engineer (UK) - Fullstack (Ecosystem/Shop)",
-              "client": "Eucalyptus",
-              "reason": "Dropped out",
-              "drops": 1
-            },
-            {
-              "job_id": "1774945442541x679227563572199400",
-              "job_title": "Senior Software Engineer (UK) - Fullstack (Ecosystem/Shop)",
-              "client": "Eucalyptus",
-              "reason": "Salary",
-              "drops": 2
             },
             {
               "job_id": "1774945442541x679227563572199400",
@@ -3329,10 +3335,31 @@
               "drops": 2
             },
             {
+              "job_id": "1774945442541x679227563572199400",
+              "job_title": "Senior Software Engineer (UK) - Fullstack (Ecosystem/Shop)",
+              "client": "Eucalyptus",
+              "reason": "Remote only",
+              "drops": 6
+            },
+            {
               "job_id": "1774630560077x666522591523242000",
               "job_title": "Senior Software Engineer (UK) - Frontend (Growth)",
               "client": "Eucalyptus",
-              "reason": "Location",
+              "reason": "Timing",
+              "drops": 1
+            },
+            {
+              "job_id": "1774945442541x679227563572199400",
+              "job_title": "Senior Software Engineer (UK) - Fullstack (Ecosystem/Shop)",
+              "client": "Eucalyptus",
+              "reason": "Salary",
+              "drops": 2
+            },
+            {
+              "job_id": "1774945442541x679227563572199400",
+              "job_title": "Senior Software Engineer (UK) - Fullstack (Ecosystem/Shop)",
+              "client": "Eucalyptus",
+              "reason": "Type of contract",
               "drops": 1
             },
             {
@@ -3343,10 +3370,17 @@
               "drops": 4
             },
             {
+              "job_id": "1774630560077x666522591523242000",
+              "job_title": "Senior Software Engineer (UK) - Frontend (Growth)",
+              "client": "Eucalyptus",
+              "reason": "Location",
+              "drops": 1
+            },
+            {
               "job_id": "1774945442541x679227563572199400",
               "job_title": "Senior Software Engineer (UK) - Fullstack (Ecosystem/Shop)",
               "client": "Eucalyptus",
-              "reason": "Type of contract",
+              "reason": "Dropped out",
               "drops": 1
             }
           ],
@@ -3459,8 +3493,8 @@
               "screens": 2,
               "actual_screens": 0,
               "ats": 0,
-              "offered": 0,
-              "hired": 0
+              "offered": 1,
+              "hired": 1
             }
           ]
         },
@@ -3479,10 +3513,59 @@
           },
           "_drops": [
             {
+              "job_id": "1781528588759x200335994288603140",
+              "job_title": "Senior Backend Engineer Paris - Aviv",
+              "client": "AVIV",
+              "reason": "Language",
+              "drops": 1
+            },
+            {
+              "job_id": "1781084768272x309178114878734340",
+              "job_title": "Senior Machine Learning Engineer",
+              "client": "AVIV",
+              "reason": "Type of contract",
+              "drops": 1
+            },
+            {
+              "job_id": "1779729846009x817600643033989100",
+              "job_title": "Frontend Engineer - Croatia",
+              "client": "AVIV",
+              "reason": "Skills",
+              "drops": 2
+            },
+            {
+              "job_id": "1779729977672x962552236573720600",
+              "job_title": "Backend Engineer - Croatia",
+              "client": "AVIV",
+              "reason": "Dropped out",
+              "drops": 1
+            },
+            {
               "job_id": "1780948201546x511155649381662700",
               "job_title": "Junior Backend Developer - France",
               "client": "AVIV",
               "reason": "Type of contract",
+              "drops": 1
+            },
+            {
+              "job_id": "1779729977672x962552236573720600",
+              "job_title": "Backend Engineer - Croatia",
+              "client": "AVIV",
+              "reason": "Position",
+              "drops": 1
+            },
+            {
+              "job_id": "1779729846009x817600643033989100",
+              "job_title": "Frontend Engineer - Croatia",
+              "client": "AVIV",
+              "reason": "Dropped out",
+              "drops": 1
+            },
+            {
+              "job_id": "1780948201546x511155649381662700",
+              "job_title": "Junior Backend Developer - France",
+              "client": "AVIV",
+              "reason": "Location",
               "drops": 1
             },
             {
@@ -3493,20 +3576,6 @@
               "drops": 4
             },
             {
-              "job_id": "1780948201546x511155649381662700",
-              "job_title": "Junior Backend Developer - France",
-              "client": "AVIV",
-              "reason": "Location",
-              "drops": 1
-            },
-            {
-              "job_id": "1779729846009x817600643033989100",
-              "job_title": "Frontend Engineer - Croatia",
-              "client": "AVIV",
-              "reason": "Timing",
-              "drops": 2
-            },
-            {
               "job_id": "1781528588759x200335994288603140",
               "job_title": "Senior Backend Engineer Paris - Aviv",
               "client": "AVIV",
@@ -3514,59 +3583,10 @@
               "drops": 2
             },
             {
-              "job_id": "1779729977672x962552236573720600",
-              "job_title": "Backend Engineer - Croatia",
-              "client": "AVIV",
-              "reason": "Dropped out",
-              "drops": 1
-            },
-            {
-              "job_id": "1781084768272x309178114878734340",
-              "job_title": "Senior Machine Learning Engineer",
-              "client": "AVIV",
-              "reason": "Type of contract",
-              "drops": 1
-            },
-            {
-              "job_id": "1781084768272x309178114878734340",
-              "job_title": "Senior Machine Learning Engineer",
-              "client": "AVIV",
-              "reason": "Timing",
-              "drops": 1
-            },
-            {
               "job_id": "1779729846009x817600643033989100",
               "job_title": "Frontend Engineer - Croatia",
               "client": "AVIV",
               "reason": "Location",
-              "drops": 1
-            },
-            {
-              "job_id": "1779729846009x817600643033989100",
-              "job_title": "Frontend Engineer - Croatia",
-              "client": "AVIV",
-              "reason": "Dropped out",
-              "drops": 1
-            },
-            {
-              "job_id": "1781528588759x200335994288603140",
-              "job_title": "Senior Backend Engineer Paris - Aviv",
-              "client": "AVIV",
-              "reason": "Language",
-              "drops": 1
-            },
-            {
-              "job_id": "1779729846009x817600643033989100",
-              "job_title": "Frontend Engineer - Croatia",
-              "client": "AVIV",
-              "reason": "Type of contract",
-              "drops": 1
-            },
-            {
-              "job_id": "1779729977672x962552236573720600",
-              "job_title": "Backend Engineer - Croatia",
-              "client": "AVIV",
-              "reason": "Position",
               "drops": 1
             },
             {
@@ -3580,8 +3600,22 @@
               "job_id": "1779729846009x817600643033989100",
               "job_title": "Frontend Engineer - Croatia",
               "client": "AVIV",
-              "reason": "Skills",
+              "reason": "Timing",
               "drops": 2
+            },
+            {
+              "job_id": "1779729846009x817600643033989100",
+              "job_title": "Frontend Engineer - Croatia",
+              "client": "AVIV",
+              "reason": "Type of contract",
+              "drops": 1
+            },
+            {
+              "job_id": "1781084768272x309178114878734340",
+              "job_title": "Senior Machine Learning Engineer",
+              "client": "AVIV",
+              "reason": "Timing",
+              "drops": 1
             },
             {
               "job_id": "1780948201546x511155649381662700",
@@ -3665,7 +3699,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 20,
+            "actual": 37,
             "target": 100.0
           },
           "Recruiter Screen": {
@@ -3685,8 +3719,8 @@
               "job_id": "1772187860944x479761207964205060",
               "job_title": "Platform Engineer",
               "client": "Glovo",
-              "reason": "Timing",
-              "drops": 4
+              "reason": "Location",
+              "drops": 2
             },
             {
               "job_id": "1775551815119x528177390986985500",
@@ -3699,15 +3733,15 @@
               "job_id": "1772187860944x479761207964205060",
               "job_title": "Platform Engineer",
               "client": "Glovo",
-              "reason": "Skills",
-              "drops": 1
+              "reason": "Timing",
+              "drops": 4
             },
             {
               "job_id": "1772187860944x479761207964205060",
               "job_title": "Platform Engineer",
               "client": "Glovo",
-              "reason": "Location",
-              "drops": 2
+              "reason": "Skills",
+              "drops": 1
             },
             {
               "job_id": "1772187860944x479761207964205060",
@@ -3736,9 +3770,29 @@
               "hired": 0
             },
             {
+              "job_id": "1773218075741x431248583678230500",
+              "job_title": "iOS Engineer - IC2",
+              "contacted": 15,
+              "screens": 0,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1772614005813x477540619595546600",
+              "job_title": "iOS Engineer - IC3 (Sam)",
+              "contacted": 1,
+              "screens": 0,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
               "job_id": "1775551815119x528177390986985500",
               "job_title": "Enterprise Account Executive - Berlin",
-              "contacted": 0,
+              "contacted": 1,
               "screens": 1,
               "actual_screens": 0,
               "ats": 0,
@@ -3766,20 +3820,6 @@
           },
           "_drops": [
             {
-              "job_id": "1775551815119x528177390986985500",
-              "job_title": "Enterprise Account Executive - Berlin",
-              "client": "Aiven",
-              "reason": "Timing",
-              "drops": 2
-            },
-            {
-              "job_id": "1772187860944x479761207964205060",
-              "job_title": "Platform Engineer",
-              "client": "Glovo",
-              "reason": "Remote only",
-              "drops": 1
-            },
-            {
               "job_id": "1772187627387x288515927427776500",
               "job_title": "Backend Engineer II (Chene)",
               "client": "Glovo",
@@ -3787,11 +3827,32 @@
               "drops": 8
             },
             {
-              "job_id": "1772187860944x479761207964205060",
-              "job_title": "Platform Engineer",
+              "job_id": "1773218075741x431248583678230500",
+              "job_title": "iOS Engineer - IC2",
               "client": "Glovo",
-              "reason": "Location",
+              "reason": "Dropped out",
+              "drops": 1
+            },
+            {
+              "job_id": "1772187627387x288515927427776500",
+              "job_title": "Backend Engineer II (Chene)",
+              "client": "Glovo",
+              "reason": "Type of contract",
+              "drops": 1
+            },
+            {
+              "job_id": "1775551815119x528177390986985500",
+              "job_title": "Enterprise Account Executive - Berlin",
+              "client": "Aiven",
+              "reason": "Timing",
               "drops": 2
+            },
+            {
+              "job_id": "1772187627387x288515927427776500",
+              "job_title": "Backend Engineer II (Chene)",
+              "client": "Glovo",
+              "reason": "Timing",
+              "drops": 5
             },
             {
               "job_id": "1772187627387x288515927427776500",
@@ -3808,13 +3869,6 @@
               "drops": 2
             },
             {
-              "job_id": "1773218075741x431248583678230500",
-              "job_title": "iOS Engineer - IC2",
-              "client": "Glovo",
-              "reason": "Dropped out",
-              "drops": 1
-            },
-            {
               "job_id": "1772187627387x288515927427776500",
               "job_title": "Backend Engineer II (Chene)",
               "client": "Glovo",
@@ -3822,17 +3876,17 @@
               "drops": 2
             },
             {
-              "job_id": "1772187627387x288515927427776500",
-              "job_title": "Backend Engineer II (Chene)",
+              "job_id": "1772187860944x479761207964205060",
+              "job_title": "Platform Engineer",
               "client": "Glovo",
-              "reason": "Timing",
-              "drops": 5
+              "reason": "Remote only",
+              "drops": 1
             },
             {
-              "job_id": "1772187627387x288515927427776500",
-              "job_title": "Backend Engineer II (Chene)",
+              "job_id": "1772614005813x477540619595546600",
+              "job_title": "iOS Engineer - IC3 (Sam)",
               "client": "Glovo",
-              "reason": "Type of contract",
+              "reason": "Unresponsive",
               "drops": 1
             },
             {
@@ -3850,11 +3904,11 @@
               "drops": 1
             },
             {
-              "job_id": "1772614005813x477540619595546600",
-              "job_title": "iOS Engineer - IC3 (Sam)",
+              "job_id": "1772187860944x479761207964205060",
+              "job_title": "Platform Engineer",
               "client": "Glovo",
-              "reason": "Unresponsive",
-              "drops": 1
+              "reason": "Location",
+              "drops": 2
             }
           ],
           "_jobs": [
@@ -3925,7 +3979,7 @@
             "target": 190.0
           },
           "Recruiter Screen": {
-            "actual": 4,
+            "actual": 5,
             "target": 10.0
           },
           "Actual Screens": {
@@ -3945,17 +3999,31 @@
               "drops": 2
             },
             {
-              "job_id": "1775551815119x528177390986985500",
-              "job_title": "Enterprise Account Executive - Berlin",
+              "job_id": "1777017827149x657905825884405800",
+              "job_title": "Senior Technical Account Manager, EMEA",
               "client": "Aiven",
               "reason": "Timing",
-              "drops": 1
+              "drops": 2
             },
             {
               "job_id": "1775552220428x685390723465871400",
               "job_title": "Enterprise Account Executive - Sweden",
               "client": "Aiven",
               "reason": "Position",
+              "drops": 1
+            },
+            {
+              "job_id": "1736934796460x763481035954192400",
+              "job_title": "Fullstack Engineer",
+              "client": "Enam",
+              "reason": "Culture Fit",
+              "drops": 1
+            },
+            {
+              "job_id": "1775551815119x528177390986985500",
+              "job_title": "Enterprise Account Executive - Berlin",
+              "client": "Aiven",
+              "reason": "Timing",
               "drops": 1
             },
             {
@@ -3969,22 +4037,8 @@
               "job_id": "1736934796460x763481035954192400",
               "job_title": "Fullstack Engineer",
               "client": "Enam",
-              "reason": "Culture Fit",
-              "drops": 1
-            },
-            {
-              "job_id": "1736934796460x763481035954192400",
-              "job_title": "Fullstack Engineer",
-              "client": "Enam",
               "reason": "Remote only",
               "drops": 3
-            },
-            {
-              "job_id": "1777017827149x657905825884405800",
-              "job_title": "Senior Technical Account Manager, EMEA",
-              "client": "Aiven",
-              "reason": "Timing",
-              "drops": 2
             }
           ],
           "_jobs": [
@@ -4002,7 +4056,7 @@
               "job_id": "1775552220428x685390723465871400",
               "job_title": "Enterprise Account Executive - Sweden",
               "contacted": 0,
-              "screens": 0,
+              "screens": 1,
               "actual_screens": 1,
               "ats": 1,
               "offered": 0,
@@ -4039,52 +4093,10 @@
           },
           "_drops": [
             {
-              "job_id": "1774630560077x666522591523242000",
-              "job_title": "Senior Software Engineer (UK) - Frontend (Growth)",
-              "client": "Eucalyptus",
-              "reason": "Location",
-              "drops": 1
-            },
-            {
               "job_id": "1736934796460x763481035954192400",
               "job_title": "Fullstack Engineer",
               "client": "Enam",
-              "reason": "Position",
-              "drops": 1
-            },
-            {
-              "job_id": "1775552220428x685390723465871400",
-              "job_title": "Enterprise Account Executive - Sweden",
-              "client": "Aiven",
-              "reason": "Timing",
-              "drops": 8
-            },
-            {
-              "job_id": "1775551815119x528177390986985500",
-              "job_title": "Enterprise Account Executive - Berlin",
-              "client": "Aiven",
-              "reason": "Location",
-              "drops": 1
-            },
-            {
-              "job_id": "1774630560077x666522591523242000",
-              "job_title": "Senior Software Engineer (UK) - Frontend (Growth)",
-              "client": "Eucalyptus",
-              "reason": "Timing",
-              "drops": 1
-            },
-            {
-              "job_id": "1778238250267x806800061349494800",
-              "job_title": "Senior Backend Engineer, Platform Team - Berlin (Wlad)",
-              "client": "AVIV",
-              "reason": "Hiring Manager Rejected",
-              "drops": 1
-            },
-            {
-              "job_id": "1732274800577x436279280051159000",
-              "job_title": "Account Executive (Full Cycle Sales) - Stockholm/Gothenburg",
-              "client": "Juni",
-              "reason": "Timing",
+              "reason": "Culture Fit",
               "drops": 1
             },
             {
@@ -4093,62 +4105,6 @@
               "client": "Eucalyptus",
               "reason": "Remote only",
               "drops": 5
-            },
-            {
-              "job_id": "1775552220428x685390723465871400",
-              "job_title": "Enterprise Account Executive - Sweden",
-              "client": "Aiven",
-              "reason": "Salary",
-              "drops": 1
-            },
-            {
-              "job_id": "1766484364452x686009847116464100",
-              "job_title": "Machine Learning Engineer",
-              "client": "Enam",
-              "reason": "Timing",
-              "drops": 2
-            },
-            {
-              "job_id": "1736934796460x763481035954192400",
-              "job_title": "Fullstack Engineer",
-              "client": "Enam",
-              "reason": "Language",
-              "drops": 1
-            },
-            {
-              "job_id": "1774945442541x679227563572199400",
-              "job_title": "Senior Software Engineer (UK) - Fullstack (Ecosystem/Shop)",
-              "client": "Eucalyptus",
-              "reason": "Timing",
-              "drops": 10
-            },
-            {
-              "job_id": "1736934796460x763481035954192400",
-              "job_title": "Fullstack Engineer",
-              "client": "Enam",
-              "reason": "Remote only",
-              "drops": 1
-            },
-            {
-              "job_id": "1766484364452x686009847116464100",
-              "job_title": "Machine Learning Engineer",
-              "client": "Enam",
-              "reason": "Culture Fit",
-              "drops": 1
-            },
-            {
-              "job_id": "1736934796460x763481035954192400",
-              "job_title": "Fullstack Engineer",
-              "client": "Enam",
-              "reason": "Culture Fit",
-              "drops": 1
-            },
-            {
-              "job_id": "1736934796460x763481035954192400",
-              "job_title": "Fullstack Engineer",
-              "client": "Enam",
-              "reason": "Type of contract",
-              "drops": 1
             },
             {
               "job_id": "1777017827149x657905825884405800",
@@ -4165,11 +4121,109 @@
               "drops": 1
             },
             {
+              "job_id": "1766484364452x686009847116464100",
+              "job_title": "Machine Learning Engineer",
+              "client": "Enam",
+              "reason": "Culture Fit",
+              "drops": 1
+            },
+            {
+              "job_id": "1774630560077x666522591523242000",
+              "job_title": "Senior Software Engineer (UK) - Frontend (Growth)",
+              "client": "Eucalyptus",
+              "reason": "Timing",
+              "drops": 1
+            },
+            {
+              "job_id": "1736934796460x763481035954192400",
+              "job_title": "Fullstack Engineer",
+              "client": "Enam",
+              "reason": "Remote only",
+              "drops": 1
+            },
+            {
               "job_id": "1777017827149x657905825884405800",
               "job_title": "Senior Technical Account Manager, EMEA",
               "client": "Aiven",
               "reason": "Position closed",
               "drops": 1
+            },
+            {
+              "job_id": "1775551815119x528177390986985500",
+              "job_title": "Enterprise Account Executive - Berlin",
+              "client": "Aiven",
+              "reason": "Location",
+              "drops": 1
+            },
+            {
+              "job_id": "1774630560077x666522591523242000",
+              "job_title": "Senior Software Engineer (UK) - Frontend (Growth)",
+              "client": "Eucalyptus",
+              "reason": "Location",
+              "drops": 1
+            },
+            {
+              "job_id": "1778238250267x806800061349494800",
+              "job_title": "Senior Backend Engineer, Platform Team - Berlin (Wlad)",
+              "client": "AVIV",
+              "reason": "Hiring Manager Rejected",
+              "drops": 1
+            },
+            {
+              "job_id": "1736934796460x763481035954192400",
+              "job_title": "Fullstack Engineer",
+              "client": "Enam",
+              "reason": "Position",
+              "drops": 1
+            },
+            {
+              "job_id": "1736934796460x763481035954192400",
+              "job_title": "Fullstack Engineer",
+              "client": "Enam",
+              "reason": "Type of contract",
+              "drops": 1
+            },
+            {
+              "job_id": "1775552220428x685390723465871400",
+              "job_title": "Enterprise Account Executive - Sweden",
+              "client": "Aiven",
+              "reason": "Timing",
+              "drops": 8
+            },
+            {
+              "job_id": "1736934796460x763481035954192400",
+              "job_title": "Fullstack Engineer",
+              "client": "Enam",
+              "reason": "Language",
+              "drops": 1
+            },
+            {
+              "job_id": "1774945442541x679227563572199400",
+              "job_title": "Senior Software Engineer (UK) - Fullstack (Ecosystem/Shop)",
+              "client": "Eucalyptus",
+              "reason": "Timing",
+              "drops": 10
+            },
+            {
+              "job_id": "1775552220428x685390723465871400",
+              "job_title": "Enterprise Account Executive - Sweden",
+              "client": "Aiven",
+              "reason": "Salary",
+              "drops": 1
+            },
+            {
+              "job_id": "1732274800577x436279280051159000",
+              "job_title": "Account Executive (Full Cycle Sales) - Stockholm/Gothenburg",
+              "client": "Juni",
+              "reason": "Timing",
+              "drops": 1
+            },
+            {
+              "job_id": "1766484364452x686009847116464100",
+              "job_title": "Machine Learning Engineer",
+              "client": "Enam",
+              "reason": "Timing",
+              "drops": 2
             }
           ],
           "_jobs": [
@@ -4256,7 +4310,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 7,
+            "actual": 24,
             "target": 100.0
           },
           "Recruiter Screen": {
@@ -4276,13 +4330,6 @@
               "job_id": "1782464038175x148248517046435840",
               "job_title": "Support Team Lead Italian speaker, Albania",
               "client": "Wolt",
-              "reason": "Other",
-              "drops": 1
-            },
-            {
-              "job_id": "1782464038175x148248517046435840",
-              "job_title": "Support Team Lead Italian speaker, Albania",
-              "client": "Wolt",
               "reason": "Location",
               "drops": 1
             },
@@ -4291,15 +4338,42 @@
               "job_title": "Support Team Lead Italian speaker, Albania",
               "client": "Wolt",
               "reason": "Seniority",
-              "drops": 3
+              "drops": 4
+            },
+            {
+              "job_id": "1782464038175x148248517046435840",
+              "job_title": "Support Team Lead Italian speaker, Albania",
+              "client": "Wolt",
+              "reason": "Other",
+              "drops": 2
             }
           ],
           "_jobs": [
+            {
+              "job_id": "1782815669120x641507371504369700",
+              "job_title": "Sr Manager, Events Marketing (7R)",
+              "contacted": 13,
+              "screens": 0,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
             {
               "job_id": "1782464038175x148248517046435840",
               "job_title": "Support Team Lead Italian speaker, Albania",
               "contacted": 7,
               "screens": 5,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1782304743750x784464762463322100",
+              "job_title": "Marketing Specialist Poland",
+              "contacted": 4,
+              "screens": 0,
               "actual_screens": 0,
               "ats": 0,
               "offered": 0,
@@ -4346,6 +4420,34 @@
           },
           "_drops": [
             {
+              "job_id": "1775125735494x364560877536935940",
+              "job_title": "Regional Manager, S&O, Consumer (Cx) - (Poland)",
+              "client": "Wolt",
+              "reason": "Position closed",
+              "drops": 145
+            },
+            {
+              "job_id": "1776935952908x871402512143876100",
+              "job_title": "Marketing Manager - Norway",
+              "client": "Wolt",
+              "reason": "Position closed",
+              "drops": 57
+            },
+            {
+              "job_id": "1777540603499x788570363141816300",
+              "job_title": "Global Revenue S&O",
+              "client": "Wolt",
+              "reason": "Position closed",
+              "drops": 45
+            },
+            {
+              "job_id": "1780916551860x156414970281066500",
+              "job_title": "Regional CRM Lead (North region)",
+              "client": "Wolt",
+              "reason": "Type of contract",
+              "drops": 2
+            },
+            {
               "job_id": "1778233814595x768879759816654800",
               "job_title": "B2B Marketing (Dx and Mx)",
               "client": "Wolt",
@@ -4356,36 +4458,8 @@
               "job_id": "1780916551860x156414970281066500",
               "job_title": "Regional CRM Lead (North region)",
               "client": "Wolt",
-              "reason": "Type of contract",
-              "drops": 2
-            },
-            {
-              "job_id": "1780916551860x156414970281066500",
-              "job_title": "Regional CRM Lead (North region)",
-              "client": "Wolt",
               "reason": "Timing",
               "drops": 4
-            },
-            {
-              "job_id": "1777540603499x788570363141816300",
-              "job_title": "Global Revenue S&O",
-              "client": "Wolt",
-              "reason": "Position closed",
-              "drops": 45
-            },
-            {
-              "job_id": "1776935952908x871402512143876100",
-              "job_title": "Marketing Manager - Norway",
-              "client": "Wolt",
-              "reason": "Position closed",
-              "drops": 57
-            },
-            {
-              "job_id": "1775125735494x364560877536935940",
-              "job_title": "Regional Manager, S&O, Consumer (Cx) - (Poland)",
-              "client": "Wolt",
-              "reason": "Position closed",
-              "drops": 145
             }
           ],
           "_jobs": [
@@ -4492,7 +4566,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 19,
+            "actual": 75,
             "target": 100.0
           },
           "Recruiter Screen": {
@@ -4509,6 +4583,13 @@
           },
           "_drops": [
             {
+              "job_id": "1769523917399x812043252328824800",
+              "job_title": "Senior Forward Deployed Engineer - EMEA (f/m/d)",
+              "client": "Parloa",
+              "reason": "Recruiter Rejected",
+              "drops": 1
+            },
+            {
               "job_id": "1770115575994x938717513032663000",
               "job_title": "Principal Applied Scientist - AI Agents & Generative AI",
               "client": "Parloa",
@@ -4523,25 +4604,18 @@
               "drops": 9
             },
             {
-              "job_id": "1758529227458x187488425396142080",
-              "job_title": "Principal Engineer",
+              "job_id": "1773223189106x174455449761349630",
+              "job_title": "Senior Software Engineer",
               "client": "Parloa",
-              "reason": "Position closed",
-              "drops": 1
+              "reason": "Timing",
+              "drops": 6
             },
             {
               "job_id": "1769523917399x812043252328824800",
               "job_title": "Senior Forward Deployed Engineer - EMEA (f/m/d)",
               "client": "Parloa",
-              "reason": "Recruiter Rejected",
-              "drops": 1
-            },
-            {
-              "job_id": "1773223189106x174455449761349630",
-              "job_title": "Senior Software Engineer",
-              "client": "Parloa",
               "reason": "Timing",
-              "drops": 5
+              "drops": 1
             },
             {
               "job_id": "1758529227458x187488425396142080",
@@ -4551,14 +4625,24 @@
               "drops": 1
             },
             {
-              "job_id": "1769523917399x812043252328824800",
-              "job_title": "Senior Forward Deployed Engineer - EMEA (f/m/d)",
+              "job_id": "1758529227458x187488425396142080",
+              "job_title": "Principal Engineer",
               "client": "Parloa",
-              "reason": "Timing",
+              "reason": "Position closed",
               "drops": 1
             }
           ],
           "_jobs": [
+            {
+              "job_id": "1773223189106x174455449761349630",
+              "job_title": "Senior Software Engineer",
+              "contacted": 50,
+              "screens": 2,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
             {
               "job_id": "1769523836852x269038770353602560",
               "job_title": "Team Lead Forward Deployed Engineering (f/m/d)",
@@ -4572,18 +4656,8 @@
             {
               "job_id": "1770115575994x938717513032663000",
               "job_title": "Principal Applied Scientist - AI Agents & Generative AI",
-              "contacted": 4,
+              "contacted": 10,
               "screens": 1,
-              "actual_screens": 0,
-              "ats": 0,
-              "offered": 0,
-              "hired": 0
-            },
-            {
-              "job_id": "1773223189106x174455449761349630",
-              "job_title": "Senior Software Engineer",
-              "contacted": 0,
-              "screens": 2,
               "actual_screens": 0,
               "ats": 0,
               "offered": 0,
@@ -4610,10 +4684,24 @@
           },
           "_drops": [
             {
-              "job_id": "1781255400473x297663042276556800",
-              "job_title": "GSI Partnerships Manager",
+              "job_id": "1770115575994x938717513032663000",
+              "job_title": "Principal Applied Scientist - AI Agents & Generative AI",
+              "client": "Parloa",
+              "reason": "Timing",
+              "drops": 3
+            },
+            {
+              "job_id": "1770115575994x938717513032663000",
+              "job_title": "Principal Applied Scientist - AI Agents & Generative AI",
               "client": "Parloa",
               "reason": "Unresponsive",
+              "drops": 2
+            },
+            {
+              "job_id": "1758529227458x187488425396142080",
+              "job_title": "Principal Engineer",
+              "client": "Parloa",
+              "reason": "Seniority",
               "drops": 1
             },
             {
@@ -4631,38 +4719,10 @@
               "drops": 1
             },
             {
-              "job_id": "1758529227458x187488425396142080",
-              "job_title": "Principal Engineer",
-              "client": "Parloa",
-              "reason": "Seniority",
-              "drops": 1
-            },
-            {
               "job_id": "1776161479950x832763580951560200",
               "job_title": "Staff Product Designer",
               "client": "Parloa",
               "reason": "Skills",
-              "drops": 1
-            },
-            {
-              "job_id": "1770115575994x938717513032663000",
-              "job_title": "Principal Applied Scientist - AI Agents & Generative AI",
-              "client": "Parloa",
-              "reason": "Timing",
-              "drops": 3
-            },
-            {
-              "job_id": "1770115575994x938717513032663000",
-              "job_title": "Principal Applied Scientist - AI Agents & Generative AI",
-              "client": "Parloa",
-              "reason": "Unresponsive",
-              "drops": 2
-            },
-            {
-              "job_id": "1776161479950x832763580951560200",
-              "job_title": "Staff Product Designer",
-              "client": "Parloa",
-              "reason": "Dropped out",
               "drops": 1
             },
             {
@@ -4673,11 +4733,25 @@
               "drops": 10
             },
             {
+              "job_id": "1781255400473x297663042276556800",
+              "job_title": "GSI Partnerships Manager",
+              "client": "Parloa",
+              "reason": "Unresponsive",
+              "drops": 1
+            },
+            {
               "job_id": "1779792152732x200231050734731260",
               "job_title": "Business Development Executive EMEA",
               "client": "Parloa",
               "reason": "Position closed",
               "drops": 12
+            },
+            {
+              "job_id": "1776161479950x832763580951560200",
+              "job_title": "Staff Product Designer",
+              "client": "Parloa",
+              "reason": "Dropped out",
+              "drops": 1
             }
           ],
           "_jobs": [
@@ -4754,7 +4828,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 27,
+            "actual": 33,
             "target": 100.0
           },
           "Recruiter Screen": {
@@ -4771,18 +4845,18 @@
           },
           "_drops": [
             {
-              "job_id": "1782299895298x182632627966574600",
-              "job_title": "Head of Engineering, Berlin AVIV",
-              "client": "AVIV",
-              "reason": "Position closed",
-              "drops": 2
-            },
-            {
               "job_id": "1773325101895x585280399134687200",
               "job_title": "Technical Product Manager",
               "client": "AVIV",
               "reason": "Position closed",
               "drops": 1
+            },
+            {
+              "job_id": "1782299895298x182632627966574600",
+              "job_title": "Head of Engineering, Berlin AVIV",
+              "client": "AVIV",
+              "reason": "Position closed",
+              "drops": 2
             }
           ],
           "_jobs": [
@@ -4800,6 +4874,16 @@
               "job_id": "1782484173697x244197280976470000",
               "job_title": "AI Operations Manager, Paris AVIV",
               "contacted": 12,
+              "screens": 0,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1782823569040x307524483096510460",
+              "job_title": "Product Manager Berlin, Aviv",
+              "contacted": 6,
               "screens": 0,
               "actual_screens": 0,
               "ats": 0,
@@ -4840,8 +4924,8 @@
               "job_id": "1779970626328x834670130159681500",
               "job_title": "Engineering Manager, Platform - Berlin",
               "client": "AVIV",
-              "reason": "Salary",
-              "drops": 2
+              "reason": "Skills",
+              "drops": 1
             },
             {
               "job_id": "1781517414437x155736261114986500",
@@ -4854,13 +4938,6 @@
               "job_id": "1773325018606x283473979082276860",
               "job_title": "Analytics Manager (AVIV)",
               "client": "AVIV",
-              "reason": "Timing",
-              "drops": 2
-            },
-            {
-              "job_id": "1773325018606x283473979082276860",
-              "job_title": "Analytics Manager (AVIV)",
-              "client": "AVIV",
               "reason": "Position closed",
               "drops": 1
             },
@@ -4868,8 +4945,15 @@
               "job_id": "1779970626328x834670130159681500",
               "job_title": "Engineering Manager, Platform - Berlin",
               "client": "AVIV",
-              "reason": "Skills",
-              "drops": 1
+              "reason": "Salary",
+              "drops": 2
+            },
+            {
+              "job_id": "1773325018606x283473979082276860",
+              "job_title": "Analytics Manager (AVIV)",
+              "client": "AVIV",
+              "reason": "Timing",
+              "drops": 2
             }
           ],
           "_jobs": [
@@ -5056,44 +5140,16 @@
           },
           "_drops": [
             {
-              "job_id": "1778673284727x519021825440350200",
-              "job_title": "Engineering Manager T&S Kristina, Berlin",
-              "client": "AVIV",
-              "reason": "Industry",
-              "drops": 1
-            },
-            {
-              "job_id": "1778673333753x755455990320857100",
-              "job_title": "Engineering Manager France, Kristina",
+              "job_id": "1775137953484x447343876051304450",
+              "job_title": "Staff Backend Engineer Trust & Safety - Wlad - Berlin",
               "client": "AVIV",
               "reason": "Salary",
               "drops": 1
             },
             {
-              "job_id": "1778238250267x806800061349494800",
-              "job_title": "Senior Backend Engineer, Platform Team - Berlin (Wlad)",
-              "client": "AVIV",
-              "reason": "Hiring Manager Rejected",
-              "drops": 2
-            },
-            {
               "job_id": "1778673284727x519021825440350200",
               "job_title": "Engineering Manager T&S Kristina, Berlin",
               "client": "AVIV",
-              "reason": "Technology",
-              "drops": 1
-            },
-            {
-              "job_id": "1778673333753x755455990320857100",
-              "job_title": "Engineering Manager France, Kristina",
-              "client": "AVIV",
-              "reason": "Other",
-              "drops": 1
-            },
-            {
-              "job_id": "1774945442541x679227563572199400",
-              "job_title": "Senior Software Engineer (UK) - Fullstack (Ecosystem/Shop)",
-              "client": "Eucalyptus",
               "reason": "Technology",
               "drops": 1
             },
@@ -5105,8 +5161,36 @@
               "drops": 1
             },
             {
-              "job_id": "1775137953484x447343876051304450",
-              "job_title": "Staff Backend Engineer Trust & Safety - Wlad - Berlin",
+              "job_id": "1774945442541x679227563572199400",
+              "job_title": "Senior Software Engineer (UK) - Fullstack (Ecosystem/Shop)",
+              "client": "Eucalyptus",
+              "reason": "Technology",
+              "drops": 1
+            },
+            {
+              "job_id": "1778673333753x755455990320857100",
+              "job_title": "Engineering Manager France, Kristina",
+              "client": "AVIV",
+              "reason": "Other",
+              "drops": 1
+            },
+            {
+              "job_id": "1778673284727x519021825440350200",
+              "job_title": "Engineering Manager T&S Kristina, Berlin",
+              "client": "AVIV",
+              "reason": "Industry",
+              "drops": 1
+            },
+            {
+              "job_id": "1778238250267x806800061349494800",
+              "job_title": "Senior Backend Engineer, Platform Team - Berlin (Wlad)",
+              "client": "AVIV",
+              "reason": "Hiring Manager Rejected",
+              "drops": 2
+            },
+            {
+              "job_id": "1778673333753x755455990320857100",
+              "job_title": "Engineering Manager France, Kristina",
               "client": "AVIV",
               "reason": "Salary",
               "drops": 1
@@ -5210,15 +5294,15 @@
             "target": 220.0
           },
           "Recruiter Screen": {
-            "actual": 7,
+            "actual": 9,
             "target": 10.0
           },
           "Actual Screens": {
-            "actual": 8,
+            "actual": 9,
             "target": 7.0
           },
           "Moved to ATS": {
-            "actual": 5,
+            "actual": 7,
             "target": 4.0
           },
           "_drops": [
@@ -5237,18 +5321,18 @@
               "drops": 2
             },
             {
-              "job_id": "1776767694969x733318081986691100",
-              "job_title": "Senior Android Engineer - Germany [ ALEX ]",
+              "job_id": "1776767826716x982121841327341600",
+              "job_title": "Senior iOS Engineer - Germany [ ALEX ]",
               "client": "AVIV",
-              "reason": "Dropped out",
+              "reason": "Skills",
               "drops": 1
             },
             {
-              "job_id": "1776767694969x733318081986691100",
-              "job_title": "Senior Android Engineer - Germany [ ALEX ]",
+              "job_id": "1776165059453x461431607535861800",
+              "job_title": "Senior Android Engineer - Croatia (Alex)",
               "client": "AVIV",
-              "reason": "Timing",
-              "drops": 3
+              "reason": "Position",
+              "drops": 1
             },
             {
               "job_id": "1776767694969x733318081986691100",
@@ -5261,7 +5345,28 @@
               "job_id": "1776165059453x461431607535861800",
               "job_title": "Senior Android Engineer - Croatia (Alex)",
               "client": "AVIV",
-              "reason": "Position",
+              "reason": "Skills",
+              "drops": 1
+            },
+            {
+              "job_id": "1776165059453x461431607535861800",
+              "job_title": "Senior Android Engineer - Croatia (Alex)",
+              "client": "AVIV",
+              "reason": "Dropped out",
+              "drops": 2
+            },
+            {
+              "job_id": "1781094905113x292385134163525600",
+              "job_title": "Senior Android Engineer Germany - Lejla",
+              "client": "AVIV",
+              "reason": "No Show",
+              "drops": 1
+            },
+            {
+              "job_id": "1776767694969x733318081986691100",
+              "job_title": "Senior Android Engineer - Germany [ ALEX ]",
+              "client": "AVIV",
+              "reason": "Dropped out",
               "drops": 1
             },
             {
@@ -5272,21 +5377,24 @@
               "drops": 3
             },
             {
-              "job_id": "1776165059453x461431607535861800",
-              "job_title": "Senior Android Engineer - Croatia (Alex)",
+              "job_id": "1776767694969x733318081986691100",
+              "job_title": "Senior Android Engineer - Germany [ ALEX ]",
               "client": "AVIV",
-              "reason": "Skills",
-              "drops": 1
-            },
-            {
-              "job_id": "1781094905113x292385134163525600",
-              "job_title": "Senior Android Engineer Germany - Lejla",
-              "client": "AVIV",
-              "reason": "No Show",
-              "drops": 1
+              "reason": "Timing",
+              "drops": 4
             }
           ],
           "_jobs": [
+            {
+              "job_id": "1776767694969x733318081986691100",
+              "job_title": "Senior Android Engineer - Germany [ ALEX ]",
+              "contacted": 0,
+              "screens": 3,
+              "actual_screens": 3,
+              "ats": 3,
+              "offered": 0,
+              "hired": 0
+            },
             {
               "job_id": "1781094905113x292385134163525600",
               "job_title": "Senior Android Engineer Germany - Lejla",
@@ -5308,22 +5416,22 @@
               "hired": 0
             },
             {
-              "job_id": "1776767694969x733318081986691100",
-              "job_title": "Senior Android Engineer - Germany [ ALEX ]",
-              "contacted": 0,
-              "screens": 2,
-              "actual_screens": 2,
-              "ats": 1,
-              "offered": 0,
-              "hired": 0
-            },
-            {
               "job_id": "1780328272082x222571569976705020",
               "job_title": "Senior Front End Engineer (DE) - Alex",
               "contacted": 0,
               "screens": 1,
               "actual_screens": 1,
               "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1773915221899x731095116844892200",
+              "job_title": "Senior IOS Engineer Paris",
+              "contacted": 0,
+              "screens": 1,
+              "actual_screens": 0,
+              "ats": 0,
               "offered": 0,
               "hired": 0
             },
@@ -5358,130 +5466,11 @@
           },
           "_drops": [
             {
-              "job_id": "1776165059453x461431607535861800",
-              "job_title": "Senior Android Engineer - Croatia (Alex)",
-              "client": "AVIV",
-              "reason": "Timing",
-              "drops": 10
-            },
-            {
-              "job_id": "1776767694969x733318081986691100",
-              "job_title": "Senior Android Engineer - Germany [ ALEX ]",
-              "client": "AVIV",
-              "reason": "Timing",
-              "drops": 5
-            },
-            {
-              "job_id": "1780948201546x511155649381662700",
-              "job_title": "Junior Backend Developer - France",
-              "client": "AVIV",
-              "reason": "Type of contract",
-              "drops": 1
-            },
-            {
-              "job_id": "1780328272082x222571569976705020",
-              "job_title": "Senior Front End Engineer (DE) - Alex",
-              "client": "AVIV",
-              "reason": "Timing",
-              "drops": 4
-            },
-            {
-              "job_id": "1781094905113x292385134163525600",
-              "job_title": "Senior Android Engineer Germany - Lejla",
-              "client": "AVIV",
-              "reason": "Do not contact again",
-              "drops": 2
-            },
-            {
-              "job_id": "1779729977672x962552236573720600",
-              "job_title": "Backend Engineer - Croatia",
-              "client": "AVIV",
-              "reason": "Position",
-              "drops": 1
-            },
-            {
-              "job_id": "1781528588759x200335994288603140",
-              "job_title": "Senior Backend Engineer Paris - Aviv",
-              "client": "AVIV",
-              "reason": "Type of contract",
-              "drops": 4
-            },
-            {
-              "job_id": "1776767826716x982121841327341600",
-              "job_title": "Senior iOS Engineer - Germany [ ALEX ]",
-              "client": "AVIV",
-              "reason": "Dropped out",
-              "drops": 1
-            },
-            {
-              "job_id": "1776165059453x461431607535861800",
-              "job_title": "Senior Android Engineer - Croatia (Alex)",
-              "client": "AVIV",
-              "reason": "Remote only",
-              "drops": 1
-            },
-            {
-              "job_id": "1776767826716x982121841327341600",
-              "job_title": "Senior iOS Engineer - Germany [ ALEX ]",
-              "client": "AVIV",
-              "reason": "Seniority",
-              "drops": 1
-            },
-            {
               "job_id": "1780948201546x511155649381662700",
               "job_title": "Junior Backend Developer - France",
               "client": "AVIV",
               "reason": "Timing",
               "drops": 3
-            },
-            {
-              "job_id": "1780328272082x222571569976705020",
-              "job_title": "Senior Front End Engineer (DE) - Alex",
-              "client": "AVIV",
-              "reason": "Skills",
-              "drops": 1
-            },
-            {
-              "job_id": "1776165059453x461431607535861800",
-              "job_title": "Senior Android Engineer - Croatia (Alex)",
-              "client": "AVIV",
-              "reason": "Skills",
-              "drops": 1
-            },
-            {
-              "job_id": "1781094905113x292385134163525600",
-              "job_title": "Senior Android Engineer Germany - Lejla",
-              "client": "AVIV",
-              "reason": "Dropped out",
-              "drops": 2
-            },
-            {
-              "job_id": "1776767826716x982121841327341600",
-              "job_title": "Senior iOS Engineer - Germany [ ALEX ]",
-              "client": "AVIV",
-              "reason": "Skills",
-              "drops": 4
-            },
-            {
-              "job_id": "1776767826716x982121841327341600",
-              "job_title": "Senior iOS Engineer - Germany [ ALEX ]",
-              "client": "AVIV",
-              "reason": "Timing",
-              "drops": 7
-            },
-            {
-              "job_id": "1776165059453x461431607535861800",
-              "job_title": "Senior Android Engineer - Croatia (Alex)",
-              "client": "AVIV",
-              "reason": "Dropped out",
-              "drops": 1
-            },
-            {
-              "job_id": "1776767694969x733318081986691100",
-              "job_title": "Senior Android Engineer - Germany [ ALEX ]",
-              "client": "AVIV",
-              "reason": "Skills",
-              "drops": 5
             },
             {
               "job_id": "1780948201546x511155649381662700",
@@ -5491,39 +5480,11 @@
               "drops": 1
             },
             {
-              "job_id": "1781528588759x200335994288603140",
-              "job_title": "Senior Backend Engineer Paris - Aviv",
+              "job_id": "1776767694969x733318081986691100",
+              "job_title": "Senior Android Engineer - Germany [ ALEX ]",
               "client": "AVIV",
-              "reason": "Position",
-              "drops": 2
-            },
-            {
-              "job_id": "1781528588759x200335994288603140",
-              "job_title": "Senior Backend Engineer Paris - Aviv",
-              "client": "AVIV",
-              "reason": "Language",
-              "drops": 1
-            },
-            {
-              "job_id": "1776165059453x461431607535861800",
-              "job_title": "Senior Android Engineer - Croatia (Alex)",
-              "client": "AVIV",
-              "reason": "Position",
-              "drops": 4
-            },
-            {
-              "job_id": "1780328272082x222571569976705020",
-              "job_title": "Senior Front End Engineer (DE) - Alex",
-              "client": "AVIV",
-              "reason": "Salary",
-              "drops": 1
-            },
-            {
-              "job_id": "1773915221899x731095116844892200",
-              "job_title": "Senior IOS Engineer Paris",
-              "client": "AVIV",
-              "reason": "Do not contact again",
-              "drops": 1
+              "reason": "Timing",
+              "drops": 5
             },
             {
               "job_id": "1780324773234x469050419941736450",
@@ -5536,7 +5497,63 @@
               "job_id": "1776767826716x982121841327341600",
               "job_title": "Senior iOS Engineer - Germany [ ALEX ]",
               "client": "AVIV",
-              "reason": "Unresponsive",
+              "reason": "Dropped out",
+              "drops": 1
+            },
+            {
+              "job_id": "1776165059453x461431607535861800",
+              "job_title": "Senior Android Engineer - Croatia (Alex)",
+              "client": "AVIV",
+              "reason": "Position",
+              "drops": 4
+            },
+            {
+              "job_id": "1776767826716x982121841327341600",
+              "job_title": "Senior iOS Engineer - Germany [ ALEX ]",
+              "client": "AVIV",
+              "reason": "Seniority",
+              "drops": 1
+            },
+            {
+              "job_id": "1773915221899x731095116844892200",
+              "job_title": "Senior IOS Engineer Paris",
+              "client": "AVIV",
+              "reason": "Do not contact again",
+              "drops": 1
+            },
+            {
+              "job_id": "1781528588759x200335994288603140",
+              "job_title": "Senior Backend Engineer Paris - Aviv",
+              "client": "AVIV",
+              "reason": "Language",
+              "drops": 1
+            },
+            {
+              "job_id": "1781094905113x292385134163525600",
+              "job_title": "Senior Android Engineer Germany - Lejla",
+              "client": "AVIV",
+              "reason": "Dropped out",
+              "drops": 2
+            },
+            {
+              "job_id": "1781528588759x200335994288603140",
+              "job_title": "Senior Backend Engineer Paris - Aviv",
+              "client": "AVIV",
+              "reason": "Type of contract",
+              "drops": 4
+            },
+            {
+              "job_id": "1781528588759x200335994288603140",
+              "job_title": "Senior Backend Engineer Paris - Aviv",
+              "client": "AVIV",
+              "reason": "Position",
+              "drops": 2
+            },
+            {
+              "job_id": "1780948201546x511155649381662700",
+              "job_title": "Junior Backend Developer - France",
+              "client": "AVIV",
+              "reason": "Type of contract",
               "drops": 1
             },
             {
@@ -5545,6 +5562,97 @@
               "client": "AVIV",
               "reason": "Salary",
               "drops": 1
+            },
+            {
+              "job_id": "1780328272082x222571569976705020",
+              "job_title": "Senior Front End Engineer (DE) - Alex",
+              "client": "AVIV",
+              "reason": "Salary",
+              "drops": 1
+            },
+            {
+              "job_id": "1779729977672x962552236573720600",
+              "job_title": "Backend Engineer - Croatia",
+              "client": "AVIV",
+              "reason": "Position",
+              "drops": 1
+            },
+            {
+              "job_id": "1781094905113x292385134163525600",
+              "job_title": "Senior Android Engineer Germany - Lejla",
+              "client": "AVIV",
+              "reason": "Do not contact again",
+              "drops": 2
+            },
+            {
+              "job_id": "1776165059453x461431607535861800",
+              "job_title": "Senior Android Engineer - Croatia (Alex)",
+              "client": "AVIV",
+              "reason": "Skills",
+              "drops": 1
+            },
+            {
+              "job_id": "1776767826716x982121841327341600",
+              "job_title": "Senior iOS Engineer - Germany [ ALEX ]",
+              "client": "AVIV",
+              "reason": "Unresponsive",
+              "drops": 1
+            },
+            {
+              "job_id": "1780328272082x222571569976705020",
+              "job_title": "Senior Front End Engineer (DE) - Alex",
+              "client": "AVIV",
+              "reason": "Skills",
+              "drops": 1
+            },
+            {
+              "job_id": "1776767694969x733318081986691100",
+              "job_title": "Senior Android Engineer - Germany [ ALEX ]",
+              "client": "AVIV",
+              "reason": "Skills",
+              "drops": 5
+            },
+            {
+              "job_id": "1780328272082x222571569976705020",
+              "job_title": "Senior Front End Engineer (DE) - Alex",
+              "client": "AVIV",
+              "reason": "Timing",
+              "drops": 4
+            },
+            {
+              "job_id": "1776767826716x982121841327341600",
+              "job_title": "Senior iOS Engineer - Germany [ ALEX ]",
+              "client": "AVIV",
+              "reason": "Timing",
+              "drops": 7
+            },
+            {
+              "job_id": "1776165059453x461431607535861800",
+              "job_title": "Senior Android Engineer - Croatia (Alex)",
+              "client": "AVIV",
+              "reason": "Remote only",
+              "drops": 1
+            },
+            {
+              "job_id": "1776165059453x461431607535861800",
+              "job_title": "Senior Android Engineer - Croatia (Alex)",
+              "client": "AVIV",
+              "reason": "Dropped out",
+              "drops": 1
+            },
+            {
+              "job_id": "1776165059453x461431607535861800",
+              "job_title": "Senior Android Engineer - Croatia (Alex)",
+              "client": "AVIV",
+              "reason": "Timing",
+              "drops": 10
+            },
+            {
+              "job_id": "1776767826716x982121841327341600",
+              "job_title": "Senior iOS Engineer - Germany [ ALEX ]",
+              "client": "AVIV",
+              "reason": "Skills",
+              "drops": 4
             }
           ],
           "_jobs": [
@@ -5661,11 +5769,11 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 0,
+            "actual": 20,
             "target": 240.0
           },
           "Recruiter Screen": {
-            "actual": 5,
+            "actual": 7,
             "target": 10.0
           },
           "Actual Screens": {
@@ -5685,16 +5793,16 @@
               "drops": 1
             },
             {
-              "job_id": "1778238250267x806800061349494800",
-              "job_title": "Senior Backend Engineer, Platform Team - Berlin (Wlad)",
-              "client": "AVIV",
+              "job_id": "1775651825154x949444861303455700",
+              "job_title": "Senior Software Engineer (Finland)",
+              "client": "Aiven",
               "reason": "Timing",
               "drops": 1
             },
             {
-              "job_id": "1775651825154x949444861303455700",
-              "job_title": "Senior Software Engineer (Finland)",
-              "client": "Aiven",
+              "job_id": "1778238250267x806800061349494800",
+              "job_title": "Senior Backend Engineer, Platform Team - Berlin (Wlad)",
+              "client": "AVIV",
               "reason": "Timing",
               "drops": 1
             },
@@ -5708,12 +5816,32 @@
           ],
           "_jobs": [
             {
+              "job_id": "1775211650509x258412021772451840",
+              "job_title": "Principal Quality engineer",
+              "contacted": 20,
+              "screens": 0,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
               "job_id": "1778673333753x755455990320857100",
               "job_title": "Engineering Manager France, Kristina",
               "contacted": 0,
-              "screens": 1,
+              "screens": 3,
               "actual_screens": 1,
               "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1736934796460x763481035954192400",
+              "job_title": "Fullstack Engineer",
+              "contacted": 0,
+              "screens": 1,
+              "actual_screens": 0,
+              "ats": 0,
               "offered": 0,
               "hired": 0
             },
@@ -5734,18 +5862,8 @@
               "screens": 2,
               "actual_screens": 0,
               "ats": 0,
-              "offered": 0,
-              "hired": 0
-            },
-            {
-              "job_id": "1736934796460x763481035954192400",
-              "job_title": "Fullstack Engineer",
-              "contacted": 0,
-              "screens": 1,
-              "actual_screens": 0,
-              "ats": 0,
-              "offered": 0,
-              "hired": 0
+              "offered": 1,
+              "hired": 1
             }
           ]
         },
@@ -5768,10 +5886,31 @@
           },
           "_drops": [
             {
+              "job_id": "1778238250267x806800061349494800",
+              "job_title": "Senior Backend Engineer, Platform Team - Berlin (Wlad)",
+              "client": "AVIV",
+              "reason": "Skills",
+              "drops": 1
+            },
+            {
+              "job_id": "1779111938424x336950569178497000",
+              "job_title": "QA Automation - Financing, Croatia",
+              "client": "AVIV",
+              "reason": "Dropped out",
+              "drops": 2
+            },
+            {
+              "job_id": "1778238250267x806800061349494800",
+              "job_title": "Senior Backend Engineer, Platform Team - Berlin (Wlad)",
+              "client": "AVIV",
+              "reason": "Dropped out",
+              "drops": 1
+            },
+            {
               "job_id": "1779729846009x817600643033989100",
               "job_title": "Frontend Engineer - Croatia",
               "client": "AVIV",
-              "reason": "Skills",
+              "reason": "Type of contract",
               "drops": 1
             },
             {
@@ -5782,25 +5921,39 @@
               "drops": 1
             },
             {
-              "job_id": "1778238250267x806800061349494800",
-              "job_title": "Senior Backend Engineer, Platform Team - Berlin (Wlad)",
+              "job_id": "1781084768272x309178114878734340",
+              "job_title": "Senior Machine Learning Engineer",
               "client": "AVIV",
+              "reason": "Timing",
+              "drops": 1
+            },
+            {
+              "job_id": "1779112032424x907451151344205800",
+              "job_title": "QA Automation - Authentication, Croatia",
+              "client": "AVIV",
+              "reason": "Dropped out",
+              "drops": 2
+            },
+            {
+              "job_id": "1775651825154x949444861303455700",
+              "job_title": "Senior Software Engineer (Finland)",
+              "client": "Aiven",
               "reason": "Skills",
               "drops": 1
             },
             {
-              "job_id": "1779729977672x962552236573720600",
-              "job_title": "Backend Engineer - Croatia",
+              "job_id": "1781084768272x309178114878734340",
+              "job_title": "Senior Machine Learning Engineer",
               "client": "AVIV",
-              "reason": "Dropped out",
+              "reason": "Type of contract",
               "drops": 1
             },
             {
-              "job_id": "1778238250267x806800061349494800",
-              "job_title": "Senior Backend Engineer, Platform Team - Berlin (Wlad)",
+              "job_id": "1779729846009x817600643033989100",
+              "job_title": "Frontend Engineer - Croatia",
               "client": "AVIV",
-              "reason": "Dropped out",
-              "drops": 1
+              "reason": "Timing",
+              "drops": 2
             },
             {
               "job_id": "1779729846009x817600643033989100",
@@ -5817,41 +5970,6 @@
               "drops": 1
             },
             {
-              "job_id": "1781084768272x309178114878734340",
-              "job_title": "Senior Machine Learning Engineer",
-              "client": "AVIV",
-              "reason": "Timing",
-              "drops": 1
-            },
-            {
-              "job_id": "1779111938424x336950569178497000",
-              "job_title": "QA Automation - Financing, Croatia",
-              "client": "AVIV",
-              "reason": "Dropped out",
-              "drops": 2
-            },
-            {
-              "job_id": "1779112032424x907451151344205800",
-              "job_title": "QA Automation - Authentication, Croatia",
-              "client": "AVIV",
-              "reason": "Dropped out",
-              "drops": 2
-            },
-            {
-              "job_id": "1779729846009x817600643033989100",
-              "job_title": "Frontend Engineer - Croatia",
-              "client": "AVIV",
-              "reason": "Type of contract",
-              "drops": 1
-            },
-            {
-              "job_id": "1779729846009x817600643033989100",
-              "job_title": "Frontend Engineer - Croatia",
-              "client": "AVIV",
-              "reason": "Timing",
-              "drops": 2
-            },
-            {
               "job_id": "1778238250267x806800061349494800",
               "job_title": "Senior Backend Engineer, Platform Team - Berlin (Wlad)",
               "client": "AVIV",
@@ -5859,17 +5977,17 @@
               "drops": 1
             },
             {
-              "job_id": "1781084768272x309178114878734340",
-              "job_title": "Senior Machine Learning Engineer",
+              "job_id": "1779729846009x817600643033989100",
+              "job_title": "Frontend Engineer - Croatia",
               "client": "AVIV",
-              "reason": "Type of contract",
+              "reason": "Skills",
               "drops": 1
             },
             {
-              "job_id": "1775651825154x949444861303455700",
-              "job_title": "Senior Software Engineer (Finland)",
-              "client": "Aiven",
-              "reason": "Skills",
+              "job_id": "1779729977672x962552236573720600",
+              "job_title": "Backend Engineer - Croatia",
+              "client": "AVIV",
+              "reason": "Dropped out",
               "drops": 1
             }
           ],
@@ -5987,7 +6105,7 @@
       "data": {
         "this_week": {
           "Outreach Contacted": {
-            "actual": 0,
+            "actual": 15,
             "target": 0.0
           },
           "Recruiter Screen": {
@@ -6004,11 +6122,11 @@
           },
           "_drops": [
             {
-              "job_id": "1780492838849x646001879518543900",
-              "job_title": "Store Team Lead, Croatia, Q2 2026",
+              "job_id": "1779445203229x683558468490100700",
+              "job_title": "Category Manager, Czechia, Q2 2026",
               "client": "Wolt",
               "reason": "Timing",
-              "drops": 1
+              "drops": 2
             },
             {
               "job_id": "1779445203229x683558468490100700",
@@ -6018,14 +6136,24 @@
               "drops": 1
             },
             {
-              "job_id": "1779445203229x683558468490100700",
-              "job_title": "Category Manager, Czechia, Q2 2026",
+              "job_id": "1780492838849x646001879518543900",
+              "job_title": "Store Team Lead, Croatia, Q2 2026",
               "client": "Wolt",
               "reason": "Timing",
-              "drops": 2
+              "drops": 1
             }
           ],
           "_jobs": [
+            {
+              "job_id": "1775551815119x528177390986985500",
+              "job_title": "Enterprise Account Executive - Berlin",
+              "contacted": 15,
+              "screens": 0,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
             {
               "job_id": "1777987322411x102512047924183040",
               "job_title": "Senior Fullstack Engineer - Stuttgart",
@@ -6057,20 +6185,6 @@
           },
           "_drops": [
             {
-              "job_id": "1779445203229x683558468490100700",
-              "job_title": "Category Manager, Czechia, Q2 2026",
-              "client": "Wolt",
-              "reason": "Parental leave",
-              "drops": 1
-            },
-            {
-              "job_id": "1779445203229x683558468490100700",
-              "job_title": "Category Manager, Czechia, Q2 2026",
-              "client": "Wolt",
-              "reason": "Timing",
-              "drops": 9
-            },
-            {
               "job_id": "1777987322411x102512047924183040",
               "job_title": "Senior Fullstack Engineer - Stuttgart",
               "client": "Taxfix",
@@ -6081,7 +6195,7 @@
               "job_id": "1779445203229x683558468490100700",
               "job_title": "Category Manager, Czechia, Q2 2026",
               "client": "Wolt",
-              "reason": "Skills",
+              "reason": "Parental leave",
               "drops": 1
             },
             {
@@ -6092,11 +6206,25 @@
               "drops": 2
             },
             {
+              "job_id": "1779445203229x683558468490100700",
+              "job_title": "Category Manager, Czechia, Q2 2026",
+              "client": "Wolt",
+              "reason": "Timing",
+              "drops": 9
+            },
+            {
               "job_id": "1780492838849x646001879518543900",
               "job_title": "Store Team Lead, Croatia, Q2 2026",
               "client": "Wolt",
               "reason": "Timing",
               "drops": 3
+            },
+            {
+              "job_id": "1779445203229x683558468490100700",
+              "job_title": "Category Manager, Czechia, Q2 2026",
+              "client": "Wolt",
+              "reason": "Skills",
+              "drops": 1
             }
           ],
           "_jobs": [
