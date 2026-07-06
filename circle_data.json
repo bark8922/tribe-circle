@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T06:49:12.018091Z",
+  "generated_at": "2026-07-06T08:22:56.651580Z",
   "source": "/tmp/sf.json",
   "periods": {
     "this_week": {
@@ -2002,7 +2002,7 @@
           },
           "Moved to ATS": {
             "actual": 0,
-            "target": 0.0
+            "target": 10.0
           },
           "_drops": [],
           "_jobs": []
@@ -2018,7 +2018,7 @@
           },
           "Moved to ATS": {
             "actual": 15,
-            "target": 0.0
+            "target": 10.0
           },
           "_drops": [
             {
@@ -2921,7 +2921,7 @@
         "this_week": {
           "Outreach Contacted": {
             "actual": 0,
-            "target": 190.0
+            "target": 0.0
           },
           "Recruiter Screen": {
             "actual": 0,
@@ -2941,7 +2941,7 @@
         "last_week": {
           "Outreach Contacted": {
             "actual": 0,
-            "target": 190.0
+            "target": 0.0
           },
           "Recruiter Screen": {
             "actual": 6,
@@ -3817,308 +3817,6 @@
         }
       }
     },
-    "nare@tribe.xyz": {
-      "name": "Nare Avetisyan",
-      "first_name": "Nare",
-      "role": "TS",
-      "client": "",
-      "pd_client": "",
-      "data": {
-        "this_week": {
-          "Outreach Contacted": {
-            "actual": 0,
-            "target": 220.0
-          },
-          "Recruiter Screen": {
-            "actual": 0,
-            "target": 10.0
-          },
-          "Actual Screens": {
-            "actual": 0,
-            "target": 7.0
-          },
-          "Moved to ATS": {
-            "actual": 0,
-            "target": 4.0
-          },
-          "_drops": [],
-          "_jobs": []
-        },
-        "last_week": {
-          "Outreach Contacted": {
-            "actual": 0,
-            "target": 220.0
-          },
-          "Recruiter Screen": {
-            "actual": 24,
-            "target": 10.0
-          },
-          "Actual Screens": {
-            "actual": 19,
-            "target": 7.0
-          },
-          "Moved to ATS": {
-            "actual": 16,
-            "target": 4.0
-          },
-          "_drops": [
-            {
-              "job_id": "1776165059453x461431607535861800",
-              "job_title": "Senior Android Engineer - Croatia (Alex)",
-              "client": "AVIV",
-              "reason": "Timing",
-              "drops": 4
-            },
-            {
-              "job_id": "1776767694969x733318081986691100",
-              "job_title": "Senior Android Engineer - Germany [ ALEX ]",
-              "client": "AVIV",
-              "reason": "Salary",
-              "drops": 2
-            },
-            {
-              "job_id": "1776767826716x982121841327341600",
-              "job_title": "Senior iOS Engineer - Germany [ ALEX ]",
-              "client": "AVIV",
-              "reason": "Skills",
-              "drops": 1
-            },
-            {
-              "job_id": "1776767826716x982121841327341600",
-              "job_title": "Senior iOS Engineer - Germany [ ALEX ]",
-              "client": "AVIV",
-              "reason": "Dropped out",
-              "drops": 1
-            },
-            {
-              "job_id": "1776767694969x733318081986691100",
-              "job_title": "Senior Android Engineer - Germany [ ALEX ]",
-              "client": "AVIV",
-              "reason": "Skills",
-              "drops": 4
-            },
-            {
-              "job_id": "1781094905113x292385134163525600",
-              "job_title": "Senior Android Engineer Germany - Lejla",
-              "client": "AVIV",
-              "reason": "Do not contact again",
-              "drops": 6
-            },
-            {
-              "job_id": "1780948201546x511155649381662700",
-              "job_title": "Junior Backend Developer - France",
-              "client": "AVIV",
-              "reason": "Timing",
-              "drops": 1
-            },
-            {
-              "job_id": "1776165059453x461431607535861800",
-              "job_title": "Senior Android Engineer - Croatia (Alex)",
-              "client": "AVIV",
-              "reason": "Skills",
-              "drops": 2
-            },
-            {
-              "job_id": "1779729846009x817600643033989100",
-              "job_title": "Frontend Engineer - Croatia",
-              "client": "AVIV",
-              "reason": "Seniority",
-              "drops": 1
-            },
-            {
-              "job_id": "1781528588759x200335994288603140",
-              "job_title": "Senior Backend Engineer Paris - Aviv",
-              "client": "AVIV",
-              "reason": "Timing",
-              "drops": 1
-            },
-            {
-              "job_id": "1781528588759x200335994288603140",
-              "job_title": "Senior Backend Engineer Paris - Aviv",
-              "client": "AVIV",
-              "reason": "Type of contract",
-              "drops": 3
-            },
-            {
-              "job_id": "1780948201546x511155649381662700",
-              "job_title": "Junior Backend Developer - France",
-              "client": "AVIV",
-              "reason": "Requalified",
-              "drops": 1
-            },
-            {
-              "job_id": "1780948201546x511155649381662700",
-              "job_title": "Junior Backend Developer - France",
-              "client": "AVIV",
-              "reason": "Position",
-              "drops": 1
-            },
-            {
-              "job_id": "1773915221899x731095116844892200",
-              "job_title": "Senior IOS Engineer Paris",
-              "client": "AVIV",
-              "reason": "Do not contact again",
-              "drops": 1
-            },
-            {
-              "job_id": "1776767826716x982121841327341600",
-              "job_title": "Senior iOS Engineer - Germany [ ALEX ]",
-              "client": "AVIV",
-              "reason": "Salary",
-              "drops": 1
-            },
-            {
-              "job_id": "1780948201546x511155649381662700",
-              "job_title": "Junior Backend Developer - France",
-              "client": "AVIV",
-              "reason": "Visa",
-              "drops": 3
-            },
-            {
-              "job_id": "1781094905113x292385134163525600",
-              "job_title": "Senior Android Engineer Germany - Lejla",
-              "client": "AVIV",
-              "reason": "No Show",
-              "drops": 1
-            },
-            {
-              "job_id": "1776165059453x461431607535861800",
-              "job_title": "Senior Android Engineer - Croatia (Alex)",
-              "client": "AVIV",
-              "reason": "Culture Fit",
-              "drops": 1
-            },
-            {
-              "job_id": "1776165059453x461431607535861800",
-              "job_title": "Senior Android Engineer - Croatia (Alex)",
-              "client": "AVIV",
-              "reason": "Position",
-              "drops": 1
-            },
-            {
-              "job_id": "1776165059453x461431607535861800",
-              "job_title": "Senior Android Engineer - Croatia (Alex)",
-              "client": "AVIV",
-              "reason": "Dropped out",
-              "drops": 2
-            },
-            {
-              "job_id": "1776767694969x733318081986691100",
-              "job_title": "Senior Android Engineer - Germany [ ALEX ]",
-              "client": "AVIV",
-              "reason": "Timing",
-              "drops": 6
-            },
-            {
-              "job_id": "1776767694969x733318081986691100",
-              "job_title": "Senior Android Engineer - Germany [ ALEX ]",
-              "client": "AVIV",
-              "reason": "Dropped out",
-              "drops": 1
-            },
-            {
-              "job_id": "1778673284727x519021825440350200",
-              "job_title": "Engineering Manager T&S Kristina, Berlin",
-              "client": "AVIV",
-              "reason": "Timing",
-              "drops": 1
-            }
-          ],
-          "_jobs": [
-            {
-              "job_id": "1776767694969x733318081986691100",
-              "job_title": "Senior Android Engineer - Germany [ ALEX ]",
-              "contacted": 0,
-              "screens": 7,
-              "actual_screens": 7,
-              "ats": 7,
-              "offered": 0,
-              "hired": 0
-            },
-            {
-              "job_id": "1776165059453x461431607535861800",
-              "job_title": "Senior Android Engineer - Croatia (Alex)",
-              "contacted": 0,
-              "screens": 5,
-              "actual_screens": 5,
-              "ats": 3,
-              "offered": 0,
-              "hired": 0
-            },
-            {
-              "job_id": "1781094905113x292385134163525600",
-              "job_title": "Senior Android Engineer Germany - Lejla",
-              "contacted": 0,
-              "screens": 6,
-              "actual_screens": 3,
-              "ats": 2,
-              "offered": 0,
-              "hired": 0
-            },
-            {
-              "job_id": "1780328272082x222571569976705020",
-              "job_title": "Senior Front End Engineer (DE) - Alex",
-              "contacted": 0,
-              "screens": 2,
-              "actual_screens": 2,
-              "ats": 2,
-              "offered": 0,
-              "hired": 0
-            },
-            {
-              "job_id": "1780948201546x511155649381662700",
-              "job_title": "Junior Backend Developer - France",
-              "contacted": 0,
-              "screens": 2,
-              "actual_screens": 2,
-              "ats": 1,
-              "offered": 0,
-              "hired": 0
-            },
-            {
-              "job_id": "1779729846009x817600643033989100",
-              "job_title": "Frontend Engineer - Croatia",
-              "contacted": 0,
-              "screens": 1,
-              "actual_screens": 0,
-              "ats": 1,
-              "offered": 0,
-              "hired": 0
-            },
-            {
-              "job_id": "1773915221899x731095116844892200",
-              "job_title": "Senior IOS Engineer Paris",
-              "contacted": 0,
-              "screens": 1,
-              "actual_screens": 0,
-              "ats": 0,
-              "offered": 0,
-              "hired": 0
-            },
-            {
-              "job_id": "1776767826716x982121841327341600",
-              "job_title": "Senior iOS Engineer - Germany [ ALEX ]",
-              "contacted": 0,
-              "screens": 0,
-              "actual_screens": 0,
-              "ats": 0,
-              "offered": 1,
-              "hired": 0
-            },
-            {
-              "job_id": "1780324773234x469050419941736450",
-              "job_title": "Frontend Engineer - DE",
-              "contacted": 0,
-              "screens": 0,
-              "actual_screens": 0,
-              "ats": 0,
-              "offered": 1,
-              "hired": 0
-            }
-          ]
-        }
-      }
-    },
     "rodrigo@tribe.xyz": {
       "name": "Rodrigo Gomes",
       "first_name": "Rodrigo",
@@ -4129,7 +3827,7 @@
         "this_week": {
           "Outreach Contacted": {
             "actual": 0,
-            "target": 240.0
+            "target": 180.0
           },
           "Recruiter Screen": {
             "actual": 0,
@@ -4149,7 +3847,7 @@
         "last_week": {
           "Outreach Contacted": {
             "actual": 186,
-            "target": 240.0
+            "target": 180.0
           },
           "Recruiter Screen": {
             "actual": 14,
