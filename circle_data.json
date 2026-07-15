@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T14:19:59.386428Z",
+  "generated_at": "2026-07-15T14:29:47.165091Z",
   "source": "/tmp/sf.json",
   "periods": {
     "this_week": {
@@ -624,6 +624,68 @@
               "ats": 1,
               "offered": 1,
               "hired": 1
+            }
+          ]
+        }
+      }
+    },
+    "adelya@tribe.xyz": {
+      "name": "Adelya Khakimova",
+      "first_name": "Adelya",
+      "role": "TA",
+      "client": "Wolt North, Baltics & Benelux",
+      "pd_client": "Wolt",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 0,
+            "target": 50.0
+          },
+          "Actual Screens": {
+            "actual": 0,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 0,
+            "target": 8.0
+          },
+          "_drops": [],
+          "_jobs": []
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 2,
+            "target": 50.0
+          },
+          "Actual Screens": {
+            "actual": 2,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 2,
+            "target": 8.0
+          },
+          "_drops": [],
+          "_jobs": [
+            {
+              "job_id": "1776662016241x890569544355020800",
+              "job_title": "Ops Excellence Specialist (GEO)",
+              "contacted": 1,
+              "screens": 1,
+              "actual_screens": 1,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1776662305695x867664369647616000",
+              "job_title": "Key Account Manager (Malta)",
+              "contacted": 1,
+              "screens": 1,
+              "actual_screens": 1,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
             }
           ]
         }
@@ -1845,6 +1907,94 @@
         }
       }
     },
+    "filip@tribe.xyz": {
+      "name": "Filip Nogowski",
+      "first_name": "Filip",
+      "role": "TA",
+      "client": "Parloa",
+      "pd_client": "Parloa",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 0,
+            "target": 50.0
+          },
+          "Actual Screens": {
+            "actual": 0,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 0,
+            "target": 8.0
+          },
+          "_drops": [],
+          "_jobs": [
+            {
+              "job_id": "1770115575994x938717513032663000",
+              "job_title": "Principal Applied Scientist - AI Agents & Generative AI",
+              "contacted": 0,
+              "screens": 0,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 1,
+              "hired": 1
+            }
+          ]
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 16,
+            "target": 50.0
+          },
+          "Actual Screens": {
+            "actual": 18,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 7,
+            "target": 8.0
+          },
+          "_drops": [
+            {
+              "job_id": "1770115575994x938717513032663000",
+              "job_title": "Principal Applied Scientist - AI Agents & Generative AI",
+              "client": "Parloa",
+              "reason": "Requalified",
+              "drops": 1
+            },
+            {
+              "job_id": "1770115575994x938717513032663000",
+              "job_title": "Principal Applied Scientist - AI Agents & Generative AI",
+              "client": "Parloa",
+              "reason": "Unresponsive",
+              "drops": 1
+            }
+          ],
+          "_jobs": [
+            {
+              "job_id": "1758529227458x187488425396142080",
+              "job_title": "Principal Engineer",
+              "contacted": 11,
+              "screens": 12,
+              "actual_screens": 12,
+              "ats": 7,
+              "offered": 2,
+              "hired": 2
+            },
+            {
+              "job_id": "1770115575994x938717513032663000",
+              "job_title": "Principal Applied Scientist - AI Agents & Generative AI",
+              "contacted": 5,
+              "screens": 3,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        }
+      }
+    },
     "marinanikolic@tribe.xyz": {
       "name": "Marina Nikolic",
       "first_name": "Marina",
@@ -2091,6 +2241,243 @@
               "screens": 4,
               "actual_screens": 1,
               "ats": 1,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        }
+      }
+    },
+    "lejla@tribe.xyz": {
+      "name": "Lejla Silva",
+      "first_name": "Lejla",
+      "role": "TA",
+      "client": "Aviv",
+      "pd_client": "AVIV",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 56,
+            "target": 70.0
+          },
+          "Actual Screens": {
+            "actual": 5,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 5,
+            "target": 10.0
+          },
+          "_drops": [
+            {
+              "job_id": "1783680621784x202193774833303550",
+              "job_title": "Recontacting: Senior IOS Engineer - Paris - AVIV",
+              "client": "AVIV",
+              "reason": "Location",
+              "drops": 1
+            },
+            {
+              "job_id": "1779112032424x907451151344205800",
+              "job_title": "QA Automation - Authentication, Croatia",
+              "client": "AVIV",
+              "reason": "Do not contact again",
+              "drops": 3
+            },
+            {
+              "job_id": "1781094905113x292385134163525600",
+              "job_title": "Senior Android Engineer Germany - Lejla",
+              "client": "AVIV",
+              "reason": "Do not contact again",
+              "drops": 1
+            },
+            {
+              "job_id": "1779112032424x907451151344205800",
+              "job_title": "QA Automation - Authentication, Croatia",
+              "client": "AVIV",
+              "reason": "Timing",
+              "drops": 5
+            }
+          ],
+          "_jobs": [
+            {
+              "job_id": "1783680621784x202193774833303550",
+              "job_title": "Recontacting: Senior IOS Engineer - Paris - AVIV",
+              "contacted": 52,
+              "screens": 2,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1779112032424x907451151344205800",
+              "job_title": "QA Automation - Authentication, Croatia",
+              "contacted": 3,
+              "screens": 5,
+              "actual_screens": 3,
+              "ats": 3,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1779111938424x336950569178497000",
+              "job_title": "QA Automation - Financing, Croatia",
+              "contacted": 1,
+              "screens": 1,
+              "actual_screens": 1,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1781094905113x292385134163525600",
+              "job_title": "Senior Android Engineer Germany - Lejla",
+              "contacted": 0,
+              "screens": 2,
+              "actual_screens": 1,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 60,
+            "target": 70.0
+          },
+          "Actual Screens": {
+            "actual": 6,
+            "target": 15.0
+          },
+          "Moved to ATS": {
+            "actual": 4,
+            "target": 10.0
+          },
+          "_drops": [
+            {
+              "job_id": "1781094905113x292385134163525600",
+              "job_title": "Senior Android Engineer Germany - Lejla",
+              "client": "AVIV",
+              "reason": "Do not contact again",
+              "drops": 2
+            },
+            {
+              "job_id": "1779112032424x907451151344205800",
+              "job_title": "QA Automation - Authentication, Croatia",
+              "client": "AVIV",
+              "reason": "Skills",
+              "drops": 1
+            },
+            {
+              "job_id": "1773915221899x731095116844892200",
+              "job_title": "Senior IOS Engineer Paris",
+              "client": "AVIV",
+              "reason": "Timing",
+              "drops": 2
+            },
+            {
+              "job_id": "1773915221899x731095116844892200",
+              "job_title": "Senior IOS Engineer Paris",
+              "client": "AVIV",
+              "reason": "Do not contact again",
+              "drops": 2
+            },
+            {
+              "job_id": "1773915221899x731095116844892200",
+              "job_title": "Senior IOS Engineer Paris",
+              "client": "AVIV",
+              "reason": "Remote only",
+              "drops": 2
+            },
+            {
+              "job_id": "1779112032424x907451151344205800",
+              "job_title": "QA Automation - Authentication, Croatia",
+              "client": "AVIV",
+              "reason": "Parental leave",
+              "drops": 1
+            },
+            {
+              "job_id": "1779111938424x336950569178497000",
+              "job_title": "QA Automation - Financing, Croatia",
+              "client": "AVIV",
+              "reason": "Do not contact again",
+              "drops": 1
+            },
+            {
+              "job_id": "1773915328724x606290305845559300",
+              "job_title": "Senior Android Engineer Paris",
+              "client": "AVIV",
+              "reason": "Do not contact again",
+              "drops": 1
+            },
+            {
+              "job_id": "1779112032424x907451151344205800",
+              "job_title": "QA Automation - Authentication, Croatia",
+              "client": "AVIV",
+              "reason": "Do not contact again",
+              "drops": 2
+            },
+            {
+              "job_id": "1779112032424x907451151344205800",
+              "job_title": "QA Automation - Authentication, Croatia",
+              "client": "AVIV",
+              "reason": "Timing",
+              "drops": 12
+            },
+            {
+              "job_id": "1781094905113x292385134163525600",
+              "job_title": "Senior Android Engineer Germany - Lejla",
+              "client": "AVIV",
+              "reason": "Dropped out",
+              "drops": 1
+            },
+            {
+              "job_id": "1779112032424x907451151344205800",
+              "job_title": "QA Automation - Authentication, Croatia",
+              "client": "AVIV",
+              "reason": "Position",
+              "drops": 1
+            }
+          ],
+          "_jobs": [
+            {
+              "job_id": "1779112032424x907451151344205800",
+              "job_title": "QA Automation - Authentication, Croatia",
+              "contacted": 34,
+              "screens": 1,
+              "actual_screens": 2,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1781094905113x292385134163525600",
+              "job_title": "Senior Android Engineer Germany - Lejla",
+              "contacted": 25,
+              "screens": 3,
+              "actual_screens": 3,
+              "ats": 3,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1773915221899x731095116844892200",
+              "job_title": "Senior IOS Engineer Paris",
+              "contacted": 1,
+              "screens": 1,
+              "actual_screens": 1,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1779111938424x336950569178497000",
+              "job_title": "QA Automation - Financing, Croatia",
+              "contacted": 0,
+              "screens": 1,
+              "actual_screens": 0,
+              "ats": 0,
               "offered": 0,
               "hired": 0
             }
@@ -5468,6 +5855,235 @@
               "job_title": "QA Automation - Financing, Croatia",
               "contacted": 0,
               "screens": 1,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        }
+      }
+    },
+    "valeriia@tribe.xyz": {
+      "name": "Valeriia Yurykova",
+      "first_name": "Valeriia",
+      "role": "TS",
+      "client": "",
+      "pd_client": "",
+      "data": {
+        "this_week": {
+          "Outreach Contacted": {
+            "actual": 67,
+            "target": 200.0
+          },
+          "Recruiter Screen": {
+            "actual": 8,
+            "target": 10.0
+          },
+          "Actual Screens": {
+            "actual": 4,
+            "target": 7.0
+          },
+          "Moved to ATS": {
+            "actual": 2,
+            "target": 4.0
+          },
+          "_drops": [
+            {
+              "job_id": "1782909597349x326592564125499400",
+              "job_title": "Tech Talent Acquisition Partner (Mexico) - TXYZ-4",
+              "client": "Tribe.xyz (IR)",
+              "reason": "Timing",
+              "drops": 1
+            },
+            {
+              "job_id": "1779368342428x874602515472056300",
+              "job_title": "Senior TA (High Volume) - Dutch",
+              "client": "Tribe.xyz (IR)",
+              "reason": "Location",
+              "drops": 1
+            },
+            {
+              "job_id": "1779368342428x874602515472056300",
+              "job_title": "Senior TA (High Volume) - Dutch",
+              "client": "Tribe.xyz (IR)",
+              "reason": "Other",
+              "drops": 2
+            },
+            {
+              "job_id": "1779368342428x874602515472056300",
+              "job_title": "Senior TA (High Volume) - Dutch",
+              "client": "Tribe.xyz (IR)",
+              "reason": "Timing",
+              "drops": 3
+            },
+            {
+              "job_id": "1770882047922x655070271851987000",
+              "job_title": "Security & Compliance Engineer",
+              "client": "Enam",
+              "reason": "Industry",
+              "drops": 1
+            }
+          ],
+          "_jobs": [
+            {
+              "job_id": "1782990831015x566346020033921000",
+              "job_title": "Product Designer Glovo",
+              "contacted": 31,
+              "screens": 0,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1782909597349x326592564125499400",
+              "job_title": "Tech Talent Acquisition Partner (Mexico) - TXYZ-4",
+              "contacted": 25,
+              "screens": 0,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1779368342428x874602515472056300",
+              "job_title": "Senior TA (High Volume) - Dutch",
+              "contacted": 11,
+              "screens": 2,
+              "actual_screens": 2,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1774945442541x679227563572199400",
+              "job_title": "Senior Software Engineer (UK) - Fullstack (Ecosystem/Shop)",
+              "contacted": 0,
+              "screens": 2,
+              "actual_screens": 2,
+              "ats": 2,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1777987322411x102512047924183040",
+              "job_title": "Senior Fullstack Engineer - Stuttgart",
+              "contacted": 0,
+              "screens": 0,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 1,
+              "hired": 1
+            },
+            {
+              "job_id": "1770882047922x655070271851987000",
+              "job_title": "Security & Compliance Engineer",
+              "contacted": 0,
+              "screens": 4,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            }
+          ]
+        },
+        "last_week": {
+          "Outreach Contacted": {
+            "actual": 201,
+            "target": 200.0
+          },
+          "Recruiter Screen": {
+            "actual": 3,
+            "target": 10.0
+          },
+          "Actual Screens": {
+            "actual": 1,
+            "target": 7.0
+          },
+          "Moved to ATS": {
+            "actual": 1,
+            "target": 4.0
+          },
+          "_drops": [
+            {
+              "job_id": "1779445203229x683558468490100700",
+              "job_title": "Category Manager, Czechia, Q2 2026",
+              "client": "Wolt",
+              "reason": "Timing",
+              "drops": 1
+            },
+            {
+              "job_id": "1770882047922x655070271851987000",
+              "job_title": "Security & Compliance Engineer",
+              "client": "Enam",
+              "reason": "Timing",
+              "drops": 4
+            },
+            {
+              "job_id": "1779975417411x145223316330774530",
+              "job_title": "Senior Talent Aquisition Partner (Polish speaker) - Immediate Start",
+              "client": "Tribe.xyz (IR)",
+              "reason": "Position closed",
+              "drops": 1
+            }
+          ],
+          "_jobs": [
+            {
+              "job_id": "1774945442541x679227563572199400",
+              "job_title": "Senior Software Engineer (UK) - Fullstack (Ecosystem/Shop)",
+              "contacted": 65,
+              "screens": 0,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1770882047922x655070271851987000",
+              "job_title": "Security & Compliance Engineer",
+              "contacted": 60,
+              "screens": 2,
+              "actual_screens": 1,
+              "ats": 1,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1736934796460x763481035954192400",
+              "job_title": "Fullstack Engineer",
+              "contacted": 46,
+              "screens": 1,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1775552220428x685390723465871400",
+              "job_title": "Enterprise Account Executive - Sweden",
+              "contacted": 15,
+              "screens": 0,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1775551815119x528177390986985500",
+              "job_title": "Enterprise Account Executive - Berlin",
+              "contacted": 14,
+              "screens": 0,
+              "actual_screens": 0,
+              "ats": 0,
+              "offered": 0,
+              "hired": 0
+            },
+            {
+              "job_id": "1779445203229x683558468490100700",
+              "job_title": "Category Manager, Czechia, Q2 2026",
+              "contacted": 1,
+              "screens": 0,
               "actual_screens": 0,
               "ats": 0,
               "offered": 0,
