@@ -186,6 +186,9 @@
         ${rsCell(j)}
         <td style="${tdr}">${j.actual_screens}</td>
         <td style="${tdr}">${j.ats}</td>
+        <td style="${tdr}">${j.int1 || 0}</td>
+        <td style="${tdr}">${j.int2 || 0}</td>
+        <td style="${tdr}">${j.int3 || 0}</td>
         <td style="${tdr}">${j.offered || 0}</td>
         <td style="${tdr}">${j.hired || 0}</td>
       </tr>`).join('');
@@ -194,9 +197,12 @@
       rs: a.rs + (j.screens || 0),
       s: a.s + j.actual_screens,
       t: a.t + j.ats,
+      i1: a.i1 + (j.int1 || 0),
+      i2: a.i2 + (j.int2 || 0),
+      i3: a.i3 + (j.int3 || 0),
       o: a.o + (j.offered || 0),
       h: a.h + (j.hired || 0),
-    }), {c:0, rs:0, s:0, t:0, o:0, h:0});
+    }), {c:0, rs:0, s:0, t:0, i1:0, i2:0, i3:0, o:0, h:0});
     const rsTotCell = showRS ? `<td style="padding:10px 12px; text-align:right; font-variant-numeric: tabular-nums;">${tot.rs}</td>` : '';
     return `
       <div class="mt-10" style="margin-top:32px;">
@@ -210,6 +216,9 @@
                 ${rsHead}
                 <th style="padding:10px 12px; text-align:right; font-weight:600;">Actual Screens</th>
                 <th style="padding:10px 12px; text-align:right; font-weight:600;">Moved to ATS</th>
+                <th style="padding:10px 12px; text-align:right; font-weight:600;">Int 1</th>
+                <th style="padding:10px 12px; text-align:right; font-weight:600;">Int 2</th>
+                <th style="padding:10px 12px; text-align:right; font-weight:600;">Int 3</th>
                 <th style="padding:10px 12px; text-align:right; font-weight:600;">Offered</th>
                 <th style="padding:10px 12px; text-align:right; font-weight:600;">Hired</th>
               </tr>
@@ -222,6 +231,9 @@
                 ${rsTotCell}
                 <td style="padding:10px 12px; text-align:right; font-variant-numeric: tabular-nums;">${tot.s}</td>
                 <td style="padding:10px 12px; text-align:right; font-variant-numeric: tabular-nums;">${tot.t}</td>
+                <td style="padding:10px 12px; text-align:right; font-variant-numeric: tabular-nums;">${tot.i1}</td>
+                <td style="padding:10px 12px; text-align:right; font-variant-numeric: tabular-nums;">${tot.i2}</td>
+                <td style="padding:10px 12px; text-align:right; font-variant-numeric: tabular-nums;">${tot.i3}</td>
                 <td style="padding:10px 12px; text-align:right; font-variant-numeric: tabular-nums;">${tot.o}</td>
                 <td style="padding:10px 12px; text-align:right; font-variant-numeric: tabular-nums;">${tot.h}</td>
               </tr>
