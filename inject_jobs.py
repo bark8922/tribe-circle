@@ -12,6 +12,7 @@ so ring totals and job sums reconcile exactly.
 """
 
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -28,19 +29,30 @@ def find_source_json():
     sys.exit(1)
 
 
+def norm_name(s):
+    """Collapse runs of whitespace. project_dashboard.rows holds some people
+    double-spaced ("Simon  Siew", "Jelena  Lacmanovic", "Manuel  Carvalho",
+    "Pratik  Sridhar") while circle members and wbr_actuals hold them
+    single-spaced. Matching on the raw string silently returned zero jobs for
+    those people even though their rings showed data. Mirrors normalizeTa in
+    tribe-recruiting App.jsx. Fixed 2026-09-02."""
+    return re.sub(r"\s+", " ", (s or "")).strip()
+
+
 def aggregate_jobs(rows, name, role, iso_week, pd_client=None, iso_year=2026):
     bucket = {}
-    pdc_norm = (pd_client or "").strip().lower()
+    pdc_norm = norm_name(pd_client).lower()
+    name_norm = norm_name(name)
     for r in rows:
         if r.get("iso_year") != iso_year or r.get("iso_week") != iso_week:
             continue
         if role == "TA":
-            if r.get("ta") != name:
+            if norm_name(r.get("ta")) != name_norm:
                 continue
-            if pdc_norm and (r.get("client") or "").strip().lower() != pdc_norm:
+            if pdc_norm and norm_name(r.get("client")).lower() != pdc_norm:
                 continue
         else:
-            if r.get("ts") != name:
+            if norm_name(r.get("ts")) != name_norm:
                 continue
         job_id = r.get("job_id")
         if not job_id:
